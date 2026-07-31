@@ -1,0 +1,80 @@
+schema_version: "1.0"
+data: "2026-07-31"
+objetivo: "Consolidar caminhos editoriais sem recuperar ou alterar conteúdo pendente."
+baseline:
+  marcadores_recuperacao_pendente: 94
+  stubs_aventura: 23
+  regras_renumeradas: 10
+manifestos_observados_antes:
+  operacional: publicacao/manifest.yml
+  historico_na_raiz_publicacao: publicacao/manifesto.yml
+referencias_ativas_antes:
+  - SUMMARY.md
+  - regras/README.md
+  - publicacao/README.md
+  - recuperacao/inventario.json
+  - recuperacao/ARVORE.txt
+  - recuperacao/SHA256SUMS
+  - desenvolvimento/continuidade/estado-inicial.yml
+  - desenvolvimento/planejamento/auditoria-de-conteudo.md
+migracoes_regras:
+  - anterior: regras/05-separacao-cenario-e-regras.md
+    atual: regras/01-convencoes-do-cenario.md
+    sha256_conteudo: de4693f541673cf386830700cdb0349d1f1bfb0455c31ec57c6735c01379c0e6
+    status_esperado: recuperacao-pendente
+    publicar: false
+    motivo: alinhar convenções à primeira posição editorial
+  - anterior: regras/03-pontuacao-e-escala.md
+    atual: regras/02-pontuacao-escala-e-progressao.md
+    sha256_conteudo: b8d31a0d3cd70dde5f0fec2b87bd7c53be2d392616c6c674c2fcb994f4ed495e
+    status_esperado: recuperacao-pendente
+    publicar: false
+    motivo: consolidar pontuação, escala e progressão na segunda posição editorial
+  - anterior: regras/01-testes-equipe-e-pa.md
+    atual: regras/03-testes-equipe-e-pa.md
+    sha256_conteudo: 740805a3943f991a8154db713274c03465a0d17f1efdf0bb53b1553e2246ebfc
+    status_esperado: recuperacao-pendente
+    publicar: false
+    motivo: alinhar testes, equipe e PA à terceira posição editorial
+  - anterior: regras/02-objetivos-xp-e-marcos.md
+    atual: regras/04-objetivos-xp-e-marcos.md
+    sha256_conteudo: eb1906aaaa46985d304b7ceb8950076756364dffc4fec11c40dcb62133665d02
+    status_esperado: recuperacao-pendente
+    publicar: false
+    motivo: alinhar objetivos, XP e Marcos à quarta posição editorial
+  - anterior: regras/04-antagonistas-e-encontros.md
+    atual: regras/06-configuracoes-modulares-e-encontros.md
+    sha256_conteudo: a0f7abf1a9682a9da7dd830b137e6e89f9bb2777fa93a999ea211db84e3346ee
+    status_esperado: recuperacao-pendente
+    publicar: false
+    motivo: reservar a quinta posição às Operações do Atlas e alinhar encontros à sexta
+  - anterior: regras/06-fichas-tenentes-tecnologicos.md
+    atual: regras/07-fichas-tenentes-tecnologicos.md
+    sha256_conteudo: 509e06e49757ebdfbcbbe97d39ef52251dbfe8743a25ac1fd50c81a760d53c06
+    status_esperado: recuperacao-pendente
+    publicar: false
+    motivo: alinhar fichas tecnológicas à sequência editorial pública
+  - anterior: regras/07-fichas-tenentes-misticos.md
+    atual: regras/08-fichas-tenentes-misticos.md
+    sha256_conteudo: 98fc579093f51d64b12ec2fc469cbe38c77aed7cbbb4d3b7220569e8db4a9254
+    status_esperado: recuperacao-pendente
+    publicar: false
+    motivo: alinhar fichas místicas à sequência editorial pública
+  - anterior: regras/08-fichas-tenentes-super-humanos.md
+    atual: regras/09-fichas-tenentes-super-humanos.md
+    sha256_conteudo: 01d943d10d7b1eed6b8a3568c259fc7e14d256bd211ebb771e304d0dafb23928
+    status_esperado: recuperacao-pendente
+    publicar: false
+    motivo: alinhar fichas super-humanas à sequência editorial pública
+  - anterior: regras/09-fichas-tenentes-cosmicos.md
+    atual: regras/10-fichas-tenentes-cosmicos.md
+    sha256_conteudo: 0b06288454c5c1723bbe6184621351767b366e7d5c36e8581858ad165ba78a8c
+    status_esperado: recuperacao-pendente
+    publicar: false
+    motivo: alinhar fichas cósmicas à sequência editorial pública
+  - anterior: regras/10-ancoras-mecanicas-alunos-recorrentes.md
+    atual: regras/11-ancoras-mecanicas-alunos-recorrentes.md
+    sha256_conteudo: 04785059de661930a11b1d6179a48b07ae24efd485469cf20284f83a677dd427
+    status_esperado: recuperacao-pendente
+    publicar: false
+    motivo: alinhar alunos recorrentes à décima primeira posição editorial
