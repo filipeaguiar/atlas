@@ -1,0 +1,32 @@
+titulo: Instituto Atlas e a Tragédia de Belamar
+subtitulo: Módulo de cenário e campanha para 3DeT Victory
+idioma: pt-BR
+fontes: publicacao/fontes
+sumario: publicacao/fontes/SUMMARY.md
+conteudo: publicacao/conteudo
+capa: assets/imagens/capa/capa-modulo-publicacao.png
+saida_pdf: build/modulo-publicacao.pdf
+relatorio_materializacao: build/relatorio-materializacao.md
+relatorio_pdf: build/relatorio-pdf.md
+termos_proibidos:
+- '**Definido**'
+- '**A desenvolver**'
+- Direção definida
+- Objetivo editorial
+- Regra de projeto
+- deverá ser criado
+- ainda será definido
+- por enquanto
+- referência conceitual
+- campanha atual
+- ainda não foi decidido
+- não foi definida uma origem
+- é um termo de projeto
+- stubs editoriais
+- não entram no PDF
+- cronologia planejada
+- distribuição de referência nas 23 aventuras
+- o texto deve explicar
+- documentados no Módulo de Campanha
+- este documento garante
+- planilha exigia

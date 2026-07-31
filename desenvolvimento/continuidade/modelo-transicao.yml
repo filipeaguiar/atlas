@@ -1,0 +1,19 @@
+versao_schema: 1
+aventura: 0
+entrada_snapshot: "desenvolvimento/continuidade/snapshots/00.yml"
+saida_snapshot: "desenvolvimento/continuidade/snapshots/00.yml"
+publicar: false
+mudancas:
+  personagens_jogadores: []
+  npcs: []
+  relacoes: []
+  conhecimentos: []
+  pistas: []
+  locais: []
+  frentes: []
+  vestigios: []
+  sequestros: []
+  recursos: []
+  promessas_e_pagamentos: []
+consequencias_condicionais: []
+alertas_para_proxima_aventura: []

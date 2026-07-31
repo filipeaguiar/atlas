@@ -1,0 +1,38 @@
+publicacao:
+  id: instituto-atlas-recuperado
+  titulo: "Instituto Atlas e a Tragédia de Belamar"
+  subtitulo: "Árvore operacional recuperada"
+  versao: "recuperacao-2026-07-31"
+  idioma: pt-BR
+  conteudo: publicacao/conteudo
+  relatorio: build/relatorio-materializacao.md
+
+secoes:
+  - id: introducao
+    titulo: "Introdução"
+    documentos:
+      - origem: publicacao/fontes/introducao/01-introducao.md
+        destino: introducao/01-introducao.md
+        publicar: true
+  - id: regras
+    titulo: "Regras"
+    documentos:
+      - origem: regras/README.md
+        destino: regras/README.md
+        publicar: true
+      - origem: regras/05-operacoes-do-atlas.md
+        destino: regras/05-operacoes-do-atlas.md
+        publicar: true
+
+exclusoes_obrigatorias:
+  - desenvolvimento
+  - publicacao/stubs
+  - historico
+  - recuperacao
+
+termos_proibidos:
+  - "**Definido**"
+  - "**A desenvolver**"
+  - "Direção definida"
+  - "Objetivo editorial"
+  - "Regra de projeto"

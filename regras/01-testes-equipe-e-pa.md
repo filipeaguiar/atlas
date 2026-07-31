@@ -1,0 +1,11 @@
+---
+titulo: "Testes, trabalho em equipe e PA"
+tipo: recuperacao-pendente
+status: recuperacao-pendente
+publicar: false
+origem: biblioteca-do-projeto
+---
+
+# Testes, trabalho em equipe e PA
+
+> **Recuperação pendente.** O caminho foi confirmado pelo sumário canônico, mas o conteúdo integral não pôde ser copiado automaticamente do armazenamento do outro chat. Substitua este marcador apenas pela versão integral correspondente.

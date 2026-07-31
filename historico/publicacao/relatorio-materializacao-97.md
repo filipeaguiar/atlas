@@ -1,0 +1,107 @@
+# Relatório de materialização recuperado
+
+- Manifesto histórico: `publicacao/manifesto.yml`
+- Fontes históricas: `publicacao/fontes`
+- Saída histórica: `publicacao/conteudo`
+- Documentos incluídos: **97**
+- Documentos não publicáveis copiados: **0**
+
+## Caminhos confirmados
+
+- `00-apresentacao.md`
+- `cenario/01-visao-geral.md`
+- `cenario/02-pessoas-extraordinarias.md`
+- `cenario/03-sociedade-heroica.md`
+- `cenario/04-belamar-e-atlas.md`
+- `cenario/05-programa-de-campo.md`
+- `cenario/06-central-de-operacoes.md`
+- `cenario/07-corpo-docente.md`
+- `cenario/08-tomas-valenca.md`
+- `cenario/09-vanguarda.md`
+- `cenario/10-tragedia-de-belamar.md`
+- `cenario/11-instituto-atlas-hub.md`
+- `cenario/12-alunos-recorrentes.md`
+- `cenario/antagonistas/README.md`
+- `cenario/antagonistas/tecnologicos.md`
+- `cenario/antagonistas/misticos.md`
+- `cenario/antagonistas/super-humanos.md`
+- `cenario/antagonistas/cosmicos.md`
+- `cenario/antagonistas/arquiteto.md`
+- `cenario/antagonistas/mecenas.md`
+- `cenario/antagonistas/zero.md`
+- `cenario/antagonistas/rei-do-veu.md`
+- `cenario/antagonistas/mae-da-mare.md`
+- `cenario/antagonistas/hierofante.md`
+- `cenario/antagonistas/soberano.md`
+- `cenario/antagonistas/tita.md`
+- `cenario/antagonistas/ascendente.md`
+- `cenario/antagonistas/emissario.md`
+- `cenario/antagonistas/regente.md`
+- `cenario/antagonistas/arauto-do-horizonte.md`
+- `cenario/tenentes/README.md`
+- `cenario/tenentes/nexo.md`
+- `cenario/tenentes/bastiao.md`
+- `cenario/tenentes/contramedida.md`
+- `cenario/tenentes/rastro.md`
+- `cenario/tenentes/vespera.md`
+- `cenario/tenentes/custodio.md`
+- `cenario/tenentes/sutura.md`
+- `cenario/tenentes/pressagio.md`
+- `cenario/tenentes/estandarte.md`
+- `cenario/tenentes/ruptura.md`
+- `cenario/tenentes/sincope.md`
+- `cenario/tenentes/rasante.md`
+- `cenario/tenentes/meridiano.md`
+- `cenario/tenentes/eclipse.md`
+- `cenario/tenentes/paralaxe.md`
+- `cenario/tenentes/peregrino.md`
+- `campanha/01-premissa-e-tom.md`
+- `campanha/02-estrutura-narrativa.md`
+- `campanha/03-tomas-na-campanha.md`
+- `campanha/04-segredos-da-tragedia.md`
+- `campanha/05-clarao-artificial-e-vestigios.md`
+- `campanha/06-o-retorno-e-os-sequestros.md`
+- `campanha/07-confronto-final.md`
+- `campanha/arcos/README.md`
+- `campanha/arcos/arco-1.md`
+- `campanha/arcos/arco-2.md`
+- `campanha/arcos/arco-3.md`
+- `campanha/pacotes/README.md`
+- `campanha/pacotes/arquiteto.md`
+- `campanha/pacotes/mecenas.md`
+- `campanha/pacotes/zero.md`
+- `campanha/pacotes/rei-do-veu.md`
+- `campanha/pacotes/mae-da-mare.md`
+- `campanha/pacotes/hierofante.md`
+- `campanha/pacotes/soberano.md`
+- `campanha/pacotes/tita.md`
+- `campanha/pacotes/ascendente.md`
+- `campanha/pacotes/emissario.md`
+- `campanha/pacotes/regente.md`
+- `campanha/pacotes/arauto-do-horizonte.md`
+- `regras/README.md`
+- `regras/01-convencoes-do-cenario.md`
+- `regras/02-pontuacao-escala-e-progressao.md`
+- `regras/03-testes-equipe-e-pa.md`
+- `regras/04-objetivos-xp-e-marcos.md`
+- `regras/05-operacoes-do-atlas.md`
+- `regras/06-configuracoes-modulares-e-encontros.md`
+- `regras/07-fichas-tenentes-tecnologicos.md`
+- `regras/08-fichas-tenentes-misticos.md`
+- `regras/09-fichas-tenentes-super-humanos.md`
+- `regras/10-fichas-tenentes-cosmicos.md`
+- `regras/11-ancoras-mecanicas-alunos-recorrentes.md`
+- `regras/antagonistas-principais/README.md`
+- `regras/antagonistas-principais/arquiteto.md`
+- `regras/antagonistas-principais/mecenas.md`
+- `regras/antagonistas-principais/zero.md`
+- `regras/antagonistas-principais/rei-do-veu.md`
+- `regras/antagonistas-principais/mae-da-mare.md`
+- `regras/antagonistas-principais/hierofante.md`
+- `regras/antagonistas-principais/soberano.md`
+- `regras/antagonistas-principais/tita.md`
+- `regras/antagonistas-principais/ascendente.md`
+- `regras/antagonistas-principais/emissario.md`
+- `regras/antagonistas-principais/regente.md`
+- `regras/antagonistas-principais/arauto-do-horizonte.md`
+- `apendices/matriz-de-pistas.md`

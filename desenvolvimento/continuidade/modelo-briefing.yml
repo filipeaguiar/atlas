@@ -1,0 +1,20 @@
+versao_schema: 1
+aventura: 0
+publicar: false
+fontes_obrigatorias: []
+estado_de_entrada:
+  personagens_jogadores: []
+  npcs_disponiveis: []
+  npcs_indisponiveis: []
+  relacoes_relevantes: []
+  conhecimentos_dos_personagens: []
+  crencas_incorretas: []
+  pistas_disponiveis: []
+  pistas_perdidas_ou_condicionais: []
+  frentes_ativas: []
+  recursos_e_restricoes: []
+funcao_estrutural: ""
+marcos_que_nao_implicam_resultado_obrigatorio: []
+continuidades_a_pagar: []
+continuidades_a_preservar: []
+alertas_bloqueantes: []

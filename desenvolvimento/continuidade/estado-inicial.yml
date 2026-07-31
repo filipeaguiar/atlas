@@ -1,0 +1,1110 @@
+metadata:
+  id: estado-inicial-pre-aventura-01
+  tipo_estado: estado-inicial
+  schema_version: 1.0.0
+  publicar: false
+  criado_em: '2026-07-31'
+  aventura_entrada: 1
+  aventura_saida: null
+  observacoes: Snapshot imediatamente anterior ao Exame de Admissão.
+fontes:
+- caminho: cenario/04-belamar-e-atlas.md
+  papel: canonica
+  observacao: Belamar, Ilha da Aurora, Parque Solar e função do Atlas.
+- caminho: cenario/05-programa-de-campo.md
+  papel: canonica
+  observacao: Programa de campo, supervisão e licenças.
+- caminho: cenario/06-tomas-valenca.md
+  papel: canonica
+  observacao: Tomás, Multiplex e segredo de identidade.
+- caminho: cenario/07-central-de-operacoes.md
+  papel: canonica
+  observacao: Chamados, graus e despacho.
+- caminho: cenario/08-corpo-docente.md
+  papel: canonica
+  observacao: Corpo docente recorrente.
+- caminho: cenario/09-vanguarda.md
+  papel: canonica
+  observacao: Formação, estados e relações da Vanguarda.
+- caminho: cenario/10-tragedia-memoria-publica.md
+  papel: canonica
+  observacao: Versão pública da Tragédia.
+- caminho: cenario/11-instituto-atlas-hub-jogavel.md
+  papel: canonica
+  observacao: Estado institucional e Exame de Admissão.
+- caminho: cenario/12-alunos-recorrentes.md
+  papel: canonica
+  observacao: Oito alunos recorrentes.
+- caminho: campanha/03-arcos.md
+  papel: canonica
+  observacao: Progressão dos três arcos.
+- caminho: campanha/05-segredos-da-tragedia.md
+  papel: canonica
+  observacao: Verdade secreta compartilhada.
+- caminho: campanha/06-clarao-artificial-e-vestigios.md
+  papel: canonica
+  observacao: Núcleo fixo dos Vestígios e variáveis de Pacote.
+- caminho: campanha/07-retorno-e-sequestros.md
+  papel: canonica
+  observacao: Estrutura futura dos sequestros.
+- caminho: campanha/14-diretrizes-de-pacotes-de-antagonista.md
+  papel: canonica
+  observacao: Elementos fixos e variáveis dos Pacotes.
+- caminho: regras/03-pontuacao-e-escala.md
+  papel: canonica
+  observacao: Início em 10 pontos e escala Ningen.
+- caminho: apendices/questoes-em-aberto.md
+  papel: canonica
+  observacao: Usado para não fechar decisões pendentes.
+posicao_campanha:
+  arco: pre-campanha
+  aventura: 1
+  momento: antes-do-exame-de-admissao
+  estado_institucional: candidato
+  pontuacao_esperada:
+    min: 10
+    max: 10
+  escala: Ningen
+  marco_anterior: null
+  proximo_marco: ingresso-no-instituto-atlas
+personagens_jogadores:
+  estado_grupo:
+    equipe_formada: false
+    nome_equipe: null
+    licenca: nenhuma
+    chamados_reais_avaliados: 0
+    tipos_de_ocorrencia_experimentados: []
+    relacao_com_atlas: candidatos ao primeiro ano do Ciclo Heroico Integrado
+  integrantes: []
+entidades:
+- id: instituto-atlas
+  nome: Instituto Atlas
+  codinome: null
+  categoria: instituicao
+  recorrente: true
+  estado_fisico: desconhecido
+  condicao: desconhecida
+  disponibilidade: disponivel
+  localizacao:
+    status: confirmada
+    valor: campus continental de Belamar
+  funcao_atual: fundação educacional sem fins lucrativos e agência heroica licenciada
+  relacao_com_pcs: instituição para a qual os PCs estão se candidatando
+  fatos_que_conhece: []
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: O exame avalia Controle, Julgamento, Equipe, Responsabilidade e Prioridade.
+- id: lucia-arcoverde
+  nome: Lúcia Arcoverde
+  codinome: null
+  categoria: funcionario
+  recorrente: false
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: afastado
+  localizacao:
+    status: presumida
+    valor: fora da rotina escolar; conselho honorário
+  funcao_atual: fundadora e integrante honorária do conselho
+  relacao_com_pcs: null
+  fatos_que_conhece:
+  - historia-do-instituto-atlas
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: false
+  observacoes: Não participa da rotina por padrão.
+- id: alvaro-siqueira
+  nome: Álvaro Siqueira
+  codinome: null
+  categoria: professor
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: confirmada
+    valor: Instituto Atlas
+  funcao_atual: diretor
+  relacao_com_pcs: autoridade institucional ainda sem relação pessoal
+  fatos_que_conhece:
+  - historia-do-instituto-atlas
+  - criterios-do-exame-de-admissao
+  - tragedia-versao-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: O cânone consultado não confirma explicitamente se conhece a identidade de Multiplex.
+- id: dalva-menezes
+  nome: Dalva Menezes
+  codinome: null
+  categoria: funcionario
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: confirmada
+    valor: enfermaria do Instituto Atlas
+  funcao_atual: enfermeira
+  relacao_com_pcs: nenhuma relação pessoal estabelecida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Diagnóstico extraordinário; não cura.
+- id: livia-monteiro
+  nome: Lívia Monteiro
+  codinome: Métrica
+  categoria: professor
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: confirmada
+    valor: Instituto Atlas
+  funcao_atual: professora de Controle; responsável pela Etapa 1 do exame
+  relacao_com_pcs: avaliadora ainda sem relação pessoal
+  fatos_que_conhece:
+  - criterios-do-exame-de-admissao
+  - tragedia-versao-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Mede propriedades do fenômeno; não determina automaticamente sua origem.
+- id: caio-ventura
+  nome: Caio Ventura
+  codinome: Impacto
+  categoria: professor
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: confirmada
+    valor: Instituto Atlas
+  funcao_atual: professor de Educação Física Extraordinária; responsável pela Etapa 2 do exame
+  relacao_com_pcs: avaliador ainda sem relação pessoal
+  fatos_que_conhece:
+  - criterios-do-exame-de-admissao
+  - tragedia-versao-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Herói veterano aposentado da atuação regular de campo.
+- id: janaina-rocha
+  nome: Janaína Rocha
+  codinome: Âncora
+  categoria: professor
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: confirmada
+    valor: Instituto Atlas
+  funcao_atual: professora de Resgate; responsável pela Etapa 3 do exame
+  relacao_com_pcs: avaliadora ainda sem relação pessoal
+  fatos_que_conhece:
+  - criterios-do-exame-de-admissao
+  - tragedia-versao-publica
+  - janaina-participou-do-resgate-da-tragedia
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Participou das operações de emergência da Tragédia, mas não integrou a Vanguarda.
+- id: raul-farias
+  nome: Raul Farias
+  codinome: Vestígio
+  categoria: professor
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: confirmada
+    valor: Instituto Atlas
+  funcao_atual: professor de Investigação Heroica
+  relacao_com_pcs: nenhuma relação pessoal estabelecida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Psicometria limitada produz fragmentos, não provas.
+- id: samira-nasser
+  nome: Samira Nasser
+  codinome: null
+  categoria: professor
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: confirmada
+    valor: Instituto Atlas
+  funcao_atual: professora de Fenômenos Extraordinários
+  relacao_com_pcs: nenhuma relação pessoal estabelecida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Sem poderes conhecidos; rejeita explicação única para todos os fenômenos.
+- id: beatriz-leal
+  nome: Beatriz Leal
+  codinome: null
+  categoria: professor
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: confirmada
+    valor: Instituto Atlas
+  funcao_atual: professora de Ética, Direito e Responsabilidade Heroica
+  relacao_com_pcs: nenhuma relação pessoal estabelecida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Ex-promotora; a regulamentação mundial ampla continua aberta.
+- id: tomas-valenca
+  nome: Tomás Valença
+  codinome: Multiplex
+  categoria: professor
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: confirmada
+    valor: Instituto Atlas
+  funcao_atual: professor de Tática e operador da Central
+  relacao_com_pcs: futuro mentor; ainda não conhece os PCs como equipe
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - tragedia-teve-clarao-artificial
+  - solar-ordenou-retirada-a-multiplex
+  - tomas-e-multiplex-sao-a-mesma-pessoa
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Nenhuma cópia acompanha alunos em campo. O grau de compreensão dos Vestígios no início não está fechado.
+- id: lia-vasconcelos
+  nome: Lia Vasconcelos
+  codinome: Atalho
+  categoria: aluno
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: aproximada
+    valor: Belamar ou Instituto Atlas durante a admissão
+  funcao_atual: candidato ou integrante da mesma turma de ingresso; posição exata será apresentada pela Aventura
+    1
+  relacao_com_pcs: não definida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - multiplex-e-uma-identidade-heroica-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Nenhuma ligação secreta padrão com Retorno, Vanguarda, Vestígios ou Multiplex.
+- id: ravi-moura
+  nome: Ravi Moura
+  codinome: Trama
+  categoria: aluno
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: aproximada
+    valor: Belamar ou Instituto Atlas durante a admissão
+  funcao_atual: candidato ou integrante da mesma turma de ingresso; posição exata será apresentada pela Aventura
+    1
+  relacao_com_pcs: não definida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - multiplex-e-uma-identidade-heroica-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Nenhuma ligação secreta padrão com o metaplot.
+- id: cecilia-dantas
+  nome: Cecília Dantas
+  codinome: Prumo
+  categoria: aluno
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: aproximada
+    valor: Belamar ou Instituto Atlas durante a admissão
+  funcao_atual: candidato ou integrante da mesma turma de ingresso; posição exata será apresentada pela Aventura
+    1
+  relacao_com_pcs: não definida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - multiplex-e-uma-identidade-heroica-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Nenhuma ligação secreta padrão com o metaplot.
+- id: noah-sato
+  nome: Noah Sato
+  codinome: Gambito
+  categoria: aluno
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: aproximada
+    valor: Belamar ou Instituto Atlas durante a admissão
+  funcao_atual: candidato ou integrante da mesma turma de ingresso; posição exata será apresentada pela Aventura
+    1
+  relacao_com_pcs: não definida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - multiplex-e-uma-identidade-heroica-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Sem poderes conhecidos; atua com tecnologia. Nenhuma ligação secreta padrão com o metaplot.
+- id: malu-serrano
+  nome: Malu Serrano
+  codinome: Rasura
+  categoria: aluno
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: aproximada
+    valor: Belamar ou Instituto Atlas durante a admissão
+  funcao_atual: candidato ou integrante da mesma turma de ingresso; posição exata será apresentada pela Aventura
+    1
+  relacao_com_pcs: não definida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - multiplex-e-uma-identidade-heroica-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Nenhuma ligação secreta padrão com o metaplot.
+- id: icaro-tavares
+  nome: Ícaro Tavares
+  codinome: Refrão
+  categoria: aluno
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: aproximada
+    valor: Belamar ou Instituto Atlas durante a admissão
+  funcao_atual: candidato ou integrante da mesma turma de ingresso; posição exata será apresentada pela Aventura
+    1
+  relacao_com_pcs: não definida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - multiplex-e-uma-identidade-heroica-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Nenhuma ligação secreta padrão com o metaplot.
+- id: sofia-mendonca
+  nome: Sofia Mendonça
+  codinome: Pulso
+  categoria: aluno
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: aproximada
+    valor: Belamar ou Instituto Atlas durante a admissão
+  funcao_atual: candidato ou integrante da mesma turma de ingresso; posição exata será apresentada pela Aventura
+    1
+  relacao_com_pcs: não definida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - multiplex-e-uma-identidade-heroica-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Não lê pensamentos. Nenhuma ligação secreta padrão com o metaplot.
+- id: dante-arcos
+  nome: Dante Arcos
+  codinome: Órbita
+  categoria: aluno
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: aproximada
+    valor: Belamar ou Instituto Atlas durante a admissão
+  funcao_atual: candidato ou integrante da mesma turma de ingresso; posição exata será apresentada pela Aventura
+    1
+  relacao_com_pcs: não definida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - multiplex-e-uma-identidade-heroica-publica
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Nenhuma ligação secreta padrão com o metaplot.
+- id: solar
+  nome: Solar
+  codinome: Solar
+  categoria: vanguarda
+  recorrente: true
+  estado_fisico: morto
+  condicao: desconhecida
+  disponibilidade: morto
+  localizacao:
+    status: desconhecida
+    valor: null
+  funcao_atual: símbolo histórico e presença póstuma no mistério
+  relacao_com_pcs: figura histórica
+  fatos_que_conhece: []
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: Tragédia de Belamar, dez anos antes
+  disponibilidade_proxima_aventura: false
+  observacoes: Morreu impedindo que a crise se espalhasse; deixou um sexto Vestígio.
+- id: prisma
+  nome: Prisma
+  codinome: Prisma
+  categoria: vanguarda
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: secreta
+    valor: em atividade; identidade civil preservada
+  funcao_atual: membro ativo e principal candidata à liderança
+  relacao_com_pcs: nenhuma relação pessoal estabelecida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - tomas-e-multiplex-sao-a-mesma-pessoa
+  - solar-ordenou-retirada-a-multiplex
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: O conhecimento consciente sobre seu próprio Vestígio não está definido.
+- id: colosso
+  nome: Colosso
+  codinome: Colosso
+  categoria: vanguarda
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: secreta
+    valor: em atividade; identidade civil preservada
+  funcao_atual: membro ativo; força, proteção e ponte emocional
+  relacao_com_pcs: nenhuma relação pessoal estabelecida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - tomas-e-multiplex-sao-a-mesma-pessoa
+  - solar-ordenou-retirada-a-multiplex
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: O conhecimento consciente sobre seu próprio Vestígio não está definido.
+- id: oraculo
+  nome: Oráculo
+  codinome: Oráculo
+  categoria: vanguarda
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: secreta
+    valor: ativa, embora possa atuar de forma menos pública
+  funcao_atual: membro ativo; investigação e misticismo
+  relacao_com_pcs: nenhuma relação pessoal estabelecida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - tomas-e-multiplex-sao-a-mesma-pessoa
+  - solar-ordenou-retirada-a-multiplex
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Percepções sobrenaturais não equivalem a conhecimento completo.
+- id: vetora
+  nome: Vetora
+  codinome: Vetora
+  categoria: vanguarda
+  recorrente: true
+  estado_fisico: vivo
+  condicao: saudavel
+  disponibilidade: disponivel
+  localizacao:
+    status: secreta
+    valor: em atividade; identidade civil preservada
+  funcao_atual: membro ativo; mobilidade e controle de campo
+  relacao_com_pcs: nenhuma relação pessoal estabelecida
+  fatos_que_conhece:
+  - tragedia-versao-publica
+  - tomas-e-multiplex-sao-a-mesma-pessoa
+  - solar-ordenou-retirada-a-multiplex
+  crencas_incorretas: []
+  descobertas_recentes: []
+  ultima_aparicao: null
+  disponibilidade_proxima_aventura: true
+  observacoes: Ainda ama Tomás; a evolução concreta da relação permanece aberta.
+fatos:
+- id: belamar-e-polo-heroico
+  descricao: Belamar é uma grande cidade litorânea do Nordeste brasileiro e um polo heroico, científico e tecnológico.
+  visibilidade: publico
+  verdadeiro: true
+  fonte_ids:
+  - cenario-belamar-atlas
+  depende_do_pacote: false
+- id: historia-do-instituto-atlas
+  descricao: O Atlas foi fundado dezesseis anos antes da campanha por articulação de Lúcia Arcoverde e hoje é fundação
+    sem fins lucrativos com agência heroica.
+  visibilidade: publico
+  verdadeiro: true
+  fonte_ids:
+  - cenario-atlas-hub-jogavel
+  depende_do_pacote: false
+- id: criterios-do-exame-de-admissao
+  descricao: O Exame avalia Controle, Julgamento, Equipe, Responsabilidade e Prioridade em três etapas.
+  visibilidade: restrito
+  verdadeiro: true
+  fonte_ids:
+  - cenario-atlas-hub-jogavel
+  depende_do_pacote: false
+- id: tragedia-versao-publica
+  descricao: Há dez anos, Solar morreu salvando Belamar; seu sacrifício permitiu a evacuação e a derrota considerada
+    definitiva do responsável.
+  visibilidade: publico
+  verdadeiro: true
+  fonte_ids:
+  - cenario-tragedia-memoria-publica
+  depende_do_pacote: false
+- id: antagonista-nao-foi-identificado-de-forma-conclusiva
+  descricao: O corpo do responsável pela Tragédia não foi identificado de forma conclusiva.
+  visibilidade: secreto-do-mestre
+  verdadeiro: true
+  fonte_ids:
+  - campanha-diretrizes-pacotes
+  depende_do_pacote: false
+- id: tragedia-teve-clarao-artificial
+  descricao: A Tragédia envolveu uma tentativa de reproduzir artificialmente efeitos observáveis associados ao Clarão.
+  visibilidade: secreto-do-mestre
+  verdadeiro: true
+  fonte_ids:
+  - campanha-segredos-tragedia
+  - campanha-clarao-artificial
+  depende_do_pacote: false
+- id: antagonista-foi-amplificado
+  descricao: A falha do processo ampliou extraordinariamente as capacidades do antagonista.
+  visibilidade: secreto-do-mestre
+  verdadeiro: true
+  fonte_ids:
+  - campanha-clarao-artificial
+  depende_do_pacote: false
+- id: vanguarda-sobrevivente-foi-afetada-pelo-clarao-artificial
+  descricao: Prisma, Vetora, Colosso, Oráculo e Multiplex carregam Vestígios distintos e complementares.
+  visibilidade: secreto-do-mestre
+  verdadeiro: true
+  fonte_ids:
+  - campanha-clarao-artificial
+  - campanha-diretrizes-pacotes
+  depende_do_pacote: false
+- id: solar-deixou-um-sexto-vestigio
+  descricao: Solar deixou um sexto Vestígio que precisa ser recuperado ou reconstruído por outro meio.
+  visibilidade: secreto-do-mestre
+  verdadeiro: true
+  fonte_ids:
+  - campanha-segredos-tragedia
+  - campanha-diretrizes-pacotes
+  depende_do_pacote: false
+- id: vestigios-removidos-sao-instaveis
+  descricao: Vestígios removidos de seus hospedeiros tendem a perder estabilidade.
+  visibilidade: secreto-do-mestre
+  verdadeiro: true
+  fonte_ids:
+  - campanha-clarao-artificial
+  - campanha-diretrizes-pacotes
+  depende_do_pacote: false
+- id: multiplex-e-uma-identidade-heroica-publica
+  descricao: Multiplex é identidade heroica pública e desapareceu da vida heroica após sobreviver à Tragédia.
+  visibilidade: publico
+  verdadeiro: true
+  fonte_ids:
+  - cenario-tomas
+  - cenario-vanguarda
+  depende_do_pacote: false
+- id: tomas-e-multiplex-sao-a-mesma-pessoa
+  descricao: Tomás Valença é Multiplex.
+  visibilidade: segredo-pessoal
+  verdadeiro: true
+  fonte_ids:
+  - cenario-tomas
+  - cenario-vanguarda
+  depende_do_pacote: false
+- id: solar-ordenou-retirada-a-multiplex
+  descricao: Solar ordenou que Multiplex deixasse a posição final e coordenasse a retirada.
+  visibilidade: secreto-do-mestre
+  verdadeiro: true
+  fonte_ids:
+  - cenario-tomas
+  - campanha-segredos-tragedia
+  depende_do_pacote: false
+- id: janaina-participou-do-resgate-da-tragedia
+  descricao: Janaína Rocha participou das operações de emergência da Tragédia sem integrar a Vanguarda.
+  visibilidade: restrito
+  verdadeiro: true
+  fonte_ids:
+  - cenario-corpo-docente
+  depende_do_pacote: false
+- id: grande-antagonista-ainda-nao-selecionado
+  descricao: Nenhum dos doze grandes antagonistas foi selecionado como overlay da campanha.
+  visibilidade: decisao-pendente
+  verdadeiro: true
+  fonte_ids:
+  - campanha-pacotes
+  depende_do_pacote: false
+conhecimento_publico:
+- fato_id: belamar-e-polo-heroico
+  confianca: confirmada
+  formulacao_publica: Belamar é um dos grandes polos heroicos do Brasil.
+- fato_id: historia-do-instituto-atlas
+  confianca: confirmada
+  formulacao_publica: O Atlas é escola e agência sem fins lucrativos.
+- fato_id: tragedia-versao-publica
+  confianca: confirmada
+  formulacao_publica: Solar morreu salvando a cidade e o responsável foi derrotado.
+- fato_id: multiplex-e-uma-identidade-heroica-publica
+  confianca: confirmada
+  formulacao_publica: Multiplex sobreviveu, abandonou a vida pública e seu paradeiro é desconhecido.
+conhecimento_por_entidade:
+- entidade_id: candidatos-e-alunos
+  conhecimentos:
+  - fato_id: tragedia-versao-publica
+    confianca: confirmada
+    origem: educação pública, memoriais e mídia
+    pode_compartilhar: true
+  - fato_id: multiplex-e-uma-identidade-heroica-publica
+    confianca: confirmada
+    origem: história heroica pública
+    pode_compartilhar: true
+- entidade_id: tomas-valenca
+  conhecimentos:
+  - fato_id: tomas-e-multiplex-sao-a-mesma-pessoa
+    confianca: confirmada
+    origem: identidade própria
+    pode_compartilhar: false
+  - fato_id: solar-ordenou-retirada-a-multiplex
+    confianca: confirmada
+    origem: experiência direta
+    pode_compartilhar: false
+  - fato_id: tragedia-teve-clarao-artificial
+    confianca: confirmada
+    origem: experiência direta e reconstrução posterior
+    pode_compartilhar: false
+- entidade_id: prisma
+  conhecimentos:
+  - fato_id: tomas-e-multiplex-sao-a-mesma-pessoa
+    confianca: confirmada
+    origem: formação clássica da Vanguarda
+    pode_compartilhar: false
+- entidade_id: colosso
+  conhecimentos:
+  - fato_id: tomas-e-multiplex-sao-a-mesma-pessoa
+    confianca: confirmada
+    origem: formação clássica da Vanguarda
+    pode_compartilhar: false
+- entidade_id: oraculo
+  conhecimentos:
+  - fato_id: tomas-e-multiplex-sao-a-mesma-pessoa
+    confianca: confirmada
+    origem: formação clássica da Vanguarda
+    pode_compartilhar: false
+- entidade_id: vetora
+  conhecimentos:
+  - fato_id: tomas-e-multiplex-sao-a-mesma-pessoa
+    confianca: confirmada
+    origem: formação clássica da Vanguarda
+    pode_compartilhar: false
+pacote_antagonista:
+  selecionado: null
+  status: pendente
+  opcoes_validas:
+  - arquiteto
+  - mecenas
+  - zero
+  - rei-do-veu
+  - mae-da-mare
+  - hierofante
+  - soberano
+  - tita
+  - ascendente
+  - emissario
+  - regente
+  - arauto-do-horizonte
+  tenente_principal: null
+  mecanismo_clarao_artificial: null
+  vestigio_solar: null
+  vinculos_com_pcs:
+    material: null
+    ideologico: null
+    operacional: null
+  frentes: []
+vestigios:
+- id: vestigio-prisma
+  hospedeiro_id: prisma
+  status: estavel-no-hospedeiro
+  natureza: null
+  localizacao: com Prisma
+  conhecimento_dos_pcs: nenhuma
+  depende_do_pacote: true
+- id: vestigio-vetora
+  hospedeiro_id: vetora
+  status: estavel-no-hospedeiro
+  natureza: null
+  localizacao: com Vetora
+  conhecimento_dos_pcs: nenhuma
+  depende_do_pacote: true
+- id: vestigio-colosso
+  hospedeiro_id: colosso
+  status: estavel-no-hospedeiro
+  natureza: null
+  localizacao: com Colosso
+  conhecimento_dos_pcs: nenhuma
+  depende_do_pacote: true
+- id: vestigio-oraculo
+  hospedeiro_id: oraculo
+  status: estavel-no-hospedeiro
+  natureza: null
+  localizacao: com Oráculo
+  conhecimento_dos_pcs: nenhuma
+  depende_do_pacote: true
+- id: vestigio-multiplex
+  hospedeiro_id: tomas-valenca
+  status: estavel-no-hospedeiro
+  natureza: null
+  localizacao: com Tomás Valença
+  conhecimento_dos_pcs: nenhuma
+  depende_do_pacote: true
+- id: vestigio-solar
+  hospedeiro_id: null
+  status: desconhecido
+  natureza: null
+  localizacao: null
+  conhecimento_dos_pcs: nenhuma
+  depende_do_pacote: true
+sequestros:
+- id: sequestro-vanguarda-01
+  alvo_id: null
+  status: nao-iniciado
+  aventura_planejada: 11
+  local_cativeiro: null
+  responsavel_id: null
+  consequencias:
+  - vira a postura do Arco II para investigação ativa
+- id: sequestro-vanguarda-02
+  alvo_id: null
+  status: nao-iniciado
+  aventura_planejada: 14
+  local_cativeiro: null
+  responsavel_id: null
+  consequencias:
+  - estabelece que membros da Vanguarda estão sendo escolhidos
+- id: sequestro-vanguarda-03
+  alvo_id: null
+  status: nao-iniciado
+  aventura_planejada: 17
+  local_cativeiro: null
+  responsavel_id: null
+  consequencias:
+  - confirma relação com a Tragédia de Belamar
+- id: sequestro-vanguarda-04
+  alvo_id: null
+  status: nao-iniciado
+  aventura_planejada: 18
+  local_cativeiro: null
+  responsavel_id: null
+  consequencias:
+  - retira os quatro membros ativos e aponta para Multiplex
+- id: sequestro-tomas
+  alvo_id: tomas-valenca
+  status: nao-iniciado
+  aventura_planejada: 22
+  local_cativeiro: null
+  responsavel_id: null
+  consequencias:
+  - coloca a tentativa final do Clarão artificial em movimento
+pistas:
+- id: pista-identidade-multiplex
+  verdade_relacionada: tomas-e-multiplex-sao-a-mesma-pessoa
+  status: latente
+  fonte: null
+  quem_conhece:
+  - tomas-valenca
+  - prisma
+  - colosso
+  - oraculo
+  - vetora
+  acessada_pelos_pcs: false
+  fontes_alternativas:
+  - registros-de-operacoes-de-multiplex
+  - comunicacoes-antigas-da-vanguarda
+  - metodos-taticos-de-tomas
+  - visitantes-civis-do-atlas
+  - ultima-transmissao-de-solar
+  interpretacao_provavel: Multiplex não desapareceu; tornou-se Tomás Valença.
+  payoff_previsto: adv-19
+- id: pista-clarao-artificial
+  verdade_relacionada: tragedia-teve-clarao-artificial
+  status: latente
+  fonte: null
+  quem_conhece:
+  - tomas-valenca
+  acessada_pelos_pcs: false
+  fontes_alternativas:
+  - assinaturas-anormais-em-ocorrencias
+  - registros-da-ilha-da-aurora
+  - testemunhos-incompletos
+  - dados-do-pacote-selecionado
+  interpretacao_provavel: a Tragédia envolveu uma reprodução artificial do Clarão
+  payoff_previsto: arco-2-e-arco-3
+- id: pista-vanguarda-carrega-vestigios
+  verdade_relacionada: vanguarda-sobrevivente-foi-afetada-pelo-clarao-artificial
+  status: latente
+  fonte: null
+  quem_conhece: []
+  acessada_pelos_pcs: false
+  fontes_alternativas:
+  - padrao-dos-sequestros
+  - dados-dos-hospedeiros
+  - registros-do-experimento
+  - mecanismo-do-pacote-selecionado
+  interpretacao_provavel: os sobreviventes são escolhidos pelo que carregam desde a Tragédia
+  payoff_previsto: adv-17-a-21
+locais:
+- id: campus-atlas
+  nome: Campus do Instituto Atlas
+  status: normal
+  alteracoes: []
+- id: central-de-operacoes
+  nome: Central de Operações
+  status: restrito
+  alteracoes: []
+- id: setor-de-simulacao
+  nome: Setor de Simulação
+  status: normal
+  alteracoes: []
+- id: ilha-da-aurora
+  nome: Ilha da Aurora
+  status: normal
+  alteracoes:
+  - mantém cicatrizes históricas da Tragédia
+- id: parque-solar
+  nome: Parque Solar e Memorial de Solar
+  status: normal
+  alteracoes:
+  - ruínas preservadas como memória histórica
+- id: sede-da-vanguarda
+  nome: Sede da Vanguarda
+  status: restrito
+  alteracoes: []
+objetos: []
+relacoes:
+- id: tomas-e-vetora
+  participantes:
+  - tomas-valenca
+  - vetora
+  estado: antigo casal ainda apaixonado, separado pelas escolhas posteriores à Tragédia
+  confianca: null
+  conflito: Tomás deixou a Vanguarda; Vetora permaneceu
+  ultima_mudanca: dez anos antes
+- id: tomas-e-prisma
+  participantes:
+  - tomas-valenca
+  - prisma
+  estado: respeito profissional com divergências de postura e estratégia
+  confianca: null
+  conflito: null
+  ultima_mudanca: após a Tragédia
+- id: prisma-e-vetora
+  participantes:
+  - prisma
+  - vetora
+  estado: rivalidade profissional possível sem ruptura da parceria
+  confianca: null
+  conflito: null
+  ultima_mudanca: null
+- id: pcs-e-atlas
+  participantes:
+  - instituto-atlas
+  estado: candidatura; relação ainda não formada
+  confianca: 0
+  conflito: null
+  ultima_mudanca: null
+consequencias:
+- id: legado-publico-da-tragedia
+  categoria: publica
+  descricao: Belamar mantém memoriais, cerimônias e narrativa coletiva centrada no sacrifício de Solar.
+  ativa: true
+  origem: Tragédia de Belamar
+- id: cultura-de-seguranca-do-atlas
+  categoria: institucional
+  descricao: O Atlas prioriza controle, proteção de vidas, trabalho em equipe, retirada e debriefing.
+  ativa: true
+  origem: história institucional e lições públicas da Tragédia
+promessas_narrativas:
+- id: promessa-tomas-e-multiplex
+  descricao: Pequenas coincidências sobre Tomás ganharão novo significado após a revelação.
+  status: aberta
+  payoff_previsto: adv-19
+- id: promessa-visitas-da-vanguarda
+  descricao: Os quatro membros ativos podem ser conhecidos primeiro como pessoas em identidades civis.
+  status: aberta
+  payoff_previsto: arco-2-e-arco-3
+- id: promessa-nova-geracao
+  descricao: Os candidatos se tornarão a nova geração de heróis de Belamar.
+  status: aberta
+  payoff_previsto: adv-23
+ganchos: []
+decisoes_pendentes:
+- id: selecionar-pacote-antagonista
+  descricao: Escolher um dos doze Pacotes de Antagonista.
+  status: pendente
+  opcoes:
+  - arquiteto
+  - mecenas
+  - zero
+  - rei-do-veu
+  - mae-da-mare
+  - hierofante
+  - soberano
+  - tita
+  - ascendente
+  - emissario
+  - regente
+  - arauto-do-horizonte
+  bloqueia:
+  - metaplot-especifico
+  - tenente-principal
+  - mecanismo-clarao-artificial
+  - frentes
+  - vestigio-solar
+  - pistas-especificas
+  fonte: campanha/antagonistas/README.md
+- id: selecionar-tenente-principal
+  descricao: Escolher o Tenente Principal compatível com o Pacote.
+  status: pendente
+  opcoes: []
+  bloqueia:
+  - aparicoes-do-tenente
+  - progressao-do-tenente
+  - adv-20
+  fonte: campanha/12-diretrizes-de-design-de-antagonistas.md
+- id: definir-limites-multiplex
+  descricao: Definir limite de cópias, compartilhamento de memória e custo/limitação do poder de Tomás.
+  status: pendente
+  opcoes: []
+  bloqueia:
+  - ficha-mecanica-tomas
+  - crises-da-central
+  fonte: apendices/questoes-em-aberto.md
+- id: criar-personagens-jogadores
+  descricao: Registrar nomes, capacidades, fichas, âncoras pessoais e vínculos dos PCs.
+  status: pendente
+  opcoes: []
+  bloqueia:
+  - vinculos-do-pacote
+  - equipe-contraponto
+  - personalizacao-das-aventuras
+  fonte: sessão zero
+conflitos_de_fonte:
+- id: conflito-segundo-sequestro
+  descricao: A posição do segundo sequestro foi consolidada na Aventura 14.
+  fontes:
+  - campanha/07-retorno-e-sequestros.md
+  - campanha/14-diretrizes-de-pacotes-de-antagonista.md
+  - desenvolvimento/decisoes/DEC-001-segundo-sequestro-aventura-14.md
+  resolucao: resolvido-em-2026-07-31
+- id: conflito-renumeracao-regras
+  descricao: A árvore modular e a publicação recente usam numerações diferentes; confirmar os caminhos na pasta ativa do projeto.
+  fontes:
+  - SUMMARY.md
+  - publicacao/fontes/SUMMARY.md
+  - build/relatorio-materializacao.md
+  resolucao: pendente
+alertas_para_proxima_aventura:
+- id: alerta-aventura-01-candidatos
+  severidade: bloqueante
+  descricao: PCs começam como candidatos de 10 pontos, Ningen, sem equipe e sem licença.
+  fontes:
+  - cenario/11-instituto-atlas-hub-jogavel.md
+  - regras/03-pontuacao-e-escala.md
+- id: alerta-aventura-01-nao-revelar-tomas
+  severidade: bloqueante
+  descricao: Os candidatos conhecem Tomás apenas como professor; não revelar Multiplex.
+  fontes:
+  - cenario/06-tomas-valenca.md
+- id: alerta-aventura-01-avaliacao-ampla
+  severidade: importante
+  descricao: Uma única falha não reprova; avaliar conjunto de decisões e potencial.
+  fontes:
+  - cenario/11-instituto-atlas-hub-jogavel.md
+  - regras/02-objetivos-xp-e-marcos.md
+- id: alerta-aventura-01-npcs-nao-roubam-protagonismo
+  severidade: importante
+  descricao: Colegas podem ajudar ou competir, mas decisões centrais permanecem com os PCs.
+  fontes:
+  - cenario/12-alunos-recorrentes.md
+  - campanha/15-colegas-e-rivalidades.md
+- id: alerta-aventura-01-sem-metaplot-especifico
+  severidade: bloqueante
+  descricao: Não introduzir mecanismo, Frentes, Vestígio de Solar ou pistas específicas enquanto o Pacote estiver
+    pendente.
+  fontes:
+  - AGENTS.md
+  - campanha/14-diretrizes-de-pacotes-de-antagonista.md
+- id: alerta-aventura-01-estado-de-saida
+  severidade: importante
+  descricao: 'Mudança estrutural esperada: candidatos tornam-se alunos; registrar avaliações e relações na transição
+    01.'
+  fontes:
+  - campanha/arcos/arco-1/README.md

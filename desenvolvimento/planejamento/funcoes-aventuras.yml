@@ -1,0 +1,73 @@
+aventuras:
+  1:
+    arco: 1
+    titulo: "Exame de Admissão"
+    funcao: apresentar o Atlas, candidatos, professores e o processo de admissão
+  2:
+    arco: 1
+    funcao: estabelecer a equipe e suas primeiras relações
+  3:
+    arco: 1
+    funcao: testar controle, cooperação e prioridades em ambiente simulado
+  4:
+    arco: 1
+    funcao: ampliar a vida escolar e apresentar um problema que não se resolve apenas com combate
+  5:
+    arco: 1
+    funcao: submeter a equipe a uma avaliação integrada com consequências
+  6:
+    arco: 1
+    funcao: concluir o arco e decidir a concessão da licença provisória
+  7:
+    arco: 2
+    funcao: inaugurar os Chamados reais e a atuação com licença provisória
+  8:
+    arco: 2
+    funcao: explorar Belamar por meio de uma ocorrência de natureza distinta
+  9:
+    arco: 2
+    funcao: aprofundar relações e autonomia sem tornar o metaplot obrigatório
+  10:
+    arco: 2
+    funcao: encerrar o primeiro movimento com uma vitória clara e uma pista opcional
+  11:
+    arco: 2
+    funcao: realizar a primeira operação de captura e mudar a postura da equipe para investigação ativa
+  12:
+    arco: 2
+    funcao: mostrar as consequências da primeira operação e a reação do Tenente Principal
+  13:
+    arco: 2
+    funcao: combinar um Chamado real com investigação deliberada e preparar a nova operação inimiga
+  14:
+    arco: 2
+    funcao: realizar a segunda operação de captura e confirmar a seleção deliberada da Vanguarda
+    marco_obrigatorio: reconhecimento da seleção deliberada
+    resultado_fisico: condicional
+  15:
+    arco: 2
+    funcao: mostrar as consequências da segunda operação e fortalecer a ligação com a Tragédia de Belamar
+  16:
+    arco: 2
+    funcao: concluir o arco, conceder a licença definitiva e confirmar uma ameaça maior
+  17:
+    arco: 3
+    funcao: realizar a terceira operação de captura e confirmar a relação com a Tragédia
+  18:
+    arco: 3
+    funcao: realizar a quarta operação de captura, retirar a Vanguarda ativa e apontar para Multiplex
+  19:
+    arco: 3
+    funcao: pagar pistas e revelar Tomás Valença como Multiplex
+  20:
+    arco: 3
+    funcao: confrontar o Tenente Principal e revelar a estrutura maior do plano
+  21:
+    arco: 3
+    funcao: permitir que os personagens formulem sua resposta e protejam Tomás
+  22:
+    arco: 3
+    funcao: capturar Tomás e colocar o processo final em movimento
+  23:
+    arco: 3
+    funcao: resolver o Clarão artificial, o antagonista e o legado da campanha

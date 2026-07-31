@@ -1,0 +1,188 @@
+schema_version: "1.0.0"
+titulo: "Esquema do estado de campanha"
+tipo: desenvolvimento-interno
+publicar: false
+finalidade: >-
+  Contrato documental para estado inicial, snapshots e transições da campanha
+  Instituto Atlas e a Tragédia de Belamar.
+
+convencoes:
+  id_pattern: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+  datas: "ISO-8601 quando houver data absoluta; caso contrário, posição narrativa"
+  valores_ausentes: "usar null"
+  desconhecimento: "usar status explícito; nunca inferir conhecimento de NPC"
+
+enums:
+  arco: [pre-campanha, arco-1, arco-2, arco-3, epilogo]
+  estado_institucional_pc: [candidato, aluno, licenca-provisoria, licenca-definitiva, formado, suspenso, afastado]
+  escala_3det: [Ningen, Sugoi, Kiodai, Kami, desconhecida]
+  estado_fisico: [vivo, morto, desaparecido, desconhecido]
+  condicao: [saudavel, ferido, gravemente-ferido, incapacitado, doente, exausto, alterado, desconhecida]
+  disponibilidade: [disponivel, ocupado, indisponivel, afastado, hospitalizado, sequestrado, preso, em-missao, desaparecido, morto, desconhecida]
+  status_localizacao: [confirmada, aproximada, presumida, desconhecida, secreta]
+  confianca_conhecimento: [nenhuma, rumor, suspeita, provavel, confirmada, falsa]
+  visibilidade_fato: [publico, restrito, secreto-do-mestre, segredo-pessoal, decisao-pendente]
+  status_pista: [latente, disponivel, acessada, interpretada, confirmada, perdida, destruida, redundante]
+  status_objeto: [intacto, danificado, destruido, perdido, roubado, oculto, em-posse, desconhecido]
+  status_local: [normal, restrito, danificado, evacuado, ocupado, destruido, inacessivel, desconhecido]
+  status_frente: [dormente, preparando, ativa, avancada, impedida, encerrada, desconhecida]
+  status_promessa: [aberta, reforcada, paga, abandonada]
+  status_gancho: [aberto, em-andamento, resolvido, falhou, substituido]
+  status_decisao: [pendente, proposta, aprovada, rejeitada, substituida]
+  status_vestigio: [estavel-no-hospedeiro, instavel, removido, perdido, recuperado, destruido, desconhecido]
+  status_sequestro: [nao-iniciado, tentativa, impedido, concluido, resgatado, consequencia-alternativa]
+
+required_root:
+  - metadata
+  - fontes
+  - posicao_campanha
+  - personagens_jogadores
+  - entidades
+  - fatos
+  - conhecimento_publico
+  - conhecimento_por_entidade
+  - pacote_antagonista
+  - vestigios
+  - sequestros
+  - pistas
+  - locais
+  - objetos
+  - relacoes
+  - consequencias
+  - promessas_narrativas
+  - ganchos
+  - decisoes_pendentes
+  - conflitos_de_fonte
+  - alertas_para_proxima_aventura
+
+fields:
+  metadata:
+    required: [id, tipo_estado, schema_version, publicar, criado_em]
+    properties:
+      id: {type: string, pattern: id_pattern}
+      tipo_estado: {enum: [estado-inicial, snapshot, transicao]}
+      schema_version: {type: string}
+      publicar: {const: false}
+      criado_em: {type: date}
+      aventura_entrada: {type: [integer, null]}
+      aventura_saida: {type: [integer, null]}
+
+  fontes:
+    type: list
+    item:
+      required: [caminho, papel]
+      properties:
+        caminho: {type: string}
+        papel: {enum: [canonica, editorial, historica, resultado-de-mesa, decisao-aprovada]}
+        observacao: {type: [string, null]}
+
+  posicao_campanha:
+    required: [arco, aventura, momento, estado_institucional, pontuacao_esperada, escala]
+    properties:
+      arco: {enum_ref: arco}
+      aventura: {type: [integer, null]}
+      momento: {type: string}
+      estado_institucional: {enum_ref: estado_institucional_pc}
+      pontuacao_esperada: {required: [min, max]}
+      escala: {enum_ref: escala_3det}
+      marco_anterior: {type: [string, null]}
+      proximo_marco: {type: [string, null]}
+
+  personagens_jogadores:
+    required: [estado_grupo, integrantes]
+    notes:
+      - "integrantes fica vazio até a criação dos PCs"
+      - "âncoras pessoais não podem ser inventadas antes da sessão zero"
+
+  entidades:
+    type: list
+    item:
+      required: [id, nome, categoria, estado_fisico, condicao, disponibilidade, localizacao, fatos_que_conhece, crencas_incorretas]
+      properties:
+        categoria: {enum: [pc, professor, funcionario, aluno, vanguarda, antagonista, tenente, civil, grupo, instituicao, outro]}
+        estado_fisico: {enum_ref: estado_fisico}
+        condicao: {enum_ref: condicao}
+        disponibilidade: {enum_ref: disponibilidade}
+        localizacao: {required: [status, valor]}
+        fatos_que_conhece: {type: list, references: fatos.id}
+        crencas_incorretas: {type: list, references: fatos.id}
+
+  fatos:
+    type: list
+    item:
+      required: [id, descricao, visibilidade, verdadeiro, depende_do_pacote]
+
+  conhecimento_publico:
+    type: list
+    item:
+      required: [fato_id, confianca]
+      references: fatos.id
+
+  conhecimento_por_entidade:
+    type: list
+    item:
+      required: [entidade_id, conhecimentos]
+      notes:
+        - "cada conhecimento registra fato_id, confiança, origem e se pode ser compartilhado"
+
+  pacote_antagonista:
+    required: [selecionado, status, tenente_principal, frentes]
+    notes:
+      - "detalhes específicos permanecem nulos enquanto status for pendente"
+      - "carregar somente o Pacote selecionado"
+
+  vestigios:
+    type: list
+    item:
+      required: [id, hospedeiro_id, status, conhecimento_dos_pcs, depende_do_pacote]
+
+  sequestros:
+    type: list
+    item:
+      required: [id, alvo_id, status, aventura_planejada]
+
+  pistas:
+    type: list
+    item:
+      required: [id, verdade_relacionada, status, acessada_pelos_pcs, fontes_alternativas]
+      notes:
+        - "verdades estruturais devem ter pelo menos duas fontes possíveis"
+
+  locais: {type: list}
+  objetos: {type: list}
+  relacoes: {type: list}
+  consequencias: {type: list}
+  promessas_narrativas: {type: list}
+  ganchos: {type: list}
+  decisoes_pendentes: {type: list}
+  conflitos_de_fonte: {type: list}
+  alertas_para_proxima_aventura: {type: list}
+
+transition_contract:
+  required:
+    - metadata
+    - snapshot_entrada
+    - fatos_adicionados
+    - mudancas_de_entidade
+    - conhecimento_adicionado
+    - mudancas_de_relacao
+    - mudancas_de_pista
+    - mudancas_de_local
+    - mudancas_de_objeto
+    - consequencias
+    - resultados_condicionais
+    - ganchos_encerrados
+    - ganchos_abertos
+    - promessas_criadas
+    - payoffs_realizados
+    - alertas_para_proxima_aventura
+
+regras_de_validacao:
+  - "metadata.publicar deve ser false"
+  - "todo fato_id referenciado deve existir em fatos"
+  - "toda entidade_id referenciada deve existir"
+  - "uma entidade morta deve ter disponibilidade morto"
+  - "uma entidade sequestrada deve ter disponibilidade sequestrado e localização não pública"
+  - "conhecimento de NPC não é inferido automaticamente a partir de fatos secretos"
+  - "detalhes dependentes do Pacote permanecem nulos enquanto pacote_antagonista.status for pendente"
+  - "decisões pendentes não podem ser descritas como fatos canonizados"

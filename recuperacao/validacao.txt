@@ -1,0 +1,15 @@
+$ python -m py_compile tools/materialize_publication.py tools/check_recovery.py
+
+$ python tools/materialize_publication.py --check
+Manifesto válido: publicacao/manifest.yml
+Documentos publicáveis recuperados: 3
+
+$ python tools/check_recovery.py
+Recuperação operacional válida.
+AVISO: Marcadores pendentes: 94
+
+$ contagens
+arquivos: 256
+stubs: 23
+marcadores canônicos pendentes: 94
+documentos materializados: 3

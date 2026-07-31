@@ -1,0 +1,12 @@
+# Caches Python
+__pycache__/
+*.py[cod]
+
+# Saída materializada; recriada por tools/materialize_publication.py
+/publicacao/conteudo/
+
+# Saídas de build, preservando a estrutura de releases
+/build/*
+!/build/releases/
+/build/releases/*
+!/build/releases/.keep
