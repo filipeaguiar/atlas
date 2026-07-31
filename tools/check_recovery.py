@@ -89,6 +89,7 @@ def main() -> int:
     seen: set[str] = set()
     inventory_pending: set[str] = set()
     inventory_stubs: set[str] = set()
+    inventory_rewritten: set[str] = set()
     for record in records:
         if not isinstance(record, dict) or not record.get("caminho_atual"):
             errors.append(f"Registro editorial inválido: {record!r}")
@@ -124,6 +125,17 @@ def main() -> int:
             inventory_stubs.add(current)
             if fm.get("publicar") is not False:
                 errors.append(f"Stub sem publicar:false: {current}")
+        if state == "reescrito-aprovado":
+            inventory_rewritten.add(current)
+            if fm.get("status") != "canon" or fm.get("origem") != "reescrita-aprovada":
+                errors.append(f"Reescrita aprovada com metadados divergentes: {current}")
+            if fm.get("publicar") is not True or fm.get("aprovado") is not True:
+                errors.append(f"Reescrita aprovada não publicável: {current}")
+            if not fm.get("fontes_fatuais"):
+                errors.append(f"Reescrita aprovada sem fontes factuais: {current}")
+            history = record.get("historico_recuperacao", {})
+            if history.get("conteudo_original_recuperado") is not False or not history.get("sha256_marcador_substituido"):
+                errors.append(f"Reescrita sem histórico do marcador: {current}")
 
     expected = inventory.get("contagens_esperadas", {})
     actual_pending = physical_markers()
@@ -145,6 +157,10 @@ def main() -> int:
             errors.append(f"Stub físico não inventariado: {path}")
     if len(actual_stubs) != expected.get("stubs_aventura"):
         errors.append(f"Contagem de stubs divergente: {len(actual_stubs)}; esperada {expected.get('stubs_aventura')}")
+    if len(inventory_rewritten) != expected.get("reescritos_aprovados"):
+        errors.append(
+            f"Contagem de reescritas divergente: {len(inventory_rewritten)}; esperada {expected.get('reescritos_aprovados')}"
+        )
 
     legacy_count = sum(1 for path in (ROOT / "publicacao" / "fontes-legado-97").rglob("*") if path.is_file())
     if legacy_count != expected.get("fontes_legado_97"):
@@ -181,6 +197,10 @@ def main() -> int:
                 source = doc.get("origem")
                 if source:
                     active_sources.append(source)
+    if len(active_sources) != expected.get("documentos_ativos_manifesto"):
+        errors.append(
+            f"Documentos ativos divergentes: {len(active_sources)}; esperados {expected.get('documentos_ativos_manifesto')}"
+        )
     for source in active_sources:
         path = ROOT / source
         if not path.is_file():
@@ -228,6 +248,8 @@ def main() -> int:
     print("Recuperação física e editorial válida.")
     print(f"Marcadores confirmados: {len(actual_pending)}")
     print(f"Stubs confirmados: {len(actual_stubs)}")
+    print(f"Reescritas aprovadas: {len(inventory_rewritten)}")
+    print(f"Documentos ativos no manifesto: {len(active_sources)}")
     print(f"Legado confirmado: {legacy_count}")
     for item in warnings:
         print(f"AVISO: {item}")

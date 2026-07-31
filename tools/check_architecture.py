@@ -176,8 +176,13 @@ def main() -> int:
         errors.append(f"Falha inesperada na validação: {exc}")
         links = docs = old_refs = 0
 
-    if docs != 3:
-        warnings.append(f"Manifesto atual contém {docs} documentos ativos; esperado nesta recuperação: 3")
+    try:
+        expected_docs = json.loads(INVENTORY.read_text(encoding="utf-8"))["contagens_esperadas"]["documentos_ativos_manifesto"]
+    except Exception as exc:
+        errors.append(f"Não foi possível obter contagem esperada do manifesto: {exc}")
+        expected_docs = None
+    if expected_docs is not None and docs != expected_docs:
+        errors.append(f"Manifesto contém {docs} documentos ativos; esperados pelo inventário: {expected_docs}")
 
     if errors:
         for item in errors:

@@ -14,6 +14,36 @@ secoes:
       - origem: publicacao/fontes/introducao/01-introducao.md
         destino: introducao/01-introducao.md
         publicar: true
+  - id: cenario
+    titulo: "Cenário"
+    documentos:
+      - origem: cenario/01-visao-geral.md
+        destino: cenario/01-visao-geral.md
+        publicar: true
+      - origem: cenario/02-extraordinarios.md
+        destino: cenario/02-extraordinarios.md
+        publicar: true
+      - origem: cenario/03-sociedade-heroica.md
+        destino: cenario/03-sociedade-heroica.md
+        publicar: true
+      - origem: cenario/04-belamar-e-atlas.md
+        destino: cenario/04-belamar-e-atlas.md
+        publicar: true
+      - origem: cenario/05-programa-de-campo.md
+        destino: cenario/05-programa-de-campo.md
+        publicar: true
+      - origem: cenario/07-central-de-operacoes.md
+        destino: cenario/07-central-de-operacoes.md
+        publicar: true
+      - origem: cenario/09-vanguarda.md
+        destino: cenario/09-vanguarda.md
+        publicar: true
+      - origem: cenario/10-tragedia-memoria-publica.md
+        destino: cenario/10-tragedia-memoria-publica.md
+        publicar: true
+      - origem: cenario/11-instituto-atlas-hub-jogavel.md
+        destino: cenario/11-instituto-atlas-hub-jogavel.md
+        publicar: true
   - id: regras
     titulo: "Regras"
     documentos:

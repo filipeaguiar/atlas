@@ -1,0 +1,267 @@
+metadata:
+  titulo: Matriz factual para reconstrução dos fundamentos do cenário
+  status: ativo
+  publicar: false
+  finalidade: autorizar afirmações da reescrita sem transformar planejamento interno em fonte narrativa
+
+fontes_permitidas:
+  - id: introducao-canonica
+    caminho: publicacao/fontes/introducao/01-introducao.md
+    autoridade: fatos e orientações explicitamente presentes no texto aprovado
+  - id: regras-indice
+    caminho: regras/README.md
+    autoridade: escopo e princípios mecânicos gerais
+  - id: regras-operacoes
+    caminho: regras/05-operacoes-do-atlas.md
+    autoridade: Chamados, Graus, licenças, supervisão, resgates, investigação, consequências e debriefing
+  - id: governanca
+    caminho: AGENTS.md
+    autoridade: restrições de cânone, agência, tom e publicação; não cria fatos ficcionais
+  - id: questoes-abertas
+    caminho: apendices/questoes-em-aberto.md
+    autoridade: limites negativos; não cria respostas
+
+fontes_proibidas_como_autoridade_narrativa:
+  - desenvolvimento/
+  - historico/
+  - recuperacao/
+  - publicacao/stubs/
+  - memoria-de-agente
+  - conversa-nao-incorporada
+
+capitulos_em_escopo:
+  - cenario/01-visao-geral.md
+  - cenario/02-extraordinarios.md
+  - cenario/03-sociedade-heroica.md
+  - cenario/04-belamar-e-atlas.md
+  - cenario/05-programa-de-campo.md
+  - cenario/07-central-de-operacoes.md
+  - cenario/09-vanguarda.md
+  - cenario/10-tragedia-memoria-publica.md
+  - cenario/11-instituto-atlas-hub-jogavel.md
+
+marcadores_substituidos:
+  - caminho: cenario/01-visao-geral.md
+    sha256: 86c501b719d25e596a24c4638146435a22e774cd8dda23ea80b962e762f457a6
+  - caminho: cenario/02-extraordinarios.md
+    sha256: 41b350e6fdfa19174cdb7ff5c7b691fe111aa83ad40976a7a3a85fdb15d96a4f
+  - caminho: cenario/03-sociedade-heroica.md
+    sha256: 1b45f26258c792a9dc139c41873f60e081020415248fb2ec84b8e94edc89938a
+  - caminho: cenario/04-belamar-e-atlas.md
+    sha256: d86ea5753aed01222f24fc0a6f8123b1553ebdd67d92c5c23965fd592d25b33b
+  - caminho: cenario/05-programa-de-campo.md
+    sha256: 51ceb537e470a5665785f7918984ae9b57fc4294c6a3b756813bcaf7cc280017
+  - caminho: cenario/07-central-de-operacoes.md
+    sha256: 091db6f712c13f2d47bc6d47388a3c5a29b2818ee1095f78e0ede4a9e810fed5
+  - caminho: cenario/09-vanguarda.md
+    sha256: 001f509caaf9060da3ed92afce86662bc0c9bcf66cfbdeb58e0d6c2f03bf0b72
+  - caminho: cenario/10-tragedia-memoria-publica.md
+    sha256: 2fda974c6f10b02bdb8de34aff596c732d02b2ce0d548fd058e4507c13f8b997
+  - caminho: cenario/11-instituto-atlas-hub-jogavel.md
+    sha256: e5d2b6f806b0492c54f03c040e1e267eb95276b449eda7eca2c354923c7cbd9f
+
+fatos_autorizados:
+  - id: clarão-observado-sem-explicacao
+    classificacao: fato-fixo
+    formulacao_permitida: O Clarão foi um fenômeno mundial não explicado; suas consequências observáveis fazem parte da vida contemporânea.
+    fonte: introducao-canonica
+    secao: Introdução, parágrafos iniciais
+    capitulos: [cenario/01-visao-geral.md, cenario/02-extraordinarios.md, cenario/03-sociedade-heroica.md]
+    proibido: afirmar causa, natureza verdadeira ou relação universal com poderes
+
+  - id: diversidade-extraordinaria
+    classificacao: fato-fixo
+    formulacao_permitida: Extraordinários podem expressar voo, invenções, magia, mutações, origem extraterrestre, treinamento ou talentos além do comum.
+    fonte: introducao-canonica
+    secao: Introdução; Mundo Heroico — Diferencie capacidades semelhantes
+    capitulos: [cenario/01-visao-geral.md, cenario/02-extraordinarios.md, cenario/03-sociedade-heroica.md]
+    proibido: reduzir todas as capacidades a uma única origem
+
+  - id: extraordinario-nao-equivale-a-heroi
+    classificacao: fato-fixo
+    formulacao_permitida: Extraordinário descreve quem possui capacidades incomuns; heroísmo depende de escolher proteger e assumir responsabilidade.
+    fonte: introducao-canonica
+    secao: Introdução, segundo e terceiro parágrafos; Mundo Heroico — Heroísmo não é apenas vencer a luta
+    capitulos: [cenario/01-visao-geral.md, cenario/02-extraordinarios.md]
+
+  - id: sociedade-adaptada
+    classificacao: fato-fixo
+    formulacao_permitida: Lugares e instituições podem adotar protocolos e acessos voltados a ocorrências extraordinárias.
+    fonte: introducao-canonica
+    secao: Mundo Heroico — Faça os lugares reagirem aos Extraordinários
+    capitulos: [cenario/03-sociedade-heroica.md, cenario/04-belamar-e-atlas.md]
+    exemplos_autorizados: pontes com protocolos de isolamento; hospitais com acessos incomuns; universidades que estudam fenômenos
+    proibido: transformar exemplos em lei universal ou inventar órgão regulador
+
+  - id: belamar-aguas-e-pontes
+    classificacao: fato-fixo
+    formulacao_permitida: Belamar é marcada por rios, canais, pontes e instituições ligadas à vida extraordinária.
+    fonte: introducao-canonica
+    secao: Introdução, parágrafo sobre o Instituto Atlas
+    capitulos: [cenario/04-belamar-e-atlas.md, cenario/07-central-de-operacoes.md, cenario/11-instituto-atlas-hub-jogavel.md]
+    proibido: inventar bairros, população ou posição geográfica mais específica
+
+  - id: atlas-multiplas-funcoes
+    classificacao: fato-fixo
+    formulacao_permitida: O Instituto Atlas é escola, residência, centro de treinamento e sede de uma agência heroica.
+    fonte: introducao-canonica
+    secao: Introdução, parágrafo sobre o Instituto Atlas
+    capitulos: [cenario/01-visao-geral.md, cenario/04-belamar-e-atlas.md, cenario/05-programa-de-campo.md, cenario/11-instituto-atlas-hub-jogavel.md]
+
+  - id: atlas-filosofia
+    classificacao: fato-fixo
+    formulacao_permitida: O Atlas ensina controle, julgamento, cooperação e responsabilidade, valorizando proteção e consequências além da luta.
+    fonte: introducao-canonica
+    secao: Introdução; Como Jogar; Mundo Heroico
+    capitulos: [cenario/01-visao-geral.md, cenario/05-programa-de-campo.md, cenario/11-instituto-atlas-hub-jogavel.md]
+
+  - id: progressao-candidatos-chamados
+    classificacao: fato-fixo
+    formulacao_permitida: Os personagens entram como candidatos, conquistam lugar no Atlas e depois respondem a ocorrências reais sob supervisão.
+    fonte: introducao-canonica
+    secao: Introdução; Visão Geral — Arco I e Arco II
+    capitulos: [cenario/01-visao-geral.md, cenario/05-programa-de-campo.md]
+
+  - id: chamados-estrutura
+    classificacao: fato-fixo
+    formulacao_permitida: Um Chamado combina dossiê inicial, Objetivo Maior, pressões, complicação e condição de encerramento; fatos, relatos e inferências devem ser distinguidos.
+    fonte: regras-operacoes
+    secao: Estrutura de um Chamado
+    capitulos: [cenario/05-programa-de-campo.md, cenario/07-central-de-operacoes.md]
+
+  - id: graus-ocorrencia
+    classificacao: fato-fixo
+    formulacao_permitida: Ocorrências usam Graus 1 a 4; o Grau pode mudar e reconhecer escalada é decisão válida.
+    fonte: regras-operacoes
+    secao: Graus de ocorrência
+    capitulos: [cenario/05-programa-de-campo.md, cenario/07-central-de-operacoes.md]
+
+  - id: licencas-atlas
+    classificacao: fato-fixo
+    formulacao_permitida: Licença provisória permite Graus 1 e Graus 2 selecionados em equipe e sob supervisão; a definitiva estudantil amplia autonomia sem romper vínculo com o Atlas.
+    fonte: regras-operacoes
+    secao: Licenças como acesso narrativo
+    capitulos: [cenario/05-programa-de-campo.md, cenario/07-central-de-operacoes.md]
+    proibido: apresentar licenças do Atlas como legislação mundial
+
+  - id: supervisao-limitada
+    classificacao: fato-fixo
+    formulacao_permitida: Supervisores transmitem e pesquisam informações, coordenam apoio, esclarecem limites e podem ordenar retirada, mas não veem tudo nem resolvem a cena.
+    fonte: regras-operacoes
+    secao: Supervisão remota
+    capitulos: [cenario/05-programa-de-campo.md, cenario/07-central-de-operacoes.md]
+
+  - id: resgate-prioridades
+    classificacao: orientacao-de-jogo
+    formulacao_permitida: Resgates combinam prioridades de pessoas, ambiente e causa; vencer um antagonista não encerra automaticamente a emergência.
+    fonte: regras-operacoes
+    secao: Resgates
+    capitulos: [cenario/05-programa-de-campo.md, cenario/07-central-de-operacoes.md]
+
+  - id: investigacao-redundante
+    classificacao: orientacao-de-jogo
+    formulacao_permitida: Informação essencial deve possuir mais de uma via de descoberta; falha muda custo ou exposição, não apaga a única pista.
+    fonte: regras-operacoes
+    secao: Investigações e Vestígios
+    capitulos: [cenario/05-programa-de-campo.md, cenario/07-central-de-operacoes.md]
+    proibido: mencionar Vestígios ou o metaplot nos capítulos públicos
+
+  - id: consequencias-e-debriefing
+    classificacao: fato-fixo
+    formulacao_permitida: O Atlas registra consequências concretas e usa debriefings para revisar informação, prioridade, efeitos imprevistos e aprendizado.
+    fonte: regras-operacoes
+    secao: Consequências públicas; Caderno de Campo e debriefing
+    capitulos: [cenario/05-programa-de-campo.md, cenario/07-central-de-operacoes.md, cenario/11-instituto-atlas-hub-jogavel.md]
+
+  - id: campus-espacos-estabelecidos
+    classificacao: fato-fixo
+    formulacao_permitida: Refeitório, oficina, Central, Ginásio Modular e Parque Solar podem cumprir funções cotidianas e heroicas.
+    fonte: introducao-canonica
+    secao: Mundo Heroico — Faça os lugares reagirem aos Extraordinários
+    capitulos: [cenario/11-instituto-atlas-hub-jogavel.md, cenario/04-belamar-e-atlas.md]
+    proibido: inventar planta, quantidade, localização interna ou autoridade responsável
+
+  - id: vanguarda-formacao
+    classificacao: fato-fixo
+    formulacao_permitida: A formação clássica da Vanguarda reúne Solar, Multiplex, Prisma, Colosso, Oráculo e Vetora.
+    fonte: introducao-canonica
+    secao: Introdução, apresentação da Vanguarda
+    capitulos: [cenario/09-vanguarda.md, cenario/10-tragedia-memoria-publica.md]
+
+  - id: vanguarda-funcoes-publicas
+    classificacao: fato-fixo
+    formulacao_permitida: Solar liderava; Multiplex coordenava com duplicatas; Prisma manipulava luz; Colosso sustentava ameaças físicas; Oráculo percebia rastros; Vetora alterava trajetórias.
+    fonte: introducao-canonica
+    secao: Introdução, apresentação da Vanguarda
+    capitulos: [cenario/09-vanguarda.md]
+    proibido: acrescentar identidades civis, limites mecânicos ou relações privadas
+
+  - id: tragedia-dez-anos
+    classificacao: memoria-publica
+    formulacao_permitida: A Tragédia de Belamar ocorreu há dez anos na Ilha da Aurora, levou a evacuações e terminou com a morte de Solar ao conter a crise.
+    fonte: introducao-canonica
+    secao: Introdução, memória pública da Tragédia
+    capitulos: [cenario/04-belamar-e-atlas.md, cenario/09-vanguarda.md, cenario/10-tragedia-memoria-publica.md]
+    proibido: revelar Clarão artificial ou mecanismo da crise
+
+  - id: versao-publica-do-final
+    classificacao: memoria-publica
+    formulacao_permitida: A versão conhecida afirma que o sacrifício de Solar permitiu a evacuação e a derrota definitiva do responsável.
+    fonte: introducao-canonica
+    secao: Introdução, parágrafo da versão conhecida
+    capitulos: [cenario/09-vanguarda.md, cenario/10-tragedia-memoria-publica.md]
+    proibido: confirmar ou negar a versão conhecida
+
+  - id: parque-solar-memorial
+    classificacao: memoria-publica
+    formulacao_permitida: O Parque Solar ocupa a área não reconstruída e preserva caminhos, árvores, ruínas e memória de herói, vítimas e equipes de resgate.
+    fonte: introducao-canonica
+    secao: Introdução, parágrafo sobre o Parque Solar
+    capitulos: [cenario/04-belamar-e-atlas.md, cenario/10-tragedia-memoria-publica.md, cenario/11-instituto-atlas-hub-jogavel.md]
+
+  - id: destino-publico-multiplex
+    classificacao: memoria-publica
+    formulacao_permitida: Multiplex sobreviveu à Tragédia, abandonou a vida pública e seu paradeiro não é conhecido publicamente.
+    fonte: introducao-canonica
+    secao: Introdução; Visão Geral
+    capitulos: [cenario/09-vanguarda.md, cenario/10-tragedia-memoria-publica.md]
+    proibido: identificar Multiplex como Tomás Valença
+
+limites_abertos:
+  - id: origem-exata-clarao
+    classificacao: limite-aberto
+    fonte: questoes-abertas
+    secao: Elementos de cenário ainda não canonizados — Origem exata do Clarão
+    proibido: definir causa, natureza ou relação necessária com poderes
+  - id: historia-mundial-extraordinarios
+    classificacao: limite-aberto
+    fonte: questoes-abertas
+    secao: Questões de cenário — Mundo
+    proibido: definir origem histórica, existência ancestral ou evento de popularização
+  - id: demografia-extraordinaria
+    classificacao: limite-aberto
+    fonte: questoes-abertas
+    secao: Questões de cenário — Mundo
+    proibido: informar porcentagem ou quantidade de Extraordinários
+  - id: legislacao-internacional
+    classificacao: limite-aberto
+    fonte: questoes-abertas
+    secao: Autoridade Heroica Internacional; Questões de cenário — Mundo
+    proibido: definir estrutura da AHI, jurisdição ou políticas nacionais
+  - id: pacotes-antagonista
+    classificacao: limite-aberto
+    fonte: questoes-abertas
+    secao: Elementos da campanha ainda não canonizados — Seleção do Pacote
+    proibido: selecionar Pacote ou importar mecanismo, Frentes e pistas
+
+segredos_proibidos_nos_capitulos_publicos:
+  - id: tomas-e-multiplex
+    proibido: identificar ou insinuar que Tomás Valença é Multiplex
+  - id: clarao-artificial
+    proibido: revelar que a Tragédia envolveu reprodução artificial do Clarão
+  - id: vestigios
+    proibido: mencionar marcas complementares, sexto Vestígio ou extração
+  - id: antagonista-sobreviveu
+    proibido: afirmar que o responsável sobreviveu ou deixou continuidade operacional
+  - id: retorno-e-sequestros
+    proibido: revelar Retorno, Tenente Principal, capturas ou alvos futuros
