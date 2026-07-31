@@ -53,9 +53,13 @@ Nenhuma limpeza genérica pode alcançar `.git/`, `openspec/`, `assets/`, fontes
 
 - branch protegida por procedimento: `main`;
 - tag anotada de recuperação: `recovery-baseline-v1`;
-- remoto esperado: repositório privado `atlas` do proprietário autenticado pelo GitHub CLI.
+- remoto confirmado: `git@github.com:filipeaguiar/atlas.git`;
+- página: `https://github.com/filipeaguiar/atlas`;
+- visibilidade confirmada pelo GitHub CLI: `PRIVATE`;
+- commit de baseline: `2be4931136ecf572a9182896bd02b160993d172a`;
+- `origin/main` e `recovery-baseline-v1` confirmados no mesmo commit.
 
-A limpeza só pode começar depois de confirmar que `main` e `recovery-baseline-v1` existem no remoto privado e correspondem às referências locais.
+O backup remoto foi verificado antes da limpeza. Nenhuma credencial foi armazenada neste documento.
 
 ## Restauração
 
@@ -88,3 +92,15 @@ python tools/materialize_publication.py
 ```
 
 O verificador de recuperação atual lê a quantidade de marcadores do inventário, mas não confirma individualmente a existência dos 94 caminhos. A contagem física deve ser verificada separadamente durante reorganizações.
+
+## Limitações preexistentes registradas
+
+A auditoria de referências encontrou cinco links quebrados em `regras/README.md`, causados pela divergência já conhecida entre a numeração modular recuperada e a numeração editorial:
+
+- `01-convencoes-do-cenario.md`;
+- `02-pontuacao-escala-e-progressao.md`;
+- `03-testes-equipe-e-pa.md`;
+- `04-objetivos-xp-e-marcos.md`;
+- `06-configuracoes-modulares-e-encontros.md`.
+
+A correção depende da consolidação da arquitetura das regras e não será resolvida silenciosamente nesta limpeza. A referência operacional do `README.md` ao inventário foi corrigida para o arquivo existente `recuperacao/inventario.json`.

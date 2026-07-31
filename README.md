@@ -12,7 +12,7 @@ Esta não é uma cópia byte a byte do sistema de arquivos temporário do chat a
 
 Os arquivos com conteúdo integral recuperado permanecem em seus caminhos normais. Arquivos cujo conteúdo não pôde ser transferido integralmente foram representados por marcadores com `status: recuperacao-pendente` e `publicar: false`.
 
-Consulte [RECUPERACAO.md](RECUPERACAO.md) e `recuperacao/inventario.yml` antes de substituir qualquer marcador. A política de rastreamento, limpeza e restauração está em [ORGANIZACAO.md](ORGANIZACAO.md).
+Consulte [RECUPERACAO.md](RECUPERACAO.md) e `recuperacao/inventario.json` antes de substituir qualquer marcador. A política de rastreamento, limpeza e restauração está em [ORGANIZACAO.md](ORGANIZACAO.md).
 
 ## Fontes de verdade
 
