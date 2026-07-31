@@ -6,7 +6,7 @@ Este documento registra a política operacional para preservar e organizar a rec
 
 | Camada | Caminhos | Tratamento |
 |---|---|---|
-| Fontes canônicas | `cenario/`, `campanha/`, `regras/`, `apendices/` | fonte editável quando o arquivo possui conteúdo canônico integral |
+| Fontes canônicas | `cenario/`, `campanha/`, `regras/`, `apendices/` | fonte editável quando o arquivo possui conteúdo canônico integral; aventuras aprovadas pertencem a `campanha/aventuras/` |
 | Recuperação pendente | arquivos com `status: recuperacao-pendente` | marcador não canônico e não publicável; preservar até decisão individual |
 | Adaptação editorial | `publicacao/fontes/` | publicável somente quando aprovada e declarada no manifesto operacional |
 | Planejamento interno | `desenvolvimento/` | preservar no Git; nunca materializar no produto |
@@ -16,7 +16,7 @@ Este documento registra a política operacional para preservar e organizar a rec
 | Assets | `assets/` | preservar fontes e estruturas, inclusive arquivos `.keep` |
 | Especificações | `openspec/` | preservar propostas, especificações, designs e tarefas |
 
-A hierarquia editorial normativa continua definida em `AGENTS.md`.
+A hierarquia editorial normativa continua definida em `AGENTS.md`. `publicacao/manifest.yml` é o único manifesto operacional. `SUMMARY.md` descreve a arquitetura-alvo das fontes, enquanto `publicacao/conteudo/SUMMARY.md` é gerado a partir do manifesto e descreve somente a release atual.
 
 ## Inventário protegido do baseline
 
@@ -87,20 +87,14 @@ Se uma organização já tiver sido registrada em commit, prefira revertê-la em
 
 ```bash
 python tools/check_recovery.py
+python tools/check_architecture.py
+python tools/materialize_publication.py --sync-stubs --check
 python tools/materialize_publication.py --check
 python tools/materialize_publication.py
 ```
 
 O verificador de recuperação atual lê a quantidade de marcadores do inventário, mas não confirma individualmente a existência dos 94 caminhos. A contagem física deve ser verificada separadamente durante reorganizações.
 
-## Limitações preexistentes registradas
+## Migrações editoriais
 
-A auditoria de referências encontrou cinco links quebrados em `regras/README.md`, causados pela divergência já conhecida entre a numeração modular recuperada e a numeração editorial:
-
-- `01-convencoes-do-cenario.md`;
-- `02-pontuacao-escala-e-progressao.md`;
-- `03-testes-equipe-e-pa.md`;
-- `04-objetivos-xp-e-marcos.md`;
-- `06-configuracoes-modulares-e-encontros.md`.
-
-A correção depende da consolidação da arquitetura das regras e não será resolvida silenciosamente nesta limpeza. A referência operacional do `README.md` ao inventário foi corrigida para o arquivo existente `recuperacao/inventario.json`.
+Renomeações de fontes são registradas em `recuperacao/migracoes-caminhos.yml`. Mover um marcador não recupera seu conteúdo e não altera `status: recuperacao-pendente` nem `publicar: false`. A referência operacional ao inventário é `recuperacao/inventario.json`.

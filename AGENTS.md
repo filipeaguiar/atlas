@@ -6,11 +6,14 @@ Estas instruções regem a árvore reconstruída de **Instituto Atlas e a Tragé
 
 ## Hierarquia das fontes
 
-1. Consulte primeiro `cenario/`, `campanha/`, `regras/` e `apendices/`.
+1. Consulte primeiro `cenario/`, `campanha/`, `regras/` e `apendices/`; aventuras completas e aprovadas pertencem a `campanha/aventuras/`.
 2. Arquivos com `status: recuperacao-pendente` não são fonte canônica e não podem ser citados como conteúdo existente.
-3. `publicacao/conteudo/` e `build/` são saídas descartáveis.
-4. `historico/` serve apenas para auditoria.
-5. `desenvolvimento/` contém planejamento, continuidade e decisões internas; nunca deve entrar no livro.
+3. `publicacao/fontes/` contém apenas adaptações editoriais aprovadas e deve rastrear suas fontes canônicas.
+4. `publicacao/manifest.yml` é a única lista positiva operacional da publicação.
+5. `SUMMARY.md` é o sumário-alvo das fontes; `publicacao/conteudo/SUMMARY.md` é uma saída gerada da release.
+6. `publicacao/conteudo/` e `build/` são saídas descartáveis.
+7. `historico/` e `recuperacao/` servem apenas para auditoria e recuperação.
+8. `desenvolvimento/` contém planejamento, continuidade e decisões internas; nunca deve entrar no livro.
 
 ## Cânone e lacunas
 
@@ -30,6 +33,7 @@ Estas instruções regem a árvore reconstruída de **Instituto Atlas e a Tragé
 
 ## Publicação
 
-- Um arquivo só entra no produto quando o manifesto o declara e ele não está marcado `publicar: false`.
+- Um arquivo só entra no produto quando `publicacao/manifest.yml` o declara e ele não está marcado `publicar: false`.
 - Stubs, prompts, checklists, decisões internas, estados de continuidade e notas de pipeline não entram na publicação.
+- Stubs permanecem em `publicacao/stubs/`; quando uma aventura estiver completa e aprovada, ela deve migrar para `campanha/aventuras/` antes de entrar no manifesto.
 - O materializador deve recusar fontes dentro de `desenvolvimento/`, `historico/`, `recuperacao/` e `publicacao/stubs/`.

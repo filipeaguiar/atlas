@@ -20,7 +20,7 @@ A documentação já possui uma separação funcional entre quatro camadas:
 
 A fonte de verdade continua sendo a camada modular. Arquivos de publicação podem condensar, reorganizar e renomear capítulos, mas não substituem os capítulos canônicos. Arquivos em `build/` e `publicacao/conteudo/` nunca devem ser editados manualmente.
 
-A release mais recente identificada na biblioteca é **`v0.2.0-alpha.1`**. O relatório de materialização associado registra **97 documentos incluídos e zero documentos não publicáveis copiados**. As 23 aventuras completas ainda não fazem parte da publicação.
+A release mais recente identificada na biblioteca é **`v0.2.0-alpha.1`**. O relatório de materialização associado registra **97 documentos incluídos e zero documentos não publicáveis copiados**. Seu manifesto recuperado foi preservado em `historico/publicacao/manifesto-publicacao-recuperado.yml`; ele não é entrada operacional. As 23 aventuras completas ainda não fazem parte da publicação.
 
 ## Limite desta auditoria
 
@@ -43,7 +43,7 @@ A auditoria foi feita a partir dos documentos do workspace disponíveis na Bibli
 | `README.md` | canônico de governança | não | manter comandos de validação atualizados | ferramentas de build |
 | `AGENTS.md` | canônico de governança | não | manter alinhado à árvore real e à política de imagens | todos os capítulos |
 | `SUMMARY.md` | mapa da árvore modular | não diretamente | confirmar nomes após renumerações recentes | fontes modulares |
-| `publicacao/manifesto.yml` | manifesto ativo | não | manter lista de termos internos proibidos | `publicacao/fontes/` |
+| `publicacao/manifest.yml` | manifesto operacional ativo | não | manter lista positiva e termos internos proibidos | fontes aprovadas |
 | `tools/materialize_publication.py` | gerador ativo | não | impedir qualquer cópia de `desenvolvimento/` | manifesto e fontes públicas |
 | `tools/generate_pdf.py` | gerador ativo | não | validação final só após aventuras e paratextos | materialização |
 | `build/relatorio-materializacao.md` | saída gerada | não | regenerar a cada release | materialização |
@@ -124,14 +124,14 @@ A árvore modular e a árvore editorial usam numerações diferentes. A publica�
 
 | Conteúdo | Fonte modular observada | Caminho editorial recente | Estado |
 |---|---|---|---|
-| convenções e separação ficção/regras | `regras/05-separacao-cenario-e-regras.md` e `regras/README.md` | `regras/01-convencoes-do-cenario.md` | publicável por síntese |
-| pontuação, escala e progressão | `regras/02-objetivos-xp-e-marcos.md` + `regras/03-pontuacao-e-escala.md` | `regras/02-pontuacao-escala-e-progressao.md` | fechado para início: 10 pontos, Ningen |
-| testes, equipe e PA | `regras/01-testes-equipe-e-pa.md` | `regras/03-testes-equipe-e-pa.md` | canônico |
-| objetivos, XP e Marcos | `regras/02-objetivos-xp-e-marcos.md` | `regras/04-objetivos-xp-e-marcos.md` | canônico; depende das aventuras |
+| convenções e separação ficção/regras | `regras/01-convencoes-do-cenario.md` e `regras/README.md` | `regras/01-convencoes-do-cenario.md` | publicável por síntese |
+| pontuação, escala e progressão | `regras/04-objetivos-xp-e-marcos.md` + `regras/02-pontuacao-escala-e-progressao.md` | `regras/02-pontuacao-escala-e-progressao.md` | fechado para início: 10 pontos, Ningen |
+| testes, equipe e PA | `regras/03-testes-equipe-e-pa.md` | `regras/03-testes-equipe-e-pa.md` | canônico |
+| objetivos, XP e Marcos | `regras/04-objetivos-xp-e-marcos.md` | `regras/04-objetivos-xp-e-marcos.md` | canônico; depende das aventuras |
 | operações do Atlas | cenário + regras | `regras/05-operacoes-do-atlas.md` | adaptação editorial |
-| encontros modulares | `regras/04-antagonistas-e-encontros.md` | `regras/06-configuracoes-modulares-e-encontros.md` | canônico |
+| encontros modulares | `regras/06-configuracoes-modulares-e-encontros.md` | `regras/06-configuracoes-modulares-e-encontros.md` | canônico |
 | tenentes | `regras/06` a `09` na árvore modular | `regras/07` a `10` na publicação | 16 fichas fechadas |
-| alunos recorrentes | `regras/10-ancoras-mecanicas-alunos-recorrentes.md` | `regras/11-ancoras-mecanicas-alunos-recorrentes.md` | canônico |
+| alunos recorrentes | `regras/11-ancoras-mecanicas-alunos-recorrentes.md` | `regras/11-ancoras-mecanicas-alunos-recorrentes.md` | canônico |
 | grandes antagonistas | `regras/antagonistas-principais/*` | mesmo agrupamento | 12 fichas fechadas |
 
 A renumeração não constitui duplicação conceitual quando a camada pública é gerada. Ela se torna risco apenas se autores passarem a editar as duas versões como fontes independentes.

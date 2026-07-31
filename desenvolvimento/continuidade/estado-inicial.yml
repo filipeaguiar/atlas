@@ -50,7 +50,7 @@ fontes:
 - caminho: campanha/14-diretrizes-de-pacotes-de-antagonista.md
   papel: canonica
   observacao: Elementos fixos e variáveis dos Pacotes.
-- caminho: regras/03-pontuacao-e-escala.md
+- caminho: regras/02-pontuacao-escala-e-progressao.md
   papel: canonica
   observacao: Início em 10 pontos e escala Ningen.
 - caminho: apendices/questoes-em-aberto.md
@@ -1077,7 +1077,7 @@ alertas_para_proxima_aventura:
   descricao: PCs começam como candidatos de 10 pontos, Ningen, sem equipe e sem licença.
   fontes:
   - cenario/11-instituto-atlas-hub-jogavel.md
-  - regras/03-pontuacao-e-escala.md
+  - regras/02-pontuacao-escala-e-progressao.md
 - id: alerta-aventura-01-nao-revelar-tomas
   severidade: bloqueante
   descricao: Os candidatos conhecem Tomás apenas como professor; não revelar Multiplex.
@@ -1088,7 +1088,7 @@ alertas_para_proxima_aventura:
   descricao: Uma única falha não reprova; avaliar conjunto de decisões e potencial.
   fontes:
   - cenario/11-instituto-atlas-hub-jogavel.md
-  - regras/02-objetivos-xp-e-marcos.md
+  - regras/04-objetivos-xp-e-marcos.md
 - id: alerta-aventura-01-npcs-nao-roubam-protagonismo
   severidade: importante
   descricao: Colegas podem ajudar ou competir, mas decisões centrais permanecem com os PCs.
