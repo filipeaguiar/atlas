@@ -131,13 +131,6 @@ def main() -> int:
         if target not in manifest_sources:
             errors.append(f"{target}: capítulo aprovado ausente do manifesto")
 
-    if inventory.get("contagens_esperadas", {}).get("marcadores_recuperacao_pendente") != 85:
-        errors.append("Inventário não espera 85 marcadores pendentes")
-    if inventory.get("contagens_esperadas", {}).get("reescritos_aprovados") != 9:
-        errors.append("Inventário não espera nove reescritas aprovadas")
-    if inventory.get("contagens_esperadas", {}).get("documentos_ativos_manifesto") != 12:
-        errors.append("Inventário não espera 12 documentos ativos")
-
     if errors:
         for error in errors:
             print(f"ERRO: {error}", file=sys.stderr)

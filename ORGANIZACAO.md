@@ -89,6 +89,7 @@ Se uma organização já tiver sido registrada em commit, prefira revertê-la em
 python tools/check_recovery.py
 python tools/check_architecture.py
 python tools/check_scenario_foundations.py
+python tools/check_campaign_foundations.py
 python tools/materialize_publication.py --sync-stubs --check
 python tools/materialize_publication.py --check
 python tools/materialize_publication.py

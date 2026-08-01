@@ -44,6 +44,27 @@ secoes:
       - origem: cenario/11-instituto-atlas-hub-jogavel.md
         destino: cenario/11-instituto-atlas-hub-jogavel.md
         publicar: true
+  - id: campanha
+    titulo: "Campanha"
+    documentos:
+      - origem: campanha/01-premissa-e-tom.md
+        destino: campanha/01-premissa-e-tom.md
+        publicar: true
+      - origem: campanha/02-estrutura-narrativa.md
+        destino: campanha/02-estrutura-narrativa.md
+        publicar: true
+      - origem: campanha/03-arcos.md
+        destino: campanha/03-arcos.md
+        publicar: true
+      - origem: campanha/arcos/arco-1/README.md
+        destino: campanha/arcos/arco-1/README.md
+        publicar: true
+      - origem: campanha/arcos/arco-2/README.md
+        destino: campanha/arcos/arco-2/README.md
+        publicar: true
+      - origem: campanha/arcos/arco-3/README.md
+        destino: campanha/arcos/arco-3/README.md
+        publicar: true
   - id: regras
     titulo: "Regras"
     documentos:

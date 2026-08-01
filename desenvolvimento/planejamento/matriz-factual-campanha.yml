@@ -1,0 +1,328 @@
+metadata:
+  titulo: "Matriz factual — fundamentos da campanha"
+  tipo: planejamento-interno
+  status: ativo
+  publicar: false
+  data: 2026-07-31
+  mudanca: reconstruir-fundamentos-da-campanha
+  regra: "Autoriza formulações novas; não afirma recuperação do texto original."
+
+capitulos_em_escopo:
+  - campanha/01-premissa-e-tom.md
+  - campanha/02-estrutura-narrativa.md
+  - campanha/03-arcos.md
+  - campanha/arcos/arco-1/README.md
+  - campanha/arcos/arco-2/README.md
+  - campanha/arcos/arco-3/README.md
+
+exclusoes:
+  - campanha/04-tomas-e-a-campanha.md
+  - campanha/05-segredos-da-tragedia.md
+  - campanha/06-clarao-artificial-e-vestigios.md
+  - campanha/07-retorno-e-sequestros.md
+  - campanha/08-confronto-final.md
+  - campanha/09-arquitetura-editorial.md
+  - campanha/10-principios-de-design.md
+  - campanha/11-diretrizes-de-design-de-aventuras.md
+  - campanha/12-diretrizes-de-design-de-antagonistas.md
+  - campanha/13-diretrizes-de-estrutura-de-arcos.md
+  - campanha/14-diretrizes-de-pacotes-de-antagonista.md
+  - campanha/15-colegas-e-rivalidades.md
+  - campanha/antagonistas/
+  - campanha/aventuras/
+  - cenario/06-tomas-valenca.md
+  - cenario/08-corpo-docente.md
+  - cenario/12-alunos-recorrentes.md
+  - cenario/antagonistas/
+  - cenario/tenentes/
+  - regras/
+
+fontes_permitidas:
+  - id: introducao-integral
+    caminho: publicacao/fontes/introducao/01-introducao.md
+    uso: "autoridade narrativa primária para premissa, estrutura, segredos gerais, arcos e progressão"
+  - id: visao-geral-cenario
+    caminho: cenario/01-visao-geral.md
+    uso: "contrato público, pilares e escopo aberto"
+  - id: programa-campo
+    caminho: cenario/05-programa-de-campo.md
+    uso: "licenças, prioridades, investigação e ciclo do Chamado"
+  - id: central-operacoes
+    caminho: cenario/07-central-de-operacoes.md
+    uso: "dossiês, supervisão limitada, encerramento e debriefing"
+  - id: vanguarda-publica
+    caminho: cenario/09-vanguarda.md
+    uso: "formação clássica e fronteira da perspectiva pública"
+  - id: tragedia-publica
+    caminho: cenario/10-tragedia-memoria-publica.md
+    uso: "memória pública e distinção de conhecimento"
+  - id: atlas-hub
+    caminho: cenario/11-instituto-atlas-hub-jogavel.md
+    uso: "campus recorrente, consequências e adultos como apoio"
+  - id: regras-indice
+    caminho: regras/README.md
+    uso: "3DeT Victory, desafios abertos e funções das regras do cenário"
+  - id: operacoes-atlas
+    caminho: regras/05-operacoes-do-atlas.md
+    uso: "Chamados, objetivos, pistas redundantes, licenças e consequências"
+
+restricoes_de_governanca:
+  - id: arco-ii-14-16
+    caminho: AGENTS.md
+    uso: "fixa Aventura 14 como segunda operação, Aventura 15 como consequências e Aventura 16 como conclusão; não serve como fonte narrativa geral"
+  - id: agencia
+    caminho: AGENTS.md
+    uso: "proíbe sequências obrigatórias e informação indispensável presa a uma rolagem"
+
+fontes_proibidas_como_autoridade_narrativa:
+  - desenvolvimento/
+  - historico/
+  - recuperacao/
+  - publicacao/stubs/
+  - publicacao/fontes-legado-97/
+  - openspec/
+  - memoria-de-agente
+  - conversas-nao-incorporadas
+
+marcadores_substituidos:
+  - caminho: campanha/01-premissa-e-tom.md
+    sha256: 540ecbf29d4f6fa2560a7fa51e8360726284de8adcfb1c81d70e0da616e84d4d
+    status_anterior: recuperacao-pendente
+    original_integral_recuperado: false
+  - caminho: campanha/02-estrutura-narrativa.md
+    sha256: 6551f438e8ad23f8cd245c016de68b2d2f57eaf25892f75a703389d96fecba28
+    status_anterior: recuperacao-pendente
+    original_integral_recuperado: false
+  - caminho: campanha/03-arcos.md
+    sha256: 07a39b0d6249038336aa413ed41bc3a88a119f2dcb5da13b8bd5129fa6a0699e
+    status_anterior: recuperacao-pendente
+    original_integral_recuperado: false
+  - caminho: campanha/arcos/arco-1/README.md
+    sha256: 91242cc136cdbf05627648697d0f9af5c3564f826519ae9763ab56e900c70995
+    status_anterior: recuperacao-pendente
+    original_integral_recuperado: false
+  - caminho: campanha/arcos/arco-2/README.md
+    sha256: 7c6152277f8eb6b6416799d7440e0942c276c0df337be2fa4a48a28bdbb860dc
+    status_anterior: recuperacao-pendente
+    original_integral_recuperado: false
+  - caminho: campanha/arcos/arco-3/README.md
+    sha256: 186b5f9ebe1fee5d220b5496a5fc232bd3825bb9e36c5c9de739d34dca0dd22b
+    status_anterior: recuperacao-pendente
+    original_integral_recuperado: false
+
+fatos_autorizados:
+  - id: campanha-tres-arcos
+    classe: fixo
+    fonte: introducao-integral
+    secao: "Como Jogar a Aventura"
+    formulacao: "Campanha de 3DeT Victory em três arcos, da candidatura ao confronto com a ameaça ligada à Tragédia."
+    capitulos: [campanha/01-premissa-e-tom.md, campanha/03-arcos.md]
+  - id: campanha-combinacao
+    classe: fixo
+    fonte: introducao-integral
+    secao: "Como Jogar a Aventura"
+    formulacao: "Combina vida escolar, Chamados, investigação, resgates, relações recorrentes e confrontos; nem toda ocorrência pertence à trama principal."
+    capitulos: [campanha/01-premissa-e-tom.md, campanha/02-estrutura-narrativa.md, campanha/arcos/arco-2/README.md]
+  - id: preparacao-situacoes
+    classe: exemplo-editorial
+    fonte: introducao-integral
+    secao: "Antes de uma aventura"
+    formulacao: "Preparar pergunta dramática, forças, informação, pistas redundantes, pressão, Objetivos e consequências, sem sequência obrigatória."
+    capitulos: [campanha/02-estrutura-narrativa.md]
+  - id: central-limitada
+    classe: fixo
+    fonte: central-operacoes
+    secao: "O que o supervisor não pode fazer"
+    formulacao: "Central e supervisores apoiam, mas não observam tudo nem resolvem a cena."
+    capitulos: [campanha/01-premissa-e-tom.md, campanha/02-estrutura-narrativa.md, campanha/arcos/arco-2/README.md]
+  - id: consequencias-concretas
+    classe: exemplo-editorial
+    fonte: introducao-integral
+    secao: "Depois da sessão"
+    formulacao: "Registrar pessoas protegidas, provas, fugas, relações e perguntas; debriefing sustenta XP, Marcos e complicações."
+    capitulos: [campanha/02-estrutura-narrativa.md]
+  - id: tres-rotas
+    classe: fixo
+    fonte: operacoes-atlas
+    secao: "Investigações e Vestígios"
+    formulacao: "Conclusão indispensável possui ao menos três caminhos; falha muda custo, tempo ou exposição sem apagar a única entrada."
+    capitulos: [campanha/02-estrutura-narrativa.md, campanha/arcos/arco-2/README.md, campanha/arcos/arco-3/README.md]
+  - id: estrutura-23
+    classe: fixo
+    fonte: introducao-integral
+    secao: "Progressão esperada"
+    formulacao: "São 23 aventuras principais: seis no Arco I, dez no II e sete no III, além de Chamados opcionais."
+    capitulos: [campanha/03-arcos.md, campanha/arcos/arco-1/README.md, campanha/arcos/arco-2/README.md, campanha/arcos/arco-3/README.md]
+  - id: progressao-inicial
+    classe: progressao
+    fonte: introducao-integral
+    secao: "Progressão esperada"
+    formulacao: "Início com 10 pontos, Ningen, como candidatos."
+    capitulos: [campanha/03-arcos.md, campanha/arcos/arco-1/README.md]
+  - id: progressao-arco-i
+    classe: progressao
+    fonte: introducao-integral
+    secao: "Progressão esperada"
+    formulacao: "Fim do Arco I por volta de 16 pontos e licença provisória."
+    capitulos: [campanha/03-arcos.md, campanha/arcos/arco-1/README.md]
+  - id: progressao-arco-ii
+    classe: progressao
+    fonte: introducao-integral
+    secao: "Progressão esperada"
+    formulacao: "Fim do Arco II por volta de 26–27 pontos e licença definitiva estudantil."
+    capitulos: [campanha/03-arcos.md, campanha/arcos/arco-2/README.md]
+  - id: progressao-arco-iii
+    classe: progressao
+    fonte: introducao-integral
+    secao: "Progressão esperada"
+    formulacao: "Fim do Arco III por volta de 35 pontos, ainda Ningen, como heróis reconhecidos."
+    capitulos: [campanha/03-arcos.md, campanha/arcos/arco-3/README.md]
+  - id: arco-i-formacao
+    classe: fixo
+    fonte: introducao-integral
+    secao: "Arco I — Rumo à Licença"
+    formulacao: "Exame de Admissão, ingresso, aulas, simulações, exercícios e incidentes trabalham controle, cooperação, investigação, resgate e julgamento."
+    capitulos: [campanha/arcos/arco-1/README.md]
+  - id: arco-i-tomas
+    classe: segredo-do-mestre
+    fonte: introducao-integral
+    secao: "Arco I — Rumo à Licença"
+    formulacao: "Tomás aparece principalmente como professor atento e discreto, interessado nas decisões dos alunos."
+    capitulos: [campanha/01-premissa-e-tom.md, campanha/arcos/arco-1/README.md]
+  - id: arco-i-marco
+    classe: fixo
+    fonte: introducao-integral
+    secao: "Arco I — Rumo à Licença"
+    formulacao: "O arco culmina na licença provisória; candidatos passam a receber responsabilidade por Chamados sob supervisão."
+    capitulos: [campanha/03-arcos.md, campanha/arcos/arco-1/README.md]
+  - id: arco-ii-chamados
+    classe: fixo
+    fonte: introducao-integral
+    secao: "Arco II — Chamados de Belamar"
+    formulacao: "Equipe atende ocorrências variadas em Belamar; apenas parte contém sinais do Retorno."
+    capitulos: [campanha/arcos/arco-2/README.md]
+  - id: sinais-variaveis
+    classe: opcao-de-pacote
+    fonte: introducao-integral
+    secao: "Arco II — Chamados de Belamar"
+    formulacao: "Tecnologias, símbolos, ressonâncias ou procedimentos são exemplos possíveis; a seleção depende do Pacote."
+    capitulos: [campanha/01-premissa-e-tom.md, campanha/arcos/arco-2/README.md]
+  - id: investigacao-deliberada
+    classe: fixo
+    fonte: introducao-integral
+    secao: "Arco II — Chamados de Belamar"
+    formulacao: "A primeira operação contra integrante ativo da Vanguarda transforma o mistério em investigação deliberada; o resultado físico não precisa ser presumido."
+    capitulos: [campanha/03-arcos.md, campanha/arcos/arco-2/README.md]
+  - id: aventura-14-operacao
+    classe: resultado-condicional
+    fonte: introducao-integral
+    secao: "Arco II — Chamados de Belamar"
+    formulacao: "A segunda operação de captura ocorre na Aventura 14 e confirma a seleção deliberada, mesmo se os personagens impedirem a captura física."
+    capitulos: [campanha/03-arcos.md, campanha/arcos/arco-2/README.md]
+  - id: aventuras-15-16
+    classe: fixo
+    fonte: arco-ii-14-16
+    secao: "Invariante do projeto"
+    formulacao: "A Aventura 15 trata das consequências do estado produzido na 14; a 16 conclui o Arco II com licença definitiva."
+    capitulos: [campanha/03-arcos.md, campanha/arcos/arco-2/README.md]
+  - id: arco-ii-marco
+    classe: fixo
+    fonte: introducao-integral
+    secao: "Arco II — Chamados de Belamar"
+    formulacao: "Equipe ganha licença definitiva, confirma uma operação ligada à Tragédia e passa de interpretar missões a investigar e criar operações."
+    capitulos: [campanha/03-arcos.md, campanha/arcos/arco-2/README.md]
+  - id: tragedia-segredo
+    classe: segredo-do-mestre
+    fonte: introducao-integral
+    secao: "Visão Geral"
+    formulacao: "Antagonista tentou reproduzir condições associadas ao Clarão; Solar morreu na crise; a continuidade da ameaça ficou oculta por dez anos."
+    capitulos: [campanha/01-premissa-e-tom.md, campanha/03-arcos.md, campanha/arcos/arco-3/README.md]
+  - id: vestigios
+    classe: segredo-do-mestre
+    fonte: introducao-integral
+    secao: "Visão Geral"
+    formulacao: "Cinco sobreviventes carregam Vestígios complementares; Solar deixou uma sexta parte tratada separadamente."
+    capitulos: [campanha/01-premissa-e-tom.md, campanha/arcos/arco-3/README.md]
+  - id: tomas-multiplex
+    classe: segredo-do-mestre
+    fonte: introducao-integral
+    secao: "Visão Geral"
+    formulacao: "Tomás Valença é Multiplex e acompanha a equipe pela Central sem revelar a identidade heroica aos alunos."
+    capitulos: [campanha/01-premissa-e-tom.md, campanha/03-arcos.md, campanha/arcos/arco-1/README.md, campanha/arcos/arco-2/README.md, campanha/arcos/arco-3/README.md]
+  - id: arco-iii-convergencia
+    classe: fixo
+    fonte: introducao-integral
+    secao: "Arco III — O Retorno"
+    formulacao: "Pressão sobre a Vanguarda, investigação da identidade de Multiplex, ameaça a Tomás e corrida contra o Clarão artificial convergem no último arco."
+    capitulos: [campanha/03-arcos.md, campanha/arcos/arco-3/README.md]
+  - id: capturas-arco-iii
+    classe: resultado-condicional
+    fonte: introducao-integral
+    secao: "Arco III — O Retorno"
+    formulacao: "Operações buscam remover sobreviventes e alcançar Tomás; êxito físico, impedimento e consequências devem preservar o estado criado em jogo."
+    capitulos: [campanha/arcos/arco-3/README.md]
+  - id: revelacao-investigada
+    classe: fixo
+    fonte: introducao-integral
+    secao: "Arco III — O Retorno"
+    formulacao: "Registros, comunicações e relações permitem aos personagens concluir que Tomás é Multiplex."
+    capitulos: [campanha/arcos/arco-3/README.md]
+  - id: clarao-final
+    classe: resultado-condicional
+    fonte: introducao-integral
+    secao: "Arco III — O Retorno"
+    formulacao: "Se o Clarão artificial alcançar estado crítico, antagonista pode assumir Sugoi temporariamente; fonte e vulnerabilidade são investigáveis e há objetivos paralelos."
+    capitulos: [campanha/03-arcos.md, campanha/arcos/arco-3/README.md]
+  - id: nova-geracao
+    classe: fixo
+    fonte: introducao-integral
+    secao: "Arco III — O Retorno"
+    formulacao: "A nova geração passa de responder ao legado a decidir o que ele significará para Belamar."
+    capitulos: [campanha/01-premissa-e-tom.md, campanha/03-arcos.md, campanha/arcos/arco-3/README.md]
+  - id: pacote-funcao
+    classe: opcao-de-pacote
+    fonte: introducao-integral
+    secao: "Antes da campanha"
+    formulacao: "Pacote escolhido determina motivação concreta, operação dos Vestígios, forças relevantes e forma específica de interromper o plano."
+    capitulos: [campanha/01-premissa-e-tom.md, campanha/02-estrutura-narrativa.md, campanha/03-arcos.md, campanha/arcos/arco-2/README.md, campanha/arcos/arco-3/README.md]
+  - id: tenente-principal
+    classe: opcao-de-pacote
+    fonte: introducao-integral
+    secao: "Visão Geral"
+    formulacao: "Um Tenente Principal coordena ocorrências e pode funcionar como ameaça aparente; sua identidade não é selecionada nesta mudança."
+    capitulos: [campanha/01-premissa-e-tom.md, campanha/03-arcos.md, campanha/arcos/arco-2/README.md, campanha/arcos/arco-3/README.md]
+
+limites_negativos:
+  - id: sem-pacote-padrao
+    proibicao: "Não escolher um dos doze antagonistas nem fixar motivação, mecanismo, Frentes, pistas, quarteto ou contrajogo específico."
+  - id: sem-tenente-principal-padrao
+    proibicao: "Não escolher ou nomear o Tenente Principal."
+  - id: sem-vinculos-pcs
+    proibicao: "Não criar vínculos pessoais com personagens jogadores antes da criação deles."
+  - id: sem-captura-obrigatoria
+    proibicao: "Não afirmar como inevitável a captura física em qualquer operação; preservar êxito, impedimento, retirada e complicações coerentes."
+  - id: sem-aventuras-detalhadas
+    proibicao: "Não inventar títulos, cenas, locais, antagonistas ou sequências para as 23 aventuras."
+  - id: sem-contaminacao-publica
+    proibicao: "Não alterar capítulos públicos de cenário nem apresentar os segredos do Mestre como conhecimento inicial dos personagens."
+  - id: sem-origem-universal
+    proibicao: "Não explicar a natureza verdadeira do Clarão original ou a origem universal dos poderes."
+
+variaveis_de_preparacao:
+  antagonista: "um dos doze Pacotes, não selecionado"
+  tenente_principal: "depende do Pacote e da campanha concreta"
+  mecanismo_clarao_artificial: "depende do Pacote"
+  operacao_dos_vestigios: "depende do Pacote"
+  frentes_e_pistas: "distribuição depende do Pacote e do futuro plano de aventuras"
+  vinculos_com_pcs: "somente depois da criação dos personagens"
+
+invariantes_arco_ii:
+  aventura_14:
+    evento: "segunda operação de captura"
+    resultado_fisico: condicional
+  aventura_15:
+    evento: "consequências da segunda operação"
+    estado_de_entrada: "resultado efetivamente produzido na Aventura 14"
+  aventura_16:
+    evento: "conclusão do Arco II"
+    marco: "licença definitiva estudantil"

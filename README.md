@@ -40,6 +40,7 @@ A pasta `desenvolvimento/` é interna e nunca entra na publicação.
 python tools/check_recovery.py
 python tools/check_architecture.py
 python tools/check_scenario_foundations.py
+python tools/check_campaign_foundations.py
 python tools/materialize_publication.py --sync-stubs --check
 python tools/materialize_publication.py --check
 python tools/materialize_publication.py

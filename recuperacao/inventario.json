@@ -55,9 +55,6 @@
   "marcadores_pendentes": [
     "apendices/README.md",
     "apendices/matriz-de-pistas.md",
-    "campanha/01-premissa-e-tom.md",
-    "campanha/02-estrutura-narrativa.md",
-    "campanha/03-arcos.md",
     "campanha/04-tomas-e-a-campanha.md",
     "campanha/05-segredos-da-tragedia.md",
     "campanha/06-clarao-artificial-e-vestigios.md",
@@ -83,9 +80,6 @@
     "campanha/antagonistas/soberano.md",
     "campanha/antagonistas/tita.md",
     "campanha/antagonistas/zero.md",
-    "campanha/arcos/arco-1/README.md",
-    "campanha/arcos/arco-2/README.md",
-    "campanha/arcos/arco-3/README.md",
     "cenario/06-tomas-valenca.md",
     "cenario/08-corpo-docente.md",
     "cenario/12-alunos-recorrentes.md",
@@ -152,11 +146,11 @@
   },
   "schema_version": "2.0",
   "contagens_esperadas": {
-    "marcadores_recuperacao_pendente": 85,
+    "marcadores_recuperacao_pendente": 79,
     "stubs_aventura": 23,
     "fontes_legado_97": 97,
-    "reescritos_aprovados": 9,
-    "documentos_ativos_manifesto": 12
+    "reescritos_aprovados": 15,
+    "documentos_ativos_manifesto": 18
   },
   "ciclo_vida_marcador": [
     "preservar",
@@ -188,33 +182,48 @@
     },
     {
       "caminho_atual": "campanha/01-premissa-e-tom.md",
-      "classe": "fonte-modular-pendente",
-      "estado_recuperacao": "recuperacao-pendente",
-      "status_esperado": "recuperacao-pendente",
-      "publicar_esperado": false,
+      "classe": "fonte-modular-reescrita",
+      "estado_recuperacao": "reescrito-aprovado",
+      "status_esperado": "canon",
+      "publicar_esperado": true,
       "existencia_esperada": true,
-      "origem": "biblioteca-do-projeto",
-      "destino_editorial": null
+      "origem": "reescrita-aprovada",
+      "destino_editorial": "campanha/01-premissa-e-tom.md",
+      "historico_recuperacao": {
+        "estado_anterior": "recuperacao-pendente",
+        "conteudo_original_recuperado": false,
+        "sha256_marcador_substituido": "540ecbf29d4f6fa2560a7fa51e8360726284de8adcfb1c81d70e0da616e84d4d"
+      }
     },
     {
       "caminho_atual": "campanha/02-estrutura-narrativa.md",
-      "classe": "fonte-modular-pendente",
-      "estado_recuperacao": "recuperacao-pendente",
-      "status_esperado": "recuperacao-pendente",
-      "publicar_esperado": false,
+      "classe": "fonte-modular-reescrita",
+      "estado_recuperacao": "reescrito-aprovado",
+      "status_esperado": "canon",
+      "publicar_esperado": true,
       "existencia_esperada": true,
-      "origem": "biblioteca-do-projeto",
-      "destino_editorial": null
+      "origem": "reescrita-aprovada",
+      "destino_editorial": "campanha/02-estrutura-narrativa.md",
+      "historico_recuperacao": {
+        "estado_anterior": "recuperacao-pendente",
+        "conteudo_original_recuperado": false,
+        "sha256_marcador_substituido": "6551f438e8ad23f8cd245c016de68b2d2f57eaf25892f75a703389d96fecba28"
+      }
     },
     {
       "caminho_atual": "campanha/03-arcos.md",
-      "classe": "fonte-modular-pendente",
-      "estado_recuperacao": "recuperacao-pendente",
-      "status_esperado": "recuperacao-pendente",
-      "publicar_esperado": false,
+      "classe": "fonte-modular-reescrita",
+      "estado_recuperacao": "reescrito-aprovado",
+      "status_esperado": "canon",
+      "publicar_esperado": true,
       "existencia_esperada": true,
-      "origem": "biblioteca-do-projeto",
-      "destino_editorial": null
+      "origem": "reescrita-aprovada",
+      "destino_editorial": "campanha/03-arcos.md",
+      "historico_recuperacao": {
+        "estado_anterior": "recuperacao-pendente",
+        "conteudo_original_recuperado": false,
+        "sha256_marcador_substituido": "07a39b0d6249038336aa413ed41bc3a88a119f2dcb5da13b8bd5129fa6a0699e"
+      }
     },
     {
       "caminho_atual": "campanha/04-tomas-e-a-campanha.md",
@@ -468,33 +477,48 @@
     },
     {
       "caminho_atual": "campanha/arcos/arco-1/README.md",
-      "classe": "fonte-modular-pendente",
-      "estado_recuperacao": "recuperacao-pendente",
-      "status_esperado": "recuperacao-pendente",
-      "publicar_esperado": false,
+      "classe": "fonte-modular-reescrita",
+      "estado_recuperacao": "reescrito-aprovado",
+      "status_esperado": "canon",
+      "publicar_esperado": true,
       "existencia_esperada": true,
-      "origem": "biblioteca-do-projeto",
-      "destino_editorial": null
+      "origem": "reescrita-aprovada",
+      "destino_editorial": "campanha/arcos/arco-1/README.md",
+      "historico_recuperacao": {
+        "estado_anterior": "recuperacao-pendente",
+        "conteudo_original_recuperado": false,
+        "sha256_marcador_substituido": "91242cc136cdbf05627648697d0f9af5c3564f826519ae9763ab56e900c70995"
+      }
     },
     {
       "caminho_atual": "campanha/arcos/arco-2/README.md",
-      "classe": "fonte-modular-pendente",
-      "estado_recuperacao": "recuperacao-pendente",
-      "status_esperado": "recuperacao-pendente",
-      "publicar_esperado": false,
+      "classe": "fonte-modular-reescrita",
+      "estado_recuperacao": "reescrito-aprovado",
+      "status_esperado": "canon",
+      "publicar_esperado": true,
       "existencia_esperada": true,
-      "origem": "biblioteca-do-projeto",
-      "destino_editorial": null
+      "origem": "reescrita-aprovada",
+      "destino_editorial": "campanha/arcos/arco-2/README.md",
+      "historico_recuperacao": {
+        "estado_anterior": "recuperacao-pendente",
+        "conteudo_original_recuperado": false,
+        "sha256_marcador_substituido": "7c6152277f8eb6b6416799d7440e0942c276c0df337be2fa4a48a28bdbb860dc"
+      }
     },
     {
       "caminho_atual": "campanha/arcos/arco-3/README.md",
-      "classe": "fonte-modular-pendente",
-      "estado_recuperacao": "recuperacao-pendente",
-      "status_esperado": "recuperacao-pendente",
-      "publicar_esperado": false,
+      "classe": "fonte-modular-reescrita",
+      "estado_recuperacao": "reescrito-aprovado",
+      "status_esperado": "canon",
+      "publicar_esperado": true,
       "existencia_esperada": true,
-      "origem": "biblioteca-do-projeto",
-      "destino_editorial": null
+      "origem": "reescrita-aprovada",
+      "destino_editorial": "campanha/arcos/arco-3/README.md",
+      "historico_recuperacao": {
+        "estado_anterior": "recuperacao-pendente",
+        "conteudo_original_recuperado": false,
+        "sha256_marcador_substituido": "186b5f9ebe1fee5d220b5496a5fc232bd3825bb9e36c5c9de739d34dca0dd22b"
+      }
     },
     {
       "caminho_atual": "cenario/01-visao-geral.md",
