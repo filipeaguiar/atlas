@@ -1,0 +1,22 @@
+[project]
+name = "atlas-editorial"
+version = "0.1.0"
+description = "Ferramentas locais para a reconstrução editorial de Herdeiros da Vanguarda"
+requires-python = ">=3.12"
+dependencies = [
+  "chonkie==1.7.0",
+  "pyyaml==6.0.3",
+]
+
+[dependency-groups]
+dev = [
+  "pytest==9.0.2",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"

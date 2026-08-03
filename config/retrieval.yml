@@ -1,0 +1,22 @@
+schema_version: 1
+source_roots:
+  - cenario
+  - campanha
+  - regras
+  - apendices
+forbidden_roots:
+  - desenvolvimento
+  - historico
+  - recuperacao
+  - publicacao/stubs
+  - publicacao/conteudo
+  - build
+allowed_statuses:
+  - canon
+chunker:
+  tokenizer: word
+  chunk_size: 300
+  min_characters_per_chunk: 80
+outputs:
+  publico: build/retrieval/chunks-publico.json
+  mestre: build/retrieval/chunks-mestre.json
