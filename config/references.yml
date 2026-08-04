@@ -1,0 +1,21 @@
+schema_version: 1
+reference_root: referencias
+output: build/retrieval/referencias.sqlite
+chunker:
+  tokenizer: word
+  chunk_size: 450
+  min_characters_per_chunk: 120
+search:
+  default_results: 5
+  max_results: 10
+  default_snippet_characters: 320
+  max_snippet_characters: 600
+sources:
+  - id: 3det-victory
+    path: 3DeT-Victory.md
+    titulo: "3DeT Victory — Manual Básico"
+    edicao: "1ª edição, 2ª impressão (v1.1), maio de 2025"
+  - id: 3det-ferozes-e-furiosos
+    path: 3DeT-Ferozes-e-Furiosos.md
+    titulo: "3DeT Victory — Ferozes e Furiosos"
+    edicao: "1ª edição, dezembro de 2025"

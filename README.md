@@ -32,6 +32,17 @@ As saídas são geradas em `build/retrieval/` e não são versionadas. Somente a
 
 O perfil público também exclui documentos com `camada: mestre` ou `conteudo_para_jogadores: false`. Chonkie não determina cânone nem recupera conteúdo ausente: ele apenas divide fontes já aprovadas para consulta posterior.
 
+## Referências locais de regras
+
+Os livros em `referencias/` permanecem fora do Git e da publicação. Para criar e consultar o índice local separado:
+
+```bash
+uv run python tools/index_references.py
+uv run python tools/search_references.py "Ataque Especial"
+```
+
+Consulte [REFERENCIAS.md](REFERENCIAS.md) para limites de uso e proveniência.
+
 ## Testes
 
 ```bash
