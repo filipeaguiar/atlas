@@ -340,8 +340,10 @@ def prepare_publication(manifest_path: Path, root: Path, *, strict: bool = False
         role = str(section_entry.get("papel", "conteudo"))
         if not SAFE_ID.fullmatch(section_id) or section_id in section_ids:
             raise PublicationError(f"id de seção inválido ou duplicado: {section_id!r}")
-        if not title or role not in {"conteudo", "handouts"}:
+        if not title or role not in {"abertura", "conteudo", "handouts"}:
             raise PublicationError(f"seção incompleta: {section_id}")
+        if role == "abertura" and any(item.role == "abertura" for item in sections):
+            raise PublicationError("manifesto não pode conter mais de uma seção de abertura")
         entries = section_entry.get("documentos")
         if not isinstance(entries, list):
             raise PublicationError(f"documentos deve ser lista: {section_id}")

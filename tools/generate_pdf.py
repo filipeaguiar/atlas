@@ -76,7 +76,9 @@ def render_html(
     css_path = safe_template_path(css_path, plan.root, "CSS")
     template = template_path.read_text(encoding="utf-8")
     css = css_path.read_text(encoding="utf-8")
-    required_placeholders = {"{{TITLE}}", "{{CSS}}", "{{COVER}}", "{{TOC}}", "{{CONTENT}}"}
+    required_placeholders = {
+        "{{TITLE}}", "{{CSS}}", "{{COVER}}", "{{OPENING}}", "{{TOC}}", "{{CONTENT}}"
+    }
     missing = [placeholder for placeholder in required_placeholders if placeholder not in template]
     if missing:
         raise PublicationError(f"template sem placeholders: {missing}")
@@ -118,11 +120,23 @@ def render_html(
         (plan.root / record["source"]).resolve(): Path(record["materialized"]).name
         for record in materialization.resource_records
     }
+    opening_parts: list[str] = []
     content_parts: list[str] = []
-    for index, section in enumerate(plan.sections, 1):
+    section_number = 0
+    for section in plan.sections:
+        if section.role == "abertura":
+            for document in section.documents:
+                body = rewrite_links(document.body, document, plan, resource_names)
+                rendered = markdown_to_html(body)
+                opening_parts.append(
+                    f'<article class="opening" id="{html.escape(document.anchor)}">{rendered}</article>'
+                )
+            continue
+
+        section_number += 1
         content_parts.append(
             f'<section class="section-divider" id="secao-{html.escape(section.id)}">'
-            f'<div class="section-number">Seção {index}</div>'
+            f'<div class="section-number">Seção {section_number}</div>'
             f'<h1>{html.escape(section.title)}</h1>'
             + ("<p>Conteúdo em preparação para uma versão futura.</p>" if not section.documents else "")
             + "</section>"
@@ -150,12 +164,14 @@ def render_html(
                 content_parts.append(
                     f'<article class="chapter" id="{html.escape(document.anchor)}">{rendered}</article>'
                 )
+    opening = "\n".join(opening_parts)
     content = "\n".join(content_parts)
 
     document = (
         template.replace("{{TITLE}}", html.escape(f"{plan.book.title} — {plan.book.version}"))
         .replace("{{CSS}}", css)
         .replace("{{COVER}}", cover)
+        .replace("{{OPENING}}", opening)
         .replace("{{TOC}}", toc)
         .replace("{{CONTENT}}", content)
     )

@@ -4,6 +4,8 @@
 
 O projeto produz somente o módulo completo destinado ao Mestre. Não existe perfil público ou livro do jogador. Handouts, quando aprovados, entram no próprio módulo na seção correspondente e são entregues aos jogadores apenas por decisão do Mestre.
 
+A seção com `papel: abertura` é renderizada em uma coluna entre a capa e o sumário. Seções com `papel: conteudo` formam o corpo numerado; `papel: handouts` acrescenta orientação reservada ao Mestre antes de cada material entregável.
+
 ## Build incremental
 
 ```bash

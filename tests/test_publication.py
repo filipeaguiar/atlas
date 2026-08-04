@@ -74,7 +74,7 @@ def write_layout(root: Path) -> tuple[Path, Path]:
     css.parent.mkdir(parents=True, exist_ok=True)
     template.write_text(
         "<html><head><title>{{TITLE}}</title><style>{{CSS}}</style></head>"
-        "<body>{{COVER}}{{TOC}}{{CONTENT}}</body></html>",
+        "<body>{{COVER}}{{OPENING}}{{TOC}}{{CONTENT}}</body></html>",
         encoding="utf-8",
     )
     css.write_text("@page { size: A4; } .chapter { page-break-before: always; }", encoding="utf-8")
@@ -167,6 +167,38 @@ def test_links_sao_aviso_incremental_e_erro_estrito(tmp_path: Path) -> None:
     ]
     with pytest.raises(PublicationError, match="modo estrito"):
         prepare_publication(manifest, tmp_path, strict=True)
+
+
+def test_abertura_aparece_entre_capa_e_sumario_sem_alterar_numeracao(tmp_path: Path) -> None:
+    write_source(
+        tmp_path,
+        "publicacao/fontes/introducao/abertura.md",
+        document_id="abertura",
+        title="Introdução",
+        tipo="introducao",
+        body="# Introdução\n\nO mundo mudou em um clarão. " * 30,
+    )
+    write_source(tmp_path, "cenario/capitulo.md", document_id="capitulo", title="Capítulo")
+    manifest = write_manifest(tmp_path, [{"origem": "cenario/capitulo.md"}])
+    data = yaml.safe_load(manifest.read_text())
+    data["secoes"].insert(
+        0,
+        {
+            "id": "abertura",
+            "titulo": "Abertura",
+            "papel": "abertura",
+            "documentos": [{"origem": "publicacao/fontes/introducao/abertura.md"}],
+        },
+    )
+    manifest.write_text(yaml.safe_dump(data, allow_unicode=True, sort_keys=False))
+    template, css = write_layout(tmp_path)
+
+    output = render_html(materialize(prepare_publication(manifest, tmp_path)), template, css)
+    rendered = output.read_text()
+
+    assert rendered.index('class="cover"') < rendered.index('class="opening"')
+    assert rendered.index('class="opening"') < rendered.index('class="toc"')
+    assert '<div class="section-number">Seção 1</div>' in rendered
 
 
 def test_handout_fica_no_mesmo_html_com_orientacao_separada(tmp_path: Path) -> None:

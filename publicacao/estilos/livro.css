@@ -60,6 +60,29 @@ li { margin-bottom: 0.28em; }
   text-transform: uppercase; letter-spacing: .08em;
 }
 
+.opening {
+  page-break-after: always;
+  column-count: 1;
+  font-size: 11pt;
+  line-height: 1.58;
+}
+.opening > h1:first-child {
+  margin: 0 0 14mm;
+  color: var(--atlas);
+  font-size: 28pt;
+  line-height: 1.08;
+  border-bottom: 1.5mm solid var(--solar);
+  padding-bottom: 3mm;
+}
+.opening > h1:first-child + p::first-letter {
+  float: left;
+  margin: .08em .12em 0 0;
+  color: var(--atlas);
+  font-size: 3.4em;
+  font-weight: 700;
+  line-height: .8;
+}
+
 .toc { page-break-after: always; }
 .toc h1 { color: var(--atlas); border-bottom: 2px solid var(--solar); padding-bottom: 3mm; }
 .toc-section { margin: 5mm 0 2mm; font: 700 12pt sans-serif; color: var(--atlas); }
