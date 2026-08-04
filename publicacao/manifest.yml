@@ -1,0 +1,38 @@
+schema_version: 1
+livro:
+  titulo: "Herdeiros da Vanguarda"
+  subtitulo: "Instituto Atlas e a Tragédia de Belamar"
+  versao: "0.1.0-dev.1"
+  idioma: pt-BR
+  arquivo_base: herdeiros-da-vanguarda
+  status: desenvolvimento
+secoes:
+  - id: cenario
+    titulo: "Cenário"
+    papel: conteudo
+    documentos:
+      - origem: cenario/01-visao-geral.md
+      - origem: cenario/02-extraordinarios.md
+      - origem: cenario/03-sociedade-heroica.md
+      - origem: cenario/04-belamar-e-atlas.md
+      - origem: cenario/05-programa-de-campo.md
+      - origem: cenario/07-central-de-operacoes.md
+      - origem: cenario/09-vanguarda.md
+      - origem: cenario/10-tragedia-memoria-publica.md
+      - origem: cenario/11-instituto-atlas-hub-jogavel.md
+  - id: campanha
+    titulo: "Campanha"
+    papel: conteudo
+    documentos:
+      - origem: campanha/01-premissa-e-tom.md
+      - origem: campanha/02-estrutura-narrativa.md
+      - origem: campanha/03-arcos.md
+  - id: regras
+    titulo: "Regras"
+    papel: conteudo
+    documentos:
+      - origem: regras/05-operacoes-do-atlas.md
+  - id: handouts
+    titulo: "Handouts e materiais para os jogadores"
+    papel: handouts
+    documentos: []

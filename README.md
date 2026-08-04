@@ -32,6 +32,20 @@ As saídas são geradas em `build/retrieval/` e não são versionadas. Somente a
 
 O perfil público também exclui documentos com `camada: mestre` ou `conteudo_para_jogadores: false`. Chonkie não determina cânone nem recupera conteúdo ausente: ele apenas divide fontes já aprovadas para consulta posterior.
 
+## Livro incremental do Mestre
+
+A publicação é um único módulo dirigido ao Mestre. O manifesto positivo em `publicacao/manifest.yml` controla seleção e ordem.
+
+```bash
+# Preview incremental; registra links ainda ausentes
+uv run python tools/generate_pdf.py
+
+# Release sem pendências
+uv run python tools/generate_pdf.py --strict
+```
+
+O PDF versionado e o relatório são gerados em `build/`. Handouts aprovados fazem parte do mesmo módulo; nenhum PDF público ou livro do jogador é criado.
+
 ## Referências locais de regras
 
 Os livros em `referencias/` permanecem fora do Git e da publicação. Para criar e consultar o índice local separado:

@@ -1,0 +1,122 @@
+@page {
+  size: A4;
+  margin: 19mm 18mm 21mm;
+  @bottom-center {
+    content: counter(page);
+    color: #52606d;
+    font: 9pt "Noto Sans", "DejaVu Sans", sans-serif;
+  }
+}
+
+:root {
+  --ink: #17212b;
+  --muted: #52606d;
+  --atlas: #174f73;
+  --atlas-light: #eaf4f8;
+  --solar: #d59a24;
+  --paper: #ffffff;
+  --line: #b8c7d1;
+}
+
+* { box-sizing: border-box; }
+html { font-size: 10.5pt; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Noto Serif", "DejaVu Serif", Georgia, serif;
+  line-height: 1.48;
+  hyphens: auto;
+}
+
+a { color: var(--atlas); text-decoration: none; }
+p, li { orphans: 3; widows: 3; }
+p { margin: 0 0 0.85em; }
+ul, ol { margin: 0.4em 0 1em 1.35em; padding: 0; }
+li { margin-bottom: 0.28em; }
+
+.cover {
+  height: 257mm;
+  margin: -19mm -18mm -21mm;
+  padding: 42mm 24mm 24mm;
+  color: white;
+  background: linear-gradient(150deg, #092c43 0%, #174f73 60%, #d59a24 160%);
+  page-break-after: always;
+  position: relative;
+}
+.cover::after {
+  content: "";
+  position: absolute;
+  inset: 12mm;
+  border: 1px solid rgba(255,255,255,.42);
+}
+.cover-kicker { text-transform: uppercase; letter-spacing: .18em; font: 700 10pt sans-serif; }
+.cover h1 { margin: 36mm 0 5mm; font-size: 34pt; line-height: 1.05; color: white; }
+.cover h2 { max-width: 125mm; font-size: 17pt; font-weight: 400; color: #dbeaf2; }
+.cover-meta { position: absolute; left: 24mm; bottom: 27mm; z-index: 1; font-family: sans-serif; }
+.dev-badge {
+  display: inline-block; margin-top: 7mm; padding: 2.5mm 4mm;
+  border: 1px solid #ffe0a1; color: #ffe0a1; font: 700 9pt sans-serif;
+  text-transform: uppercase; letter-spacing: .08em;
+}
+
+.toc { page-break-after: always; }
+.toc h1 { color: var(--atlas); border-bottom: 2px solid var(--solar); padding-bottom: 3mm; }
+.toc-section { margin: 5mm 0 2mm; font: 700 12pt sans-serif; color: var(--atlas); }
+.toc ul { list-style: none; margin: 0 0 4mm; }
+.toc li { border-bottom: 1px dotted var(--line); padding: 1.4mm 0; }
+
+.section-divider {
+  page-break-before: always;
+  page-break-after: always;
+  min-height: 210mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 4mm solid var(--atlas);
+}
+.section-divider .section-number { color: var(--solar); font: 700 11pt sans-serif; text-transform: uppercase; letter-spacing: .16em; }
+.section-divider h1 { color: var(--atlas); font-size: 30pt; line-height: 1.1; }
+
+.chapter, .handout-instructions, .handout-page { page-break-before: always; }
+.chapter > h1:first-child, .handout-page > h1:first-child {
+  color: var(--atlas);
+  font-size: 24pt;
+  line-height: 1.08;
+  border-bottom: 1.5mm solid var(--solar);
+  padding-bottom: 3mm;
+}
+h2 { color: var(--atlas); margin: 1.3em 0 .45em; font-size: 16pt; page-break-after: avoid; }
+h3 { color: #2f647f; margin: 1.15em 0 .35em; font-size: 12.5pt; page-break-after: avoid; }
+h4 { page-break-after: avoid; }
+blockquote {
+  margin: 1em 0; padding: 3mm 4mm;
+  border-left: 1.4mm solid var(--solar);
+  background: #fff8e8;
+}
+code, pre { font-family: "DejaVu Sans Mono", monospace; }
+pre { overflow-wrap: anywhere; padding: 3mm; background: #f3f6f8; border: 1px solid var(--line); }
+
+table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 9.2pt; page-break-inside: avoid; }
+th { color: white; background: var(--atlas); text-align: left; }
+th, td { padding: 2mm; border: .25mm solid var(--line); vertical-align: top; }
+tr:nth-child(even) td { background: #f5f8fa; }
+img { max-width: 100%; max-height: 220mm; object-fit: contain; }
+
+.master-note {
+  padding: 5mm; border: .6mm solid var(--atlas); background: var(--atlas-light);
+  page-break-inside: avoid;
+}
+.master-note h1 { margin-top: 0; color: var(--atlas); }
+.master-note dt { font: 700 9.5pt sans-serif; color: var(--atlas); margin-top: 2.5mm; }
+.master-note dd { margin: 0 0 2mm; }
+.handout-page { min-height: 230mm; border: .4mm dashed var(--muted); padding: 8mm; }
+.handout-label { font: 700 8pt sans-serif; color: var(--muted); text-transform: uppercase; letter-spacing: .12em; }
+
+.missing-link { color: #8b1e1e; text-decoration: line-through; }
+.page-break { page-break-before: always; }
+
+@media screen {
+  body { max-width: 210mm; margin: 0 auto; box-shadow: 0 0 18px #bbb; padding: 18mm; }
+  .cover { margin: -18mm; }
+}
