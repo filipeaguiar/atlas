@@ -45,7 +45,7 @@
 
 - [x] 6.1 Registrar a autorização explícita para substituir a `main` divergente de `filipeaguiar/atlas` e confirmar a visibilidade antes do Pages
 - [x] 6.2 Configurar `filipeaguiar/atlas` como `origin` e buscar o estado remoto sem mesclá-lo às fontes locais
-- [ ] 6.3 Após validação e commit, substituir a branch remota com `--force-with-lease` vinculado ao hash remoto observado
-- [ ] 6.4 Configurar Pages para origem GitHub Actions e verificar compatibilidade da visibilidade com o plano da conta
+- [x] 6.3 Após validação e commit, substituir a branch remota com `--force-with-lease` vinculado ao hash remoto observado
+- [x] 6.4 Configurar Pages para origem GitHub Actions e verificar compatibilidade da visibilidade com o plano da conta
 - [ ] 6.5 Acionar e acompanhar o primeiro workflow com `gh`, corrigindo falhas do build sem relaxar as regras editoriais
 - [ ] 6.6 Revisar o site implantado, seus assets, navegação, URL de subdiretório e ausência de áreas internas
