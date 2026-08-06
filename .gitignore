@@ -2,6 +2,11 @@
 __pycache__/
 .pytest_cache/
 *.py[cod]
+# Saídas descartáveis: PDF, projeto Hugo materializado e site estático
 build/
 publicacao/conteudo/
 /referencias/
+
+# Binários candidatos aguardando curadoria editorial
+desenvolvimento/curadoria/imagens-3det-victory/lotes/
+desenvolvimento/curadoria/imagens-3det-victory/contatos/

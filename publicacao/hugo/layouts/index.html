@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="hero">
+  <p class="eyebrow">Módulo de campanha para o Mestre</p>
+  <h1>{{ .Site.Title }}</h1>
+  <p class="subtitle">{{ .Site.Params.subtitle }}</p>
+  <p class="version">Versão {{ .Site.Params.version }}{{ if eq .Site.Params.status "desenvolvimento" }} · material em desenvolvimento{{ end }}</p>
+</section>
+{{ with .Content }}<article class="opening prose">{{ . }}</article>{{ end }}
+<section aria-labelledby="secoes">
+  <h2 id="secoes">Conteúdo do módulo</h2>
+  <div class="section-grid">
+    {{ range .Site.Sections.ByWeight }}
+    <a class="section-card" href="{{ .RelPermalink }}">
+      <span>{{ .Title }}</span>
+      <small>{{ if .Pages }}{{ len .Pages }} capítulo(s){{ else }}Em preparação{{ end }}</small>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

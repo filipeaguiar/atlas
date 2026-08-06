@@ -32,6 +32,9 @@ secoes:
       - origem: campanha/01-premissa-e-tom.md
       - origem: campanha/02-estrutura-narrativa.md
       - origem: campanha/03-arcos.md
+      - origem: campanha/arcos/arco-1/README.md
+      - origem: campanha/arcos/arco-2/README.md
+      - origem: campanha/arcos/arco-3/README.md
   - id: regras
     titulo: "Regras"
     papel: conteudo

@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article class="chapter">
+  <header class="chapter-header">
+    <p class="eyebrow">{{ .Params.section_title }}</p>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <div class="prose">{{ .Content }}</div>
+</article>
+<nav class="chapter-pagination" aria-label="Navegação entre capítulos">
+  {{ with .Params.previous }}<a class="previous" href="{{ .url | relURL }}">← <span>{{ .title }}</span></a>{{ end }}
+  {{ with .Params.next }}<a class="next" href="{{ .url | relURL }}"><span>{{ .title }}</span> →</a>{{ end }}
+</nav>
+{{ end }}

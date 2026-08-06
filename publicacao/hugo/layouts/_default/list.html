@@ -1,0 +1,16 @@
+{{ define "main" }}
+<header class="section-header">
+  <p class="eyebrow">Seção</p>
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+</header>
+{{ if .Pages }}
+<ol class="chapter-list">
+  {{ range .Pages.ByWeight }}
+  <li><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><span aria-hidden="true">→</span></a></li>
+  {{ end }}
+</ol>
+{{ else }}
+<p class="empty-state">Conteúdo em preparação para uma versão futura.</p>
+{{ end }}
+{{ end }}

@@ -46,6 +46,16 @@ uv run python tools/generate_pdf.py --strict
 
 O PDF versionado e o relatório são gerados em `build/`. Handouts aprovados fazem parte do mesmo módulo; nenhum PDF público ou livro do jogador é criado.
 
+## Site Hugo do Mestre
+
+O mesmo manifesto positivo gera um site navegável com Hugo Extended 0.164.0:
+
+```bash
+uv run python tools/generate_site.py
+```
+
+A saída descartável fica em `build/site/`. `.github/workflows/pages.yml` implanta somente essa árvore no GitHub Pages e não publica PDFs. Consulte `publicacao/README.md` para os requisitos e o alerta sobre a exposição pública dos segredos do Mestre.
+
 ## Referências locais de regras
 
 Os livros em `referencias/` permanecem fora do Git e da publicação. Para criar e consultar o índice local separado:

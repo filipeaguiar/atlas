@@ -1,0 +1,71 @@
+# Lista interna para autocomplete da identificação de imagens.
+# Uma identidade por linha. Edite este arquivo para acrescentar opções.
+
+# Instituto Atlas e Exame de Admissão
+Álvaro Siqueira
+Beatriz Leal
+Caio Ventura — Impacto
+Dalva Menezes
+Dra. Samira Nasser
+Janaína Rocha — Âncora
+Lívia Monteiro — Métrica
+Raul Farias — Vestígio
+Tomás Valença
+
+# Estudantes recorrentes
+Cecília Dantas — Prumo
+Dante Arcos — Órbita
+Ícaro Tavares — Refrão
+Lia Vasconcelos — Atalho
+Malu Serrano — Rasura
+Noah Sato — Gambito
+Ravi Moura — Trama
+Sofia Mendonça — Pulso
+
+# Vanguarda
+Solar
+Multiplex
+Prisma
+Colosso
+Oráculo
+Vetora
+
+# Antagonistas principais
+Arquiteto
+Ascendente
+Hierofante
+Mãe da Maré
+Mecenas
+Regente
+Soberano
+Rei do Véu
+Titã
+Zero
+
+# Tenentes tecnológicos
+Nexo
+Bastião
+Contramedida
+Rastro
+
+# Tenentes místicos
+Véspera
+Custódio
+Sutura
+Presságio
+
+# Tenentes super-humanos
+Estandarte
+Ruptura
+Síncope
+Rasante
+
+# Tenentes cósmicos
+Meridiano
+Eclipse
+Paralaxe
+Peregrino
+
+# Adicionados durante a identificação
+Emissário
+Arauto do Horizonte

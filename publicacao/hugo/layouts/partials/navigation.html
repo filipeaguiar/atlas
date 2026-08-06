@@ -1,0 +1,11 @@
+<nav class="site-nav" aria-label="Conteúdo do módulo">
+  <a href="{{ "" | relURL }}">Início</a>
+  {{ range .Site.Sections.ByWeight }}
+  <details {{ if or ($.IsSection) (eq $.Section .Section) }}open{{ end }}>
+    <summary><a href="{{ .RelPermalink }}">{{ .Title }}</a></summary>
+    {{ if .Pages }}<ul>
+      {{ range .Pages.ByWeight }}<li><a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></li>{{ end }}
+    </ul>{{ end }}
+  </details>
+  {{ end }}
+</nav>
