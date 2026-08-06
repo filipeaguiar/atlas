@@ -20,10 +20,10 @@ jobs:
       pages: read
     steps:
       - name: Obter repositório
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
 
       - name: Instalar uv
-        uses: astral-sh/setup-uv@v9
+        uses: astral-sh/setup-uv@v9.0.0
         with:
           enable-cache: true
 
@@ -40,7 +40,7 @@ jobs:
 
       - name: Configurar GitHub Pages
         id: pages
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@v6.0.0
 
       - name: Executar testes
         run: uv run pytest
@@ -52,7 +52,7 @@ jobs:
         run: test -z "$(find build/site -type f -iname '*.pdf' -print -quit)"
 
       - name: Enviar somente o site
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: build/site
 
@@ -68,4 +68,4 @@ jobs:
     steps:
       - name: Implantar no GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v5.0.0
