@@ -2,8 +2,9 @@ name: Publicar site Hugo no GitHub Pages
 
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
+    branches:
+      - main
+  workflow_dispatch: {}
 
 concurrency:
   group: pages
