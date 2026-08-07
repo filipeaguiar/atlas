@@ -82,7 +82,7 @@
 - [x] 12.2 Apresentar cada técnica especial como item de lista não ordenada
 - [x] 12.3 Separar as linhas de atributos para gerar painéis completos nos cinco blocos próprios da Vanguarda
 - [x] 12.4 Testar a estrutura Markdown e HTML das técnicas e atributos da Vanguarda
-- [ ] 12.5 Publicar e revisar a correção no GitHub Pages
+- [x] 12.5 Publicar e revisar a correção no GitHub Pages
 
 ## 13. Galeria de imagens aprovadas
 
@@ -90,7 +90,7 @@
 - [x] 13.2 Deduplicar por hash e gerar cópias WebP otimizadas para publicação
 - [x] 13.3 Criar página manifestada, shortcode e layout responsivo da galeria
 - [x] 13.4 Testar seleção positiva, arquivos promovidos, HTML e ausência de lixo ou pendências
-- [ ] 13.5 Atualizar versão, validar e publicar tudo no GitHub e no GitHub Pages
+- [x] 13.5 Atualizar versão, validar e publicar tudo no GitHub e no GitHub Pages
 
 ## 14. Menu lateral e tipografia de impacto
 
@@ -98,4 +98,4 @@
 - [x] 14.2 Refinar estados aberto, atual, foco e hover no menu desktop e no drawer móvel
 - [x] 14.3 Adicionar Anybody como fonte local de display e reforçar títulos e separadores
 - [x] 14.4 Testar navegação, fontes locais, responsividade e contraste visual
-- [ ] 14.5 Incluir o refinamento na publicação final do GitHub Pages
+- [x] 14.5 Incluir o refinamento na publicação final do GitHub Pages
