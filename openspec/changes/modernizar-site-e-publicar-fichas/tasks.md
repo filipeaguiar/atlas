@@ -68,3 +68,10 @@
 - [x] 10.3 Normalizar perícias, vantagens, desvantagens e limitações como listas não ordenadas
 - [x] 10.4 Hospedar Fraunces e Space Grotesk localmente com licenças OFL
 - [x] 10.5 Validar, publicar e revisar cards e drawer no GitHub Pages
+
+## 11. Listas de técnicas dos tenentes
+
+- [x] 11.1 Separar as técnicas exclusivas do item de desvantagens nos quatro compêndios de tenentes
+- [x] 11.2 Apresentar cada técnica exclusiva como item de lista não ordenada em seção própria
+- [x] 11.3 Testar a estrutura Markdown e HTML das técnicas
+- [ ] 11.4 Publicar e revisar a correção no GitHub Pages

@@ -34,6 +34,10 @@ O site SHALL reconhecer documentos com `tipo: ficha` e SHALL apresentar seus blo
 - **WHEN** a ficha informa perícias, vantagens, desvantagens ou limitações
 - **THEN** cada categoria aparece como item de lista não ordenada dentro do card
 
+#### Scenario: Técnicas exclusivas dos tenentes
+- **WHEN** uma ficha de tenente apresenta técnicas exclusivas após suas características
+- **THEN** as técnicas aparecem em seção própria e como lista não ordenada, sem integrar o item de desvantagens
+
 ### Requirement: Navegação escalável
 O site SHALL manter navegação utilizável com o aumento de capítulos e SHALL agrupar visualmente páginas por seção e categoria.
 

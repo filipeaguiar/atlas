@@ -29,8 +29,11 @@ Véspera não é uma combatente física. Ela é a manifestação da escuridão q
 - **Perícias:** Mística
 - **Vantagens:** Sentidos Especiais (Visão no Escuro), Voo
 - **Desvantagens:** Fracote
-**Manto do Crepúsculo:** Enquanto estiver sob as sombras ou de noite, qualquer ataque à distância desferido contra Véspera sofre uma Perda automática, pois a escuridão distorce sua posição real.
-**Apagar as Luzes (Gatilho: Uma vez por combate):** Véspera bate seu cajado no chão, criando uma zona de escuridão mágica Perto dela. Inimigos que falharem em um teste de Resistência ficam *Cegos* (Perda em ataques e defesa) enquanto permanecerem dentro da área.
+
+### Técnicas exclusivas
+
+- **Manto do Crepúsculo:** Enquanto estiver sob as sombras ou de noite, qualquer ataque à distância desferido contra Véspera sofre uma Perda automática, pois a escuridão distorce sua posição real.
+- **Apagar as Luzes (Gatilho: Uma vez por combate):** Véspera bate seu cajado no chão, criando uma zona de escuridão mágica Perto dela. Inimigos que falharem em um teste de Resistência ficam *Cegos* (Perda em ataques e defesa) enquanto permanecerem dentro da área.
 
 **TESOURO**
 **Orbe do Entardecer:** Pode ser esmagado (usado) para conjurar a vantagem *Invisibilidade* em um aliado por uma cena inteira. Desintegra após o uso.
@@ -49,8 +52,11 @@ Uma figura coberta por uma armadura de pedra rúnica impenetrável. Custódio é
 - **Perícias:** Mística, Investigação
 - **Vantagens:** Defesa Especial, Duro de Matar
 - **Desvantagens:** Lento
-**Égide Arcana (Gatilho: Quando uma magia é lançada Perto dele):** Custódio pode redirecionar automaticamente qualquer ataque baseado em magia que mire um aliado para si mesmo, recebendo o impacto com sua Defesa dobrada.
-**Selo de Interdição (Gatilho: Início do combate):** Custódio finca sua lança no solo. Enquanto a lança estiver no chão (ela tem 5 PV próprios), nenhum poder mágico ou vantagem que custaria PM pode ser usada na distância Perto. 
+
+### Técnicas exclusivas
+
+- **Égide Arcana (Gatilho: Quando uma magia é lançada Perto dele):** Custódio pode redirecionar automaticamente qualquer ataque baseado em magia que mire um aliado para si mesmo, recebendo o impacto com sua Defesa dobrada.
+- **Selo de Interdição (Gatilho: Início do combate):** Custódio finca sua lança no solo. Enquanto a lança estiver no chão (ela tem 5 PV próprios), nenhum poder mágico ou vantagem que custaria PM pode ser usada na distância Perto. 
 
 **TESOURO**
 **Fragmento Rúnico de Pedra-Mãe:** Se fundido a um escudo ou traje protetor, concede +1 R permanente para o portador quando defendendo um ataque baseado em energia ou magia. 
@@ -69,8 +75,11 @@ Sutura foi uma curandeira arcana que perdeu a sanidade tentando curar feridas da
 - **Perícias:** Medicina, Mística
 - **Vantagens:** Paralisia, Genialidade
 - **Desvantagens:** Assombrada (as vozes dos pacientes perdidos)
-**Fios da Alma (Gatilho: Em vez de atacar):** Sutura cura 10 PV de um aliado. No entanto, os fios mágicos corrompem a mente do alvo curado: ele automaticamente sofrerá um "Acerto Crítico Inverso" (como se tivesse rolado uma falha crítica) no primeiro teste de ataque que fizer após ser curado.
-**Boneco de Pano (Gatilho: Quando causa dano físico a alguém):** Se Sutura causar pelo menos 1 PV de dano a um herói com suas agulhas, ela pode conectá-lo a um fio invisível. No próximo turno, ela escolhe a movimentação daquele herói (para Perto ou para Longe), arrastando-o magicamente. 
+
+### Técnicas exclusivas
+
+- **Fios da Alma (Gatilho: Em vez de atacar):** Sutura cura 10 PV de um aliado. No entanto, os fios mágicos corrompem a mente do alvo curado: ele automaticamente sofrerá um "Acerto Crítico Inverso" (como se tivesse rolado uma falha crítica) no primeiro teste de ataque que fizer após ser curado.
+- **Boneco de Pano (Gatilho: Quando causa dano físico a alguém):** Se Sutura causar pelo menos 1 PV de dano a um herói com suas agulhas, ela pode conectá-lo a um fio invisível. No próximo turno, ela escolhe a movimentação daquele herói (para Perto ou para Longe), arrastando-o magicamente. 
 
 **TESOURO**
 **Carretel de Fio-Espírito:** Pode ser usado como um kit médico arcano. Garante cura equivalente à vantagem *Cura* sem gastar PM, mas possui apenas 3 usos antes que a linha acabe.
@@ -89,8 +98,11 @@ Uma figura perturbadora, com múltiplos olhos flutuando ao seu redor. Presságio
 - **Perícias:** Percepção, Mística
 - **Vantagens:** Reflexos Defensivos, Telepatia
 - **Desvantagens:** Ponto Fraco (Vulnerável quando suas previsões são quebradas)
-**Visão do Fim (Gatilho: Uma vez por cena):** Quando Presságio for atingido por um acerto crítico inevitável, ele sussurra "eu já sabia", e o ataque é completamente anulado. Ele já havia desviado há três segundos atrás.
-**Maldição Profética (Gatilho: Sempre que um herói errar um ataque contra ele):** Se um jogador falhar no teste de ataque contra Presságio, as palavras macabras dele se concretizam, causando 2 PV de dano psíquico direto (ignora armadura) ao personagem que errou, graças à quebra de autoconfiança.
+
+### Técnicas exclusivas
+
+- **Visão do Fim (Gatilho: Uma vez por cena):** Quando Presságio for atingido por um acerto crítico inevitável, ele sussurra "eu já sabia", e o ataque é completamente anulado. Ele já havia desviado há três segundos atrás.
+- **Maldição Profética (Gatilho: Sempre que um herói errar um ataque contra ele):** Se um jogador falhar no teste de ataque contra Presságio, as palavras macabras dele se concretizam, causando 2 PV de dano psíquico direto (ignora armadura) ao personagem que errou, graças à quebra de autoconfiança.
 
 **TESOURO**
 **Olho de Vidro Cativante:** Garante a vantagem *Telepatia* a quem o possuir, e permite tentar antecipar um perigo na trama com um teste de Mística, concedendo uma dica do Mestre.

@@ -61,6 +61,17 @@ def test_fichas_possuem_front_matter_publicavel_e_estatisticas() -> None:
                 assert line.startswith("- "), f"item mecânico fora de lista: {path}: {line}"
 
 
+def test_tecnicas_exclusivas_dos_tenentes_sao_listas_separadas() -> None:
+    for path in TENANT_FILES:
+        _, body, _ = split_front_matter(path.read_text(encoding="utf-8"), str(path))
+        assert body.count("### Técnicas exclusivas") == 4, path
+        assert len(re.findall(r"^- \*\*Desvantagens:\*\*.*\n\n### Técnicas exclusivas$", body, re.MULTILINE)) == 4, path
+        sections = body.split("### Técnicas exclusivas")[1:]
+        for section in sections:
+            techniques = section.split("**TESOURO**", 1)[0]
+            assert len(re.findall(r"^- \*\*[^*]+:\*\*", techniques, re.MULTILINE)) == 2, path
+
+
 def test_npcs_sao_redacao_atual_e_nao_copiam_stubs() -> None:
     for path in NPC_FILES:
         metadata, body, _ = split_front_matter(path.read_text(encoding="utf-8"), str(path))

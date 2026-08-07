@@ -29,8 +29,11 @@ Nexo não é exatamente uma pessoa, mas uma rede de drones humanoides conectados
 - **Perícias:** Máquinas, Manha
 - **Vantagens:** Sentidos Especiais (Radar), Genialidade
 - **Desvantagens:** Fracote
-**Hackeamento de Iniciativa:** Uma vez por rodada, Nexo pode obrigar um defensor a rolar sua iniciativa com Perda, graças a interferências nos seus comunicadores.
-**Sacrifício de Hardware:** Quando Nexo sofre um ataque que reduziria seus PV a 0, ele pode transferir sua consciência para outro drone adjacente, sacrificando o corpo atual e recuperando 5PV. (Gatilho: 1 vez por cena).
+
+### Técnicas exclusivas
+
+- **Hackeamento de Iniciativa:** Uma vez por rodada, Nexo pode obrigar um defensor a rolar sua iniciativa com Perda, graças a interferências nos seus comunicadores.
+- **Sacrifício de Hardware:** Quando Nexo sofre um ataque que reduziria seus PV a 0, ele pode transferir sua consciência para outro drone adjacente, sacrificando o corpo atual e recuperando 5PV. (Gatilho: 1 vez por cena).
 
 **TESOURO**
 **Placa-Mãe Neural:** Pode ser usada por alguém com a perícia Máquinas para garantir Ganho em três testes futuros envolvendo tecnologia, segurança ou robótica. Após os três usos, ela queima.
@@ -49,8 +52,11 @@ Se Nexo é o cérebro, Bastião é a parede. Uma armadura de contenção gigante
 - **Perícias:** Luta
 - **Vantagens:** Escudo, Duro de Matar
 - **Desvantagens:** Lento
-**Protocolo de Cobertura:** Sempre que um aliado (ou chefe) que estiver Perto for alvo de um ataque, Bastião pode se colocar na frente e receber o ataque em seu lugar automaticamente.
-**Pulso de Repulsão:** Uma vez por cena, em vez de atacar, Bastião pode bater os braços no chão e emitir um pulso gravitacional. Todos os inimigos Perto devem fazer um teste de Resistência (meta 12) ou serão atirados para Longe, sofrendo 5 de dano ignorando Defesa.
+
+### Técnicas exclusivas
+
+- **Protocolo de Cobertura:** Sempre que um aliado (ou chefe) que estiver Perto for alvo de um ataque, Bastião pode se colocar na frente e receber o ataque em seu lugar automaticamente.
+- **Pulso de Repulsão:** Uma vez por cena, em vez de atacar, Bastião pode bater os braços no chão e emitir um pulso gravitacional. Todos os inimigos Perto devem fazer um teste de Resistência (meta 12) ou serão atirados para Longe, sofrendo 5 de dano ignorando Defesa.
 
 **TESOURO**
 **Núcleo Magnético de Contenção:** Pode ser adaptado ao traje de um herói. Uma vez por sessão, permite ativar a vantagem *Escudo* sem gastar PM.
@@ -69,8 +75,11 @@ Projetada especificamente para caçar Extraordinários. A armadura de Contramedi
 - **Perícias:** Percepção, Luta
 - **Vantagens:** Reflexos Defensivos, Ataque Especial (Preciso)
 - **Desvantagens:** Ponto Fraco (Fica vulnerável a danos de tipos diferentes simultâneos)
-**Nanita Reativa:** Ao ser atacada e sofrer dano por um tipo específico de poder (ex: Fogo, Magia, Força Bruta), Contramedida recebe Ganho em todas as rolagens de Defesa contra esse mesmo tipo de dano pelo resto da cena.
-**Reflexo Reativo:** Sempre que Contramedida obtiver um acerto Crítico na sua Defesa, ela reflete automaticamente metade do dano que teria sofrido diretamente contra o atacante, sem precisar fazer uma jogada de ataque.
+
+### Técnicas exclusivas
+
+- **Nanita Reativa:** Ao ser atacada e sofrer dano por um tipo específico de poder (ex: Fogo, Magia, Força Bruta), Contramedida recebe Ganho em todas as rolagens de Defesa contra esse mesmo tipo de dano pelo resto da cena.
+- **Reflexo Reativo:** Sempre que Contramedida obtiver um acerto Crítico na sua Defesa, ela reflete automaticamente metade do dano que teria sofrido diretamente contra o atacante, sem precisar fazer uma jogada de ataque.
 
 **TESOURO**
 **Fibra Nanocelular Reativa:** Pode ser trocada por 1 XP, ou instalada em um traje, concedendo um bônus permanente de +1 na Defesa contra o primeiro ataque recebido na cena.
@@ -89,8 +98,11 @@ Rastro é uma unidade de busca e destruição furtiva, equipada com camuflagem �
 - **Perícias:** Sobrevivência, Investigação
 - **Vantagens:** Furtividade, Movimento Especial
 - **Desvantagens:** Código de Honra (Nunca desiste de uma presa marcada)
-**Emboscada Perfeita:** Rastro sempre inicia o combate furtivo. Seu primeiro ataque na cena contra um alvo que não o tenha percebido anula completamente a Defesa do oponente (ele se defende apenas com a armadura/Resistência básica).
-**Teleporte Tático:** Sempre que seu alvo tentar se mover para Longe de Rastro, ele pode usar um teleporte de curto alcance para aparecer imediatamente adjacente a ele de novo, desde que tenha linha de visão. (Gatilho: Reação automática, 3 vezes por cena).
+
+### Técnicas exclusivas
+
+- **Emboscada Perfeita:** Rastro sempre inicia o combate furtivo. Seu primeiro ataque na cena contra um alvo que não o tenha percebido anula completamente a Defesa do oponente (ele se defende apenas com a armadura/Resistência básica).
+- **Teleporte Tático:** Sempre que seu alvo tentar se mover para Longe de Rastro, ele pode usar um teleporte de curto alcance para aparecer imediatamente adjacente a ele de novo, desde que tenha linha de visão. (Gatilho: Reação automática, 3 vezes por cena).
 
 **TESOURO**
 **Módulo Óptico Camaleão:** Um dispositivo que pode ser anexado a roupas. Ao ser ativado, fornece a vantagem *Furtividade* durante 1 hora. Após o uso, a bateria descarrega permanentemente.

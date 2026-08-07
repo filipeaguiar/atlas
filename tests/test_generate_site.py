@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 import pytest
@@ -64,6 +65,13 @@ def test_build_hugo_funciona_em_subdiretorio_e_nao_publica_pdf() -> None:
     assert "stat-panel" in sheet
     assert "tcg-card" in sheet
     assert "tcg-card-frame" in sheet
+    tenants = (destination / "regras" / "fichas-tenentes-tecnologicos" / "index.html").read_text()
+    assert len(re.findall(r"Técnicas exclusivas\s*<a", tenants)) == 4
+    assert re.search(
+        r"Desvantagens:</strong>.*?</li>\s*</ul>\s*<h3[^>]*>Técnicas exclusivas\s*<a.*?</h3>\s*<ul>\s*<li>",
+        tenants,
+        re.DOTALL,
+    )
     assert not list(destination.rglob("*.pdf"))
     report = json.loads((PROJECT_ROOT / "build" / "relatorio-site.json").read_text())
     assert report["pdfs_published"] == 0
