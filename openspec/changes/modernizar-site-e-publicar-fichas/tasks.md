@@ -60,3 +60,11 @@
 - [x] 9.3 Transformar linhas P/H/R e PV/PM/PA em painéis semânticos especializados no site
 - [x] 9.4 Testar menu, hierarquia e fichas em desktop e viewport móvel
 - [x] 9.5 Publicar e revisar o refinamento no GitHub Pages
+
+## 10. Drawer, cards TCG e tipografia
+
+- [x] 10.1 Transformar o menu móvel oculto em drawer lateral sobreposto
+- [x] 10.2 Agrupar cada personagem em um único card completo inspirado em TCG
+- [x] 10.3 Normalizar perícias, vantagens, desvantagens e limitações como listas não ordenadas
+- [x] 10.4 Hospedar Fraunces e Space Grotesk localmente com licenças OFL
+- [ ] 10.5 Validar, publicar e revisar cards e drawer no GitHub Pages

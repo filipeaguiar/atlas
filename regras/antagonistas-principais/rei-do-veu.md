@@ -20,9 +20,9 @@ O Rei do Véu não é feito inteiramente de carne. Ele habita as frestas entre o
 
 **P4, H5, R3; 15 PV, 25 PM, 3 PA.**
 
-**Perícias:** Mística, Enganação, Furtividade
-**Vantagens:** Ilusão, Telepatia, Movimento Especial (Pode atravessar superfícies sólidas)
-**Desvantagens:** Vulnerabilidade (Magia sagrada, artefatos solares ou luz pura revelam sua posição e ignoram sua intangibilidade).
+- **Perícias:** Mística, Enganação, Furtividade
+- **Vantagens:** Ilusão, Telepatia, Movimento Especial (Pode atravessar superfícies sólidas)
+- **Desvantagens:** Vulnerabilidade (Magia sagrada, artefatos solares ou luz pura revelam sua posição e ignoram sua intangibilidade).
 
 ### Técnicas Exclusivas
 

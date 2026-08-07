@@ -1,0 +1,10 @@
+<article class="tcg-card" id="{{ .Get "anchor" }}">
+  <div class="tcg-card-frame">
+    <header class="tcg-card-header">
+      <span class="tcg-card-type">{{ with .Page.Params.categoria }}{{ replace . "-" " " | title }}{{ else }}Ficha{{ end }}</span>
+      <h2>{{ .Get "title" }}</h2>
+    </header>
+    <div class="tcg-card-body prose">{{ .Inner | markdownify }}</div>
+    <footer class="tcg-card-footer"><span>Instituto Atlas</span><span>Material do Mestre</span></footer>
+  </div>
+</article>

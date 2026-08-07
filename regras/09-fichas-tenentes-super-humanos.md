@@ -26,9 +26,9 @@ Um líder patriota (ou extremista) que veste cores vibrantes e ostenta um símbo
 
 **P3, H3, R4; 20PV**
 
-**Perícias:** Influência, Luta
-**Vantagens:** Ataque Especial, Inspirar (efeito passivo sem PM)
-**Desvantagens:** Código de Honra (Nunca recua, mesmo que seja a atitude lógica)
+- **Perícias:** Influência, Luta
+- **Vantagens:** Ataque Especial, Inspirar (efeito passivo sem PM)
+- **Desvantagens:** Código de Honra (Nunca recua, mesmo que seja a atitude lógica)
 **Grito de Guerra (Gatilho: No início do combate):** Todo capanga, drone ou lacaio genérico que estiver Perto do Estandarte ganha +1 P e +5 PV. Se Estandarte cair, todos os capangas perdem esse bônus e rolam todos os testes com Perda (desmoralizados).
 **Postura Inabalável (Gatilho: Efeito Passivo):** Estandarte é mecanicamente imune a qualquer efeito de derrubar, empurrar, paralisar ou controle mental. A mente dele está fanaticamente ancorada em seus próprios ideais.
 
@@ -46,9 +46,9 @@ Ruptura não anda pelas portas, ela atravessa as paredes. Ela possui força cin�
 
 **P6, H2, R3; 15PV**
 
-**Perícias:** Esporte
-**Vantagens:** Força Oculta, Quebra-Escudos
-**Desvantagens:** Inculta
+- **Perícias:** Esporte
+- **Vantagens:** Força Oculta, Quebra-Escudos
+- **Desvantagens:** Inculta
 **Soco Sísmico (Gatilho: Uma vez a cada duas rodadas):** Ruptura golpeia o chão. Todos os personagens (heróis e aliados) Perto dela sofrem um ataque de Poder 6 (com Ganho) que atinge a área toda e ignora as armaduras básicas.
 **Quebrar a Guarda (Gatilho: Ao causar dano físico direto):** Qualquer personagem que receba dano dos socos de Ruptura fica com a defesa despedaçada: o *próximo* ataque feito por qualquer inimigo contra esse herói recebe Ganho automático.
 
@@ -66,9 +66,9 @@ Ele ataca o sistema nervoso. Síncope é um velocista furtivo, que não foca na 
 
 **P2, H6, R2; 10PV**
 
-**Perícias:** Esporte, Luta
-**Vantagens:** Aceleração, Esquiva
-**Desvantagens:** Ponto Fraco (Vulnerável se sua mobilidade for restringida)
+- **Perícias:** Esporte, Luta
+- **Vantagens:** Aceleração, Esquiva
+- **Desvantagens:** Ponto Fraco (Vulnerável se sua mobilidade for restringida)
 **Mil Golpes (Gatilho: Em seu turno de ataque):** Em vez de rolar os dados normalmente, Síncope pode fazer três (3) ataques separados na mesma rodada usando o valor fixo P2 contra alvos diferentes (ou o mesmo alvo).
 **Vibração Desorientadora (Gatilho: Quando causa Dano Crítico):** Se Síncope acertar um Crítico (ou obter um número muito alto nos 3 golpes), o choque desliga as sinapses do alvo. O herói atingido perde a capacidade de fazer um movimento no próximo turno (só pode atacar ou defender, sem se deslocar).
 
@@ -86,9 +86,9 @@ Equipado com asas mutantes (ou enxertos bio-mecânicos agressivos) e garras que 
 
 **P4, H4, R3; 15PV**
 
-**Perícias:** Acrobacia, Percepção
-**Vantagens:** Voo, Sentidos Especiais (Visão Aguçada)
-**Desvantagens:** Monstruoso
+- **Perícias:** Acrobacia, Percepção
+- **Vantagens:** Voo, Sentidos Especiais (Visão Aguçada)
+- **Desvantagens:** Monstruoso
 **Mergulho de Impacto (Gatilho: Movimento de Longe para Perto):** Se Rasante estiver voando e iniciar seu turno Longe de um alvo, e decidir gastar o movimento para chegar Perto, seu próximo ataque rola com um dado extra e soma 2 ao resultado final pelo impacto do voo.
 **Arrebatar (Gatilho: Após atacar com sucesso):** Se ele acertar um ataque físico que cause dano em um herói, Rasante o agarra. Ambos agora são considerados Longe do resto do grupo e suspensos no ar. O herói tem uma rodada para se libertar antes de ser solto em queda livre. 
 

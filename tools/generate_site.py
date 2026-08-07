@@ -40,6 +40,8 @@ STAT_LINE_RE = re.compile(
     re.MULTILINE,
 )
 RESOURCE_RE = re.compile(r"(?P<value>\d+)\s*(?P<label>PV|PM|PA)", re.IGNORECASE)
+SHEET_HEADING_RE = re.compile(r"^##[ \t]+(?P<title>[^\n]+)$", re.MULTILINE)
+TOP_HEADING_RE = re.compile(r"^#[ \t]+[^\n]+\n+", re.MULTILINE)
 
 FORBIDDEN_OUTPUT_MARKERS = (
     "desenvolvimento/",
@@ -125,6 +127,34 @@ def render_stat_panels(body: str) -> str:
     return STAT_LINE_RE.sub(replace, body)
 
 
+def wrap_sheet_cards(body: str, fallback_title: str) -> str:
+    """Agrupa cada ficha em um shortcode visual sem alterar a fonte canônica."""
+    matches = list(SHEET_HEADING_RE.finditer(body))
+    if not matches:
+        inner = TOP_HEADING_RE.sub("", body, count=1).strip()
+        anchor = re.sub(r"[^a-z0-9]+", "-", fallback_title.casefold()).strip("-")
+        return (
+            f'{{{{< sheet-card title="{fallback_title}" anchor="{anchor}" >}}}}\n'
+            f"{inner}\n{{{{< /sheet-card >}}}}\n"
+        )
+
+    output = [body[: matches[0].start()].rstrip(), ""]
+    for index, match in enumerate(matches):
+        title = match.group("title").strip()
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(body)
+        inner = body[match.end() : end].strip()
+        anchor = re.sub(r"[^a-z0-9]+", "-", title.casefold()).strip("-")
+        output.extend(
+            [
+                f'{{{{< sheet-card title="{title}" anchor="{anchor}" >}}}}',
+                inner,
+                "{{< /sheet-card >}}",
+                "",
+            ]
+        )
+    return "\n".join(output).strip() + "\n"
+
+
 def front_matter(data: dict[str, Any]) -> str:
     return "---\n" + yaml.safe_dump(data, allow_unicode=True, sort_keys=False) + "---\n\n"
 
@@ -204,6 +234,7 @@ def materialize_hugo(
             body = rewrite_site_links(document.body, document, plan, resources)
             if document.metadata.get("tipo") == "ficha":
                 body = render_stat_panels(body)
+                body = wrap_sheet_cards(body, str(document.metadata["titulo"]))
             page_path = section_root / f"{document.metadata['id']}.md"
             page_path.write_text(front_matter(metadata) + body.lstrip(), encoding="utf-8")
             if section.role == "abertura":

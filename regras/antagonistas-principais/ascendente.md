@@ -20,9 +20,9 @@ O Ascendente parou de se considerar humano há muito tempo. Dono de poderes opre
 
 **P5, H4, R4; 20 PV, 25 PM, 3 PA.**
 
-**Perícias:** Intimidação (ou Influência focada em impor medo), Esporte (Aéreo)
-**Vantagens:** Voo, Sentidos Especiais (Visão Telescópica/Microscópica), Imunidade (Veneno/Doenças), Defesa Especial
-**Desvantagens:** Ponto Fraco (Orgulho extremo: ele nunca tenta desviar de algo que parece inofensivo, tornando-se vulnerável a truques de Enganação).
+- **Perícias:** Intimidação (ou Influência focada em impor medo), Esporte (Aéreo)
+- **Vantagens:** Voo, Sentidos Especiais (Visão Telescópica/Microscópica), Imunidade (Veneno/Doenças), Defesa Especial
+- **Desvantagens:** Ponto Fraco (Orgulho extremo: ele nunca tenta desviar de algo que parece inofensivo, tornando-se vulnerável a truques de Enganação).
 
 ### Técnicas Exclusivas
 

@@ -20,9 +20,9 @@ A Mãe da Maré é uma força elemental terrível. Venerada por cultos fanático
 
 **P5, H3, R5; 25 PV, 20 PM, 2 PA.**
 
-**Perícias:** Mística, Sobrevivência
-**Vantagens:** Imunidade (Frio e Água), Voo (Flutuar), Aliado (Legião de Afogados)
-**Desvantagens:** Monstruoso (Aparência lovecraftiana/abissal), Lento
+- **Perícias:** Mística, Sobrevivência
+- **Vantagens:** Imunidade (Frio e Água), Voo (Flutuar), Aliado (Legião de Afogados)
+- **Desvantagens:** Monstruoso (Aparência lovecraftiana/abissal), Lento
 
 ### Técnicas Exclusivas
 

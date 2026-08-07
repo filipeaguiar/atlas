@@ -20,9 +20,9 @@ Pode ser um hacker que transcendeu a humanidade ou uma Inteligência Artificial 
 
 **P4, H5, R3; 15 PV, 25 PM, 3 PA.**
 
-**Perícias:** Máquinas, Ciências, Mística (Tecnomagia)
-**Vantagens:** Teleporte, Ataque Especial, Sentidos Especiais (Infravermelho, Ver o Invisível), Imortal (Enquanto houver rede para fazer backup)
-**Desvantagens:** Vulnerabilidade (Fica atordoado/sem PM se confinado em áreas totalmente analógicas e isoladas eletromagneticamente).
+- **Perícias:** Máquinas, Ciências, Mística (Tecnomagia)
+- **Vantagens:** Teleporte, Ataque Especial, Sentidos Especiais (Infravermelho, Ver o Invisível), Imortal (Enquanto houver rede para fazer backup)
+- **Desvantagens:** Vulnerabilidade (Fica atordoado/sem PM se confinado em áreas totalmente analógicas e isoladas eletromagneticamente).
 
 ### Técnicas Exclusivas
 

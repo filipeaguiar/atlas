@@ -20,9 +20,9 @@ Enquanto o Titã esmaga e o Ascendente queima, o Regente prefere que seus inimig
 
 **P3, H5, R4; 20 PV, 30 PM, 3 PA.**
 
-**Perícias:** Ciências, Percepção
-**Vantagens:** Voo (Levitação controlada), Telecinese (Gravidade), Ataque Especial (Amplo)
-**Desvantagens:** Ponto Fraco (Vulnerável se a concentração dele for fisicamente quebrada por ataques sonoros intensos ou ilusões psíquicas profundas).
+- **Perícias:** Ciências, Percepção
+- **Vantagens:** Voo (Levitação controlada), Telecinese (Gravidade), Ataque Especial (Amplo)
+- **Desvantagens:** Ponto Fraco (Vulnerável se a concentração dele for fisicamente quebrada por ataques sonoros intensos ou ilusões psíquicas profundas).
 
 ### Técnicas Exclusivas
 

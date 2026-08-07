@@ -20,9 +20,9 @@ Um mago incrivelmente velho (ou uma entidade) que veste mantos impecáveis e det
 
 **P3, H4, R4; 20 PV, 30 PM, 3 PA.**
 
-**Perícias:** Mística, Influência, Arte (Oratória)
-**Vantagens:** Escudo (Barreiras de runas), Ataque Especial (Punição Divina), Defesa Especial
-**Desvantagens:** Código de Honra (Ele mesmo é escravo das próprias leis e nunca quebra sua palavra, mesmo que seja taticamente ruim).
+- **Perícias:** Mística, Influência, Arte (Oratória)
+- **Vantagens:** Escudo (Barreiras de runas), Ataque Especial (Punição Divina), Defesa Especial
+- **Desvantagens:** Código de Honra (Ele mesmo é escravo das próprias leis e nunca quebra sua palavra, mesmo que seja taticamente ruim).
 
 ### Técnicas Exclusivas
 

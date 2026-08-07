@@ -1,5 +1,8 @@
 /* Camada visual contemporânea, local e progressiva. */
+@font-face { font-family: "Space Grotesk Atlas"; src: url("../fonts/space-grotesk/SpaceGrotesk-Variable.ttf") format("truetype"); font-style: normal; font-weight: 300 700; font-display: swap; }
+@font-face { font-family: "Fraunces Atlas"; src: url("../fonts/fraunces/Fraunces-Variable.ttf") format("truetype"); font-style: normal; font-weight: 600 900; font-display: swap; }
 :root {
+  font-family: "Space Grotesk Atlas", Inter, ui-sans-serif, system-ui, sans-serif;
   --night: #07141c;
   --night-soft: #0c2530;
   --cyan: #26c6da;
@@ -35,7 +38,7 @@ body {
 .content { max-width: 66rem; }
 .hero { position: relative; isolation: isolate; overflow: hidden; padding: clamp(2rem, 7vw, 5rem); color: #eefbfc; background: linear-gradient(135deg, var(--night), #123d4a 70%, #185b68); border: 0; border-radius: calc(var(--radius) * 1.35); box-shadow: var(--shadow-modern); }
 .hero::after { content: ""; position: absolute; z-index: -1; width: 24rem; aspect-ratio: 1; right: -8rem; top: -10rem; border: 4rem solid rgb(38 198 218 / 12%); border-radius: 50%; }
-.hero h1 { max-width: 12ch; letter-spacing: -.045em; text-wrap: balance; }
+.hero h1 { max-width: 12ch; font-family: "Fraunces Atlas", Georgia, serif; letter-spacing: -.045em; text-wrap: balance; }
 .hero .subtitle { color: #bcd5d9; }
 .hero .version, .hero .eyebrow { color: #84e5ee; }
 .opening { border: 1px solid rgb(255 255 255 / 70%); border-left: 5px solid var(--gold-bright); border-radius: var(--radius); }
@@ -47,7 +50,7 @@ body {
 .chapter-context { display: flex; align-items: center; flex-wrap: wrap; gap: .7rem; }
 .category-chip { padding: .32rem .65rem; color: var(--atlas-dark); background: var(--cyan-soft); }
 .sheet-label { width: fit-content; padding: .42rem .72rem; color: #f9e5ae; background: var(--night-soft); }
-.chapter-header h1 { max-width: 19ch; letter-spacing: -.035em; text-wrap: balance; }
+.chapter-header h1, .section-header h1 { max-width: 19ch; font-family: "Fraunces Atlas", Georgia, serif; letter-spacing: -.035em; text-wrap: balance; }
 .chapter-list { display: grid; gap: .8rem; border: 0; }
 .chapter-list li { border: 0; }
 .chapter-list a { padding: 1rem 1.1rem; background: rgb(255 255 255 / 76%); border: 1px solid rgb(23 79 99 / 13%); border-radius: .8rem; box-shadow: 0 8px 24px rgb(7 20 28 / 5%); }
@@ -70,6 +73,23 @@ body {
 .stat-cell strong { color: #fff; font-size: 1.45rem; line-height: 1; }
 .page-type-ficha .prose > p { padding-inline: .15rem; }
 .page-type-ficha .prose > p:has(> strong:first-child) { padding: .85rem 1rem; background: rgb(255 255 255 / 72%); border: 1px solid rgb(23 79 99 / 12%); border-radius: .65rem; }
+.tcg-card { --card-accent: #26c6da; position: relative; margin: 2.5rem 0; padding: .42rem; background: linear-gradient(145deg, var(--gold-bright), var(--card-accent) 42%, var(--night)); border-radius: 1.35rem; box-shadow: 0 26px 60px rgb(7 20 28 / 22%); }
+.page-category-inimigos .tcg-card { --card-accent: #e25b67; }
+.page-category-npcs-estudantes .tcg-card { --card-accent: #7dce82; }
+.page-category-npcs-vanguarda .tcg-card { --card-accent: #a78bfa; }
+.tcg-card-frame { overflow: hidden; background: #f8f5ea; border: 2px solid rgb(7 20 28 / 70%); border-radius: 1rem; }
+.tcg-card-header { position: relative; padding: 1.25rem 1.4rem 1.1rem; color: #f7feff; background: linear-gradient(120deg, var(--night), color-mix(in srgb, var(--card-accent) 42%, var(--night))); border-bottom: 3px solid var(--gold-bright); }
+.tcg-card-header::after { content: ""; position: absolute; width: 8rem; aspect-ratio: 1; right: -2.5rem; top: -4rem; border: 1.4rem solid rgb(255 255 255 / 7%); border-radius: 50%; }
+.page-type-ficha .prose .tcg-card-header h2 { margin: .2rem 0 0; padding: 0; color: #fff; background: none; border: 0; box-shadow: none; font: 760 clamp(1.55rem, 4vw, 2.35rem)/1.08 "Fraunces Atlas", Georgia, serif; }
+.tcg-card-type { color: color-mix(in srgb, var(--card-accent) 65%, white); font-size: .66rem; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
+.tcg-card-body { padding: 1.35rem clamp(1rem, 3vw, 1.7rem) 1.6rem; }
+.tcg-card-body > :first-child { margin-top: 0; }
+.tcg-card-body > :last-child { margin-bottom: 0; }
+.tcg-card-body ul { display: grid; gap: .45rem; margin: 1rem 0; padding: 0; list-style: none; }
+.tcg-card-body ul li { position: relative; padding: .72rem .85rem .72rem 2rem; background: rgb(255 255 255 / 75%); border: 1px solid rgb(23 79 99 / 13%); border-radius: .62rem; }
+.tcg-card-body ul li::before { content: "◆"; position: absolute; left: .75rem; top: .78rem; color: var(--card-accent); font-size: .72rem; }
+.tcg-card-body .stat-panel { margin-inline: -.2rem; }
+.tcg-card-footer { display: flex; justify-content: space-between; gap: 1rem; padding: .55rem 1.1rem; color: #d8e7e9; background: var(--night); font-size: .62rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .chapter-pagination a { border-radius: .8rem; transition: transform .18s ease, border-color .18s ease; }
 .chapter-pagination a:hover { transform: translateY(-2px); border-color: var(--cyan); }
 @supports not (backdrop-filter: blur(1px)) {
@@ -80,14 +100,20 @@ body {
   .hero { padding: 2rem 1.4rem; border-radius: .9rem; }
   .site-shell > .site-nav { display: none; }
   .mobile-menu { display: block; background: #edf3f2; border-bottom: 1px solid var(--line); }
+  .mobile-menu[open]::before { content: ""; position: fixed; inset: 0; z-index: 30; background: rgb(7 20 28 / 62%); backdrop-filter: blur(3px); }
   .mobile-menu > summary { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.2rem; color: var(--atlas-dark); font-weight: 850; cursor: pointer; list-style: none; }
   .mobile-menu > summary::-webkit-details-marker { display: none; }
   .menu-state::before { content: "+"; display: grid; place-items: center; width: 2rem; aspect-ratio: 1; color: #fff; background: var(--atlas); border-radius: 50%; font-size: 1.25rem; }
+  .mobile-menu[open] > summary { position: fixed; top: .65rem; right: .65rem; z-index: 32; width: auto; padding: .35rem; color: transparent; background: transparent; }
+  .mobile-menu[open] > summary .menu-state { color: initial; }
   .mobile-menu[open] .menu-state::before { content: "−"; }
-  .mobile-menu .site-nav { position: static; display: block; max-height: min(62vh, 28rem); overflow-y: auto; padding-top: .25rem; background: #edf3f2; border: 0; backdrop-filter: none; }
+  .mobile-menu .site-nav { position: fixed; inset: 0 auto 0 0; z-index: 31; display: block; width: min(86vw, 22rem); max-height: 100vh; overflow-y: auto; padding: 1.4rem 1rem 2rem; background: #edf3f2; border: 0; box-shadow: 18px 0 55px rgb(7 20 28 / 28%); backdrop-filter: none; }
   .page-type-ficha .prose h2 { margin-inline: -.25rem; }
   .stat-panel { grid-template-columns: repeat(3, 1fr); }
   .stat-cell { min-width: 0; padding: .55rem; }
+  .tcg-card { margin-inline: -.25rem; padding: .3rem; border-radius: 1rem; }
+  .tcg-card-frame { border-radius: .75rem; }
+  .tcg-card-footer { align-items: flex-start; flex-direction: column; gap: .15rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }

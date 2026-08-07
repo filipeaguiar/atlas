@@ -22,7 +22,9 @@ A Vanguarda é uma geração veterana. Use estas fichas para memória, treinamen
 
 **22 pt — liderança e contenção.** **P5, H5, R5; 25 PV, 25 PM, 3 PA.**
 
-**Perícias:** Influência, Luta, Sobrevivência. **Vantagens:** Voo, Escudo, Inspirar. **Limitação:** Código de Honra — civis primeiro.
+- **Perícias:** Influência, Luta, Sobrevivência.
+- **Vantagens:** Voo, Escudo, Inspirar.
+- **Limitação:** Código de Honra — civis primeiro.
 
 **Clarão protetor (3 PM):** aliados Perto recebem **Ganho** em Defesa por uma rodada. **Centro da crise (3 PM):** Solar segura uma pressão ambiental e abre uma rodada para retirada; os personagens executam o resgate. **Comando entregue (1 PA):** um personagem define a prioridade e recebe 1 PA.
 
@@ -36,7 +38,9 @@ A Vanguarda é uma geração veterana. Use estas fichas para memória, treinamen
 
 **20 pt — luz, mobilidade e engano.** **P4, H6, R3; 15 PV, 30 PM, 3 PA.**
 
-**Perícias:** Arte, Enganação, Percepção. **Vantagens:** Ilusão, Voo, Ataque Especial. **Limitação:** escuridão total restringe suas construções.
+- **Perícias:** Arte, Enganação, Percepção.
+- **Vantagens:** Ilusão, Voo, Ataque Especial.
+- **Limitação:** escuridão total restringe suas construções.
 
 **Refração múltipla (3 PM):** cria três imagens; ataques contra Prisma sofrem **Perda** até uma acertar. **Ponte de luz (2 PM):** cria rota estável entre dois pontos Perto ou de Perto para Longe. **Espectro revelador (2 PM):** torna visível uma pista, criatura ou energia oculta.
 
@@ -44,7 +48,9 @@ A Vanguarda é uma geração veterana. Use estas fichas para memória, treinamen
 
 **22 pt — força e sustentação.** **P7, H3, R6; 30 PV, 15 PM, 2 PA.**
 
-**Perícias:** Luta, Esporte. **Vantagens:** Armadura, Duro de Matar, Ataque Especial. **Limitação:** Lento.
+- **Perícias:** Luta, Esporte.
+- **Vantagens:** Armadura, Duro de Matar, Ataque Especial.
+- **Limitação:** Lento.
 
 **Sustentar o impossível (3 PM):** mantém estrutura ou obstáculo colossal por uma rodada, criando tempo para os personagens agirem. **Passo de contenção (2 PM):** impede que ameaça Perto avance. **Base da equipe:** aliados que usam Colosso como cobertura recebem **Ganho** em Defesa.
 
@@ -52,7 +58,9 @@ A Vanguarda é uma geração veterana. Use estas fichas para memória, treinamen
 
 **19 pt — percepção e investigação.** **P2, H7, R3; 15 PV, 30 PM, 3 PA.**
 
-**Perícias:** Investigação, Mística, Percepção. **Vantagens:** Sentidos Especiais, Genialidade, Telepatia. **Limitação:** visões mostram possibilidades e rastros, não um futuro obrigatório.
+- **Perícias:** Investigação, Mística, Percepção.
+- **Vantagens:** Sentidos Especiais, Genialidade, Telepatia.
+- **Limitação:** visões mostram possibilidades e rastros, não um futuro obrigatório.
 
 **Rastro impossível (2 PM):** encontra sinal que escaparia a sentidos comuns. **Três futuros próximos (3 PM):** apresenta três consequências plausíveis; uma é descartada quando a equipe obtém nova informação. **Aviso, não ordem (1 PA):** um aliado recebe **Ganho** para reagir, escolhendo como fazê-lo.
 
@@ -60,7 +68,9 @@ A Vanguarda é uma geração veterana. Use estas fichas para memória, treinamen
 
 **20 pt — trajetória e controle de campo.** **P4, H6, R4; 20 PV, 25 PM, 3 PA.**
 
-**Perícias:** Ciências, Esporte, Percepção. **Vantagens:** Telecinese, Voo, Escudo. **Limitação:** precisa perceber a trajetória que pretende alterar.
+- **Perícias:** Ciências, Esporte, Percepção.
+- **Vantagens:** Telecinese, Voo, Escudo.
+- **Limitação:** precisa perceber a trajetória que pretende alterar.
 
 **Redirecionar (2 PM):** muda o alvo ou destino de movimento, queda ou projétil após Defesa bem-sucedida. **Campo vetorial (3 PM):** todos em uma área Perto podem ser movidos para posições Perto escolhidas pelos próprios aliados. **Queda zero (2 PM):** cancela dano de queda para até três pessoas.
 

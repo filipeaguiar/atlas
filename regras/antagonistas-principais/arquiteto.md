@@ -20,9 +20,9 @@ O Arquiteto é um humano brilhante e meticuloso. Ele enxerga os Extraordinários
 
 **P2, H5, R4; 20 PV, 20 PM, 3 PA.**
 
-**Perícias:** Máquinas, Ciências, Investigação
-**Vantagens:** Arena (Seu próprio laboratório ou base), Escudo, Genialidade
-**Desvantagens:** Ponto Fraco (Arrogância: Ele sempre precisa explicar por que seu plano é superior, o que pode dar Ganho em defesas aos heróis se eles prestarem atenção).
+- **Perícias:** Máquinas, Ciências, Investigação
+- **Vantagens:** Arena (Seu próprio laboratório ou base), Escudo, Genialidade
+- **Desvantagens:** Ponto Fraco (Arrogância: Ele sempre precisa explicar por que seu plano é superior, o que pode dar Ganho em defesas aos heróis se eles prestarem atenção).
 
 ### Técnicas Exclusivas
 

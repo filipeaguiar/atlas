@@ -56,6 +56,9 @@ def test_fichas_possuem_front_matter_publicavel_e_estatisticas() -> None:
         assert metadata["categoria"]
         assert re.search(r"P\d+, H\d+, R\d+; \d+ ?PV", body), path
         assert "recuperacao-pendente" not in body
+        for line in body.splitlines():
+            if re.match(r"(?:- )?\*\*(Perícias|Vantagens|Desvantagens|Limitaç(?:ão|ões)):", line):
+                assert line.startswith("- "), f"item mecânico fora de lista: {path}: {line}"
 
 
 def test_npcs_sao_redacao_atual_e_nao_copiam_stubs() -> None:

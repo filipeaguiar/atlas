@@ -20,9 +20,9 @@ Se o Arquiteto constrói a arena, o Mecenas a *compra*. Ele é um bilionário im
 
 **P3, H4, R3; 15 PV, 30 PM, 2 PA.** (Possui reserva absurda de PM, representando seus recursos).
 
-**Perícias:** Influência, Manha, Investigação
-**Vantagens:** Riqueza, Aliado (Capangas corporativos), Patrono, Ataque Especial
-**Desvantagens:** Ponto Fraco (Covarde: se ficar fisicamente isolado de seus capangas ou tecnologia, rola testes com Perda).
+- **Perícias:** Influência, Manha, Investigação
+- **Vantagens:** Riqueza, Aliado (Capangas corporativos), Patrono, Ataque Especial
+- **Desvantagens:** Ponto Fraco (Covarde: se ficar fisicamente isolado de seus capangas ou tecnologia, rola testes com Perda).
 
 ### Técnicas Exclusivas
 

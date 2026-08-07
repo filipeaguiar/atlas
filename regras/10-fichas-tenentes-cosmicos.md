@@ -26,9 +26,9 @@ Meridiano não possui rosto humano, sendo coberto por fractais cristalinos de ge
 
 **P4, H4, R4; 20PV**
 
-**Perícias:** Ciências
-**Vantagens:** Teleporte, Sentidos Especiais (Radar Dimensional)
-**Desvantagens:** Estranho (alienígena/abstrato)
+- **Perícias:** Ciências
+- **Vantagens:** Teleporte, Sentidos Especiais (Radar Dimensional)
+- **Desvantagens:** Estranho (alienígena/abstrato)
 **Dobrar o Espaço (Gatilho: Ao defender com sucesso):** Sempre que Meridiano anular um ataque à distância com a sua Defesa, o ataque foi "engolido" por um micro-portal. Ele imediatamente abre a saída do portal em outro ponto e redireciona esse mesmo ataque contra outro herói do grupo, usando o valor de P da jogada original do atacante.
 **Fenda Orbital (Gatilho: Início do combate ou 1x por cena):** Meridiano reposiciona todo o campo de batalha. Heróis que estavam Longe agora estão Perto, os que estavam Perto ficam Longe, sem direito a testes para resistir. Suas formações táticas são arruinadas.
 
@@ -46,9 +46,9 @@ Eclipse transita entre o estado físico sólido e a energia pura. Quando em luz,
 
 **P5, H3, R3; 15PV**
 
-**Perícias:** Mística, Sobrevivência
-**Vantagens:** Imunidade (Fogo/Luz/Energia), Voo
-**Desvantagens:** Vulnerabilidade (Sombras e vácuo limitam sua forma de luz)
+- **Perícias:** Mística, Sobrevivência
+- **Vantagens:** Imunidade (Fogo/Luz/Energia), Voo
+- **Desvantagens:** Vulnerabilidade (Sombras e vácuo limitam sua forma de luz)
 **Absorção de Fótons (Gatilho: Ao receber ataques baseados em energia, plasma ou magia elemental de fogo):** Ela não sofre dano, não rola defesa. Todo o valor rolado pelo atacante é convertido e curado para os PVs de Eclipse. Se os PVs dela passarem do máximo, os excedentes são liberados no próximo turno como bônus de dano de fogo em área.
 **Luz Cegante (Gatilho: Morte de Eclipse ou 1x por cena):** Emite um pulso massivo de luz (como uma granada flashbang cósmica). Todos os personagens Perto ficam atordoados, recebendo Perda em testes de H pelo próximo turno inteiro.
 
@@ -66,9 +66,9 @@ Diferente da mágica, o poder de Paralaxe é manipular como a própria percepç�
 
 **P3, H5, R3; 15PV**
 
-**Perícias:** Enganação, Artes
-**Vantagens:** Ilusão, Esquiva
-**Desvantagens:** Frágil
+- **Perícias:** Enganação, Artes
+- **Vantagens:** Ilusão, Esquiva
+- **Desvantagens:** Frágil
 **Múltiplas Reflexões (Gatilho: Efeito Passivo Permanente):** Qualquer herói que tentar atacar Paralaxe deve primeiro jogar 1 dado comum (1d6). Em resultado Ímpar, o herói atingiu um "reflexo" de Paralaxe que se desfaz e causa zero de dano, anulando o ataque automaticamente, mesmo antes do teste de Resistência de Paralaxe.
 **Distorcer Realidade (Gatilho: 1x por combate):** Paralaxe altera a topografia (as paredes derretem, o chão parece o teto). Qualquer teste de movimentação (como saltar um buraco ou usar Esporte para locomoção em combate) ganha meta 12 para ter sucesso durante toda a cena.
 
@@ -86,9 +86,9 @@ Uma criatura enorme, silenciosa e pesada. Seu corpo parece conter uma galáxia m
 
 **P6, H1, R6; 30PV**
 
-**Perícias:** Investigação (como um radar cósmico rastreando almas)
-**Vantagens:** Armadura, Imortal (Volta da morte eventualmente)
-**Desvantagens:** Lento (Sempre age por último na rodada), Mudo
+- **Perícias:** Investigação (como um radar cósmico rastreando almas)
+- **Vantagens:** Armadura, Imortal (Volta da morte eventualmente)
+- **Desvantagens:** Lento (Sempre age por último na rodada), Mudo
 **Passo Inexorável (Gatilho: Efeito Passivo):** O Peregrino ignora todas as vantagens de Escudo, Barreira Física ou de campo de força criadas pelos heróis. Ele simplesmente atravessa, destruindo-as automaticamente se passar pela área.
 **Aura do Vazio (Gatilho: Final do turno do Peregrino):** Qualquer personagem vivo que estiver Perto dele (seja aliado dele ou herói) sente sua força vital sendo puxada para o vácuo, sofrendo 2 PV de dano inegável (ignora armadura e poderes de absorção) no final da rodada do Peregrino.
 

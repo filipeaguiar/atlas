@@ -13,6 +13,7 @@ from tools.generate_site import (
     materialize_hugo,
     render_stat_panels,
     rewrite_site_links,
+    wrap_sheet_cards,
 )
 from tools.materialize_publication import DEFAULT_MANIFEST, PROJECT_ROOT, PublicationError, prepare_publication
 
@@ -61,7 +62,8 @@ def test_build_hugo_funciona_em_subdiretorio_e_nao_publica_pdf() -> None:
     assert '<details class="mobile-menu" open' not in home
     sheet = (destination / "regras" / "fichas-equipe-atlas" / "index.html").read_text()
     assert "stat-panel" in sheet
-    assert "heading-level-2" in sheet
+    assert "tcg-card" in sheet
+    assert "tcg-card-frame" in sheet
     assert not list(destination.rglob("*.pdf"))
     report = json.loads((PROJECT_ROOT / "build" / "relatorio-site.json").read_text())
     assert report["pdfs_published"] == 0
@@ -72,6 +74,13 @@ def test_render_stat_panels_separa_atributos_e_recursos() -> None:
     assert 'class="stat-panel"' in rendered
     for label, value in (("P", "3"), ("H", "6"), ("R", "4"), ("PV", "20"), ("PM", "30"), ("PA", "3")):
         assert f"<b>{label}</b><strong>{value}</strong>" in rendered
+
+
+def test_wrap_sheet_cards_cria_um_card_por_ficha() -> None:
+    body = "# Compêndio\n\n## Um\n\nTexto.\n\n## Dois\n\nOutro.\n"
+    wrapped = wrap_sheet_cards(body, "Compêndio")
+    assert wrapped.count("{{< sheet-card") == 2
+    assert 'title="Um"' in wrapped and 'title="Dois"' in wrapped
 
 
 def test_auditoria_recusa_pdf_e_marcador_interno(tmp_path: Path) -> None:
@@ -90,8 +99,19 @@ def test_css_declara_limites_responsivos() -> None:
     assert "@media (max-width: 48rem)" in css
     assert "@media (prefers-reduced-motion: reduce)" in css
     assert ".mobile-menu { display: none; }" in css
+    assert ".mobile-menu[open]::before" in css
+    assert "position: fixed; inset: 0 auto 0 0" in css
     assert ".stat-panel" in css
+    assert ".tcg-card" in css
+    assert "Space Grotesk Atlas" in css and "Fraunces Atlas" in css
     assert "max-width: 100%" in css
     assert "overflow-x: auto" in css
     assert ":focus-visible" in css
     assert "http://" not in css and "https://" not in css
+    for relative in (
+        "fraunces/Fraunces-Variable.ttf",
+        "fraunces/OFL.txt",
+        "space-grotesk/SpaceGrotesk-Variable.ttf",
+        "space-grotesk/OFL.txt",
+    ):
+        assert (PROJECT_ROOT / "publicacao" / "hugo" / "static" / "fonts" / relative).is_file()

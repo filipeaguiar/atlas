@@ -20,9 +20,9 @@ O Titã é a Força Bruta encarnada. Seja por experimentos genéticos que deram 
 
 **P6, H2, R5; 35 PV, 10 PM, 2 PA.** (Atenção: A reserva de PV dele é monstruosa, mas seus PM são curtos, refletindo que seus golpes especiais exaurem seu fôlego eventualmente).
 
-**Perícias:** Luta, Esporte
-**Vantagens:** Armadura, Ataque Especial (Poderoso), Duro de Matar, Vigoroso
-**Desvantagens:** Inculto, Ponto Fraco (Seus ataques são anunciados e em linha reta, o que pode dar bônus para heróis com alta mobilidade esquivarem).
+- **Perícias:** Luta, Esporte
+- **Vantagens:** Armadura, Ataque Especial (Poderoso), Duro de Matar, Vigoroso
+- **Desvantagens:** Inculto, Ponto Fraco (Seus ataques são anunciados e em linha reta, o que pode dar bônus para heróis com alta mobilidade esquivarem).
 
 ### Técnicas Exclusivas
 
