@@ -1,0 +1,275 @@
+schema_version: 1
+selection: aprovadas-unicas
+images:
+- id: parte-02-006
+  identity: Eclipse
+  file: parte-02-006.webp
+  source_sha256: 02d54b05f5685f307e41e501b8774bc17cc5c2d5d5e8af781046211bc7dfe583
+- id: parte-02-007
+  identity: Tomás Valença
+  file: parte-02-007.webp
+  source_sha256: 8ba90f86bf89d73be29dd0def1f5d8965c07222a50f5c6c127b526edec71455d
+- id: parte-02-010
+  identity: Caio Ventura — Impacto
+  file: parte-02-010.webp
+  source_sha256: 16dbbd698ee22300310db4d09234b7661692c939415a41a643e73492d862f5c6
+- id: parte-03-001
+  identity: Arquiteto
+  file: parte-03-001.webp
+  source_sha256: 2e6282a8eba8bf5ba4da1bdac6f500b931c9fb8b561f78b431859a74c6826eca
+- id: parte-03-002
+  identity: Custódio
+  file: parte-03-002.webp
+  source_sha256: b20aea29fe50b891312cdd50f8bbb7d80186a625451d2c7238038c00bb6203ea
+- id: parte-03-005
+  identity: Rei do Véu
+  file: parte-03-005.webp
+  source_sha256: 024e5192be02595e54dc47a00ad38e3b22b59040a0cfbdbf4023acc4146fffb5
+- id: parte-03-006
+  identity: Rei do Véu
+  file: parte-03-006.webp
+  source_sha256: 76ddd7894d8c8561878470ff393283f71410cc836e4bd741332c11673504aec3
+- id: parte-03-008
+  identity: Soberano
+  file: parte-03-008.webp
+  source_sha256: aa049f4c2554773726ea29f76be1b060927ec1416db4ba72db110b6a1f25f3b4
+- id: parte-03-009
+  identity: Emissário
+  file: parte-03-009.webp
+  source_sha256: 87c2b2bee9e0f2f914fea03fc8992fd4fd04788a4f2fb64b9fad7738b21a1fb3
+- id: parte-03-010
+  identity: Emissário
+  file: parte-03-010.webp
+  source_sha256: 8d729ccbf2b3b8516a5dde9bc62efe4d1191ec4330957369ad69dfc9b25db433
+- id: parte-03-011
+  identity: Emissário
+  file: parte-03-011.webp
+  source_sha256: dbf41be518ce89208025437f4c9968c81114b683eb947f54bd086a99c3fad23a
+- id: parte-03-012
+  identity: Emissário
+  file: parte-03-012.webp
+  source_sha256: 6a5ed4dea7506f578796af89c0465d628b2d083c0ba990f071a7d113f43e1c9e
+- id: parte-03-013
+  identity: Nexo
+  file: parte-03-013.webp
+  source_sha256: 28f93097bcf554418cb26745c2b337814aa487bbb0c1d9be0a4d1abbc35005ff
+- id: parte-03-014
+  identity: Véspera
+  file: parte-03-014.webp
+  source_sha256: e5c6db964a2be5c215f6b13d10646108cc346f1670c7db1a8f5c7b6e7c6805cf
+- id: parte-03-015
+  identity: Estandarte
+  file: parte-03-015.webp
+  source_sha256: 36bdbb4aaaf5851dbbff9ca0162dc5d9284b0d3086e164f01b0dd22cd651c55c
+- id: parte-03-016
+  identity: Meridiano
+  file: parte-03-016.webp
+  source_sha256: 6d3d057d282453dc9249cc84681cca7553a62a603b519d6bc207833a420ea7f8
+- id: parte-03-017
+  identity: Álvaro Siqueira
+  file: parte-03-017.webp
+  source_sha256: a89ad532bb9e8addef8813decc03b2d835316803ac11193562116d7aba488bbe
+- id: parte-04-002
+  identity: Solar
+  file: parte-04-002.webp
+  source_sha256: 38952b01301f69dc430b1f65ab77d29434c238beb1fa2a6301fd3e10f1603e42
+- id: parte-04-005
+  identity: Lia Vasconcelos — Atalho
+  file: parte-04-005.webp
+  source_sha256: 6f74f64810ee7cdb9d5103c5502906bcfae27105209969830fa3f232b8e97aa8
+- id: parte-04-008
+  identity: Álvaro Siqueira
+  file: parte-04-008.webp
+  source_sha256: e587a9c32f2245f0a4b9331319378b2fbc00c9e8d8e64f8222a59e183b4a9048
+- id: parte-05-003
+  identity: Prisma
+  file: parte-05-003.webp
+  source_sha256: a1f068a85e1ae5c9526d1f0be964a7fa5ddebb775f4f4951fefb7e3f951a240b
+- id: parte-05-006
+  identity: Regente
+  file: parte-05-006.webp
+  source_sha256: c9e27258fb123302a65e371bac39824a2d5c5380eaba6db65558fbe746628484
+- id: parte-05-007
+  identity: Regente
+  file: parte-05-007.webp
+  source_sha256: 32be19302485ff88377de35b2d10807b08a4a215fa0f345b000ccb2ded33590a
+- id: parte-05-008
+  identity: Regente
+  file: parte-05-008.webp
+  source_sha256: 7474c843ef01d532bf8d5b66fb2a62f5aac781ffe569391f0f6c79445446e3b8
+- id: parte-05-009
+  identity: Regente
+  file: parte-05-009.webp
+  source_sha256: 5d06b9040f5565598ad185ea9dea87992934592abe3b3c36092c687583a52801
+- id: parte-05-010
+  identity: Bastião
+  file: parte-05-010.webp
+  source_sha256: 5e7e52697c5cebd4959db3aacaf7b50d7bcd2af519d8a58aea8e9d1d71ad785a
+- id: parte-05-012
+  identity: Ruptura
+  file: parte-05-012.webp
+  source_sha256: 0f4747fa891997812f039628e244a54a489311c013b3e393473fb15883a2d8c2
+- id: parte-05-015
+  identity: Dalva Menezes
+  file: parte-05-015.webp
+  source_sha256: c4a3186672ac7a9c9e54caf5b5ed851f7a64d4686275a62660ab2a651f4f9b59
+- id: parte-06-001
+  identity: Ravi Moura — Trama
+  file: parte-06-001.webp
+  source_sha256: 99c92e01ffa4ce71c62bda5187986ebf1e26cfe085231197ec9baa95a6152bef
+- id: parte-06-002
+  identity: Mecenas
+  file: parte-06-002.webp
+  source_sha256: 47b1a5756145292e9e75ae59117f6f7b84c947a4fc999f7177bb195b500448e8
+- id: parte-06-003
+  identity: Mãe da Maré
+  file: parte-06-003.webp
+  source_sha256: cfda729dcecb095eb57cecc02549bf6b43bbcca41a26ace4ca44248aa195028e
+- id: parte-06-008
+  identity: Ascendente
+  file: parte-06-008.webp
+  source_sha256: 65dab029bcf824f2a3034f9360fbc61b0d32416ed8bce3d7fd10c42e59b91b4e
+- id: parte-06-009
+  identity: Arauto do Horizonte
+  file: parte-06-009.webp
+  source_sha256: c49358931ed025857aac4012ac79a87724809f8c127704b3e8335fc05b9007c0
+- id: parte-06-010
+  identity: Arauto do Horizonte
+  file: parte-06-010.webp
+  source_sha256: b87660d039fb864b2fbfa9947c0b279018b191fe3d1292f702afa5ea4cdee1bc
+- id: parte-06-011
+  identity: Arauto do Horizonte
+  file: parte-06-011.webp
+  source_sha256: a0f0032c1e283bebff52b3438601ff70e7740fff87793ebba87257780aa4398f
+- id: parte-06-012
+  identity: Arauto do Horizonte
+  file: parte-06-012.webp
+  source_sha256: 87ba3c5d145517f2540109aa9525f0c66fe48114e20b9a78910837bf910d3b99
+- id: parte-06-013
+  identity: Contramedida
+  file: parte-06-013.webp
+  source_sha256: 988ebeaf58214c0b5f5b66ae5112718cd5262b565e6ca0d1d3c7dfdffcfcaf81
+- id: parte-06-014
+  identity: Sutura
+  file: parte-06-014.webp
+  source_sha256: 2715879028aa8d12e3fd47cb2bcbb7cba5f95e1cb041c02760d03033848d1a38
+- id: parte-06-015
+  identity: Síncope
+  file: parte-06-015.webp
+  source_sha256: c866e137e1013955cc0b29504154dfcc27fc5653337d5219bd0e155ae443d88f
+- id: parte-06-016
+  identity: Paralaxe
+  file: parte-06-016.webp
+  source_sha256: cc1c5bcbb24eeb1983b3baefaddbaf88993be5e7779ac8d19abb0bc7a406f2b0
+- id: parte-07-002
+  identity: Colosso
+  file: parte-07-002.webp
+  source_sha256: 06b460957fd0fc7976be4d10d3705246858f5b2c34c7ff6cc3bf1c858423b5d7
+- id: parte-07-005
+  identity: Cecília Dantas — Prumo
+  file: parte-07-005.webp
+  source_sha256: 9b4c7e9f15e0903443ec722d524b408e8c3d1e66067de20dc8e0813b5172da96
+- id: parte-07-006
+  identity: Zero
+  file: parte-07-006.webp
+  source_sha256: fc96414ee3bb87cdb373cde4b54e702be64ece658037cb156d2dc1563251e6a4
+- id: parte-07-007
+  identity: Hierofante
+  file: parte-07-007.webp
+  source_sha256: 5f47fff87c995b6c3b8baa3016e7d3d819d9659cf0f311a8d8c4af0bfa97a04b
+- id: parte-07-008
+  identity: Lívia Monteiro — Métrica
+  file: parte-07-008.webp
+  source_sha256: a0e642d64769912c4047841d41cfb2aeb3940bbfd66a65e10d2b200e7d9eff69
+- id: parte-07-009
+  identity: Lívia Monteiro — Métrica
+  file: parte-07-009.webp
+  source_sha256: c688de37387ebe34a02e352192406a39594db7c502756c7b54047030f8293d25
+- id: parte-07-013
+  identity: Rasante
+  file: parte-07-013.webp
+  source_sha256: b1fc49df05cc646ace7afba0230283cb0d4c181258680ce77ebac3f7ffc58630
+- id: parte-07-014
+  identity: Peregrino
+  file: parte-07-014.webp
+  source_sha256: 5a7b5bee04dabdbe804e1fd1b569da9d39bec0751a6ef9f24b7df687b0ed3d32
+- id: parte-08-003
+  identity: Multiplex
+  file: parte-08-003.webp
+  source_sha256: a5fcb3180b98382f4f90ce7c41bbaabf3716b3860067324571b56c7c6eff4b62
+- id: parte-08-006
+  identity: Noah Sato — Gambito
+  file: parte-08-006.webp
+  source_sha256: d5100b92a2bbadb23e78f7419394492a8356ce0cf3b5e44d27f35b47741c773d
+- id: parte-08-007
+  identity: Rastro
+  file: parte-08-007.webp
+  source_sha256: 68ff03a040995577d7bc87aa498229a2262893d7f17159f6232b94fccee10ed6
+- id: parte-08-008
+  identity: Presságio
+  file: parte-08-008.webp
+  source_sha256: 5b7ea986a6c0bb5c208f3ae5f7517a98e230cc939849107a7b1c49857c098b52
+- id: parte-09-001
+  identity: Janaína Rocha — Âncora
+  file: parte-09-001.webp
+  source_sha256: 67b1109b87cb11d82b390a771a624ccb7a763ff99e3e5c1350b3a3fc84467fa4
+- id: parte-09-002
+  identity: Janaína Rocha — Âncora
+  file: parte-09-002.webp
+  source_sha256: 63f3cda24ec688ae9d3bf4145491f0b839392b62302914a4f7a9fc718eacfea2
+- id: parte-09-007
+  identity: Oráculo
+  file: parte-09-007.webp
+  source_sha256: 1ceba932a44a6797da28088c0846bdd6c0fc15c1908b16392950b99a42b7dbf1
+- id: parte-09-010
+  identity: Ícaro Tavares — Refrão
+  file: parte-09-010.webp
+  source_sha256: 081edd5edd5af4275d1c373f49191e5a15a324706d7003a80deaf432b3be6459
+- id: parte-09-011
+  identity: Raul Farias — Vestígio
+  file: parte-09-011.webp
+  source_sha256: aef16bb3153dc1c35b0bb876928e6167e70e56ea7052af966825f25d2c4376fa
+- id: parte-09-012
+  identity: Raul Farias — Vestígio
+  file: parte-09-012.webp
+  source_sha256: 7da9e89e29d84615cfe989ae44e28df31379e37103cb04e36a49eb76374aa9bd
+- id: parte-09-016
+  identity: Sofia Mendonça — Pulso
+  file: parte-09-016.webp
+  source_sha256: ffa4a6cd96b15f1bbe4fc2cb16b24a7c748af1c42d8658e83bffae1037a487f8
+- id: parte-10-001
+  identity: Dra. Samira Nasser
+  file: parte-10-001.webp
+  source_sha256: 8667108fe43eb3f5550338fbcce60ce6a3b4c5dbaab90d70c02ee32299b059ec
+- id: parte-10-002
+  identity: Dra. Samira Nasser
+  file: parte-10-002.webp
+  source_sha256: f153660fd984d0b3371281ddf8ca13911434bea88b33e7e6e7399b829ea4037d
+- id: parte-10-005
+  identity: Dante Arcos — Órbita
+  file: parte-10-005.webp
+  source_sha256: 613afdf2a30baf35ec11cbe09f279e162b4d7d2262b64f88485cf898a2ed5a4a
+- id: parte-10-006
+  identity: Beatriz Leal
+  file: parte-10-006.webp
+  source_sha256: 1c581bcbd61a4c24c5366bcb4a36bb1268632d324b3996d1eb64e37623dad0d5
+- id: parte-10-007
+  identity: Beatriz Leal
+  file: parte-10-007.webp
+  source_sha256: 78cc03875fbf1c9a9b6c7b4486201798de63a465e9b8889831fc7a3ab21ba628
+- id: manual-01-001
+  identity: Caio Ventura — Impacto
+  file: manual-01-001.webp
+  source_sha256: b7377edeef46178eb0c4221e200a205d28234169b1489139efad4b1b9af145c5
+- id: manual-01-002
+  identity: Malu Serrano — Rasura
+  file: manual-01-002.webp
+  source_sha256: 6c039ed419d3c03d2593225811939591e8982f3ca2007d1fed1ae82b7fbf8542
+- id: manual-01-003
+  identity: Titã
+  file: manual-01-003.webp
+  source_sha256: fad54dc78114e8738b9ba7334dfd93eec97b7af297611ea9f6690d64f9eb61ab
+- id: manual-01-004
+  identity: Vetora
+  file: manual-01-004.webp
+  source_sha256: dd64b57f61e5cd6525da1a3c027166c1af65d1823e5814d137dd8aee4d4b93bd

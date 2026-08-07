@@ -72,6 +72,16 @@ def test_tecnicas_exclusivas_dos_tenentes_sao_listas_separadas() -> None:
             assert len(re.findall(r"^- \*\*[^*]+:\*\*", techniques, re.MULTILINE)) == 2, path
 
 
+def test_tecnicas_especiais_da_vanguarda_sao_listas_separadas() -> None:
+    _, body, _ = split_front_matter(NPC_FILES[2].read_text(encoding="utf-8"), str(NPC_FILES[2]))
+    assert body.count("### Técnicas especiais") == 5
+    assert len(re.findall(r"^\*\*P\d+, H\d+, R\d+; \d+ PV, \d+ PM, \d+ PA\.\*\*$", body, re.MULTILINE)) == 5
+    assert len(re.findall(r"^- \*\*Limitação:\*\*.*\n\n### Técnicas especiais$", body, re.MULTILINE)) == 5
+    for section in body.split("### Técnicas especiais")[1:]:
+        techniques = re.split(r"^## ", section, maxsplit=1, flags=re.MULTILINE)[0]
+        assert len(re.findall(r"^- \*\*[^*]+:\*\*", techniques, re.MULTILINE)) == 3
+
+
 def test_npcs_sao_redacao_atual_e_nao_copiam_stubs() -> None:
     for path in NPC_FILES:
         metadata, body, _ = split_front_matter(path.read_text(encoding="utf-8"), str(path))

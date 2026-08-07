@@ -19,7 +19,7 @@ Não há fichas recuperadas para NPCs. Os três arquivos correspondentes no back
 
 - recuperar ou completar silenciosamente os stubs antigos de NPCs;
 - publicar a Aventura 1 antes de seu gate próprio de aprovação;
-- promover imagens aprovadas na curadoria;
+- associar automaticamente imagens da galeria às fichas individuais;
 - criar fichas de personagens dos jogadores;
 - introduzir autenticação, CMS, framework JavaScript ou dependência de tema remoto;
 - publicar PDFs.
@@ -61,7 +61,7 @@ A seção Regras receberá primeiro uma página de fichas de NPCs e depois ficha
 - **[Navegação cresce demais]** → Manter compêndios por grupos e destacar categorias no índice lateral.
 - **[Visual moderno reduz legibilidade]** → Preservar contraste, largura de linha, foco visível, redução de movimento e fallback sem transparência.
 - **[Conteúdo bruto de inimigos contém inconsistências]** → Auditar todos os 25 blocos antes de adicionar seus arquivos ao manifesto.
-- **[Imagens parecem implicitamente aprovadas]** → Não copiar nenhum binário da curadoria nesta mudança.
+- **[Imagens parecem implicitamente canônicas]** → Publicar somente decisões `aprovar`, deduplicar por hash e explicar que a galeria é referência visual, sem alterar fatos ou associar imagens automaticamente às fichas.
 
 ## Migration Plan
 
@@ -72,4 +72,5 @@ A seção Regras receberá primeiro uma página de fichas de NPCs e depois ficha
 5. Adicionar os documentos ao manifesto em ordem explícita.
 6. Executar testes, build estrito e auditoria sem PDFs ou áreas internas.
 7. Commitar e enviar para `main`; acompanhar o Pages e revisar o site publicado.
-8. Em caso de falha visual, reverter apenas tema/layout; as fichas permanecem fontes canônicas independentes.
+8. Promover cópias WebP otimizadas somente das imagens aprovadas e identificadas, publicando-as em galeria manifestada separada.
+9. Em caso de falha visual, reverter apenas tema/layout ou galeria; as fichas permanecem fontes canônicas independentes.

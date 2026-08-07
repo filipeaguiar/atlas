@@ -1,6 +1,7 @@
 /* Camada visual contemporânea, local e progressiva. */
 @font-face { font-family: "Space Grotesk Atlas"; src: url("../fonts/space-grotesk/SpaceGrotesk-Variable.ttf") format("truetype"); font-style: normal; font-weight: 300 700; font-display: swap; }
 @font-face { font-family: "Fraunces Atlas"; src: url("../fonts/fraunces/Fraunces-Variable.ttf") format("truetype"); font-style: normal; font-weight: 600 900; font-display: swap; }
+@font-face { font-family: "Anybody Atlas"; src: url("../fonts/anybody/Anybody-Variable.ttf") format("truetype"); font-style: normal; font-weight: 100 900; font-stretch: 50% 150%; font-display: swap; }
 :root {
   font-family: "Space Grotesk Atlas", Inter, ui-sans-serif, system-ui, sans-serif;
   --night: #07141c;
@@ -24,21 +25,38 @@ body {
   border-bottom: 1px solid rgb(38 198 218 / 35%);
   backdrop-filter: blur(18px);
 }
-.brand { display: flex; align-items: center; gap: .7rem; letter-spacing: -.02em; }
+.brand { display: flex; align-items: center; gap: .7rem; font-family: "Anybody Atlas", sans-serif; font-variation-settings: "wdth" 82; font-weight: 720; letter-spacing: -.035em; }
 .brand::before { content: "A"; display: grid; place-items: center; width: 2rem; aspect-ratio: 1; color: var(--night); background: linear-gradient(135deg, var(--cyan), var(--gold-bright)); clip-path: polygon(50% 0, 100% 100%, 74% 100%, 50% 52%, 26% 100%, 0 100%); font-size: 0; }
 .master-badge, .category-chip, .sheet-label { border-radius: 999px; text-transform: uppercase; letter-spacing: .1em; font-size: .68rem; font-weight: 850; }
 .master-badge { padding: .35rem .7rem; color: #e9fdff; border-color: rgb(38 198 218 / 55%); background: rgb(38 198 218 / 10%); }
-.site-nav { top: 4.6rem; max-height: calc(100vh - 4.6rem); padding: 2rem 1.25rem; background: rgb(255 255 255 / 58%); backdrop-filter: blur(14px); }
-.site-nav > a { padding: .7rem .8rem; border-radius: .7rem; text-decoration: none; }
-.site-nav details { padding: .35rem .65rem; border-radius: .75rem; }
-.site-nav details[open] { background: rgb(23 79 99 / 6%); }
-.site-nav summary { list-style-position: outside; }
-.site-nav li a { display: block; padding: .25rem .4rem; border-radius: .4rem; text-decoration: none; }
-.site-nav [aria-current="page"] { color: var(--atlas-dark); background: var(--cyan-soft); }
+.site-nav { top: 4.6rem; max-height: calc(100vh - 4.6rem); padding: 1.45rem 1rem 2rem; color: #d6e8eb; background: linear-gradient(180deg, #0b202a, #102f3a 55%, #0a1b24); border-right: 1px solid rgb(38 198 218 / 22%); box-shadow: inset -1px 0 rgb(255 255 255 / 4%); scrollbar-color: rgb(38 198 218 / 45%) transparent; }
+.nav-intro { display: grid; gap: .1rem; margin: .15rem .45rem 1.25rem; padding: 0 .35rem 1rem; border-bottom: 1px solid rgb(255 255 255 / 11%); }
+.nav-intro span { color: #71dce6; font-size: .63rem; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
+.nav-intro strong { color: #fff; font: 680 1.05rem/1.2 "Anybody Atlas", sans-serif; font-variation-settings: "wdth" 88; }
+.site-nav > .nav-home { display: flex; align-items: center; gap: .65rem; margin: 0 0 .8rem; padding: .72rem .85rem; color: #effdff; background: rgb(255 255 255 / 5%); border: 1px solid rgb(255 255 255 / 8%); border-radius: .65rem; font-weight: 680; text-decoration: none; }
+.nav-home span { color: var(--gold-bright); font-size: 1.15rem; }
+.nav-sections { display: grid; gap: .45rem; }
+.site-nav .nav-section { margin: 0; padding: 0; overflow: hidden; background: rgb(255 255 255 / 3%); border: 1px solid rgb(255 255 255 / 7%); border-radius: .72rem; }
+.site-nav .nav-section[open] { background: rgb(255 255 255 / 6%); border-color: rgb(38 198 218 / 22%); }
+.site-nav .nav-section:has([aria-current="page"]) { border-color: rgb(242 193 78 / 48%); box-shadow: inset 3px 0 var(--gold-bright); }
+.site-nav .nav-section summary { display: grid; grid-template-columns: 2rem minmax(0, 1fr) .8rem; align-items: center; gap: .5rem; min-height: 3rem; padding: .55rem .7rem; color: #f2fbfc; cursor: pointer; list-style: none; }
+.site-nav .nav-section summary::-webkit-details-marker { display: none; }
+.nav-number { color: #69d8e2; font: 650 .64rem/1 "Anybody Atlas", sans-serif; letter-spacing: .08em; }
+.nav-section-title { font: 670 .91rem/1.15 "Anybody Atlas", sans-serif; font-variation-settings: "wdth" 90; letter-spacing: -.01em; }
+.nav-chevron { width: .48rem; aspect-ratio: 1; border-right: 2px solid #75dce5; border-bottom: 2px solid #75dce5; transform: rotate(45deg) translateY(-.12rem); transition: transform .18s ease; }
+.nav-section[open] .nav-chevron { transform: rotate(225deg) translate(-.08rem, -.08rem); }
+.nav-section-body { padding: 0 .65rem .7rem 2.7rem; }
+.site-nav .nav-overview { display: block; margin: 0 0 .35rem; padding: .35rem .5rem; color: #91cdd3; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+.site-nav ul { margin: 0; padding: 0 0 0 .7rem; border-left: 1px solid rgb(38 198 218 / 19%); list-style: none; }
+.site-nav li { margin: .08rem 0; font-size: .84rem; }
+.site-nav li a { display: block; position: relative; padding: .42rem .55rem; color: #c2dadd; border-radius: .42rem; line-height: 1.35; text-decoration: none; }
+.site-nav li a::before { content: ""; position: absolute; width: .35rem; height: 1px; left: -.72rem; top: 1rem; background: rgb(38 198 218 / 30%); }
+.site-nav a:hover { color: #fff; background: rgb(38 198 218 / 11%); }
+.site-nav [aria-current="page"] { color: #07141c !important; background: linear-gradient(100deg, #8ceaf0, #dff7f8) !important; box-shadow: 0 5px 16px rgb(0 0 0 / 18%); }
 .content { max-width: 66rem; }
 .hero { position: relative; isolation: isolate; overflow: hidden; padding: clamp(2rem, 7vw, 5rem); color: #eefbfc; background: linear-gradient(135deg, var(--night), #123d4a 70%, #185b68); border: 0; border-radius: calc(var(--radius) * 1.35); box-shadow: var(--shadow-modern); }
 .hero::after { content: ""; position: absolute; z-index: -1; width: 24rem; aspect-ratio: 1; right: -8rem; top: -10rem; border: 4rem solid rgb(38 198 218 / 12%); border-radius: 50%; }
-.hero h1 { max-width: 12ch; font-family: "Fraunces Atlas", Georgia, serif; letter-spacing: -.045em; text-wrap: balance; }
+.hero h1 { max-width: 12ch; font-family: "Anybody Atlas", sans-serif; font-variation-settings: "wdth" 78; font-weight: 790; letter-spacing: -.055em; text-wrap: balance; }
 .hero .subtitle { color: #bcd5d9; }
 .hero .version, .hero .eyebrow { color: #84e5ee; }
 .opening { border: 1px solid rgb(255 255 255 / 70%); border-left: 5px solid var(--gold-bright); border-radius: var(--radius); }
@@ -46,11 +64,13 @@ body {
 .section-card { position: relative; overflow: hidden; border: 1px solid rgb(23 79 99 / 14%); border-radius: var(--radius); transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
 .section-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: .3rem; background: linear-gradient(var(--cyan), var(--gold-bright)); }
 .section-card:hover { transform: translateY(-4px); border-color: rgb(38 198 218 / 45%); box-shadow: var(--shadow-modern); }
-.section-header, .chapter-header { margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+.section-card span { font-family: "Anybody Atlas", sans-serif; font-variation-settings: "wdth" 86; font-weight: 720; letter-spacing: -.025em; }
+.section-header, .chapter-header { position: relative; margin-bottom: 2.5rem; padding-bottom: 1.6rem; border: 0; }
+.section-header::after, .chapter-header::after { content: ""; position: absolute; inset: auto 0 0; height: 3px; background: linear-gradient(90deg, var(--gold-bright) 0 3.5rem, var(--cyan) 3.5rem 9rem, rgb(23 79 99 / 12%) 9rem); border-radius: 999px; }
 .chapter-context { display: flex; align-items: center; flex-wrap: wrap; gap: .7rem; }
 .category-chip { padding: .32rem .65rem; color: var(--atlas-dark); background: var(--cyan-soft); }
 .sheet-label { width: fit-content; padding: .42rem .72rem; color: #f9e5ae; background: var(--night-soft); }
-.chapter-header h1, .section-header h1 { max-width: 19ch; font-family: "Fraunces Atlas", Georgia, serif; letter-spacing: -.035em; text-wrap: balance; }
+.chapter-header h1, .section-header h1 { max-width: 19ch; font-family: "Anybody Atlas", sans-serif; font-variation-settings: "wdth" 80; font-weight: 780; letter-spacing: -.05em; text-wrap: balance; }
 .chapter-list { display: grid; gap: .8rem; border: 0; }
 .chapter-list li { border: 0; }
 .chapter-list a { padding: 1rem 1.1rem; background: rgb(255 255 255 / 76%); border: 1px solid rgb(23 79 99 / 13%); border-radius: .8rem; box-shadow: 0 8px 24px rgb(7 20 28 / 5%); }
@@ -60,12 +80,12 @@ body {
 .content-heading { position: relative; text-wrap: balance; scroll-margin-top: 6rem; }
 .heading-anchor { margin-left: .35em; color: var(--cyan); font: 600 .65em/1 ui-monospace, monospace; opacity: 0; text-decoration: none; transition: opacity .15s ease; }
 .content-heading:hover .heading-anchor, .heading-anchor:focus-visible { opacity: 1; }
-.prose .heading-level-2 { padding-bottom: .35rem; color: var(--night-soft); border-bottom: 2px solid rgb(38 198 218 / 35%); }
-.prose .heading-level-3 { padding-left: .8rem; color: var(--atlas-dark); border-left: 3px solid var(--gold-bright); }
-.prose .heading-level-4 { color: var(--muted); font-size: .95rem; letter-spacing: .08em; text-transform: uppercase; }
+.prose .heading-level-2 { padding-bottom: .55rem; color: var(--night-soft); border-bottom: 3px solid transparent; border-image: linear-gradient(90deg, var(--cyan), var(--gold-bright), transparent 72%) 1; font-family: "Anybody Atlas", sans-serif; font-variation-settings: "wdth" 84; font-weight: 740; letter-spacing: -.035em; }
+.prose .heading-level-3 { padding-left: .8rem; color: var(--atlas-dark); border-left: 3px solid var(--gold-bright); font-family: "Fraunces Atlas", Georgia, serif; font-weight: 720; letter-spacing: -.018em; }
+.prose .heading-level-4 { color: var(--muted); font-family: "Anybody Atlas", sans-serif; font-variation-settings: "wdth" 92; font-size: .9rem; font-weight: 720; letter-spacing: .11em; text-transform: uppercase; }
 .prose ul li::marker { color: var(--cyan); }
 .prose ol li::marker { color: var(--atlas); font-weight: 800; }
-.prose hr { height: 1px; margin: 2.5rem 0; border: 0; background: linear-gradient(90deg, transparent, var(--cyan), transparent); }
+.prose hr { height: 4px; margin: 2.8rem 0; border: 0; background: linear-gradient(90deg, transparent 0 4%, var(--gold-bright) 4% 10%, var(--cyan) 10% 58%, transparent 82%); border-radius: 999px; opacity: .75; }
 .page-type-ficha .prose h3 { color: var(--atlas-dark); }
 .stat-panel { display: grid; grid-template-columns: repeat(auto-fit, minmax(5.2rem, 1fr)); gap: .55rem; margin: 1.1rem 0 1.4rem; padding: .7rem; color: #effdff; background: linear-gradient(120deg, var(--night), var(--night-soft)); border: 1px solid rgb(38 198 218 / 28%); border-radius: .9rem; box-shadow: 0 14px 35px rgb(7 20 28 / 16%); }
 .stat-cell { display: flex; align-items: center; justify-content: space-between; gap: .7rem; min-height: 3.2rem; padding: .65rem .75rem; background: rgb(255 255 255 / 7%); border: 1px solid rgb(255 255 255 / 10%); border-radius: .6rem; }
@@ -90,24 +110,32 @@ body {
 .tcg-card-body ul li::before { content: "◆"; position: absolute; left: .75rem; top: .78rem; color: var(--card-accent); font-size: .72rem; }
 .tcg-card-body .stat-panel { margin-inline: -.2rem; }
 .tcg-card-footer { display: flex; justify-content: space-between; gap: 1rem; padding: .55rem 1.1rem; color: #d8e7e9; background: var(--night); font-size: .62rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.gallery-count { width: fit-content; margin: 1.5rem 0; padding: .55rem .85rem; color: #e9fdff; background: var(--night-soft); border-radius: 999px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: 1rem; margin: 1.5rem 0 3rem; padding: 0; list-style: none; }
+.gallery-item { overflow: hidden; min-width: 0; background: #fff; border: 1px solid rgb(23 79 99 / 16%); border-radius: .9rem; box-shadow: 0 12px 30px rgb(7 20 28 / 10%); transition: transform .18s ease, box-shadow .18s ease; }
+.gallery-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-modern); }
+.gallery-item a { display: block; color: var(--night); text-decoration: none; }
+.gallery-item figure { margin: 0; }
+.gallery-item img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: var(--cyan-soft); }
+.gallery-item figcaption { min-height: 3.2rem; padding: .8rem .9rem; font-weight: 700; line-height: 1.3; }
 .chapter-pagination a { border-radius: .8rem; transition: transform .18s ease, border-color .18s ease; }
 .chapter-pagination a:hover { transform: translateY(-2px); border-color: var(--cyan); }
 @supports not (backdrop-filter: blur(1px)) {
   .site-header { background: var(--night); }
-  .site-nav { background: #f4f3ee; }
+  .site-nav { background: var(--night); }
 }
 @media (max-width: 48rem) {
   .hero { padding: 2rem 1.4rem; border-radius: .9rem; }
   .site-shell > .site-nav { display: none; }
   .mobile-menu { display: block; background: #edf3f2; border-bottom: 1px solid var(--line); }
   .mobile-menu[open]::before { content: ""; position: fixed; inset: 0; z-index: 30; background: rgb(7 20 28 / 62%); backdrop-filter: blur(3px); }
-  .mobile-menu > summary { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.2rem; color: var(--atlas-dark); font-weight: 850; cursor: pointer; list-style: none; }
+  .mobile-menu > summary { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.2rem; color: var(--atlas-dark); font-family: "Anybody Atlas", sans-serif; font-variation-settings: "wdth" 88; font-weight: 740; cursor: pointer; list-style: none; }
   .mobile-menu > summary::-webkit-details-marker { display: none; }
   .menu-state::before { content: "+"; display: grid; place-items: center; width: 2rem; aspect-ratio: 1; color: #fff; background: var(--atlas); border-radius: 50%; font-size: 1.25rem; }
   .mobile-menu[open] > summary { position: fixed; top: .65rem; right: .65rem; z-index: 32; width: auto; padding: .35rem; color: transparent; background: transparent; }
   .mobile-menu[open] > summary .menu-state { color: initial; }
   .mobile-menu[open] .menu-state::before { content: "−"; }
-  .mobile-menu .site-nav { position: fixed; inset: 0 auto 0 0; z-index: 31; display: block; width: min(86vw, 22rem); max-height: 100vh; overflow-y: auto; padding: 1.4rem 1rem 2rem; background: #edf3f2; border: 0; box-shadow: 18px 0 55px rgb(7 20 28 / 28%); backdrop-filter: none; }
+  .mobile-menu .site-nav { position: fixed; inset: 0 auto 0 0; z-index: 31; display: block; width: min(86vw, 22rem); max-height: 100vh; overflow-y: auto; padding: 1.4rem 1rem 2rem; background: linear-gradient(180deg, #0b202a, #102f3a 55%, #0a1b24); border: 0; box-shadow: 18px 0 55px rgb(7 20 28 / 38%); backdrop-filter: none; }
   .page-type-ficha .prose h2 { margin-inline: -.25rem; }
   .stat-panel { grid-template-columns: repeat(3, 1fr); }
   .stat-cell { min-width: 0; padding: .55rem; }

@@ -11,7 +11,7 @@ O site publicado funciona, mas ainda apresenta uma interface editorial básica e
 - Separar descrição, interpretação, função narrativa e bloco mecânico para facilitar uso durante a sessão.
 - Acrescentar índices de NPCs e inimigos ao manifesto e ao site, mantendo o módulo integralmente dirigido ao Mestre.
 - Validar as fichas contra as convenções de 3DeT Victory e distinguir personagens de apoio, estudantes, veteranos, tenentes e antagonistas principais.
-- Não promover imagens da curadoria nesta mudança; aprovação visual continua separada da autorização de publicação.
+- Promover para uma galeria separada somente as imagens explicitamente aprovadas e identificadas, sem associá-las automaticamente às fichas.
 
 ## Capabilities
 
@@ -26,4 +26,4 @@ Nenhuma.
 
 ## Impact
 
-A mudança afeta layouts e CSS em `publicacao/hugo/`, o materializador do site, fontes em `regras/`, o manifesto de publicação, testes e documentação. O volume publicado aumenta substancialmente e passa a incluir estatísticas e segredos de NPCs e inimigos. O GitHub Pages será atualizado automaticamente após validação; nenhum PDF será publicado.
+A mudança afeta layouts e CSS em `publicacao/hugo/`, o materializador do site, fontes em `regras/`, uma galeria visual aprovada, o manifesto de publicação, testes e documentação. O volume publicado aumenta substancialmente e passa a incluir estatísticas, segredos de NPCs e inimigos e cópias otimizadas das imagens promovidas. O GitHub Pages será atualizado automaticamente após validação; nenhum PDF será publicado.

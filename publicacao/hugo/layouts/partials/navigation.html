@@ -1,11 +1,24 @@
 <nav class="site-nav" aria-label="Conteúdo do módulo">
-  <a href="{{ "" | relURL }}">Início</a>
-  {{ range .Site.Sections.ByWeight }}
-  <details {{ if or ($.IsSection) (eq $.Section .Section) }}open{{ end }}>
-    <summary><a href="{{ .RelPermalink }}">{{ .Title }}</a></summary>
-    {{ if .Pages }}<ul>
-      {{ range .Pages.ByWeight }}<li><a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></li>{{ end }}
-    </ul>{{ end }}
+  <div class="nav-intro" aria-hidden="true">
+    <span>Navegação</span>
+    <strong>Arquivo do Mestre</strong>
+  </div>
+  <a class="nav-home" href="{{ "" | relURL }}"{{ if .IsHome }} aria-current="page"{{ end }}><span aria-hidden="true">⌂</span> Início</a>
+  <div class="nav-sections">
+  {{ range $index, $section := .Site.Sections.ByWeight }}
+  <details class="nav-section" {{ if or ($.IsSection) (eq $.Section $section.Section) }}open{{ end }}>
+    <summary>
+      <span class="nav-number" aria-hidden="true">{{ printf "%02d" (add $index 1) }}</span>
+      <span class="nav-section-title">{{ $section.Title }}</span>
+      <span class="nav-chevron" aria-hidden="true"></span>
+    </summary>
+    <div class="nav-section-body">
+      <a class="nav-overview" href="{{ $section.RelPermalink }}"{{ if eq $.RelPermalink $section.RelPermalink }} aria-current="page"{{ end }}>Visão da seção</a>
+      {{ if $section.Pages }}<ul>
+        {{ range $section.Pages.ByWeight }}<li><a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></li>{{ end }}
+      </ul>{{ end }}
+    </div>
   </details>
   {{ end }}
+  </div>
 </nav>

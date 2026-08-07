@@ -2,7 +2,7 @@ schema_version: 1
 livro:
   titulo: "Herdeiros da Vanguarda"
   subtitulo: "Instituto Atlas e a Tragédia de Belamar"
-  versao: "0.1.0-dev.3"
+  versao: "0.1.0-dev.4"
   idioma: pt-BR
   arquivo_base: herdeiros-da-vanguarda
   status: desenvolvimento
@@ -56,6 +56,11 @@ secoes:
       - origem: regras/antagonistas-principais/rei-do-veu.md
       - origem: regras/antagonistas-principais/tita.md
       - origem: regras/antagonistas-principais/zero.md
+  - id: galeria
+    titulo: "Galeria"
+    papel: conteudo
+    documentos:
+      - origem: apendices/galeria-de-personagens.md
   - id: handouts
     titulo: "Handouts e materiais para os jogadores"
     papel: handouts

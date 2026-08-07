@@ -1,0 +1,15 @@
+{{ with hugo.Data.gallery }}
+<p class="gallery-count"><strong>{{ len .images }}</strong> imagens únicas aprovadas</p>
+<ul class="gallery-grid" aria-label="Galeria de personagens e antagonistas">
+  {{ range .images }}
+  <li class="gallery-item">
+    <a href="{{ printf "images/galeria/%s" .file | relURL }}">
+      <figure>
+        <img src="{{ printf "images/galeria/%s" .file | relURL }}" alt="{{ .identity }}" loading="lazy" decoding="async">
+        <figcaption>{{ .identity }}</figcaption>
+      </figure>
+    </a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

@@ -29,7 +29,7 @@ def test_materializacao_hugo_contem_somente_documentos_manifestados() -> None:
     }
     manifest_ids = {str(document.metadata["id"]) for document in plan.documents}
     assert generated_ids == manifest_ids
-    assert len(generated_ids) == 33
+    assert len(generated_ids) == 34
     assert not (stage / "content" / "desenvolvimento").exists()
     assert not list(stage.rglob("*.pdf"))
     sheet = (stage / "content" / "regras" / "fichas-equipe-atlas.md").read_text()
@@ -47,7 +47,7 @@ def test_links_entre_capitulos_sao_relativos_ao_site() -> None:
 
 def test_build_hugo_funciona_em_subdiretorio_e_nao_publica_pdf() -> None:
     destination, plan = generate_site(base_url="https://exemplo.github.io/projeto/")
-    assert len(plan.documents) == 33
+    assert len(plan.documents) == 34
     home = (destination / "index.html").read_text(encoding="utf-8")
     chapter = (
         destination / "campanha" / "campanha-tres-arcos" / "index.html"
@@ -60,6 +60,7 @@ def test_build_hugo_funciona_em_subdiretorio_e_nao_publica_pdf() -> None:
         destination / "handouts" / "index.html"
     ).read_text(encoding="utf-8")
     assert '<details class=mobile-menu>' in home
+    assert "nav-intro" in home and "nav-number" in home and "nav-overview" in home
     assert '<details class="mobile-menu" open' not in home
     sheet = (destination / "regras" / "fichas-equipe-atlas" / "index.html").read_text()
     assert "stat-panel" in sheet
@@ -72,6 +73,18 @@ def test_build_hugo_funciona_em_subdiretorio_e_nao_publica_pdf() -> None:
         tenants,
         re.DOTALL,
     )
+    vanguard = (destination / "regras" / "fichas-vanguarda" / "index.html").read_text()
+    assert len(re.findall(r"Técnicas especiais\s*<a", vanguard)) == 5
+    assert re.search(
+        r"Limitação:</strong>.*?</li>\s*</ul>\s*<h3[^>]*>Técnicas especiais\s*<a.*?</h3>\s*<ul>\s*<li>",
+        vanguard,
+        re.DOTALL,
+    )
+    assert len(re.findall(r'class=["\']?stat-panel', vanguard)) == 5
+    gallery = (destination / "galeria" / "galeria-de-personagens" / "index.html").read_text()
+    assert gallery.count("class=gallery-item") == 68
+    assert gallery.count("loading=lazy") == 68
+    assert "Imagens pendentes e descartadas não fazem parte" in gallery
     assert not list(destination.rglob("*.pdf"))
     report = json.loads((PROJECT_ROOT / "build" / "relatorio-site.json").read_text())
     assert report["pdfs_published"] == 0
@@ -111,12 +124,15 @@ def test_css_declara_limites_responsivos() -> None:
     assert "position: fixed; inset: 0 auto 0 0" in css
     assert ".stat-panel" in css
     assert ".tcg-card" in css
-    assert "Space Grotesk Atlas" in css and "Fraunces Atlas" in css
+    assert "Space Grotesk Atlas" in css and "Fraunces Atlas" in css and "Anybody Atlas" in css
+    assert ".nav-section-title" in css and ".nav-number" in css
     assert "max-width: 100%" in css
     assert "overflow-x: auto" in css
     assert ":focus-visible" in css
     assert "http://" not in css and "https://" not in css
     for relative in (
+        "anybody/Anybody-Variable.ttf",
+        "anybody/OFL.txt",
         "fraunces/Fraunces-Variable.ttf",
         "fraunces/OFL.txt",
         "space-grotesk/SpaceGrotesk-Variable.ttf",

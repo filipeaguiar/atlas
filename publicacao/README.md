@@ -41,7 +41,7 @@ A saída fica em `build/site/`. O site é o módulo integral dirigido ao Mestre:
 
 A seção de Regras publica fichas completas de NPCs e inimigos declaradas no manifesto. Fichas de NPCs com `origem: redacao-atual-aprovada` são redação nova e não recuperação dos stubs ausentes.
 
-Aprovar uma imagem na curadoria não a publica. Ela só entra no site depois de ser promovida para uma raiz editorial permitida, referenciada por um documento manifestado e aceita pelo build estrito.
+Aprovar uma imagem na curadoria não a publica automaticamente. A galeria manifestada contém somente cópias WebP promovidas após autorização explícita: itens pendentes ou marcados como lixo são recusados, e duplicatas exatas são reunidas por hash. A promoção auditável pode ser refeita com `uv run python tools/promote_gallery.py`. Publicar a galeria não associa automaticamente imagens às fichas nem transforma a escolha visual em fato canônico.
 
 O workflow `.github/workflows/pages.yml` testa, gera e envia exclusivamente `build/site/` ao GitHub Pages. **Nenhum PDF é publicado.**
 

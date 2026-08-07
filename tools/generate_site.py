@@ -174,7 +174,7 @@ def materialize_hugo(
     static_root = stage_root / "static" / "recursos"
     data_root = stage_root / "data"
     content_root.mkdir(parents=True)
-    data_root.mkdir(parents=True)
+    data_root.mkdir(parents=True, exist_ok=True)
 
     resources = resource_mapping(plan)
     for source, name in resources.items():
@@ -235,6 +235,8 @@ def materialize_hugo(
             if document.metadata.get("tipo") == "ficha":
                 body = render_stat_panels(body)
                 body = wrap_sheet_cards(body, str(document.metadata["titulo"]))
+            elif document.metadata.get("tipo") == "galeria":
+                body = body.rstrip() + "\n\n{{< gallery >}}\n"
             page_path = section_root / f"{document.metadata['id']}.md"
             page_path.write_text(front_matter(metadata) + body.lstrip(), encoding="utf-8")
             if section.role == "abertura":

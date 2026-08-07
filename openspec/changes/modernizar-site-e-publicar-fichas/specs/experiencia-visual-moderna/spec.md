@@ -11,6 +11,10 @@ O site SHALL apresentar uma identidade visual coesa e contemporânea por meio de
 - **WHEN** o visitante abre um capítulo
 - **THEN** título, seção, categoria, corpo e navegação sequencial possuem hierarquia visual inequívoca
 
+#### Scenario: Tipografia de impacto
+- **WHEN** títulos, subtítulos e separadores editoriais são apresentados
+- **THEN** famílias locais de display, pesos, largura, cor e traços de separação criam contraste profissional sem reduzir legibilidade
+
 ### Requirement: Apresentação especializada de fichas
 O site SHALL reconhecer documentos com `tipo: ficha` e SHALL apresentar seus blocos mecânicos com rótulos, estatísticas e seções distinguíveis durante consulta rápida.
 
@@ -38,6 +42,21 @@ O site SHALL reconhecer documentos com `tipo: ficha` e SHALL apresentar seus blo
 - **WHEN** uma ficha de tenente apresenta técnicas exclusivas após suas características
 - **THEN** as técnicas aparecem em seção própria e como lista não ordenada, sem integrar o item de desvantagens
 
+#### Scenario: Técnicas especiais da Vanguarda
+- **WHEN** uma ficha mecânica da Vanguarda apresenta técnicas especiais
+- **THEN** as técnicas aparecem em seção própria e cada técnica constitui um item de lista não ordenada
+
+### Requirement: Galeria visual aprovada
+O site SHALL publicar uma galeria separada composta somente por cópias otimizadas de imagens com decisão explícita `aprovar` e identidade registrada, sem converter a seleção visual em fato canônico ou associação automática às fichas.
+
+#### Scenario: Seleção positiva de imagens
+- **WHEN** a galeria é promovida e gerada
+- **THEN** imagens pendentes ou marcadas como lixo são recusadas, enquanto duplicatas exatas aparecem uma única vez
+
+#### Scenario: Consulta da galeria
+- **WHEN** o Mestre abre a página da galeria
+- **THEN** encontra miniaturas responsivas, identificação textual e acesso à cópia otimizada de cada imagem aprovada
+
 ### Requirement: Navegação escalável
 O site SHALL manter navegação utilizável com o aumento de capítulos e SHALL agrupar visualmente páginas por seção e categoria.
 
@@ -48,6 +67,10 @@ O site SHALL manter navegação utilizável com o aumento de capítulos e SHALL 
 #### Scenario: Posição atual
 - **WHEN** o visitante está em uma ficha
 - **THEN** a navegação indica página atual, seção e acesso anterior/próximo
+
+#### Scenario: Organização do menu lateral
+- **WHEN** o visitante percorre a navegação lateral
+- **THEN** encontra cabeçalho, início, seções numeradas, visão de seção, capítulos recuados e estado atual visualmente distinguíveis
 
 ### Requirement: Responsividade e acessibilidade preservadas
 O novo visual MUST preservar HTML semântico, foco visível, contraste legível, redução de movimento, ampliação de texto e ausência de rolagem horizontal estrutural.
