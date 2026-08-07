@@ -52,3 +52,11 @@
 - [x] 8.2 Revisar localmente páginas inicial, seção Regras, NPCs e inimigos em desktop e viewport estreita
 - [x] 8.3 Commitar e enviar a mudança para `main`
 - [x] 8.4 Acompanhar o workflow do Pages até sucesso e revisar conteúdo e assets publicados
+
+## 9. Refinamento móvel e fichas
+
+- [x] 9.1 Tornar o menu móvel recolhível e fechado por padrão, preservando a navegação desktop
+- [x] 9.2 Criar estilos distintos para títulos de níveis 1 a 4 e demais elementos editoriais hierárquicos
+- [x] 9.3 Transformar linhas P/H/R e PV/PM/PA em painéis semânticos especializados no site
+- [x] 9.4 Testar menu, hierarquia e fichas em desktop e viewport móvel
+- [ ] 9.5 Publicar e revisar o refinamento no GitHub Pages

@@ -22,6 +22,10 @@ O site SHALL reconhecer documentos com `tipo: ficha` e SHALL apresentar seus blo
 - **WHEN** um documento manifestado declara categoria de NPC
 - **THEN** a página diferencia o grupo de apoio dos antagonistas por rótulo e cor de destaque
 
+#### Scenario: Bloco de atributos
+- **WHEN** uma ficha contém P, H, R, PV, PM ou PA em sua linha mecânica
+- **THEN** o site apresenta cada estatística em célula própria, legível e identificada, sem alterar o Markdown canônico
+
 ### Requirement: Navegação escalável
 O site SHALL manter navegação utilizável com o aumento de capítulos e SHALL agrupar visualmente páginas por seção e categoria.
 
@@ -42,7 +46,11 @@ O novo visual MUST preservar HTML semântico, foco visível, contraste legível,
 
 #### Scenario: Tela estreita
 - **WHEN** a viewport possui largura de dispositivo móvel
-- **THEN** cards, ficha e navegação se reorganizam em uma coluna sem esconder estatísticas
+- **THEN** cards e fichas se reorganizam em uma coluna, enquanto o menu começa oculto e pode ser aberto ou fechado sem esconder estatísticas
+
+#### Scenario: Hierarquia editorial
+- **WHEN** um capítulo contém títulos de níveis 1 a 4, texto, listas, citações e tabelas
+- **THEN** cada nível e elemento possui tratamento visual distinto e consistente com sua função hierárquica
 
 #### Scenario: CSS indisponível
 - **WHEN** a folha de estilo não carrega

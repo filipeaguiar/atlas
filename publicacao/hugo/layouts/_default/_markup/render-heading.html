@@ -1,0 +1,4 @@
+<h{{ .Level }} id="{{ .Anchor }}" class="content-heading heading-level-{{ .Level }}">
+  {{ .Text | safeHTML }}
+  <a class="heading-anchor" href="#{{ .Anchor }}" aria-label="Link para esta seção">#</a>
+</h{{ .Level }}>

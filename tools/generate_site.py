@@ -35,6 +35,12 @@ DEFAULT_HUGO_SOURCE = PROJECT_ROOT / "publicacao" / "hugo"
 DEFAULT_STAGE = PROJECT_ROOT / "build" / "hugo"
 DEFAULT_DESTINATION = PROJECT_ROOT / "build" / "site"
 DEFAULT_REPORT = PROJECT_ROOT / "build" / "relatorio-site.json"
+STAT_LINE_RE = re.compile(
+    r"^\*\*P(?P<p>\d+),[ \t]*H(?P<h>\d+),[ \t]*R(?P<r>\d+);[ \t]*(?P<resources>[^*\n]+)\*\*[ \t]*$",
+    re.MULTILINE,
+)
+RESOURCE_RE = re.compile(r"(?P<value>\d+)\s*(?P<label>PV|PM|PA)", re.IGNORECASE)
+
 FORBIDDEN_OUTPUT_MARKERS = (
     "desenvolvimento/",
     "historico/",
@@ -95,6 +101,28 @@ def rewrite_site_links(
         return match.group(0)
 
     return LINK_RE.sub(replace, body)
+
+
+def render_stat_panels(body: str) -> str:
+    """Converte apenas a linha mecânica da cópia Hugo em HTML semântico."""
+
+    def replace(match: re.Match[str]) -> str:
+        cells = [
+            ("P", match.group("p"), "Poder"),
+            ("H", match.group("h"), "Habilidade"),
+            ("R", match.group("r"), "Resistência"),
+        ]
+        cells.extend(
+            (item.group("label").upper(), item.group("value"), item.group("label").upper())
+            for item in RESOURCE_RE.finditer(match.group("resources"))
+        )
+        rendered = "".join(
+            f'<span class="stat-cell" title="{title}"><b>{label}</b><strong>{value}</strong></span>'
+            for label, value, title in cells
+        )
+        return f'<div class="stat-panel" aria-label="Atributos e recursos">{rendered}</div>'
+
+    return STAT_LINE_RE.sub(replace, body)
 
 
 def front_matter(data: dict[str, Any]) -> str:
@@ -174,6 +202,8 @@ def materialize_hugo(
                     "url": route_for(following),
                 }
             body = rewrite_site_links(document.body, document, plan, resources)
+            if document.metadata.get("tipo") == "ficha":
+                body = render_stat_panels(body)
             page_path = section_root / f"{document.metadata['id']}.md"
             page_path.write_text(front_matter(metadata) + body.lstrip(), encoding="utf-8")
             if section.role == "abertura":

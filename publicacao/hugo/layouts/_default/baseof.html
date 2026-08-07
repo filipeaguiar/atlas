@@ -15,6 +15,10 @@
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
   {{ partial "header.html" . }}
   <div class="site-shell">
+    <details class="mobile-menu">
+      <summary><span>Menu do módulo</span><span class="menu-state" aria-hidden="true"></span></summary>
+      {{ partial "navigation.html" . }}
+    </details>
     {{ partial "navigation.html" . }}
     <main id="conteudo" class="content" tabindex="-1">
       {{ block "main" . }}{{ end }}

@@ -11,6 +11,7 @@ from tools.generate_site import (
     audit_site,
     generate_site,
     materialize_hugo,
+    render_stat_panels,
     rewrite_site_links,
 )
 from tools.materialize_publication import DEFAULT_MANIFEST, PROJECT_ROOT, PublicationError, prepare_publication
@@ -56,9 +57,21 @@ def test_build_hugo_funciona_em_subdiretorio_e_nao_publica_pdf() -> None:
     assert "Conteúdo em preparação" in (
         destination / "handouts" / "index.html"
     ).read_text(encoding="utf-8")
+    assert '<details class=mobile-menu>' in home
+    assert '<details class="mobile-menu" open' not in home
+    sheet = (destination / "regras" / "fichas-equipe-atlas" / "index.html").read_text()
+    assert "stat-panel" in sheet
+    assert "heading-level-2" in sheet
     assert not list(destination.rglob("*.pdf"))
     report = json.loads((PROJECT_ROOT / "build" / "relatorio-site.json").read_text())
     assert report["pdfs_published"] == 0
+
+
+def test_render_stat_panels_separa_atributos_e_recursos() -> None:
+    rendered = render_stat_panels("**P3, H6, R4; 20 PV, 30 PM, 3 PA.**")
+    assert 'class="stat-panel"' in rendered
+    for label, value in (("P", "3"), ("H", "6"), ("R", "4"), ("PV", "20"), ("PM", "30"), ("PA", "3")):
+        assert f"<b>{label}</b><strong>{value}</strong>" in rendered
 
 
 def test_auditoria_recusa_pdf_e_marcador_interno(tmp_path: Path) -> None:
@@ -76,6 +89,8 @@ def test_css_declara_limites_responsivos() -> None:
     css = "\n".join(path.read_text() for path in sorted(css_root.glob("*.css")))
     assert "@media (max-width: 48rem)" in css
     assert "@media (prefers-reduced-motion: reduce)" in css
+    assert ".mobile-menu { display: none; }" in css
+    assert ".stat-panel" in css
     assert "max-width: 100%" in css
     assert "overflow-x: auto" in css
     assert ":focus-visible" in css

@@ -8,6 +8,7 @@
   --radius: 1.1rem;
   --shadow-modern: 0 24px 70px rgb(7 20 28 / 14%);
 }
+.mobile-menu { display: none; }
 body {
   background:
     radial-gradient(circle at 92% 8%, rgb(38 198 218 / 12%), transparent 24rem),
@@ -53,7 +54,20 @@ body {
 .chapter-list small { display: block; margin-top: .25rem; color: var(--muted); font-size: .68rem; letter-spacing: .07em; text-transform: uppercase; }
 .page-type-ficha .content { max-width: 72rem; }
 .page-type-ficha .prose h2 { margin: 2.8rem 0 1rem; padding: 1rem 1.2rem; color: #f4fcfd; background: linear-gradient(105deg, var(--night-soft), #155263); border-left: .35rem solid var(--gold-bright); border-radius: .75rem; box-shadow: 0 10px 30px rgb(7 20 28 / 12%); }
+.content-heading { position: relative; text-wrap: balance; scroll-margin-top: 6rem; }
+.heading-anchor { margin-left: .35em; color: var(--cyan); font: 600 .65em/1 ui-monospace, monospace; opacity: 0; text-decoration: none; transition: opacity .15s ease; }
+.content-heading:hover .heading-anchor, .heading-anchor:focus-visible { opacity: 1; }
+.prose .heading-level-2 { padding-bottom: .35rem; color: var(--night-soft); border-bottom: 2px solid rgb(38 198 218 / 35%); }
+.prose .heading-level-3 { padding-left: .8rem; color: var(--atlas-dark); border-left: 3px solid var(--gold-bright); }
+.prose .heading-level-4 { color: var(--muted); font-size: .95rem; letter-spacing: .08em; text-transform: uppercase; }
+.prose ul li::marker { color: var(--cyan); }
+.prose ol li::marker { color: var(--atlas); font-weight: 800; }
+.prose hr { height: 1px; margin: 2.5rem 0; border: 0; background: linear-gradient(90deg, transparent, var(--cyan), transparent); }
 .page-type-ficha .prose h3 { color: var(--atlas-dark); }
+.stat-panel { display: grid; grid-template-columns: repeat(auto-fit, minmax(5.2rem, 1fr)); gap: .55rem; margin: 1.1rem 0 1.4rem; padding: .7rem; color: #effdff; background: linear-gradient(120deg, var(--night), var(--night-soft)); border: 1px solid rgb(38 198 218 / 28%); border-radius: .9rem; box-shadow: 0 14px 35px rgb(7 20 28 / 16%); }
+.stat-cell { display: flex; align-items: center; justify-content: space-between; gap: .7rem; min-height: 3.2rem; padding: .65rem .75rem; background: rgb(255 255 255 / 7%); border: 1px solid rgb(255 255 255 / 10%); border-radius: .6rem; }
+.stat-cell b { color: #86edf3; font-size: .72rem; letter-spacing: .08em; }
+.stat-cell strong { color: #fff; font-size: 1.45rem; line-height: 1; }
 .page-type-ficha .prose > p { padding-inline: .15rem; }
 .page-type-ficha .prose > p:has(> strong:first-child) { padding: .85rem 1rem; background: rgb(255 255 255 / 72%); border: 1px solid rgb(23 79 99 / 12%); border-radius: .65rem; }
 .chapter-pagination a { border-radius: .8rem; transition: transform .18s ease, border-color .18s ease; }
@@ -64,8 +78,16 @@ body {
 }
 @media (max-width: 48rem) {
   .hero { padding: 2rem 1.4rem; border-radius: .9rem; }
-  .site-nav { max-height: 14rem; overflow-y: auto; background: #edf3f2; backdrop-filter: none; }
+  .site-shell > .site-nav { display: none; }
+  .mobile-menu { display: block; background: #edf3f2; border-bottom: 1px solid var(--line); }
+  .mobile-menu > summary { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.2rem; color: var(--atlas-dark); font-weight: 850; cursor: pointer; list-style: none; }
+  .mobile-menu > summary::-webkit-details-marker { display: none; }
+  .menu-state::before { content: "+"; display: grid; place-items: center; width: 2rem; aspect-ratio: 1; color: #fff; background: var(--atlas); border-radius: 50%; font-size: 1.25rem; }
+  .mobile-menu[open] .menu-state::before { content: "−"; }
+  .mobile-menu .site-nav { position: static; display: block; max-height: min(62vh, 28rem); overflow-y: auto; padding-top: .25rem; background: #edf3f2; border: 0; backdrop-filter: none; }
   .page-type-ficha .prose h2 { margin-inline: -.25rem; }
+  .stat-panel { grid-template-columns: repeat(3, 1fr); }
+  .stat-cell { min-width: 0; padding: .55rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
