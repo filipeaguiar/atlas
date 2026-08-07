@@ -67,4 +67,4 @@
 - [x] 10.2 Agrupar cada personagem em um único card completo inspirado em TCG
 - [x] 10.3 Normalizar perícias, vantagens, desvantagens e limitações como listas não ordenadas
 - [x] 10.4 Hospedar Fraunces e Space Grotesk localmente com licenças OFL
-- [ ] 10.5 Validar, publicar e revisar cards e drawer no GitHub Pages
+- [x] 10.5 Validar, publicar e revisar cards e drawer no GitHub Pages
