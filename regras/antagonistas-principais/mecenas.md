@@ -1,3 +1,16 @@
+---
+id: ficha-antagonista-mecenas
+titulo: "O Mecenas"
+tipo: ficha
+categoria: inimigos
+camada: mestre
+conteudo_para_jogadores: false
+status: canon
+origem: revisao-mecanica-aprovada
+publicar: true
+aprovado: true
+---
+
 # O Mecenas
 *O Financiador / Megalomaníaco Corporativo*
 
@@ -17,7 +30,7 @@ Se o Arquiteto constrói a arena, o Mecenas a *compra*. Ele é um bilionário im
 O Mecenas aponta um designador laser. No final do turno atual, um satélite corporativo ilegal dispara um raio massivo cobrindo uma zona inteira do combate (Perto ou Longe). Causa dano extremo, mas os heróis têm o turno inteiro para se mover para fora da zona se perceberem a marcação.
 
 **Contrato de Risco (2 PM)**
-Ele joga um chip de crédito ou injeta um estimulante de combate em um de seus capangas ou Tenentes que estava prestes a cair. O alvo escolhido recupera metade da vida instantaneamente e ganha uma ação de ataque imediata fora do seu turno de iniciativa.
+Ele lança um chip de crédito ou ativa um estimulante no traje de um capanga ou Tenente que estava prestes a cair. O alvo escolhido recupera metade da vida instantaneamente e ganha uma ação de ataque imediata fora do seu turno de iniciativa.
 
 **Blindagem Reativa de Luxo (Gatilho de Defesa, 3 PM)**
 Ao ser alvo de um ataque corpo-a-corpo e falhar na esquiva, em vez de tomar o dano, um nano-escudo caríssimo comprado no mercado ilegal explode para fora de seu terno. O escudo absorve todo o dano e devolve metade dele imediatamente em forma de choque cinético contra o herói atacante.

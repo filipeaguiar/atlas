@@ -1,3 +1,16 @@
+---
+id: ficha-antagonista-zero
+titulo: "O Zero"
+tipo: ficha
+categoria: inimigos
+camada: mestre
+conteudo_para_jogadores: false
+status: canon
+origem: revisao-mecanica-aprovada
+publicar: true
+aprovado: true
+---
+
 # O Zero
 *O Dominador Digital / A IA Corrompida*
 

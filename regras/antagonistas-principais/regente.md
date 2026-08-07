@@ -1,3 +1,16 @@
+---
+id: ficha-antagonista-regente
+titulo: "O Regente"
+tipo: ficha
+categoria: inimigos
+camada: mestre
+conteudo_para_jogadores: false
+status: canon
+origem: revisao-mecanica-aprovada
+publicar: true
+aprovado: true
+---
+
 # O Regente
 *O Soberano da Gravidade / Manipulador Físico*
 

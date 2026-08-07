@@ -39,6 +39,8 @@ uv run python tools/generate_site.py \
 
 A saída fica em `build/site/`. O site é o módulo integral dirigido ao Mestre: quando implantado no GitHub Pages, seus segredos ficam publicamente acessíveis. Não existe filtragem automática para jogadores.
 
+A seção de Regras publica fichas completas de NPCs e inimigos declaradas no manifesto. Fichas de NPCs com `origem: redacao-atual-aprovada` são redação nova e não recuperação dos stubs ausentes.
+
 Aprovar uma imagem na curadoria não a publica. Ela só entra no site depois de ser promovida para uma raiz editorial permitida, referenciada por um documento manifestado e aceita pelo build estrito.
 
 O workflow `.github/workflows/pages.yml` testa, gera e envia exclusivamente `build/site/` ao GitHub Pages. **Nenhum PDF é publicado.**

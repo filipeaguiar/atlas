@@ -1,3 +1,16 @@
+---
+id: ficha-antagonista-tita
+titulo: "O Titã"
+tipo: ficha
+categoria: inimigos
+camada: mestre
+conteudo_para_jogadores: false
+status: canon
+origem: revisao-mecanica-aprovada
+publicar: true
+aprovado: true
+---
+
 # O Titã
 *O Colosso Imparável*
 
@@ -23,4 +36,4 @@ Ele abaixa os ombros, mira num herói que esteja Longe e corre. Ele destrói qua
 Quando os heróis finalmente reduzem o Titã a 0 PV e acham que a luta acabou, o metabolismo insano entra em ignição (estágio 2 da luta). Ele gasta os 4 PM, ruge e recupera 15 PV instantaneamente. Além disso, a queima de adrenalina remove todos os efeitos negativos do corpo dele (cegueira, paralisia, veneno ou controle mental).
 
 ### Tesouro
-**Soro de Medula Mutável:** Uma amostra do sangue espesso dele. O herói que o injetar ganhará permanentemente +1 ponto no Atributo Resistência (R), mas pode sofrer uma mutação estética pequena à escolha do jogador.
+**Núcleo de Adaptação:** Um módulo estabilizado a partir da energia residual do Titã. Uma vez instalado em traje apropriado, concede permanentemente +1 ponto de Resistência (R) e uma alteração estética pequena escolhida pelo jogador.

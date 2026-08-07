@@ -1,3 +1,16 @@
+---
+id: ficha-antagonista-ascendente
+titulo: "O Ascendente"
+tipo: ficha
+categoria: inimigos
+camada: mestre
+conteudo_para_jogadores: false
+status: canon
+origem: revisao-mecanica-aprovada
+publicar: true
+aprovado: true
+---
+
 # O Ascendente
 *O Falso Deus*
 
@@ -17,7 +30,7 @@ O Ascendente parou de se considerar humano há muito tempo. Dono de poderes opre
 Flutuando acima da batalha, ele dispara de seus olhos ou mãos uma onda contínua de pura energia que varre o campo. Ele escolhe uma linha reta no mapa: o ataque atinge *todos* os personagens nessa linha. O raio queima coberturas e os heróis não podem usar bônus de terreno para se defender dessa técnica.
 
 **Voo do Abate (4 PM, 1 PA)**
-O Ascendente desce velozmente do céu e tenta agarrar o herói com a pior defesa física do grupo. Se acertar o ataque, ele não causa dano imediato, mas agarra o jogador pelo pescoço e decola de volta para as nuvens em velocidade supersônica no mesmo turno (Ambos ficam Longe/Fora de Alcance dos ataques corpo a corpo dos outros). No próximo turno, ele solta o herói, forçando-o a lidar com dano letal de queda (a menos que o herói consiga voar ou seja salvo).
+O Ascendente desce velozmente do céu e tenta agarrar o herói com a pior defesa física do grupo. Se acertar o ataque, ele não causa dano imediato, mas prende o herói e decola de volta para as nuvens no mesmo turno (ambos ficam Longe e fora do alcance corpo a corpo dos outros). No próximo turno, ele solta o herói, forçando-o a lidar com dano de queda, a menos que consiga voar ou seja salvo.
 
 **Aura de Desprezo (2 PM)**
 Usada como Reação defensiva. O Ascendente infla seu próprio ego e resistência. Durante essa rodada, qualquer ataque dos heróis que *não seja* um Acerto Crítico (ou que não use PM em alguma vantagem/magia) simplesmente ricocheteia no peito dele sem surtir efeito nenhum. Apenas força bruta genuína ou ataques mortais penetram a Aura de Desprezo.

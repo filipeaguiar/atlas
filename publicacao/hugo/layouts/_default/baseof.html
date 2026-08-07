@@ -6,10 +6,12 @@
   <meta name="color-scheme" content="light">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}Módulo de campanha Herdeiros da Vanguarda para o Mestre.{{ end }}">
   <title>{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
-  {{ $style := resources.Get "css/site.css" | minify | fingerprint }}
+  {{ $base := resources.Get "css/site.css" }}
+  {{ $modern := resources.Get "css/modern.css" }}
+  {{ $style := slice $base $modern | resources.Concat "css/atlas.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
 </head>
-<body>
+<body class="page-kind-{{ .Kind }}{{ with .Params.tipo }} page-type-{{ . }}{{ end }}{{ with .Params.categoria }} page-category-{{ . }}{{ end }}">
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
   {{ partial "header.html" . }}
   <div class="site-shell">

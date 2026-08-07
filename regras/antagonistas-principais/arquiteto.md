@@ -1,3 +1,16 @@
+---
+id: ficha-antagonista-arquiteto
+titulo: "O Arquiteto"
+tipo: ficha
+categoria: inimigos
+camada: mestre
+conteudo_para_jogadores: false
+status: canon
+origem: revisao-mecanica-aprovada
+publicar: true
+aprovado: true
+---
+
 # O Arquiteto
 *O Construtor / Gênio da Infraestrutura*
 

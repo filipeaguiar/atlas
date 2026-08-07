@@ -26,9 +26,12 @@ def test_materializacao_hugo_contem_somente_documentos_manifestados() -> None:
     }
     manifest_ids = {str(document.metadata["id"]) for document in plan.documents}
     assert generated_ids == manifest_ids
-    assert len(generated_ids) == 17
+    assert len(generated_ids) == 33
     assert not (stage / "content" / "desenvolvimento").exists()
     assert not list(stage.rglob("*.pdf"))
+    sheet = (stage / "content" / "regras" / "fichas-equipe-atlas.md").read_text()
+    assert "tipo: ficha" in sheet
+    assert "categoria: npcs-atlas" in sheet
 
 
 def test_links_entre_capitulos_sao_relativos_ao_site() -> None:
@@ -41,7 +44,7 @@ def test_links_entre_capitulos_sao_relativos_ao_site() -> None:
 
 def test_build_hugo_funciona_em_subdiretorio_e_nao_publica_pdf() -> None:
     destination, plan = generate_site(base_url="https://exemplo.github.io/projeto/")
-    assert len(plan.documents) == 17
+    assert len(plan.documents) == 33
     home = (destination / "index.html").read_text(encoding="utf-8")
     chapter = (
         destination / "campanha" / "campanha-tres-arcos" / "index.html"
@@ -69,8 +72,11 @@ def test_auditoria_recusa_pdf_e_marcador_interno(tmp_path: Path) -> None:
 
 
 def test_css_declara_limites_responsivos() -> None:
-    css = (PROJECT_ROOT / "publicacao" / "hugo" / "assets" / "css" / "site.css").read_text()
+    css_root = PROJECT_ROOT / "publicacao" / "hugo" / "assets" / "css"
+    css = "\n".join(path.read_text() for path in sorted(css_root.glob("*.css")))
     assert "@media (max-width: 48rem)" in css
+    assert "@media (prefers-reduced-motion: reduce)" in css
     assert "max-width: 100%" in css
     assert "overflow-x: auto" in css
     assert ":focus-visible" in css
+    assert "http://" not in css and "https://" not in css

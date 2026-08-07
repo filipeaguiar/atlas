@@ -1,3 +1,16 @@
+---
+id: fichas-tenentes-tecnologicos
+titulo: "Tenentes tecnológicos"
+tipo: ficha
+categoria: inimigos
+camada: mestre
+conteudo_para_jogadores: false
+status: canon
+origem: revisao-mecanica-aprovada
+publicar: true
+aprovado: true
+---
+
 # Fichas dos Tenentes Tecnológicos
 
 Estas fichas foram construídas seguindo o modelo ágil de *Ferozes e Furiosos* para acelerar o uso em mesa pelo Mestre. Elas não possuem Pontos de Magia (PM) ou de Ação (PA) para simplificar a rolagem, e usam "Poderes Únicos" ativados por gatilhos. Os Tenentes Tecnológicos geralmente atuam a serviço de grandes vilões corporativos ou inteligências artificiais corrompidas (como O Arquiteto ou O Zero).
@@ -17,7 +30,7 @@ Nexo não é exatamente uma pessoa, mas uma rede de drones humanoides conectados
 **Vantagens:** Sentidos Especiais (Radar), Genialidade
 **Desvantagens:** Fracote
 **Hackeamento de Iniciativa:** Uma vez por rodada, Nexo pode obrigar um defensor a rolar sua iniciativa com Perda, graças a interferências nos seus comunicadores.
-**Sacrifício de Hardware:** Quando Nexo sofre um ataque letal (que reduziria seus PV a 0), ele pode transferir sua consciência para outro drone adjacente, sacrificando o corpo atual e recuperando 5PV. (Gatilho: 1 vez por cena).
+**Sacrifício de Hardware:** Quando Nexo sofre um ataque que reduziria seus PV a 0, ele pode transferir sua consciência para outro drone adjacente, sacrificando o corpo atual e recuperando 5PV. (Gatilho: 1 vez por cena).
 
 **TESOURO**
 **Placa-Mãe Neural:** Pode ser usada por alguém com a perícia Máquinas para garantir Ganho em três testes futuros envolvendo tecnologia, segurança ou robótica. Após os três usos, ela queima.
@@ -57,7 +70,7 @@ Projetada especificamente para caçar Extraordinários. A armadura de Contramedi
 **Vantagens:** Reflexos Defensivos, Ataque Especial (Preciso)
 **Desvantagens:** Ponto Fraco (Fica vulnerável a danos de tipos diferentes simultâneos)
 **Nanita Reativa:** Ao ser atacada e sofrer dano por um tipo específico de poder (ex: Fogo, Magia, Força Bruta), Contramedida recebe Ganho em todas as rolagens de Defesa contra esse mesmo tipo de dano pelo resto da cena.
-**Reflexo Letal:** Sempre que Contramedida obtiver um acerto Crítico na sua Defesa, ela reflete automaticamente metade do dano que teria sofrido diretamente contra o atacante, sem precisar fazer uma jogada de ataque.
+**Reflexo Reativo:** Sempre que Contramedida obtiver um acerto Crítico na sua Defesa, ela reflete automaticamente metade do dano que teria sofrido diretamente contra o atacante, sem precisar fazer uma jogada de ataque.
 
 **TESOURO**
 **Fibra Nanocelular Reativa:** Pode ser trocada por 1 XP, ou instalada em um traje, concedendo um bônus permanente de +1 na Defesa contra o primeiro ataque recebido na cena.

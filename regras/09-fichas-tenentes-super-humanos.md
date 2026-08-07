@@ -1,3 +1,16 @@
+---
+id: fichas-tenentes-super-humanos
+titulo: "Tenentes super-humanos"
+tipo: ficha
+categoria: inimigos
+camada: mestre
+conteudo_para_jogadores: false
+status: canon
+origem: revisao-mecanica-aprovada
+publicar: true
+aprovado: true
+---
+
 # Fichas dos Tenentes Super-humanos
 
 Seguindo o padrão do *Ferozes e Furiosos*, estas fichas não possuem Pontos de Magia (PM) nem Pontos de Ação (PA) e rodam exclusivamente com Poderes Únicos ativados por gatilhos narrativos ou mecânicos. Os Tenentes Super-humanos operam a serviço de vilões que valorizam a superioridade biológica ou física (como O Titã ou O Ascendente).
@@ -29,7 +42,7 @@ Um líder patriota (ou extremista) que veste cores vibrantes e ostenta um símbo
 
 **16 pt**
 
-Ruptura não anda pelas portas, ela atravessa as paredes. Ela possui força cinética massiva concentrada nos punhos e pés, gerando ondas de choque visíveis. Seu papel não é matar discretamente, mas desmanchar a estrutura de defesa dos heróis para que os outros ataquem.
+Ruptura não anda pelas portas, ela atravessa as paredes. Ela possui força cinética massiva concentrada nos punhos e pés, gerando ondas de choque visíveis. Seu papel não é agir discretamente, mas desmanchar a estrutura de defesa dos heróis para que os outros ataquem.
 
 **P6, H2, R3; 15PV**
 
@@ -60,7 +73,7 @@ Ele ataca o sistema nervoso. Síncope é um velocista furtivo, que não foca na 
 **Vibração Desorientadora (Gatilho: Quando causa Dano Crítico):** Se Síncope acertar um Crítico (ou obter um número muito alto nos 3 golpes), o choque desliga as sinapses do alvo. O herói atingido perde a capacidade de fazer um movimento no próximo turno (só pode atacar ou defender, sem se deslocar).
 
 **TESOURO**
-**Válvula de Adrenalina Sintética:** Um injetor que concede uma ação completa extra ao usuário no turno em que for ativado. Tem 2 cargas. Uso perigoso: gasta 2 PV do usuário a cada injeção por forçar o coração.
+**Válvula de Impulso Sintético:** Um módulo de traje que concede uma ação completa extra ao usuário no turno em que for ativado. Tem 2 cargas; cada ativação gasta 2 PV pela sobrecarga.
 
 ---
 
@@ -76,7 +89,7 @@ Equipado com asas mutantes (ou enxertos bio-mecânicos agressivos) e garras que 
 **Perícias:** Acrobacia, Percepção
 **Vantagens:** Voo, Sentidos Especiais (Visão Aguçada)
 **Desvantagens:** Monstruoso
-**Mergulho Letal (Gatilho: Movimento de Longe para Perto):** Se Rasante estiver voando e iniciar seu turno Longe de um alvo, e decidir gastar o movimento para chegar Perto, seu próximo ataque rola com um dado extra e soma 2 ao resultado final pelo impacto do voo.
+**Mergulho de Impacto (Gatilho: Movimento de Longe para Perto):** Se Rasante estiver voando e iniciar seu turno Longe de um alvo, e decidir gastar o movimento para chegar Perto, seu próximo ataque rola com um dado extra e soma 2 ao resultado final pelo impacto do voo.
 **Arrebatar (Gatilho: Após atacar com sucesso):** Se ele acertar um ataque físico que cause dano em um herói, Rasante o agarra. Ambos agora são considerados Longe do resto do grupo e suspensos no ar. O herói tem uma rodada para se libertar antes de ser solto em queda livre. 
 
 **TESOURO**

@@ -1,3 +1,16 @@
+---
+id: ficha-antagonista-mae-da-mare
+titulo: "A Mãe da Maré"
+tipo: ficha
+categoria: inimigos
+camada: mestre
+conteudo_para_jogadores: false
+status: canon
+origem: revisao-mecanica-aprovada
+publicar: true
+aprovado: true
+---
+
 # A Mãe da Maré
 *O Culto / A Força da Natureza Abissal*
 
@@ -23,4 +36,4 @@ A Mãe da Maré entoa uma canção de ninar ancestral e hipnótica. Todos os her
 Uma correnteza mágica se forma sob os pés de um herói que esteja Longe, puxando-o violentamente para a distância Corpo a Corpo dela. O herói é arremessado a seus pés e sofre 2 de dano físico pela pressão, ficando perigosamente isolado do resto do grupo.
 
 ### Tesouro
-**Pérola Negra Abissal:** Um artefato gotejante. O herói que a engolir ganha permanentemente a capacidade de respirar embaixo d'água e ignorar penalidades de visão e movimentação em ambientes aquáticos.
+**Pérola Negra Abissal:** Um artefato frio que pode ser incorporado a um traje. Concede permanentemente a capacidade de respirar embaixo d'água e ignorar penalidades de visão e movimentação em ambientes aquáticos.

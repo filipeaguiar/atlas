@@ -1,3 +1,16 @@
+---
+id: ficha-antagonista-rei-do-veu
+titulo: "O Rei do Véu"
+tipo: ficha
+categoria: inimigos
+camada: mestre
+conteudo_para_jogadores: false
+status: canon
+origem: revisao-mecanica-aprovada
+publicar: true
+aprovado: true
+---
+
 # O Rei do Véu
 *O Ilusionista / Mestre dos Pesadelos*
 

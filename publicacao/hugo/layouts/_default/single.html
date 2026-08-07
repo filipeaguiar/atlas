@@ -1,8 +1,12 @@
 {{ define "main" }}
 <article class="chapter">
   <header class="chapter-header">
-    <p class="eyebrow">{{ .Params.section_title }}</p>
+    <div class="chapter-context">
+      <span class="eyebrow">{{ .Params.section_title }}</span>
+      {{ with .Params.categoria }}<span class="category-chip">{{ replace . "-" " " | title }}</span>{{ end }}
+    </div>
     <h1>{{ .Title }}</h1>
+    {{ if eq .Params.tipo "ficha" }}<p class="sheet-label">Dossiê mecânico · material do Mestre</p>{{ end }}
   </header>
   <div class="prose">{{ .Content }}</div>
 </article>

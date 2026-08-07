@@ -1,3 +1,16 @@
+---
+id: fichas-tenentes-misticos
+titulo: "Tenentes místicos"
+tipo: ficha
+categoria: inimigos
+camada: mestre
+conteudo_para_jogadores: false
+status: canon
+origem: revisao-mecanica-aprovada
+publicar: true
+aprovado: true
+---
+
 # Fichas dos Tenentes Místicos
 
 Seguindo o padrão do *Ferozes e Furiosos*, estas fichas não possuem Pontos de Magia (PM) nem Pontos de Ação (PA) e rodam exclusivamente com Poderes Únicos ativados por gatilhos narrativos ou mecânicos. Os Tenentes Místicos operam a serviço de grandes ocultistas, artefatos corrompidos ou seitas perigosas (como a Mãe da Maré ou O Hierofante).
@@ -9,7 +22,7 @@ Seguindo o padrão do *Ferozes e Furiosos*, estas fichas não possuem Pontos de 
 
 **13 pt**
 
-Véspera não é uma combatente física. Ela é a manifestação da escuridão que precede a noite profunda. Veste mantos fluidos e usa ilusões para debuffar (enfraquecer) seus oponentes. Ela não luta para matar de imediato, mas para exaurir os heróis até que eles próprios desistam.
+Véspera não é uma combatente física. Ela é a manifestação da escuridão que precede a noite profunda. Veste mantos fluidos e usa ilusões para debuffar (enfraquecer) seus oponentes. Ela luta para exaurir os heróis até que eles próprios desistam.
 
 **P3, H3, R3; 15PV**
 

@@ -160,6 +160,9 @@ def materialize_hugo(
                 "section_title": section.title,
                 "editorial_id": str(document.metadata["id"]),
             }
+            for presentation_key in ("tipo", "categoria"):
+                if document.metadata.get(presentation_key):
+                    metadata[presentation_key] = str(document.metadata[presentation_key])
             if previous:
                 metadata["previous"] = {
                     "title": str(previous.metadata["titulo"]),

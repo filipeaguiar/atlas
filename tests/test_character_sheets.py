@@ -1,0 +1,72 @@
+from __future__ import annotations
+
+import re
+from pathlib import Path
+
+import yaml
+
+from tools.materialize_publication import split_front_matter
+
+ROOT = Path(__file__).resolve().parents[1]
+TENANT_FILES = [ROOT / "regras" / f"0{number}-fichas-tenentes-{kind}.md" for number, kind in [
+    (7, "tecnologicos"), (8, "misticos"), (9, "super-humanos")
+]] + [ROOT / "regras" / "10-fichas-tenentes-cosmicos.md"]
+BOSS_FILES = sorted((ROOT / "regras" / "antagonistas-principais").glob("*.md"))
+NPC_FILES = [
+    ROOT / "regras" / "11-fichas-equipe-atlas.md",
+    ROOT / "regras" / "12-fichas-alunos-recorrentes.md",
+    ROOT / "regras" / "13-fichas-vanguarda.md",
+]
+
+EXPECTED_TENANTS = {
+    "Nexo", "Bastião", "Contramedida", "Rastro", "Véspera", "Custódio", "Sutura", "Presságio",
+    "Estandarte", "Ruptura", "Síncope", "Rasante", "Meridiano", "Eclipse", "Paralaxe", "Peregrino",
+}
+EXPECTED_BOSSES = {"Arquiteto", "Ascendente", "Hierofante", "Mãe da Maré", "Mecenas", "Regente", "Rei do Véu", "Titã", "Zero"}
+EXPECTED_STAFF = {"Beatriz Leal", "Álvaro Siqueira", "Dalva Menezes", "Dra. Samira Nasser", "Lívia Monteiro", "Caio Ventura", "Janaína Rocha", "Raul Farias", "Tomás Valença"}
+EXPECTED_STUDENTS = {"Lia Vasconcelos", "Ravi Moura", "Cecília Dantas", "Noah Sato", "Malu Serrano", "Ícaro Tavares", "Sofia Mendonça", "Dante Arcos"}
+EXPECTED_VANGUARD = {"Solar", "Multiplex", "Prisma", "Colosso", "Oráculo", "Vetora"}
+
+
+def headings(paths: list[Path], level: int = 2) -> set[str]:
+    found: set[str] = set()
+    marker = "#" * level + " "
+    for path in paths:
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if line.startswith(marker):
+                found.add(line[len(marker):].split(" — ", 1)[0].removeprefix("O ").removeprefix("A "))
+    return found
+
+
+def test_cobertura_de_inimigos_e_npcs() -> None:
+    assert EXPECTED_TENANTS <= headings(TENANT_FILES)
+    assert EXPECTED_BOSSES <= headings(BOSS_FILES, level=1)
+    assert EXPECTED_STAFF <= headings([NPC_FILES[0]])
+    assert EXPECTED_STUDENTS <= headings([NPC_FILES[1]])
+    assert EXPECTED_VANGUARD <= headings([NPC_FILES[2]])
+
+
+def test_fichas_possuem_front_matter_publicavel_e_estatisticas() -> None:
+    for path in TENANT_FILES + BOSS_FILES + NPC_FILES:
+        metadata, body, _ = split_front_matter(path.read_text(encoding="utf-8"), str(path))
+        assert metadata["status"] == "canon"
+        assert metadata["publicar"] is True
+        assert metadata["aprovado"] is True
+        assert metadata["tipo"] == "ficha"
+        assert metadata["categoria"]
+        assert re.search(r"P\d+, H\d+, R\d+; \d+ ?PV", body), path
+        assert "recuperacao-pendente" not in body
+
+
+def test_npcs_sao_redacao_atual_e_nao_copiam_stubs() -> None:
+    for path in NPC_FILES:
+        metadata, body, _ = split_front_matter(path.read_text(encoding="utf-8"), str(path))
+        assert metadata["origem"] == "redacao-atual-aprovada"
+        assert "Recuperação pendente" not in body
+
+
+def test_manifesto_nao_publica_curadoria_de_imagens() -> None:
+    manifest = yaml.safe_load((ROOT / "publicacao" / "manifest.yml").read_text())
+    origins = [item["origem"] for section in manifest["secoes"] for item in section["documentos"]]
+    assert all(not origin.startswith("desenvolvimento/") for origin in origins)
+    assert all(not origin.lower().endswith((".png", ".jpg", ".webp")) for origin in origins)

@@ -1,3 +1,16 @@
+---
+id: fichas-tenentes-cosmicos
+titulo: "Tenentes cósmicos"
+tipo: ficha
+categoria: inimigos
+camada: mestre
+conteudo_para_jogadores: false
+status: canon
+origem: revisao-mecanica-aprovada
+publicar: true
+aprovado: true
+---
+
 # Fichas dos Tenentes Cósmicos
 
 Seguindo o padrão do *Ferozes e Furiosos*, estas fichas não possuem Pontos de Magia (PM) nem Pontos de Ação (PA) e rodam exclusivamente com Poderes Únicos ativados por gatilhos narrativos ou mecânicos. Os Tenentes Cósmicos operam para as forças mais alienígenas e incompreensíveis do cenário (como O Emissário ou o Rei do Véu), e lidam com quebras das leis da física.

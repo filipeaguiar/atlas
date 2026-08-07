@@ -7,7 +7,7 @@
 {{ if .Pages }}
 <ol class="chapter-list">
   {{ range .Pages.ByWeight }}
-  <li><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><span aria-hidden="true">→</span></a></li>
+  <li><a href="{{ .RelPermalink }}"><span>{{ .Title }}{{ with .Params.categoria }}<small>{{ replace . "-" " " | title }}</small>{{ end }}</span><span aria-hidden="true">→</span></a></li>
   {{ end }}
 </ol>
 {{ else }}

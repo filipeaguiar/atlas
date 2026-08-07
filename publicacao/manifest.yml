@@ -2,7 +2,7 @@ schema_version: 1
 livro:
   titulo: "Herdeiros da Vanguarda"
   subtitulo: "Instituto Atlas e a Tragédia de Belamar"
-  versao: "0.1.0-dev.2"
+  versao: "0.1.0-dev.3"
   idioma: pt-BR
   arquivo_base: herdeiros-da-vanguarda
   status: desenvolvimento
@@ -40,6 +40,22 @@ secoes:
     papel: conteudo
     documentos:
       - origem: regras/05-operacoes-do-atlas.md
+      - origem: regras/11-fichas-equipe-atlas.md
+      - origem: regras/12-fichas-alunos-recorrentes.md
+      - origem: regras/13-fichas-vanguarda.md
+      - origem: regras/07-fichas-tenentes-tecnologicos.md
+      - origem: regras/08-fichas-tenentes-misticos.md
+      - origem: regras/09-fichas-tenentes-super-humanos.md
+      - origem: regras/10-fichas-tenentes-cosmicos.md
+      - origem: regras/antagonistas-principais/arquiteto.md
+      - origem: regras/antagonistas-principais/ascendente.md
+      - origem: regras/antagonistas-principais/hierofante.md
+      - origem: regras/antagonistas-principais/mae-da-mare.md
+      - origem: regras/antagonistas-principais/mecenas.md
+      - origem: regras/antagonistas-principais/regente.md
+      - origem: regras/antagonistas-principais/rei-do-veu.md
+      - origem: regras/antagonistas-principais/tita.md
+      - origem: regras/antagonistas-principais/zero.md
   - id: handouts
     titulo: "Handouts e materiais para os jogadores"
     papel: handouts
