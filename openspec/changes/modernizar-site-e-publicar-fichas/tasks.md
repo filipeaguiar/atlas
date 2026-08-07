@@ -59,4 +59,4 @@
 - [x] 9.2 Criar estilos distintos para títulos de níveis 1 a 4 e demais elementos editoriais hierárquicos
 - [x] 9.3 Transformar linhas P/H/R e PV/PM/PA em painéis semânticos especializados no site
 - [x] 9.4 Testar menu, hierarquia e fichas em desktop e viewport móvel
-- [ ] 9.5 Publicar e revisar o refinamento no GitHub Pages
+- [x] 9.5 Publicar e revisar o refinamento no GitHub Pages
