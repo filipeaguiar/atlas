@@ -50,5 +50,5 @@
 
 - [x] 8.1 Executar testes completos e validação OpenSpec estrita
 - [x] 8.2 Revisar localmente páginas inicial, seção Regras, NPCs e inimigos em desktop e viewport estreita
-- [ ] 8.3 Commitar e enviar a mudança para `main`
-- [ ] 8.4 Acompanhar o workflow do Pages até sucesso e revisar conteúdo e assets publicados
+- [x] 8.3 Commitar e enviar a mudança para `main`
+- [x] 8.4 Acompanhar o workflow do Pages até sucesso e revisar conteúdo e assets publicados
