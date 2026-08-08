@@ -47,7 +47,6 @@ FORBIDDEN_OUTPUT_MARKERS = (
     "desenvolvimento/",
     "historico/",
     "recuperacao/",
-    "referencias/",
     "openspec/",
     "publicacao/stubs/",
     "publicacao/conteudo/",

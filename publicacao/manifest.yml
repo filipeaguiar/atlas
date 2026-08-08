@@ -61,6 +61,13 @@ secoes:
     papel: conteudo
     documentos:
       - origem: apendices/galeria-de-personagens.md
+  - id: referencias
+    titulo: "Referências"
+    papel: conteudo
+    documentos:
+      - origem: publicacao/fontes/referencias/3DeT-Ferozes-e-Furiosos.md
+      - origem: publicacao/fontes/referencias/3DeT-Victory.md
+      - origem: publicacao/fontes/referencias/Hero_High.md
   - id: handouts
     titulo: "Handouts e materiais para os jogadores"
     papel: handouts
