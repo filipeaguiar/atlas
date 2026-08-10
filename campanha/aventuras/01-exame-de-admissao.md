@@ -251,9 +251,11 @@ Em outro módulo, Noah espera o primeiro ciclo de ativação, Sofia atravessa os
 
 ### Encontro 2 — Galeria Vertical
 
-**Objetivo:** completar a rota vertical do shopping: ativar o mapa, ligar os elevadores, neutralizar os robôs de cada piso e usar o painel de missão no terceiro andar.
+**Objetivo:** restaurar a rota de evacuação do shopping: ativar o mapa, colocar os elevadores em modo de emergência, verificar os pisos, neutralizar os robôs e confirmar a rota na Central de Emergência da Galeria.
 
-**Descreva aos jogadores:** A avenida desemboca no primeiro piso de um shopping de três andares. As escadas rolantes estão recolhidas atrás de placas de segurança e as portas dos elevadores permanecem apagadas. No centro do átrio existe um quiosque escuro com a palavra **MAPA**. Acima, sacadas circulares permitem ver o segundo e o terceiro pisos, mas não revelam como chegar até eles.
+O exercício simula uma falha dos sistemas de evacuação durante uma emergência. Para restaurá-los, os candidatos precisam obter a planta do prédio, verificar que os caminhos estão seguros e transmitir esse registro à central. Não existem frequentadores reais no shopping, mas o procedimento avalia Julgamento e Responsabilidade diante de infraestrutura pública indisponível.
+
+**Descreva aos jogadores:** A avenida desemboca no primeiro piso de um shopping de três andares. As escadas rolantes estão recolhidas atrás de placas de segurança e as portas dos elevadores permanecem apagadas. No centro do átrio existe um quiosque escuro com a palavra **MAPA**. Uma faixa vermelha cruza sua tela: **SISTEMA DE EVACUAÇÃO OFFLINE**. Acima, sacadas circulares permitem ver o segundo e o terceiro pisos, mas não revelam como chegar até eles.
 
 A informação inicial é direta: o quiosque de mapa é o único equipamento ativo no primeiro piso. Os personagens podem se aproximar dele sem teste.
 
@@ -267,39 +269,43 @@ A informação inicial é direta: o quiosque de mapa é o único equipamento ati
 
 Um personagem Perto do quiosque pode gastar uma ação para encostar o Identificador no símbolo do Atlas. Isso não exige teste.
 
-> **Leia em voz alta:** “Mapa da Galeria Vertical sincronizado. Elevadores localizados. Rota do segundo piso disponível.”
+> **Leia em voz alta:** “Planta da Galeria Vertical sincronizada. Sistema de evacuação offline. Localize os elevadores, verifique os pisos e restabeleça uma rota segura.”
 
-O mesmo Identificador que registra a margem operacional passa a projetar uma planta holográfica do shopping. Todos os personagens conseguem consultar a projeção: ela destaca o corredor até os elevadores e continua disponível pelo restante do encontro. Não esconda essa informação atrás de rolagem.
+O mesmo Identificador que registra a margem operacional passa a projetar uma planta holográfica do shopping. Todos os personagens conseguem consultar a projeção: ela destaca o corredor até os elevadores e registra os pisos verificados durante o encontro. Não esconda essa informação atrás de rolagem.
 
 #### Etapa 2 — Ativar os elevadores
 
 O mapa mostra que os elevadores ficam no fim do corredor, Longe do quiosque. Chegar até eles exige um movimento. Voo, teleporte e outras capacidades podem antecipar a exploração, mas não substituem a sincronização do mapa nem os controles de missão.
 
-Um personagem Perto das portas pode gastar uma ação para encostar o Identificador no leitor externo. Isso liga o banco de elevadores, abre as portas e registra a primeira etapa. Não exige teste. A cabine leva todos ao segundo piso.
+Um personagem Perto das portas pode gastar uma ação para encostar o Identificador no leitor externo. Isso coloca o banco de elevadores em modo de emergência, abre as portas e registra a primeira etapa. Não exige teste. A cabine leva todos ao segundo piso.
 
 #### Etapa 3 — Liberar o segundo piso
 
 Quando as portas se abrem, Sentinelas Centelha cercam o saguão. Role Iniciativa. Os Tipo A precisam ser neutralizados para liberar o elevador; imobilizar, desativar ou retirar uma unidade da área continua contando como neutralização.
 
-As Centelhas começam Perto das portas. No primeiro turno, no máximo uma ataca cada personagem; as demais tentam cercar a cabine. Quando a última é neutralizada, o mapa holográfico traça a continuação da rota e o leitor interno fica verde. Um personagem pode gastar uma ação, sem teste, para enviar o elevador ao terceiro andar.
+As Centelhas começam Perto das portas. No primeiro turno, no máximo uma ataca cada personagem; as demais tentam cercar a cabine. Quando a última é neutralizada, o Identificador marca o segundo piso como verificado, o mapa holográfico traça a continuação da rota e o leitor interno fica verde. Um personagem pode gastar uma ação, sem teste, para enviar o elevador ao terceiro andar.
 
 #### Etapa 4 — Derrotar o Robô de Carga
 
-No terceiro piso, o elevador abre diante de uma praça de alimentação cenográfica. Um grande painel azul ocupa a parede oposta e exibe **MISSÃO INCOMPLETA**. O Robô de Carga está Perto do painel, com os estabilizadores presos ao chão e os quatro braços abertos para impedir aproximação.
+No terceiro piso, o elevador abre diante de uma praça de alimentação cenográfica. Na parede oposta, a **Central de Emergência da Galeria** exibe **ROTA DE EVACUAÇÃO INDISPONÍVEL — VARREDURA PENDENTE**. O Robô de Carga está Perto da central, com os estabilizadores presos ao chão e os quatro braços abertos para impedir aproximação.
 
 Mantenha a mesma ordem de Iniciativa. Nesta etapa, o Robô de Carga precisa ser derrotado. Quando chega a 0PV, os estabilizadores recolhem, os braços se fecham e o acesso ao painel fica livre. Empurrar ou imobilizar pode ajudar durante o combate, mas não completa a condição de derrota.
 
-#### Etapa 5 — Completar a missão
+#### Etapa 5 — Restaurar a rota de evacuação
 
-Depois da derrota do Tipo B, um personagem Perto do painel pode gastar uma ação para encostar o Identificador no leitor azul. Isso não exige teste.
+Depois da derrota do Tipo B, um personagem Perto da Central de Emergência pode gastar uma ação para conectar o Identificador ao leitor azul. A central recebe a planta sincronizada e os registros dos pisos verificados, então pergunta:
 
-> **Leia em voz alta:** “Missão concluída. Pontuação registrada. Rota de convergência liberada.”
+> **Leia em voz alta:** “Varredura concluída. Confirmar rota segura para evacuação?”
 
-O painel fica verde e abre a porta para o terceiro encontro. Os robôs Tipo A concedem 1 ponto cada; o Robô de Carga concede 3 pontos. Se todos os personagens chegarem a 0PV, a equipe técnica conclui a extração e abre a rota de convergência, mas a missão permanece incompleta e os robôs não neutralizados não concedem pontos.
+Peça ao jogador que responda. Confirmar não exige teste. A sinalização do shopping muda de vermelho para verde, os elevadores permanecem em modo de emergência e uma saída corta-fogo se abre para o terceiro encontro.
+
+> **Leia em voz alta:** “Rota segura confirmada. Sinalização de emergência e saídas liberadas. Pontuação registrada.”
+
+Os robôs Tipo A concedem 1 ponto cada; o Robô de Carga concede 3 pontos. Se todos os personagens chegarem a 0PV, a equipe técnica conclui a extração e abre a rota de convergência, mas o sistema de evacuação permanece offline e os robôs não neutralizados não concedem pontos.
 
 #### Tipo B — Robô de Carga
 
-O Robô de Carga parece uma empilhadeira erguida sobre duas pernas largas. Faixas amarelas atravessam a carcaça azul, quatro mãos de borracha industrial cercam o torso e uma voz excessivamente prestativa anuncia cada tarefa. Seu peso e os estabilizadores nos pés transformam a aproximação ao painel de missão num problema de posição, não apenas de dano.
+O Robô de Carga parece uma empilhadeira erguida sobre duas pernas largas. Faixas amarelas atravessam a carcaça azul, quatro mãos de borracha industrial cercam o torso e uma voz excessivamente prestativa anuncia cada tarefa. Seu peso e os estabilizadores nos pés transformam a aproximação à Central de Emergência num problema de posição, não apenas de dano.
 
 **P2, H2, R2; 10PV. Perícia:** Máquinas. **Vantagens:** Construto, Obstinado. **Pontos no exame:** 3.
 
@@ -313,11 +319,11 @@ O Robô de Carga parece uma empilhadeira erguida sobre duas pernas largas. Faixa
 
 **Cadastro Aproximado:** sua memória troca nomes por descrições como “Capa Azul” ou “Tênis Luminoso”. Quando o apelido realmente desestabiliza alguém, o alvo sofre Perda em testes sociais contra o Robô de Carga. Nunca use características pessoais sensíveis ou termos ofensivos.
 
-**Trava de Serviço:** enquanto possui PV, mantém os estabilizadores presos ao piso e não pode ser retirado da área por um único empurrão. Ao chegar a 0PV, recolhe os estabilizadores e os braços, liberando automaticamente o painel de missão.
+**Trava de Serviço:** enquanto possui PV, mantém os estabilizadores presos ao piso e não pode ser retirado da área por um único empurrão. Ao chegar a 0PV, recolhe os estabilizadores e os braços, liberando automaticamente a Central de Emergência.
 
 **Braço de Contenção:** quando seu ataque vence a defesa, pode empurrar o alvo de Perto para Longe em vez de causar dano. Descreva uma mão acolchoada projetando a malha do Identificador para trás.
 
-**Tática:** permanece junto ao painel de missão, abre os quatro braços para bloquear passagem e prioriza empurrar; não persegue candidatos até o elevador.
+**Tática:** permanece junto à Central de Emergência, abre os quatro braços para bloquear passagem e prioriza empurrar; não persegue candidatos até o elevador.
 
 #### A equipe rival
 
@@ -413,7 +419,9 @@ A informação é completa e não exige teste:
 
 ### Sofia aceita o duelo
 
-Sofia alcança um último candidato no centro da avenida, transporta-o até Cecília e percebe que o Ponteiro Zero está perto demais. Em vez de correr para a Área Azul, volta-se para a máquina.
+Sofia usa **Aceleração (1 PM)** para cruzar a avenida e **Abrir a corrida (1 PM)** para alcançar antes de todos um último candidato. Ela o transporta até Cecília e deixa uma rota clara atrás de si. O primeiro personagem que seguir essa rota para ajudar a evacuação ou alcançar Sofia recebe **Ganho** no teste correspondente.
+
+Ao perceber que o Ponteiro Zero está perto demais, Sofia não corre para a Área Azul. Ela se volta para a máquina.
 
 — Levem todo mundo. Eu seguro ele.
 
@@ -426,6 +434,14 @@ Não faça rolagens para esse confronto entre NPCs. Ele estabelece a situação 
 Cecília precisa permanecer com as vítimas que ainda transporta. Noah abandona o placar e fica ao lado dos personagens. Ele não ataca nem resolve o encontro:
 
 — Eu acompanhei o protocolo. Ele só mantém um duelo por vez. Digam o que precisam e eu ajudo.
+
+### Cecília sustenta a evacuação
+
+Cecília usa **Escudo** para proteger a passagem e impedir que destroços cenográficos interrompam o transporte. Esse uso explica por que a evacuação continua avançando, mas não preenche marcadores adicionais nem contém o Ponteiro Zero.
+
+Uma vez na cena, quando um personagem agir Perto da rota de evacuação, Cecília pode usar **Centro estável (2 PM)**: o personagem ignora uma **Perda** causada por terreno, desorganização ou pânico naquela ação. Ela também pode usar **Sem pressa** para observar antes de orientar; em vez de agir, concede **Ganho** ao próximo teste de um personagem para transportar uma vítima ou escolher uma rota segura.
+
+Cecília não entra na Iniciativa. Na mesma rodada, escolha entre um apoio mecânico dela e a Ajuda de Noah; os NPCs não acumulam benefícios para resolver o clímax pelos personagens.
 
 ### Preparando os dois relógios
 
@@ -475,11 +491,13 @@ Uma falha deixa a tentativa visível, mas não interrompe o movimento. Uma falha
 
 ### Noah como apoio
 
-Noah não entra na Iniciativa. Uma vez por rodada, pode oferecer **Ajuda** a um personagem que consiga ouvi-lo, descrevendo intervalo, trajetória ou regra observada.
+Noah usa Habilidade 5 e **Genialidade** para acompanhar os intervalos do Ponteiro Zero. Sua **Esquiva** explica como ele permanece Perto da linha de defesa sem se tornar alvo fácil, mas ele não entra na Iniciativa nem realiza ataques.
+
+Uma vez por rodada, Noah pode oferecer **Ajuda** a um personagem que consiga ouvi-lo, descrevendo intervalo, trajetória ou regra observada. Se Cecília já concedeu apoio mecânico naquela rodada, Noah limita-se a uma observação ficcional.
 
 Uma vez na cena, use **Já observei o ciclo**: um jogador faz uma pergunta objetiva sobre o padrão ou protocolo do robô e recebe resposta verdadeira.
 
-Uma vez na cena, Noah pode usar **Troca calculada**. O Mestre comunica uma complicação menor; se um jogador a aceitar, ele e outro personagem recebem Ganho em seus próximos testes relacionados ao plano. Noah reconhece o custo antes que decidam.
+Uma vez na cena, Noah pode gastar **2 PM** para usar **Troca calculada**. O Mestre comunica uma complicação menor; se um jogador a aceitar, ele e outro personagem recebem Ganho em seus próximos testes relacionados ao plano. Noah reconhece o custo antes que decidam.
 
 ### Ficha completa — Ponteiro Zero
 
@@ -584,7 +602,7 @@ Pontuação alta pode demonstrar capacidade e Controle, mas nunca substitui sozi
 | Desafio | Meta | Sucesso | Falha |
 |---|---:|---|---|
 | **Avenida das Vitrines** | defesa fixa 6 | neutralizar Tipo A concede 1 ponto | robôs restantes recuam após três rodadas |
-| **Galeria Vertical** | mapa e elevadores sem teste; Tipo A com defesa 6; Robô de Carga com defesa 5 | ativar o mapa e os elevadores, neutralizar os robôs e usar o painel completa a missão | se todos chegarem a 0PV, extração técnica abre a rota, mas a missão fica incompleta |
+| **Galeria Vertical** | mapa e elevadores sem teste; Tipo A com defesa 6; Robô de Carga com defesa 5 | verificar os pisos e confirmar a rota na Central de Emergência restaura a evacuação | se todos chegarem a 0PV, extração técnica abre a rota, mas a evacuação permanece offline |
 | **Quarteirão em Obras** | defesa fixa 6; ambiente 9 | estabilizar, abrir rota ou contornar encerra o setor | Instabilidade avança e pode bloquear a avenida |
 | **Transportar vítima de exercício** | 9 sob pressão | preenche Evacuação ou alcança faixa azul | vítima permanece na posição atual |
 | **Libertar Sofia** | ataque contra defesa 10; fuga contra Poder 13; protocolo 9 ou 12 | encerra o Agarrão | Ponteiro Zero continua segurando Sofia |
@@ -605,7 +623,7 @@ Cada objetivo cumprido concede **1 XP**:
 
 - todos os personagens neutralizam pelo menos um robô usando uma capacidade própria;
 - alguém usa Ajuda para favorecer outro personagem;
-- a equipe completa todas as etapas da Galeria Vertical e ativa o painel de missão;
+- a equipe completa a varredura da Galeria Vertical e restaura a rota de evacuação;
 - a equipe cria ou preserva uma rota coletiva no prédio instável;
 - pelo menos um personagem transporta uma vítima de exercício até uma faixa azul;
 - uma ação atrasa ou desvia o Ponteiro Zero sem colocar outro candidato em risco;

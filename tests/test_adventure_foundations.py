@@ -65,14 +65,33 @@ def test_galeria_vertical_exige_mapa_elevadores_e_dois_combates() -> None:
         "#### Etapa 2 — Ativar os elevadores",
         "#### Etapa 3 — Liberar o segundo piso",
         "#### Etapa 4 — Derrotar o Robô de Carga",
-        "#### Etapa 5 — Completar a missão",
+        "#### Etapa 5 — Restaurar a rota de evacuação",
     )
     positions = [gallery.index(marker) for marker in sequence]
     assert positions == sorted(positions)
     assert "planta holográfica" in gallery
     assert "Sentinela Centelha no segundo piso" in gallery
-    assert "painel de missão" in gallery
+    assert "Central de Emergência da Galeria" in gallery
+    assert "Confirmar rota segura para evacuação?" in gallery
     assert "Mover as passarelas" not in gallery
+
+
+def test_climax_explica_os_poderes_do_trio_sem_dar_turnos_aos_npcs() -> None:
+    body = ADVENTURE.read_text()
+    climax = body.split("## Cena 3 — A Última Linha", 1)[1].split(
+        "## Cena 4 — Debriefing e Resultado", 1
+    )[0]
+    for ability in (
+        "Aceleração (1 PM)",
+        "Abrir a corrida (1 PM)",
+        "Centro estável (2 PM)",
+        "Sem pressa",
+        "Já observei o ciclo",
+        "Troca calculada",
+    ):
+        assert ability in climax
+    assert "Cecília não entra na Iniciativa" in climax
+    assert "ele não entra na Iniciativa nem realiza ataques" in climax
 
 
 def test_aventura_recusa_secao_ausente_e_aprovacao_sem_manifesto(tmp_path: Path) -> None:
