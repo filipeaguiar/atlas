@@ -44,6 +44,17 @@ def test_aventura_real_tem_estrutura_e_esta_publicada() -> None:
     assert "campanha/aventuras/01-exame-de-admissao.md" in MANIFEST.read_text()
 
 
+def test_aventura_conta_e_aprova_todos_os_oito_estudantes_recorrentes() -> None:
+    body = ADVENTURE.read_text()
+    students = ("Lia", "Ravi", "Cecília", "Noah", "Malu", "Ícaro", "Sofia", "Dante")
+    for student in students:
+        assert student in body
+    assert "8 + o número de personagens jogadores" in body
+    assert "somente dez continuam ativos" in body
+    assert "somente onze continuam ativos" in body
+    assert "Todos os oito NPCs estudantes recorrentes também são aprovados" in body
+
+
 def test_aventura_recusa_secao_ausente_e_aprovacao_sem_manifesto(tmp_path: Path) -> None:
     original = ADVENTURE.read_text()
     candidate = tmp_path / "aventura.md"

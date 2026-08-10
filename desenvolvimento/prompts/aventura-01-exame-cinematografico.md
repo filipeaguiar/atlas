@@ -23,7 +23,7 @@ Reestruturar `campanha/aventuras/01-exame-de-admissao.md` como uma aventura comp
 - Não transformar estudantes recorrentes aprovados em caricaturas incompatíveis com suas fichas.
 - Usar Noah como prodígio estratégico e líder rival, sem torná-lo cruel ou incompatível com sua ficha aprovada.
 - Preservar Tomás como observador e condutor de debriefing, sem revelar Multiplex.
-- Todos os personagens jogadores e todos os NPCs estudantes apresentados na aventura ingressam no Atlas; falhas podem gerar plano de desenvolvimento, não expulsão da campanha.
+- Todos os personagens jogadores e todos os NPCs estudantes apresentados na aventura ingressam no Atlas; isso inclui os oito estudantes recorrentes aprovados: Lia, Ravi, Cecília, Noah, Malu, Ícaro, Sofia e Dante.
 - Não declarar como canônico o número de personagens jogadores. Balancear os encontros para 2–3 personagens.
 
 ## Objetivos de design
@@ -36,7 +36,7 @@ Reestruturar `campanha/aventuras/01-exame-de-admissao.md` como uma aventura comp
 6. Tratar o combate como conflito não violento: cada candidato recebe um Identificador de Avaliação Atlas, modular e acessível, que converte acertos simulados em perda de PV como margem operacional, nunca ferimento físico.
 7. Tornar o prédio instável um objetivo simultâneo ao terceiro combate: contornar, abrir passagem ou estabilizar.
 8. Fazer do Ponteiro Zero um Robô de Duelo Ningen, 17 pontos, forte mas possível de enfrentar, sem exigir sua derrota para concluir a prova.
-9. No clímax, candidatos em 0PV precisam ser transportados à Área Azul. Tomás informa pelo sistema de som que apenas **3 + o número de personagens jogadores** continuam ativos: os personagens jogadores, Noah, Sofia e Cecília. Cecília lidera a evacuação; Sofia é agarrada pelo Ponteiro Zero depois de salvar um candidato; Noah permanece para apoiar os personagens, que formam a última linha de defesa.
+9. No clímax, candidatos em 0PV precisam ser transportados à Área Azul. Tomás informa pelo sistema de som que apenas **8 + o número de personagens jogadores** continuam ativos: os personagens jogadores e os oito estudantes recorrentes. Lia, Ravi, Malu, Ícaro e Dante permanecem na evacuação sem interagir diretamente com os protagonistas; Cecília lidera a retirada; Sofia é agarrada pelo Ponteiro Zero depois de salvar um candidato; Noah permanece para apoiar os personagens, que formam a última linha de defesa.
 10. Tomás comanda a etapa prática pelo sistema de som, explica suas linhas gerais e comunica que, se o Ponteiro Zero atravessar o perímetro da Área Azul, todos falham na etapa coletiva.
 11. Manter explícitos Controle, Julgamento, Equipe, Responsabilidade e Prioridade. A pontuação de combate não decide sozinha o ingresso.
 12. Usar Meta 9 como padrão, Meta 12 para ações especialmente difíceis, além de Ganho, Perda, Ajuda e PA.

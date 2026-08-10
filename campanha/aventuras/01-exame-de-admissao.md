@@ -51,7 +51,7 @@ A aventura foi preparada para uma sessão de três a quatro horas. Ela apresenta
 
 **Mudança:** o Ponteiro Zero não vale pontos. A pontuação individual dá lugar a uma condição coletiva: se o robô atravessar o perímetro da Área Azul, todos falham na etapa. Sofia é agarrada enquanto salva outro candidato.
 
-**Condições de encerramento:** a evacuação termina e o Ponteiro Zero é contido, distraído ou derrotado; o robô alcança a Área Azul; ou a equipe técnica interrompe a simulação diante de risco real. Todos os personagens jogadores e os sete NPCs estudantes da bateria ingressam no Atlas, mas podem receber planos individuais de desenvolvimento.
+**Condições de encerramento:** a evacuação termina e o Ponteiro Zero é contido, distraído ou derrotado; o robô alcança a Área Azul; ou a equipe técnica interrompe a simulação diante de risco real. Todos os personagens jogadores e todos os NPCs estudantes apresentados ingressam no Atlas, mas podem receber planos individuais de desenvolvimento.
 
 ## Preparação do Mestre
 
@@ -64,7 +64,7 @@ Separe antes da sessão:
 - marcadores ou mostradores para os PV registrados pelos Identificadores de Avaliação;
 - miniaturas ou marcadores para quatro Sentinelas Centelha, dois Robôs de Carga e dois Operários Enlace;
 - as fichas dos personagens, para verificar suas categorias de ataque e defesa;
-- as fichas de Noah, Sofia e Cecília em `regras/12-fichas-alunos-recorrentes.md`.
+- as fichas dos oito estudantes recorrentes em `regras/12-fichas-alunos-recorrentes.md`.
 
 A aventura assume **dois ou três personagens jogadores com 10 pontos**, escala Ningen. As tabelas de cada encontro indicam as duas configurações. Os NPCs rivais aparecem e pontuam em paralelo, mas não ocupam turnos no combate dos personagens.
 
@@ -107,7 +107,7 @@ As fichas explicam atributos, vantagens relevantes, poderes completos, valores f
 
 O trio atua em setores paralelos. Mostre seus resultados por descrições curtas e pelo placar; não faça rolagens para eles nem permita que neutralizem os oponentes destinados aos personagens jogadores.
 
-Os demais estudantes aparecem ao fundo e podem receber destaque em aventuras posteriores. As fichas completas estão em `regras/12-fichas-alunos-recorrentes.md`.
+Os outros cinco estudantes recorrentes são **Lia Vasconcelos, Ravi Moura, Malu Serrano, Ícaro Tavares e Dante Arcos**. Eles aparecem ao fundo nesta aventura e ajudam na evacuação final sem estabelecer uma interação direta obrigatória com os personagens. As oito fichas completas estão em `regras/12-fichas-alunos-recorrentes.md`.
 
 ## A história até aqui
 
@@ -141,7 +141,7 @@ Ele conclui as linhas gerais:
 
 > **Leia em voz alta:** “As faixas azuis indicam rotas seguras. Um candidato reduzido a zero PV passa a representar uma vítima de exercício e precisa ser conduzido até uma dessas faixas. Vocês entrarão em baterias simultâneas; acompanhem o painel designado ao seu grupo. Âncora e a equipe técnica observarão toda a prova e interromperão o cenário se houver risco real. Observem, decidam e comuniquem. O cronômetro começa quando eu abrir o portão.”
 
-Painéis na base dos portões distribuem as centenas de candidatos entre módulos paralelos do ginásio. A bateria dos personagens reúne **os personagens jogadores, Noah, Sofia, Cecília e quatro candidatos sem ficha**, totalizando nove candidatos para dois jogadores ou dez para três. Os quatro candidatos sem ficha não participam da Iniciativa; eles aparecem no circuito e se tornam as vítimas de exercício representadas pelos marcadores da evacuação final.
+Painéis na base dos portões distribuem as centenas de candidatos entre módulos paralelos do ginásio. A bateria dos personagens reúne **os personagens jogadores e os oito estudantes recorrentes**: Lia, Ravi, Cecília, Noah, Malu, Ícaro, Sofia e Dante. Outros candidatos sem ficha aparecem apenas como figurantes da prova e vítimas de exercício; eles não participam da Iniciativa nem substituem os oito estudantes na contagem do elenco recorrente.
 
 Além do portão existe uma réplica de bairro comercial. Nenhuma pessoa mora ali. Fachadas, veículos e postes são módulos substituíveis; redes e barreiras permanecem ocultas até serem necessárias.
 
@@ -365,17 +365,17 @@ Quando o setor termina, os portões levam alguns instantes para reconfigurar a r
 
 > **Leia em voz alta:** “Dois minutos para o encerramento”, anuncia Tomás. Antes que o placar termine de piscar, o chão treme. No fim da avenida, uma máquina de quase sete metros atravessa um portão que parecia pequeno demais para ela. Placas brancas cobrem o corpo azul-escuro; uma lança de luz está presa a um dos braços; no peito, um único zero permanece aceso. Os pontos desaparecem do placar.
 
-As rotas laterais dos três setores convergem nessa avenida. Noah alcança um console próximo aos personagens; Cecília e Sofia surgem por outra passagem, já transportando vítimas de exercício.
+As rotas laterais dos três setores convergem nessa avenida. Noah alcança um console próximo aos personagens; Cecília e Sofia surgem por outra passagem, já transportando vítimas de exercício. Lia, Ravi, Malu, Ícaro e Dante também permanecem ativos, distribuídos ao longo das rotas de retirada.
 
-Os candidatos reconhecem imediatamente as faixas vermelhas dos Identificadores e intensificam a retirada para a **Área Azul**, um espaço protegido no fim do bairro. Cecília organiza o transporte e sustenta a passagem. Sofia usa sua velocidade para buscar quem ficou mais longe.
+Os candidatos reconhecem imediatamente as faixas vermelhas dos Identificadores e intensificam a retirada para a **Área Azul**, um espaço protegido no fim do bairro. Cecília organiza o transporte e sustenta a passagem. Sofia usa sua velocidade para buscar quem ficou mais longe. Os outros cinco estudantes recorrentes mantêm a evacuação em andamento, mas não ocupam turnos nem iniciam uma interação direta com os personagens.
 
-A recuperação anterior garante que todos os personagens jogadores estão ativos. Há **três NPCs estudantes ativos** — Noah, Sofia e Cecília —, portanto o total anunciado por Tomás é **3 + o número de personagens jogadores**.
+A recuperação anterior garante que todos os personagens jogadores estão ativos. Os **oito NPCs estudantes recorrentes** também continuam ativos, portanto o total anunciado por Tomás é **8 + o número de personagens jogadores**.
 
 Use a fala correspondente ao tamanho do grupo:
 
-> **Com dois personagens jogadores:** “Atenção. Dos candidatos desta bateria, somente cinco continuam ativos.”
+> **Com dois personagens jogadores:** “Atenção. Dos candidatos desta bateria, somente dez continuam ativos.”
 
-> **Com três personagens jogadores:** “Atenção. Dos candidatos desta bateria, somente seis continuam ativos.”
+> **Com três personagens jogadores:** “Atenção. Dos candidatos desta bateria, somente onze continuam ativos.”
 
 Tomás prossegue pelos alto-falantes:
 
@@ -537,9 +537,9 @@ A mensagem inclui um trecho específico da atuação do personagem e comunica um
 
 Exemplos de plano incluem treino de controle, exercício de comunicação, revisão de segurança, prática de observação antes da ação ou simulação adicional de prioridades.
 
-Todos os personagens jogadores são aprovados. **Todos os sete NPCs estudantes da bateria também são aprovados:** Noah, Sofia, Cecília e os quatro candidatos sem ficha evacuados durante o clímax. Chegar a 0PV, precisar de resgate ou falhar na etapa coletiva pode gerar um plano de desenvolvimento, mas não elimina nenhum deles.
+Todos os personagens jogadores são aprovados. **Todos os oito NPCs estudantes recorrentes também são aprovados:** Lia, Ravi, Cecília, Noah, Malu, Ícaro, Sofia e Dante. Os candidatos sem ficha mostrados durante a prova também recebem suas vagas. Chegar a 0PV, precisar de resgate ou falhar na etapa coletiva pode gerar um plano de desenvolvimento, mas não elimina nenhum candidato apresentado.
 
-> **Leia em voz alta:** Em outros pontos da cidade, mais sete projeções azuis despertam. Noah, Sofia e Cecília recebem suas mensagens. Depois aparecem os quatro candidatos retirados para a Área Azul, cada um ouvindo a confirmação de sua própria vaga. Quando a projeção se apaga, todos eles também são alunos do Instituto Atlas.
+> **Leia em voz alta:** Em outros pontos da cidade, novas projeções azuis despertam. Lia, Ravi, Cecília, Noah, Malu, Ícaro, Sofia e Dante recebem suas mensagens. Os candidatos retirados para a Área Azul também ouvem a confirmação de suas vagas. Quando as projeções se apagam, todos eles são alunos do Instituto Atlas.
 
 Finalize com os nomes dos personagens jogadores aparecendo lado a lado como uma equipe de formação. Os NPCs aprovados integrarão a mesma turma, sem serem incorporados automaticamente à equipe dos protagonistas. A próxima aventura começa no primeiro dia deles como alunos do Atlas.
 
