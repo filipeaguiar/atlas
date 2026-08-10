@@ -51,7 +51,7 @@ A aventura foi preparada para uma sessão de três a quatro horas. Ela apresenta
 
 **Mudança:** o Ponteiro Zero não vale pontos. A pontuação individual dá lugar a uma condição coletiva: se o robô atravessar o perímetro da Área Azul, todos falham na etapa. Sofia é agarrada enquanto salva outro candidato.
 
-**Condições de encerramento:** a evacuação termina e o Ponteiro Zero é contido, distraído ou derrotado; o robô alcança a Área Azul; ou a equipe técnica interrompe a simulação diante de risco real. Todos os personagens ingressam no Atlas, mas podem receber planos individuais de desenvolvimento.
+**Condições de encerramento:** a evacuação termina e o Ponteiro Zero é contido, distraído ou derrotado; o robô alcança a Área Azul; ou a equipe técnica interrompe a simulação diante de risco real. Todos os personagens jogadores e os sete NPCs estudantes da bateria ingressam no Atlas, mas podem receber planos individuais de desenvolvimento.
 
 ## Preparação do Mestre
 
@@ -369,11 +369,17 @@ As rotas laterais dos três setores convergem nessa avenida. Noah alcança um co
 
 Os candidatos reconhecem imediatamente as faixas vermelhas dos Identificadores e intensificam a retirada para a **Área Azul**, um espaço protegido no fim do bairro. Cecília organiza o transporte e sustenta a passagem. Sofia usa sua velocidade para buscar quem ficou mais longe.
 
-A recuperação anterior garante que todos os personagens jogadores estão ativos. Calcule **X** somando os três integrantes da equipe rival à quantidade de personagens jogadores: **cinco** candidatos para dois personagens ou **seis** para três.
+A recuperação anterior garante que todos os personagens jogadores estão ativos. Há **três NPCs estudantes ativos** — Noah, Sofia e Cecília —, portanto o total anunciado por Tomás é **3 + o número de personagens jogadores**.
 
-Então Tomás continua pelos alto-falantes, agora sem o tom de contagem:
+Use a fala correspondente ao tamanho do grupo:
 
-> **Leia em voz alta:** “Atenção. Dos candidatos desta bateria, somente **[X]** continuam ativos. Todos os demais aguardam evacuação. O Ponteiro Zero está a três setores da Área Azul e não vale pontos. Se atravessar o perímetro, a etapa coletiva será considerada falha para todos.”
+> **Com dois personagens jogadores:** “Atenção. Dos candidatos desta bateria, somente cinco continuam ativos.”
+
+> **Com três personagens jogadores:** “Atenção. Dos candidatos desta bateria, somente seis continuam ativos.”
+
+Tomás prossegue pelos alto-falantes:
+
+> **Leia em voz alta:** “Todos os demais aguardam evacuação. O Ponteiro Zero está a três setores da Área Azul e não vale pontos. Se atravessar o perímetro, a etapa coletiva será considerada falha para todos.”
 
 A informação é completa e não exige teste:
 
@@ -529,9 +535,13 @@ A mensagem inclui um trecho específico da atuação do personagem e comunica um
 - **ingresso regular:** o personagem segue a formação comum;
 - **ingresso com plano de desenvolvimento:** o personagem também recebe uma ação concreta de acompanhamento, baseada no que aconteceu durante a prova.
 
-Exemplos de plano incluem treino de controle, exercício de comunicação, revisão de segurança, prática de observação antes da ação ou simulação adicional de prioridades. Todos ingressam e permanecem juntos na campanha.
+Exemplos de plano incluem treino de controle, exercício de comunicação, revisão de segurança, prática de observação antes da ação ou simulação adicional de prioridades.
 
-Finalize com os nomes dos personagens aparecendo lado a lado como uma equipe de formação. A próxima aventura começa no primeiro dia deles como alunos do Atlas.
+Todos os personagens jogadores são aprovados. **Todos os sete NPCs estudantes da bateria também são aprovados:** Noah, Sofia, Cecília e os quatro candidatos sem ficha evacuados durante o clímax. Chegar a 0PV, precisar de resgate ou falhar na etapa coletiva pode gerar um plano de desenvolvimento, mas não elimina nenhum deles.
+
+> **Leia em voz alta:** Em outros pontos da cidade, mais sete projeções azuis despertam. Noah, Sofia e Cecília recebem suas mensagens. Depois aparecem os quatro candidatos retirados para a Área Azul, cada um ouvindo a confirmação de sua própria vaga. Quando a projeção se apaga, todos eles também são alunos do Instituto Atlas.
+
+Finalize com os nomes dos personagens jogadores aparecendo lado a lado como uma equipe de formação. Os NPCs aprovados integrarão a mesma turma, sem serem incorporados automaticamente à equipe dos protagonistas. A próxima aventura começa no primeiro dia deles como alunos do Atlas.
 
 ### Avaliando os cinco critérios
 
