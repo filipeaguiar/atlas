@@ -35,6 +35,9 @@ def test_materializacao_hugo_contem_somente_documentos_manifestados() -> None:
     sheet = (stage / "content" / "regras" / "fichas-equipe-atlas.md").read_text()
     assert "tipo: ficha" in sheet
     assert "categoria: npcs-atlas" in sheet
+    adventure = (stage / "content" / "campanha" / "aventura-01.md").read_text()
+    assert "arco: 1" in adventure
+    assert "nav_parent: campanha-arco-1" in adventure
 
 
 def test_links_entre_capitulos_sao_relativos_ao_site() -> None:
@@ -62,6 +65,15 @@ def test_build_hugo_funciona_em_subdiretorio_e_nao_publica_pdf() -> None:
     assert '<details class=mobile-menu>' in home
     assert "nav-intro" in home and "nav-number" in home and "nav-overview" in home
     assert '<details class="mobile-menu" open' not in home
+    adventure_page = (destination / "campanha" / "aventura-01" / "index.html").read_text()
+    nested_adventure = re.compile(
+        r'<li class=nav-parent><a href=/projeto/campanha/campanha-arco-1/>Arco I — Rumo à Licença</a>'
+        r'<ul class=nav-children[^>]*>.*?<a href=/projeto/campanha/aventura-01/[^>]*aria-current=page>'
+        r'Exame de Admissão</a>',
+        re.DOTALL,
+    )
+    assert len(nested_adventure.findall(adventure_page)) == 2
+    assert adventure_page.count(">Exame de Admissão</a>") == 2
     sheet = (destination / "regras" / "fichas-equipe-atlas" / "index.html").read_text()
     assert "stat-panel" in sheet
     assert "tcg-card" in sheet
@@ -126,6 +138,7 @@ def test_css_declara_limites_responsivos() -> None:
     assert ".tcg-card" in css
     assert "Space Grotesk Atlas" in css and "Fraunces Atlas" in css and "Anybody Atlas" in css
     assert ".nav-section-title" in css and ".nav-number" in css
+    assert ".nav-children" in css and ".nav-parent" in css
     assert "max-width: 100%" in css
     assert "overflow-x: auto" in css
     assert ":focus-visible" in css

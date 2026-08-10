@@ -220,6 +220,22 @@ def materialize_hugo(
             for presentation_key in ("tipo", "categoria"):
                 if document.metadata.get(presentation_key):
                     metadata[presentation_key] = str(document.metadata[presentation_key])
+            if document.metadata.get("tipo") == "aventura":
+                arc = document.metadata.get("arco")
+                if not isinstance(arc, int) or arc < 1:
+                    raise PublicationError(
+                        f"arco inválido para navegação: {document.relative_path}: {arc!r}"
+                    )
+                parent_id = f"campanha-arco-{arc}"
+                section_document_ids = {
+                    str(candidate.metadata["id"]) for candidate in section.documents
+                }
+                if parent_id not in section_document_ids:
+                    raise PublicationError(
+                        f"arco pai ausente para navegação: {document.relative_path}: {parent_id}"
+                    )
+                metadata["arco"] = arc
+                metadata["nav_parent"] = parent_id
             if previous:
                 metadata["previous"] = {
                     "title": str(previous.metadata["titulo"]),

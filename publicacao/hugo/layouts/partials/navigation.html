@@ -14,9 +14,22 @@
     </summary>
     <div class="nav-section-body">
       <a class="nav-overview" href="{{ $section.RelPermalink }}"{{ if eq $.RelPermalink $section.RelPermalink }} aria-current="page"{{ end }}>Visão da seção</a>
-      {{ if $section.Pages }}<ul>
-        {{ range $section.Pages.ByWeight }}<li><a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a></li>{{ end }}
-      </ul>{{ end }}
+      {{ if $section.Pages }}
+      {{ $pages := $section.Pages.ByWeight }}
+      <ul class="nav-tree">
+        {{ range $page := $pages }}
+          {{ if not $page.Params.nav_parent }}
+            {{ $children := where $pages "Params.nav_parent" $page.Params.editorial_id }}
+            <li{{ if $children }} class="nav-parent"{{ end }}>
+              <a href="{{ $page.RelPermalink }}"{{ if eq $.RelPermalink $page.RelPermalink }} aria-current="page"{{ end }}>{{ $page.Title }}</a>
+              {{ if $children }}<ul class="nav-children" aria-label="Conteúdo de {{ $page.Title }}">
+                {{ range $child := $children }}<li><a href="{{ $child.RelPermalink }}"{{ if eq $.RelPermalink $child.RelPermalink }} aria-current="page"{{ end }}>{{ $child.Title }}</a></li>{{ end }}
+              </ul>{{ end }}
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+      {{ end }}
     </div>
   </details>
   {{ end }}
