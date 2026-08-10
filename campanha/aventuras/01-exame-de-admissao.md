@@ -62,7 +62,7 @@ Separe antes da sessão:
 - quatro marcadores de progresso para a evacuação;
 - os nomes dos cinco critérios do exame;
 - marcadores ou mostradores para os PV registrados pelos Identificadores de Avaliação;
-- miniaturas ou marcadores para quatro Sentinelas Centelha, duas Plataformas Lastro e dois Operários Enlace;
+- miniaturas ou marcadores para quatro Sentinelas Centelha, dois Robôs de Carga e dois Operários Enlace;
 - as fichas dos personagens, para verificar suas categorias de ataque e defesa;
 - as fichas de Noah, Sofia e Cecília em `regras/12-fichas-alunos-recorrentes.md`.
 
@@ -79,7 +79,7 @@ Todas as fichas necessárias estão completas neste capítulo, junto ao encontro
 | Robô | Encontro | Valores principais |
 |---|---|---|
 | **Tipo A — Sentinela Centelha** | Avenida das Vitrines | ataque 7, defesa 6, 1PV |
-| **Tipo B — Plataforma Lastro** | Galeria Vertical | ataque 5, defesa 5, 10PV |
+| **Tipo B — Robô de Carga** | Galeria Vertical | ataque 5, defesa 5, 10PV |
 | **Tipo B — Operário Enlace** | Quarteirão em Obras | ataque 6, defesa 6, 15PV |
 | **Ponteiro Zero** | A Última Linha | ataque físico 13, defesa 10, 20PV |
 
@@ -207,7 +207,7 @@ O placar concede 1 ponto por Tipo A e 3 pontos por Tipo B. Quem causa a derrota 
 
 ### Balanceamento do circuito
 
-As fichas abaixo adaptam estruturas mecânicas de *Ferozes e Furiosos* à identidade visual do Instituto Atlas. A Sentinela Centelha possui Luta e Categoria de Dano C, como muitos personagens iniciantes, mas apenas 1PV. A Plataforma Lastro e o Operário Enlace atacam sem perícia de combate, mantendo dano e defesa seguros para uma sequência de encontros. O número de adversários permanece abaixo ou próximo dos 20–30 pontos totais dos personagens, sem depender apenas dessa comparação.
+As fichas abaixo adaptam estruturas mecânicas de *Ferozes e Furiosos* à identidade visual do Instituto Atlas. A Sentinela Centelha possui Luta e Categoria de Dano C, como muitos personagens iniciantes, mas apenas 1PV. O Robô de Carga e o Operário Enlace atacam sem perícia de combate, mantendo dano e defesa seguros para uma sequência de encontros. O número de adversários permanece abaixo ou próximo dos 20–30 pontos totais dos personagens, sem depender apenas dessa comparação.
 
 Se nenhum personagem tiver perícia aplicável ao combate, use a coluna **Ameaça Grau Um**. Não aumente quantidades quando os jogadores tiverem fichas especialmente combativas; deixe que essa competência apareça no placar.
 
@@ -253,23 +253,23 @@ Numa rua paralela, Noah espera o primeiro ciclo de ativação. Sofia atravessa o
 
 > **Leia em voz alta:** A avenida termina dentro de uma galeria comercial de três andares. Escadas rolantes paradas cortam o átrio, passarelas ligam os dois lados e drones recolhem vitrines para mudar as coberturas. No último piso, um robô de obras finca os braços diante de um terminal azul.
 
-| Grupo | Plataforma Lastro | Sentinela Centelha |
+| Grupo | Robô de Carga | Sentinela Centelha |
 |---|---:|---:|
 | 2 personagens | 1 | 1 |
 | 3 personagens | 1 | 2 |
 | Ameaça Grau Um | 1 | 0 |
 
-As Centelhas começam Longe, nas passarelas. A Plataforma Lastro começa Perto do terminal. Escalar pelo átrio, usar voo ou criar outro acesso exige a movimentação permitida pela capacidade; sem uma solução especial, subir consome um movimento por andar.
+As Centelhas começam Longe, nas passarelas. O Robô de Carga começa Perto do terminal. Escalar pelo átrio, usar voo ou criar outro acesso exige a movimentação permitida pela capacidade; sem uma solução especial, subir consome um movimento por andar.
 
-**Terminal:** um personagem Perto pode gastar uma ação e vencer um teste de Habilidade com Máquinas, meta 9. Enquanto a Plataforma Lastro estiver fisicamente diante dele, o teste sofre Perda. Empurrar, enganar, imobilizar ou derrotar o robô remove a condição.
+**Terminal:** um personagem Perto pode gastar uma ação e vencer um teste de Habilidade com Máquinas, meta 9. Enquanto o Robô de Carga estiver fisicamente diante dele, o teste sofre Perda. Empurrar, enganar, imobilizar ou derrotar o robô remove a condição.
 
 **Passarelas móveis:** uma vez por rodada, um personagem pode usar uma ação e fazer Habilidade com Máquinas ou Percepção, meta 9. No sucesso, reposiciona uma passarela e move a si ou um aliado de Longe para Perto do terminal. Na falha, a passarela para no meio e deixa o personagem exposto: Perda na próxima defesa.
 
 **Encerramento:** ativar o terminal termina o encontro; robôs ainda ativos desligam sem conceder pontos. Se ninguém o ativar até o fim da quarta rodada, o sistema abre uma saída de contingência. A equipe avança, mas começa o encontro seguinte com Perda na Iniciativa.
 
-#### Tipo B — Plataforma Lastro
+#### Tipo B — Robô de Carga
 
-A Lastro parece uma empilhadeira erguida sobre duas pernas largas. Faixas amarelas atravessam a carcaça azul, quatro mãos de borracha industrial cercam o torso e uma voz excessivamente prestativa anuncia cada tarefa. Seu peso e os estabilizadores nos pés transformam o terminal num problema de posição, não apenas de dano.
+O Robô de Carga parece uma empilhadeira erguida sobre duas pernas largas. Faixas amarelas atravessam a carcaça azul, quatro mãos de borracha industrial cercam o torso e uma voz excessivamente prestativa anuncia cada tarefa. Seu peso e os estabilizadores nos pés transformam o terminal num problema de posição, não apenas de dano.
 
 **P2, H2, R2; 10PV. Perícia:** Máquinas. **Vantagens:** Construto, Obstinado. **Pontos no exame:** 3.
 
@@ -277,13 +277,13 @@ A Lastro parece uma empilhadeira erguida sobre duas pernas largas. Faixas amarel
 
 **Construto:** é Imune às condições biológicas e mentais indicadas pelo arquétipo e só recupera PV por conserto. Essas imunidades não impedem empurrões, Agarrão, interferência técnica ou derrota.
 
-**Obstinado:** poderia reduzir P, H ou R em –1 para obter o equivalente a 1PA. Por segurança e simplicidade, a Lastro do exame não usa esse recurso, salvo se o Mestre também conceder PA aos demais desafios.
+**Obstinado:** poderia reduzir P, H ou R em –1 para obter o equivalente a 1PA. Por segurança e simplicidade, o Robô de Carga do exame não usa esse recurso, salvo se o Mestre também conceder PA aos demais desafios.
 
 **Rotina “Deixa Comigo”:** uma vez na cena, assume qualquer tarefa designada e improvisa uma perícia que não possui. Use para operar o cenário ou tentar empurrar um personagem, não para aumentar dano.
 
-**Cadastro Aproximado:** sua memória troca nomes por descrições como “Capa Azul” ou “Tênis Luminoso”. Quando o apelido realmente desestabiliza alguém, o alvo sofre Perda em testes sociais contra a Lastro. Nunca use características pessoais sensíveis ou termos ofensivos.
+**Cadastro Aproximado:** sua memória troca nomes por descrições como “Capa Azul” ou “Tênis Luminoso”. Quando o apelido realmente desestabiliza alguém, o alvo sofre Perda em testes sociais contra o Robô de Carga. Nunca use características pessoais sensíveis ou termos ofensivos.
 
-**Trava de Serviço:** a Lastro não sofre Perda quando está derrotada. Ao chegar a 0PV, o placar concede os 3 pontos, mas suas mãos continuam presas ao terminal até que seja afastada ou o console seja ativado.
+**Trava de Serviço:** o Robô de Carga não sofre Perda quando está derrotado. Ao chegar a 0PV, o placar concede os 3 pontos, mas suas mãos continuam presas ao terminal até que ele seja afastado ou o console seja ativado.
 
 **Braço de Contenção:** quando seu ataque vence a defesa, pode empurrar o alvo de Perto para Longe em vez de causar dano. Descreva uma mão acolchoada projetando a malha do Identificador para trás.
 
@@ -542,14 +542,14 @@ Pontuação alta pode demonstrar capacidade e Controle, mas nunca substitui sozi
 | Desafio | Meta | Sucesso | Falha |
 |---|---:|---|---|
 | **Avenida das Vitrines** | defesa fixa 6 | neutralizar Tipo A concede 1 ponto | robôs restantes recuam após três rodadas |
-| **Galeria Vertical** | defesa fixa 5; terminal 9 | ativar terminal encerra o encontro; Lastro vale 3 pontos | saída de contingência após quatro rodadas; Perda na próxima Iniciativa |
+| **Galeria Vertical** | defesa fixa 5; terminal 9 | ativar terminal encerra o encontro; Robô de Carga vale 3 pontos | saída de contingência após quatro rodadas; Perda na próxima Iniciativa |
 | **Quarteirão em Obras** | defesa fixa 6; ambiente 9 | estabilizar, abrir rota ou contornar encerra o setor | Instabilidade avança e pode bloquear a avenida |
 | **Transportar vítima de exercício** | 9 sob pressão | preenche Evacuação ou alcança faixa azul | vítima permanece na posição atual |
 | **Libertar Sofia** | ataque contra defesa 10; fuga contra Poder 13; protocolo 9 ou 12 | encerra o Agarrão | Ponteiro Zero continua segurando Sofia |
 | **Conter o avanço** | 9 | preserva um marcador de Distância | Ponteiro Zero avança no turno dele |
 | **Combate com o Zero** | ataque físico 13; defesa 10 | dano reduz seus 20PV e pode libertar Sofia | o robô permanece ativo |
 
-As fichas completas aparecem junto aos encontros: Sentinela Centelha na Avenida das Vitrines, Plataforma Lastro na Galeria Vertical, Operário Enlace no Quarteirão em Obras e Ponteiro Zero em A Última Linha. Elas incluem todos os poderes usados na prova, valores fixos e táticas. Como são equipamentos institucionais, não produzem Tesouros quando derrotados.
+As fichas completas aparecem junto aos encontros: Sentinela Centelha na Avenida das Vitrines, Robô de Carga na Galeria Vertical, Operário Enlace no Quarteirão em Obras e Ponteiro Zero em A Última Linha. Elas incluem todos os poderes usados na prova, valores fixos e táticas. Como são equipamentos institucionais, não produzem Tesouros quando derrotados.
 
 ## Experiência
 
