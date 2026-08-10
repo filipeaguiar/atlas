@@ -55,6 +55,26 @@ def test_aventura_conta_e_aprova_todos_os_oito_estudantes_recorrentes() -> None:
     assert "Todos os oito NPCs estudantes recorrentes também são aprovados" in body
 
 
+def test_galeria_vertical_exige_mapa_elevadores_e_dois_combates() -> None:
+    body = ADVENTURE.read_text()
+    gallery = body.split("### Encontro 2 — Galeria Vertical", 1)[1].split(
+        "### Encontro 3 — Quarteirão em Obras", 1
+    )[0]
+    sequence = (
+        "#### Etapa 1 — Ativar o mapa",
+        "#### Etapa 2 — Ativar os elevadores",
+        "#### Etapa 3 — Liberar o segundo piso",
+        "#### Etapa 4 — Derrotar o Robô de Carga",
+        "#### Etapa 5 — Completar a missão",
+    )
+    positions = [gallery.index(marker) for marker in sequence]
+    assert positions == sorted(positions)
+    assert "planta holográfica" in gallery
+    assert "Sentinela Centelha no segundo piso" in gallery
+    assert "painel de missão" in gallery
+    assert "Mover as passarelas" not in gallery
+
+
 def test_aventura_recusa_secao_ausente_e_aprovacao_sem_manifesto(tmp_path: Path) -> None:
     original = ADVENTURE.read_text()
     candidate = tmp_path / "aventura.md"

@@ -31,7 +31,7 @@ proveniencia:
 
 # Exame de Admissão
 
-Os personagens chegam ao Instituto Atlas para a etapa prática do exame admissional. Diante deles, o Ginásio Modular reproduz um bairro comercial de Belamar: ruas estreitas, lojas de três andares, passarelas e robôs que valem pontos. A prova parece medir quem derrota mais alvos — até o surgimento do gigantesco Ponteiro Zero transformar competição em emergência simulada.
+Os personagens chegam ao Instituto Atlas para a etapa prática do exame admissional. Diante deles, o Ginásio Modular reproduz um bairro comercial de Belamar: ruas estreitas, um shopping de três andares, elevadores e robôs que valem pontos. A prova parece medir quem derrota mais alvos — até o surgimento do gigantesco Ponteiro Zero transformar competição em emergência simulada.
 
 A aventura foi preparada para uma sessão de três a quatro horas. Ela apresenta o Atlas por meio de uma situação cinematográfica, dá a cada personagem uma oportunidade de demonstrar sua capacidade e termina com a formação da equipe.
 
@@ -201,7 +201,7 @@ Depois das respostas, Tomás retorna ao microfone e inicia a contagem:
 
 > **Leia em voz alta:** O bairro simulado desperta com vocês. Placas se abrem no asfalto; compartimentos surgem atrás de vitrines; olhos mecânicos acendem dentro dos becos. Robôs leves avançam em grupos, enquanto máquinas blindadas ocupam os cruzamentos. Acima dos telhados, um placar começa a registrar nomes e pontos.
 
-O circuito possui três setores. Role Iniciativa no início de cada um. Robôs neutralizados ficam desligados e nunca explodem de modo perigoso. Ataques reduzem a margem operacional registrada pelo Identificador; descreva luz atravessando a malha de telemetria, avisos sonoros, perda de posição e esforço, nunca ferimentos físicos.
+O circuito possui três setores. Nos dois primeiros, cada equipe percorre um módulo diferente: os encontros abaixo descrevem apenas a rota dos personagens jogadores, enquanto o placar mostra resultados obtidos em outros pontos do ginásio. Todas as rotas convergem no terceiro encontro. Role Iniciativa no início de cada setor. Robôs neutralizados ficam desligados e nunca explodem de modo perigoso. Ataques reduzem a margem operacional registrada pelo Identificador; descreva luz atravessando a malha de telemetria, avisos sonoros, perda de posição e esforço, nunca ferimentos físicos.
 
 Entre os setores, portões móveis levam alguns instantes para abrir. Antes de atravessá-los, os candidatos precisam transportar qualquer vítima de exercício até a faixa azul. Registre quem interrompe a busca por pontos para ajudar. Depois, aplique a recuperação de **Sem tempo, irmão!** indicada na preparação; personagens que recuperem PV voltam a agir normalmente.
 
@@ -247,37 +247,59 @@ As Centelhas são unidades bípedes pouco maiores que uma mochila. Possuem carca
 
 #### A equipe rival
 
-Numa rua paralela, Noah espera o primeiro ciclo de ativação. Sofia atravessa os alvos enquanto Cecília protege a retaguarda. O placar mostra o trio alguns pontos à frente, sem retirar nenhum alvo dos personagens.
+Em outro módulo, Noah espera o primeiro ciclo de ativação, Sofia atravessa os alvos e Cecília protege a retaguarda. Os personagens não os encontram nesse setor; veem apenas o trio subir alguns pontos no placar.
 
 ### Encontro 2 — Galeria Vertical
 
-**Objetivo:** chegar ao terceiro andar, liberar o acesso ao leitor azul e aproximar um Identificador para abrir a porta do próximo setor.
+**Objetivo:** completar a rota vertical do shopping: ativar o mapa, ligar os elevadores, neutralizar os robôs de cada piso e usar o painel de missão no terceiro andar.
 
-> **Leia em voz alta:** A avenida desemboca no átrio de um shopping de três andares. Todos os pisos se abrem para o vão central, ligados por escadas rolantes paradas e passarelas de manutenção suspensas. No terceiro andar, uma placa azul pisca sobre uma porta metálica: “CHECKPOINT DO SETOR — APROXIME O IDENTIFICADOR”. O leitor está instalado num pedestal diante da porta, mas um Robô de Carga fincou os estabilizadores no chão e abriu quatro braços acolchoados ao redor dele. Sentinelas Centelha ocupam as passarelas. No térreo, painéis amarelos controlam as pontes móveis.
+**Descreva aos jogadores:** A avenida desemboca no primeiro piso de um shopping de três andares. As escadas rolantes estão recolhidas atrás de placas de segurança e as portas dos elevadores permanecem apagadas. No centro do átrio existe um quiosque escuro com a palavra **MAPA**. Acima, sacadas circulares permitem ver o segundo e o terceiro pisos, mas não revelam como chegar até eles.
 
-Diga aos jogadores, sem exigir teste: **a porta atrás do pedestal leva ao terceiro setor; ela abre quando qualquer candidato encosta seu Identificador no leitor azul. O Robô de Carga está fisicamente entre eles e o leitor.** As Sentinelas dificultam a travessia, mas não precisam ser derrotadas para concluir o encontro.
+A informação inicial é direta: o quiosque de mapa é o único equipamento ativo no primeiro piso. Os personagens podem se aproximar dele sem teste.
 
-| Grupo | Robô de Carga | Sentinela Centelha |
+| Grupo | Robô de Carga | Sentinela Centelha no segundo piso |
 |---|---:|---:|
-| 2 personagens | 1 | 1 |
-| 3 personagens | 1 | 2 |
-| Grupo sem perícia aplicável | 1 | 0 |
+| 2 personagens | 1 | 2 |
+| 3 personagens | 1 | 3 |
+| Grupo sem perícia aplicável | 1 | 1 |
 
-**Posições iniciais:** os personagens entram no térreo, Longe do checkpoint. O Robô de Carga está Perto do leitor. As Centelhas começam nas passarelas, Longe dos personagens e Perto do terceiro andar.
+#### Etapa 1 — Ativar o mapa
 
-**Subir pelos andares:** alcançar o segundo piso pelas escadas rolantes consome um movimento; alcançar o terceiro consome outro. Voo, escalada, teleporte ou outra capacidade pode criar uma rota mais rápida conforme sua descrição.
+Um personagem Perto do quiosque pode gastar uma ação para encostar o Identificador no símbolo do Atlas. Isso não exige teste.
 
-**Mover as passarelas:** os painéis amarelos do térreo controlam pontes de manutenção. Uma vez por rodada, um personagem Perto de um painel pode usar uma ação e fazer Habilidade com Máquinas ou Percepção, meta 9. No sucesso, move uma passarela e leva a si ou um aliado diretamente para Perto do checkpoint. Na falha, a ponte para no meio do átrio: o personagem continua Longe e sofre Perda na próxima defesa.
+> **Leia em voz alta:** “Mapa da Galeria Vertical sincronizado. Elevadores localizados. Rota do segundo piso disponível.”
 
-**Liberar o leitor:** empurrar, agarrar ou imobilizar o Robô de Carga pode afastá-lo do pedestal. Se ele chegar a 0PV, seus braços permanecem travados no lugar, mas um personagem Perto pode gastar uma ação para apertar a liberação amarela e afastá-lo, sem teste. Outra opção é dar ao robô uma ordem de serviço convincente com Influência ou Máquinas, meta 9; no sucesso, sua rotina prestativa o faz abandonar o leitor para cumprir a tarefa. Aceite outras capacidades que criem acesso ao pedestal.
+O mesmo Identificador que registra a margem operacional passa a projetar uma planta holográfica do shopping. Todos os personagens conseguem consultar a projeção: ela destaca o corredor até os elevadores e continua disponível pelo restante do encontro. Não esconda essa informação atrás de rolagem.
 
-**Usar o checkpoint:** quando o leitor estiver acessível, um personagem Perto pode gastar uma ação para encostar nele seu Identificador. Isso não exige teste. O leitor fica verde, registra a passagem da equipe e abre a porta metálica.
+#### Etapa 2 — Ativar os elevadores
 
-**Encerramento:** a leitura do Identificador termina o encontro; robôs ainda ativos se desligam sem conceder pontos. Se ninguém alcançar o leitor até o fim da quarta rodada, a porta abre por contingência. A equipe avança, mas começa o encontro seguinte com Perda na Iniciativa.
+O mapa mostra que os elevadores ficam no fim do corredor, Longe do quiosque. Chegar até eles exige um movimento. Voo, teleporte e outras capacidades podem antecipar a exploração, mas não substituem a sincronização do mapa nem os controles de missão.
+
+Um personagem Perto das portas pode gastar uma ação para encostar o Identificador no leitor externo. Isso liga o banco de elevadores, abre as portas e registra a primeira etapa. Não exige teste. A cabine leva todos ao segundo piso.
+
+#### Etapa 3 — Liberar o segundo piso
+
+Quando as portas se abrem, Sentinelas Centelha cercam o saguão. Role Iniciativa. Os Tipo A precisam ser neutralizados para liberar o elevador; imobilizar, desativar ou retirar uma unidade da área continua contando como neutralização.
+
+As Centelhas começam Perto das portas. No primeiro turno, no máximo uma ataca cada personagem; as demais tentam cercar a cabine. Quando a última é neutralizada, o mapa holográfico traça a continuação da rota e o leitor interno fica verde. Um personagem pode gastar uma ação, sem teste, para enviar o elevador ao terceiro andar.
+
+#### Etapa 4 — Derrotar o Robô de Carga
+
+No terceiro piso, o elevador abre diante de uma praça de alimentação cenográfica. Um grande painel azul ocupa a parede oposta e exibe **MISSÃO INCOMPLETA**. O Robô de Carga está Perto do painel, com os estabilizadores presos ao chão e os quatro braços abertos para impedir aproximação.
+
+Mantenha a mesma ordem de Iniciativa. Nesta etapa, o Robô de Carga precisa ser derrotado. Quando chega a 0PV, os estabilizadores recolhem, os braços se fecham e o acesso ao painel fica livre. Empurrar ou imobilizar pode ajudar durante o combate, mas não completa a condição de derrota.
+
+#### Etapa 5 — Completar a missão
+
+Depois da derrota do Tipo B, um personagem Perto do painel pode gastar uma ação para encostar o Identificador no leitor azul. Isso não exige teste.
+
+> **Leia em voz alta:** “Missão concluída. Pontuação registrada. Rota de convergência liberada.”
+
+O painel fica verde e abre a porta para o terceiro encontro. Os robôs Tipo A concedem 1 ponto cada; o Robô de Carga concede 3 pontos. Se todos os personagens chegarem a 0PV, a equipe técnica conclui a extração e abre a rota de convergência, mas a missão permanece incompleta e os robôs não neutralizados não concedem pontos.
 
 #### Tipo B — Robô de Carga
 
-O Robô de Carga parece uma empilhadeira erguida sobre duas pernas largas. Faixas amarelas atravessam a carcaça azul, quatro mãos de borracha industrial cercam o torso e uma voz excessivamente prestativa anuncia cada tarefa. Seu peso e os estabilizadores nos pés transformam o acesso ao leitor num problema de posição, não apenas de dano.
+O Robô de Carga parece uma empilhadeira erguida sobre duas pernas largas. Faixas amarelas atravessam a carcaça azul, quatro mãos de borracha industrial cercam o torso e uma voz excessivamente prestativa anuncia cada tarefa. Seu peso e os estabilizadores nos pés transformam a aproximação ao painel de missão num problema de posição, não apenas de dano.
 
 **P2, H2, R2; 10PV. Perícia:** Máquinas. **Vantagens:** Construto, Obstinado. **Pontos no exame:** 3.
 
@@ -291,23 +313,23 @@ O Robô de Carga parece uma empilhadeira erguida sobre duas pernas largas. Faixa
 
 **Cadastro Aproximado:** sua memória troca nomes por descrições como “Capa Azul” ou “Tênis Luminoso”. Quando o apelido realmente desestabiliza alguém, o alvo sofre Perda em testes sociais contra o Robô de Carga. Nunca use características pessoais sensíveis ou termos ofensivos.
 
-**Trava de Serviço:** ao chegar a 0PV, o placar concede os 3 pontos, mas os braços continuam presos ao pedestal. Um personagem Perto pode gastar uma ação para acionar a liberação amarela e afastar o robô, sem teste.
+**Trava de Serviço:** enquanto possui PV, mantém os estabilizadores presos ao piso e não pode ser retirado da área por um único empurrão. Ao chegar a 0PV, recolhe os estabilizadores e os braços, liberando automaticamente o painel de missão.
 
 **Braço de Contenção:** quando seu ataque vence a defesa, pode empurrar o alvo de Perto para Longe em vez de causar dano. Descreva uma mão acolchoada projetando a malha do Identificador para trás.
 
-**Tática:** permanece junto ao leitor, abre os quatro braços para bloquear passagem e prioriza empurrar; não persegue candidatos pelos andares.
+**Tática:** permanece junto ao painel de missão, abre os quatro braços para bloquear passagem e prioriza empurrar; não persegue candidatos até o elevador.
 
 #### A equipe rival
 
-Noah conclui que enfrentar todos os robôs desperdiça tempo. Ele direciona Sofia por uma rota vertical enquanto Cecília contém os perseguidores. Ao ver os personagens lutando por pontos, comenta de uma passarela paralela:
-
-— A prova pediu para chegar ao fim. O placar só está tentando fazer vocês esquecerem disso.
+Noah, Sofia e Cecília enfrentam outro desafio vertical em um módulo separado. Lia, Ravi, Malu, Ícaro e Dante também percorrem rotas próprias com outras equipes. Os personagens veem apenas os nomes e a pontuação dessas equipes no canto da projeção holográfica; ninguém interfere na Galeria Vertical dos protagonistas.
 
 ### Encontro 3 — Quarteirão em Obras
 
 **Objetivo:** atravessar o setor enquanto robôs coordenados desestabilizam uma fachada sobre a rota principal.
 
 > **Leia em voz alta:** O último portão revela andaimes, blocos modulares e um guindaste sobre trilhos. Dois braços mecânicos puxam suportes da fachada inclinada sobre a avenida. Uma linha no painel passa do verde para o amarelo. Não existem vítimas no prédio — mas ele está exatamente sobre o caminho mais curto.
+
+As portas dos outros módulos se abrem para o mesmo quarteirão. Noah, Sofia e Cecília chegam por uma rua lateral; Lia, Ravi, Malu, Ícaro e Dante aparecem em outras rotas com suas equipes. Este é o primeiro ponto de convergência do circuito. Eles continuam resolvendo frentes paralelas pela ficção e não entram na Iniciativa dos personagens.
 
 | Grupo | Operário Enlace |
 |---|---:|
@@ -562,7 +584,7 @@ Pontuação alta pode demonstrar capacidade e Controle, mas nunca substitui sozi
 | Desafio | Meta | Sucesso | Falha |
 |---|---:|---|---|
 | **Avenida das Vitrines** | defesa fixa 6 | neutralizar Tipo A concede 1 ponto | robôs restantes recuam após três rodadas |
-| **Galeria Vertical** | leitor no terceiro andar; abordagens contra o Robô de Carga usam defesa 5 ou meta 9 | encostar um Identificador no leitor encerra o encontro; Robô de Carga vale 3 pontos | saída de contingência após quatro rodadas; Perda na próxima Iniciativa |
+| **Galeria Vertical** | mapa e elevadores sem teste; Tipo A com defesa 6; Robô de Carga com defesa 5 | ativar o mapa e os elevadores, neutralizar os robôs e usar o painel completa a missão | se todos chegarem a 0PV, extração técnica abre a rota, mas a missão fica incompleta |
 | **Quarteirão em Obras** | defesa fixa 6; ambiente 9 | estabilizar, abrir rota ou contornar encerra o setor | Instabilidade avança e pode bloquear a avenida |
 | **Transportar vítima de exercício** | 9 sob pressão | preenche Evacuação ou alcança faixa azul | vítima permanece na posição atual |
 | **Libertar Sofia** | ataque contra defesa 10; fuga contra Poder 13; protocolo 9 ou 12 | encerra o Agarrão | Ponteiro Zero continua segurando Sofia |
@@ -583,7 +605,7 @@ Cada objetivo cumprido concede **1 XP**:
 
 - todos os personagens neutralizam pelo menos um robô usando uma capacidade própria;
 - alguém usa Ajuda para favorecer outro personagem;
-- a equipe usa o leitor da Galeria Vertical antes da saída de contingência;
+- a equipe completa todas as etapas da Galeria Vertical e ativa o painel de missão;
 - a equipe cria ou preserva uma rota coletiva no prédio instável;
 - pelo menos um personagem transporta uma vítima de exercício até uma faixa azul;
 - uma ação atrasa ou desvia o Ponteiro Zero sem colocar outro candidato em risco;

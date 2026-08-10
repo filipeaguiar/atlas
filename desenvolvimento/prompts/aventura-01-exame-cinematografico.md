@@ -42,7 +42,7 @@ Reestruturar `campanha/aventuras/01-exame-de-admissao.md` como uma aventura comp
 12. Usar Meta 9 como padrão, Meta 12 para ações especialmente difíceis, além de Ganho, Perda, Ajuda e PA.
 13. Dar informação indispensável sem exigir rolagem.
 14. Organizar cada cena por propósito, situação, decisões, procedimento e consequências.
-15. Na Galeria Vertical, apresentar claramente um shopping de três andares, o leitor de checkpoint no terceiro piso, a porta que ele destrava, o Robô de Carga bloqueando o acesso e as formas de interagir com esses elementos.
+15. Na Galeria Vertical, apresentar um shopping de três andares em etapas claras: ativar o mapa no primeiro piso; receber a planta holográfica no Identificador; localizar e ativar os elevadores; neutralizar robôs Tipo A no segundo piso; subir ao terceiro; derrotar o Robô de Carga Tipo B; e usar o painel que completa a missão. As outras equipes enfrentam rotas diferentes e só convergem com os personagens no encontro seguinte.
 16. Encerrar com debriefing imediato e confirmação de ingresso por mensagem holográfica dias depois.
 
 ## Estrutura desejada

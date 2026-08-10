@@ -2,7 +2,7 @@ schema_version: 1
 livro:
   titulo: "Herdeiros da Vanguarda"
   subtitulo: "Instituto Atlas e a Tragédia de Belamar"
-  versao: "0.1.0-dev.12"
+  versao: "0.1.0-dev.13"
   idioma: pt-BR
   arquivo_base: herdeiros-da-vanguarda
   status: desenvolvimento
