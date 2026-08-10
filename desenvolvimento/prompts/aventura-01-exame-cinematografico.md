@@ -32,17 +32,18 @@ Reestruturar `campanha/aventuras/01-exame-de-admissao.md` como uma aventura comp
 2. Abrir com impacto visual, discurso de recepção de Álvaro, passagem do comando pelo microfone para Tomás, aproximação pessoal de Samira para entrega dos Identificadores, rivalidade e contagem regressiva.
 3. Dar a cada personagem uma oportunidade inicial de parecer competente.
 4. Estruturar três encontros de combate consecutivos para uma equipe de 2–3 personagens de 10 pontos, usando fichas adaptadas de *3DeT Victory — Ferozes e Furiosos*: Robô de Combate Produzido em Massa (Modelo Antigo), P.E.A.O., G.A.R.I. e Robô de Duelo.
-5. Aplicar as recomendações de Categoria de Dano, Grau de Ameaça, números fixos e recuperação entre cenas de combate.
+5. Aplicar as recomendações de Categoria de Dano, adequação à perícia principal do grupo, números fixos e recuperação entre cenas de combate, sem depender do jargão de Grau de Ameaça nas instruções de mesa.
 6. Tratar o combate como conflito não violento: cada candidato recebe um Identificador de Avaliação Atlas, modular e acessível, que converte acertos simulados em perda de PV como margem operacional, nunca ferimento físico.
 7. Tornar o prédio instável um objetivo simultâneo ao terceiro combate: contornar, abrir passagem ou estabilizar.
 8. Fazer do Ponteiro Zero um Robô de Duelo Ningen, 17 pontos, forte mas possível de enfrentar, sem exigir sua derrota para concluir a prova.
-9. No clímax, candidatos em 0PV precisam ser transportados à Área Azul. Cecília lidera a evacuação; Sofia é agarrada pelo Ponteiro Zero depois de salvar um candidato; Noah permanece para apoiar os personagens, que formam a última linha de defesa.
+9. No clímax, candidatos em 0PV precisam ser transportados à Área Azul. Tomás informa pelo sistema de som que apenas os personagens jogadores e Noah, Sofia e Cecília continuam ativos. Cecília lidera a evacuação; Sofia é agarrada pelo Ponteiro Zero depois de salvar um candidato; Noah permanece para apoiar os personagens, que formam a última linha de defesa.
 10. Tomás comanda a etapa prática pelo sistema de som, explica suas linhas gerais e comunica que, se o Ponteiro Zero atravessar o perímetro da Área Azul, todos falham na etapa coletiva.
 11. Manter explícitos Controle, Julgamento, Equipe, Responsabilidade e Prioridade. A pontuação de combate não decide sozinha o ingresso.
 12. Usar Meta 9 como padrão, Meta 12 para ações especialmente difíceis, além de Ganho, Perda, Ajuda e PA.
 13. Dar informação indispensável sem exigir rolagem.
 14. Organizar cada cena por propósito, situação, decisões, procedimento e consequências.
-15. Encerrar com debriefing imediato e confirmação de ingresso por mensagem holográfica dias depois.
+15. Na Galeria Vertical, apresentar claramente um shopping de três andares, o leitor de checkpoint no terceiro piso, a porta que ele destrava, o Robô de Carga bloqueando o acesso e as formas de interagir com esses elementos.
+16. Encerrar com debriefing imediato e confirmação de ingresso por mensagem holográfica dias depois.
 
 ## Estrutura desejada
 

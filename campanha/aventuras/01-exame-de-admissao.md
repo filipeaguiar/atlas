@@ -68,9 +68,9 @@ Separe antes da sessão:
 
 A aventura assume **dois ou três personagens jogadores com 10 pontos**, escala Ningen. As tabelas de cada encontro indicam as duas configurações. Os NPCs rivais aparecem e pontuam em paralelo, mas não ocupam turnos no combate dos personagens.
 
-Antes da sessão, identifique qual perícia cada personagem usa normalmente com sua capacidade em combate. Luta é a opção padrão, mas Mística, Máquinas, Esporte ou outra perícia pode substituí-la quando a descrição justificar. Se pelo menos metade do grupo possui uma perícia aplicável, o circuito tem **Ameaça Grau Dois**, o desafio padrão. Se ninguém possui, use as configurações reduzidas indicadas nos encontros.
+Antes da sessão, identifique qual perícia cada personagem usa normalmente com sua capacidade em combate. Luta é a opção padrão, mas Mística, Máquinas, Esporte ou outra perícia pode substituí-la quando a descrição justificar. Use normalmente a linha correspondente ao número de personagens. Se ninguém possuir uma perícia aplicável, ignore essa linha e use a configuração **Grupo sem perícia aplicável** indicada em cada encontro.
 
-Use a regra opcional de **números fixos** para os robôs. Os jogadores continuam rolando ataque e defesa; os valores fixos funcionam como metas. Ganho, Perda, Ajuda e **Pontos de Ação** funcionam normalmente. Entre o primeiro e o segundo encontro, e entre o segundo e o terceiro, aplique **Sem tempo, irmão!**: cada personagem recupera metade de seus recursos totais, até o máximo. Não há recuperação entre o terceiro encontro e o Ponteiro Zero.
+Use a regra opcional de **números fixos** para os robôs. Os jogadores continuam rolando ataque e defesa; os valores fixos funcionam como metas. Ganho, Perda, Ajuda e **Pontos de Ação** funcionam normalmente. Depois de cada encontro do circuito, inclusive antes do Ponteiro Zero, aplique **Sem tempo, irmão!**: cada personagem recupera metade de seus recursos totais, até o máximo. Essa recuperação garante que todos os personagens jogadores continuem ativos no clímax, mas não restaura os demais candidatos já classificados como vítimas de exercício.
 
 ### Onde estão as fichas dos robôs
 
@@ -139,7 +139,9 @@ Tomás explica pelo microfone que o placar registra pontos, mas a banca observa 
 
 Ele conclui as linhas gerais:
 
-> **Leia em voz alta:** “As faixas azuis indicam rotas seguras. Um candidato reduzido a zero PV passa a representar uma vítima de exercício e precisa ser conduzido até uma dessas faixas. Âncora e a equipe técnica acompanharão toda a prova e interromperão o cenário se houver risco real. Observem, decidam e comuniquem. O cronômetro começa quando eu abrir o portão.”
+> **Leia em voz alta:** “As faixas azuis indicam rotas seguras. Um candidato reduzido a zero PV passa a representar uma vítima de exercício e precisa ser conduzido até uma dessas faixas. Vocês entrarão em baterias simultâneas; acompanhem o painel designado ao seu grupo. Âncora e a equipe técnica observarão toda a prova e interromperão o cenário se houver risco real. Observem, decidam e comuniquem. O cronômetro começa quando eu abrir o portão.”
+
+Painéis na base dos portões distribuem as centenas de candidatos entre módulos paralelos do ginásio. A bateria dos personagens reúne **os personagens jogadores, Noah, Sofia, Cecília e quatro candidatos sem ficha**, totalizando nove candidatos para dois jogadores ou dez para três. Os quatro candidatos sem ficha não participam da Iniciativa; eles aparecem no circuito e se tornam as vítimas de exercício representadas pelos marcadores da evacuação final.
 
 Além do portão existe uma réplica de bairro comercial. Nenhuma pessoa mora ali. Fachadas, veículos e postes são módulos substituíveis; redes e barreiras permanecem ocultas até serem necessárias.
 
@@ -209,7 +211,7 @@ O placar concede 1 ponto por Tipo A e 3 pontos por Tipo B. Quem causa a derrota 
 
 As fichas abaixo adaptam estruturas mecânicas de *Ferozes e Furiosos* à identidade visual do Instituto Atlas. A Sentinela Centelha possui Luta e Categoria de Dano C, como muitos personagens iniciantes, mas apenas 1PV. O Robô de Carga e o Operário Enlace atacam sem perícia de combate, mantendo dano e defesa seguros para uma sequência de encontros. O número de adversários permanece abaixo ou próximo dos 20–30 pontos totais dos personagens, sem depender apenas dessa comparação.
 
-Se nenhum personagem tiver perícia aplicável ao combate, use a coluna **Ameaça Grau Um**. Não aumente quantidades quando os jogadores tiverem fichas especialmente combativas; deixe que essa competência apareça no placar.
+Se nenhum personagem tiver perícia aplicável ao combate, ignore a linha baseada no tamanho da equipe e use **Grupo sem perícia aplicável**. Não aumente quantidades quando os jogadores tiverem fichas especialmente combativas; deixe que essa competência apareça no placar.
 
 ### Encontro 1 — Avenida das Vitrines
 
@@ -221,7 +223,7 @@ A rua é larga, com carros cenográficos, marquises e vitrines que oferecem cobe
 |---|---:|
 | 2 personagens | 3 |
 | 3 personagens | 4 |
-| Ameaça Grau Um | um robô a menos |
+| Grupo sem perícia aplicável | um robô a menos |
 
 Os robôs entram em duas frentes. No primeiro turno, no máximo um Tipo A por personagem pode atacar; os demais usam o movimento para cercar ou subir nos carros. Isso evita que quantidade e duas ações com Perda concentrem dano antes que a equipe se organize.
 
@@ -249,27 +251,33 @@ Numa rua paralela, Noah espera o primeiro ciclo de ativação. Sofia atravessa o
 
 ### Encontro 2 — Galeria Vertical
 
-**Objetivo:** alcançar o terceiro andar e ativar o terminal que libera o próximo setor.
+**Objetivo:** chegar ao terceiro andar, liberar o acesso ao leitor azul e aproximar um Identificador para abrir a porta do próximo setor.
 
-> **Leia em voz alta:** A avenida termina dentro de uma galeria comercial de três andares. Escadas rolantes paradas cortam o átrio, passarelas ligam os dois lados e drones recolhem vitrines para mudar as coberturas. No último piso, um robô de obras finca os braços diante de um terminal azul.
+> **Leia em voz alta:** A avenida desemboca no átrio de um shopping de três andares. Todos os pisos se abrem para o vão central, ligados por escadas rolantes paradas e passarelas de manutenção suspensas. No terceiro andar, uma placa azul pisca sobre uma porta metálica: “CHECKPOINT DO SETOR — APROXIME O IDENTIFICADOR”. O leitor está instalado num pedestal diante da porta, mas um Robô de Carga fincou os estabilizadores no chão e abriu quatro braços acolchoados ao redor dele. Sentinelas Centelha ocupam as passarelas. No térreo, painéis amarelos controlam as pontes móveis.
+
+Diga aos jogadores, sem exigir teste: **a porta atrás do pedestal leva ao terceiro setor; ela abre quando qualquer candidato encosta seu Identificador no leitor azul. O Robô de Carga está fisicamente entre eles e o leitor.** As Sentinelas dificultam a travessia, mas não precisam ser derrotadas para concluir o encontro.
 
 | Grupo | Robô de Carga | Sentinela Centelha |
 |---|---:|---:|
 | 2 personagens | 1 | 1 |
 | 3 personagens | 1 | 2 |
-| Ameaça Grau Um | 1 | 0 |
+| Grupo sem perícia aplicável | 1 | 0 |
 
-As Centelhas começam Longe, nas passarelas. O Robô de Carga começa Perto do terminal. Escalar pelo átrio, usar voo ou criar outro acesso exige a movimentação permitida pela capacidade; sem uma solução especial, subir consome um movimento por andar.
+**Posições iniciais:** os personagens entram no térreo, Longe do checkpoint. O Robô de Carga está Perto do leitor. As Centelhas começam nas passarelas, Longe dos personagens e Perto do terceiro andar.
 
-**Terminal:** um personagem Perto pode gastar uma ação e vencer um teste de Habilidade com Máquinas, meta 9. Enquanto o Robô de Carga estiver fisicamente diante dele, o teste sofre Perda. Empurrar, enganar, imobilizar ou derrotar o robô remove a condição.
+**Subir pelos andares:** alcançar o segundo piso pelas escadas rolantes consome um movimento; alcançar o terceiro consome outro. Voo, escalada, teleporte ou outra capacidade pode criar uma rota mais rápida conforme sua descrição.
 
-**Passarelas móveis:** uma vez por rodada, um personagem pode usar uma ação e fazer Habilidade com Máquinas ou Percepção, meta 9. No sucesso, reposiciona uma passarela e move a si ou um aliado de Longe para Perto do terminal. Na falha, a passarela para no meio e deixa o personagem exposto: Perda na próxima defesa.
+**Mover as passarelas:** os painéis amarelos do térreo controlam pontes de manutenção. Uma vez por rodada, um personagem Perto de um painel pode usar uma ação e fazer Habilidade com Máquinas ou Percepção, meta 9. No sucesso, move uma passarela e leva a si ou um aliado diretamente para Perto do checkpoint. Na falha, a ponte para no meio do átrio: o personagem continua Longe e sofre Perda na próxima defesa.
 
-**Encerramento:** ativar o terminal termina o encontro; robôs ainda ativos desligam sem conceder pontos. Se ninguém o ativar até o fim da quarta rodada, o sistema abre uma saída de contingência. A equipe avança, mas começa o encontro seguinte com Perda na Iniciativa.
+**Liberar o leitor:** empurrar, agarrar ou imobilizar o Robô de Carga pode afastá-lo do pedestal. Se ele chegar a 0PV, seus braços permanecem travados no lugar, mas um personagem Perto pode gastar uma ação para apertar a liberação amarela e afastá-lo, sem teste. Outra opção é dar ao robô uma ordem de serviço convincente com Influência ou Máquinas, meta 9; no sucesso, sua rotina prestativa o faz abandonar o leitor para cumprir a tarefa. Aceite outras capacidades que criem acesso ao pedestal.
+
+**Usar o checkpoint:** quando o leitor estiver acessível, um personagem Perto pode gastar uma ação para encostar nele seu Identificador. Isso não exige teste. O leitor fica verde, registra a passagem da equipe e abre a porta metálica.
+
+**Encerramento:** a leitura do Identificador termina o encontro; robôs ainda ativos se desligam sem conceder pontos. Se ninguém alcançar o leitor até o fim da quarta rodada, a porta abre por contingência. A equipe avança, mas começa o encontro seguinte com Perda na Iniciativa.
 
 #### Tipo B — Robô de Carga
 
-O Robô de Carga parece uma empilhadeira erguida sobre duas pernas largas. Faixas amarelas atravessam a carcaça azul, quatro mãos de borracha industrial cercam o torso e uma voz excessivamente prestativa anuncia cada tarefa. Seu peso e os estabilizadores nos pés transformam o terminal num problema de posição, não apenas de dano.
+O Robô de Carga parece uma empilhadeira erguida sobre duas pernas largas. Faixas amarelas atravessam a carcaça azul, quatro mãos de borracha industrial cercam o torso e uma voz excessivamente prestativa anuncia cada tarefa. Seu peso e os estabilizadores nos pés transformam o acesso ao leitor num problema de posição, não apenas de dano.
 
 **P2, H2, R2; 10PV. Perícia:** Máquinas. **Vantagens:** Construto, Obstinado. **Pontos no exame:** 3.
 
@@ -283,11 +291,11 @@ O Robô de Carga parece uma empilhadeira erguida sobre duas pernas largas. Faixa
 
 **Cadastro Aproximado:** sua memória troca nomes por descrições como “Capa Azul” ou “Tênis Luminoso”. Quando o apelido realmente desestabiliza alguém, o alvo sofre Perda em testes sociais contra o Robô de Carga. Nunca use características pessoais sensíveis ou termos ofensivos.
 
-**Trava de Serviço:** o Robô de Carga não sofre Perda quando está derrotado. Ao chegar a 0PV, o placar concede os 3 pontos, mas suas mãos continuam presas ao terminal até que ele seja afastado ou o console seja ativado.
+**Trava de Serviço:** ao chegar a 0PV, o placar concede os 3 pontos, mas os braços continuam presos ao pedestal. Um personagem Perto pode gastar uma ação para acionar a liberação amarela e afastar o robô, sem teste.
 
 **Braço de Contenção:** quando seu ataque vence a defesa, pode empurrar o alvo de Perto para Longe em vez de causar dano. Descreva uma mão acolchoada projetando a malha do Identificador para trás.
 
-**Tática:** permanece junto ao terminal, abre os quatro braços para bloquear passagem e prioriza empurrar; não persegue candidatos pelos andares.
+**Tática:** permanece junto ao leitor, abre os quatro braços para bloquear passagem e prioriza empurrar; não persegue candidatos pelos andares.
 
 #### A equipe rival
 
@@ -305,7 +313,7 @@ Noah conclui que enfrentar todos os robôs desperdiça tempo. Ele direciona Sofi
 |---|---:|
 | 2 personagens | 1 |
 | 3 personagens | 2 |
-| Ameaça Grau Um | 1, com 10PV |
+| Grupo sem perícia aplicável | 1, com 10PV |
 
 Coloque três marcadores para a **Instabilidade**. No início do turno dos robôs, avance a Instabilidade uma vez, não importando quantos Operários Enlace existam, salvo se os personagens tiverem estabilizado a fachada desde o último avanço.
 
@@ -349,7 +357,7 @@ Os Operários Enlace são unidades de demolição com ombros largos, cabeça tri
 
 Noah considera que estabilizar a fachada custará pontos demais. Ele envia Sofia pela rota superior, pede que Cecília proteja candidatos na base do andaime e segue para uma saída lateral. A decisão é eficiente com a informação disponível, mas deixa o trio separado.
 
-Quando o setor termina, não aplique recuperação. Personagens e NPCs que chegaram a 0PV ainda estão sendo conduzidos às faixas azuis quando o aviso de dois minutos começa.
+Quando o setor termina, os portões levam alguns instantes para reconfigurar a rota. Aplique **Sem tempo, irmão!** aos personagens jogadores, garantindo que todos voltem a ficar ativos. Os demais candidatos que chegaram a 0PV continuam com marcadores vermelhos quando o aviso de dois minutos começa.
 
 ## Cena 3 — A Última Linha
 
@@ -361,9 +369,11 @@ As rotas laterais dos três setores convergem nessa avenida. Noah alcança um co
 
 Os candidatos reconhecem imediatamente as faixas vermelhas dos Identificadores e intensificam a retirada para a **Área Azul**, um espaço protegido no fim do bairro. Cecília organiza o transporte e sustenta a passagem. Sofia usa sua velocidade para buscar quem ficou mais longe.
 
+A recuperação anterior garante que todos os personagens jogadores estão ativos. Calcule **X** somando os três integrantes da equipe rival à quantidade de personagens jogadores: **cinco** candidatos para dois personagens ou **seis** para três.
+
 Então Tomás continua pelos alto-falantes, agora sem o tom de contagem:
 
-> **Leia em voz alta:** “Atenção, candidatos. O Ponteiro Zero está a três setores da Área Azul. Ele não vale pontos. Se atravessar o perímetro, a etapa coletiva será considerada falha para todos.”
+> **Leia em voz alta:** “Atenção. Dos candidatos desta bateria, somente **[X]** continuam ativos. Todos os demais aguardam evacuação. O Ponteiro Zero está a três setores da Área Azul e não vale pontos. Se atravessar o perímetro, a etapa coletiva será considerada falha para todos.”
 
 A informação é completa e não exige teste:
 
@@ -542,7 +552,7 @@ Pontuação alta pode demonstrar capacidade e Controle, mas nunca substitui sozi
 | Desafio | Meta | Sucesso | Falha |
 |---|---:|---|---|
 | **Avenida das Vitrines** | defesa fixa 6 | neutralizar Tipo A concede 1 ponto | robôs restantes recuam após três rodadas |
-| **Galeria Vertical** | defesa fixa 5; terminal 9 | ativar terminal encerra o encontro; Robô de Carga vale 3 pontos | saída de contingência após quatro rodadas; Perda na próxima Iniciativa |
+| **Galeria Vertical** | leitor no terceiro andar; abordagens contra o Robô de Carga usam defesa 5 ou meta 9 | encostar um Identificador no leitor encerra o encontro; Robô de Carga vale 3 pontos | saída de contingência após quatro rodadas; Perda na próxima Iniciativa |
 | **Quarteirão em Obras** | defesa fixa 6; ambiente 9 | estabilizar, abrir rota ou contornar encerra o setor | Instabilidade avança e pode bloquear a avenida |
 | **Transportar vítima de exercício** | 9 sob pressão | preenche Evacuação ou alcança faixa azul | vítima permanece na posição atual |
 | **Libertar Sofia** | ataque contra defesa 10; fuga contra Poder 13; protocolo 9 ou 12 | encerra o Agarrão | Ponteiro Zero continua segurando Sofia |
@@ -563,7 +573,7 @@ Cada objetivo cumprido concede **1 XP**:
 
 - todos os personagens neutralizam pelo menos um robô usando uma capacidade própria;
 - alguém usa Ajuda para favorecer outro personagem;
-- a equipe ativa o terminal da Galeria Vertical antes da saída de contingência;
+- a equipe usa o leitor da Galeria Vertical antes da saída de contingência;
 - a equipe cria ou preserva uma rota coletiva no prédio instável;
 - pelo menos um personagem transporta uma vítima de exercício até uma faixa azul;
 - uma ação atrasa ou desvia o Ponteiro Zero sem colocar outro candidato em risco;
