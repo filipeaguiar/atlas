@@ -29,7 +29,7 @@ def test_materializacao_hugo_contem_somente_documentos_manifestados() -> None:
     }
     manifest_ids = {str(document.metadata["id"]) for document in plan.documents}
     assert generated_ids == manifest_ids
-    assert len(generated_ids) == 37
+    assert len(generated_ids) == 38
     assert not (stage / "content" / "desenvolvimento").exists()
     assert not list(stage.rglob("*.pdf"))
     sheet = (stage / "content" / "regras" / "fichas-equipe-atlas.md").read_text()
@@ -47,7 +47,7 @@ def test_links_entre_capitulos_sao_relativos_ao_site() -> None:
 
 def test_build_hugo_funciona_em_subdiretorio_e_nao_publica_pdf() -> None:
     destination, plan = generate_site(base_url="https://exemplo.github.io/projeto/")
-    assert len(plan.documents) == 37
+    assert len(plan.documents) == 38
     home = (destination / "index.html").read_text(encoding="utf-8")
     chapter = (
         destination / "campanha" / "campanha-tres-arcos" / "index.html"

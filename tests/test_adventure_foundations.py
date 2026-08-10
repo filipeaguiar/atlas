@@ -35,12 +35,13 @@ def test_mapa_recusa_posicao_ausente_e_selecao_editorial(tmp_path: Path) -> None
         validate_map(invalid, manifest)
 
 
-def test_aventura_real_tem_estrutura_e_permanece_em_revisao() -> None:
+def test_aventura_real_tem_estrutura_e_esta_publicada() -> None:
     validate_adventure(ADVENTURE, MANIFEST)
     metadata = yaml.safe_load(ADVENTURE.read_text().split("---\n", 2)[1])
-    assert metadata["status"] == "revisao"
-    assert metadata["publicar"] is False
-    assert "campanha/aventuras/01-exame-de-admissao.md" not in MANIFEST.read_text()
+    assert metadata["status"] == "canon"
+    assert metadata["publicar"] is True
+    assert metadata["aprovado"] is True
+    assert "campanha/aventuras/01-exame-de-admissao.md" in MANIFEST.read_text()
 
 
 def test_aventura_recusa_secao_ausente_e_aprovacao_sem_manifesto(tmp_path: Path) -> None:
@@ -53,12 +54,7 @@ def test_aventura_recusa_secao_ausente_e_aprovacao_sem_manifesto(tmp_path: Path)
     with pytest.raises(AdventureError, match="partes obrigatórias"):
         validate_adventure(candidate, manifest)
 
-    approved = (
-        original.replace("status: revisao", "status: canon", 1)
-        .replace("publicar: false", "publicar: true", 1)
-        .replace("aprovado: false", "aprovado: true", 1)
-    )
-    candidate.write_text(approved)
+    candidate.write_text(original)
     with pytest.raises(AdventureError, match="deve constar no manifesto"):
         validate_adventure(candidate, manifest)
 
@@ -66,7 +62,12 @@ def test_aventura_recusa_secao_ausente_e_aprovacao_sem_manifesto(tmp_path: Path)
 def test_aventura_recusa_rascunho_selecionado_e_resumo_sem_leitura(tmp_path: Path) -> None:
     original = ADVENTURE.read_text()
     candidate = tmp_path / "aventura.md"
-    candidate.write_text(original)
+    draft = (
+        original.replace("status: canon", "status: revisao", 1)
+        .replace("publicar: true", "publicar: false", 1)
+        .replace("aprovado: true", "aprovado: false", 1)
+    )
+    candidate.write_text(draft)
     manifest = tmp_path / "manifest.yml"
     manifest.write_text(f"origem: {candidate.as_posix()}\n")
     with pytest.raises(AdventureError, match="revisão"):
@@ -81,10 +82,13 @@ def test_aventura_recusa_rascunho_selecionado_e_resumo_sem_leitura(tmp_path: Pat
 def test_aventura_recusa_cena_sem_texto_para_mesa(tmp_path: Path) -> None:
     original = ADVENTURE.read_text()
     candidate = tmp_path / "aventura.md"
-    marker = "## Cena 1 — Os portões estão abertos\n\n> **Leia em voz alta:**"
-    candidate.write_text(original.replace(marker, "## Cena 1 — Os portões estão abertos\n\n> **Descrição:**", 1))
+    before, scene_and_after = original.split("## Cena 1 — O Portão e a Largada", 1)
+    scene, after = scene_and_after.split("## Cena 2 — O Circuito de Combate", 1)
+    scene = scene.replace("> **Leia em voz alta:**", "> **Descrição:**")
+    modified = before + "## Cena 1 — O Portão e a Largada" + scene + "## Cena 2 — O Circuito de Combate" + after
+    candidate.write_text(modified)
     manifest = tmp_path / "manifest.yml"
-    manifest.write_text("schema_version: 1\n")
+    manifest.write_text(f"origem: {candidate.as_posix()}\n")
     with pytest.raises(AdventureError, match="cena sem leitura em voz alta"):
         validate_adventure(candidate, manifest)
 
@@ -99,13 +103,11 @@ def test_aventura_recusa_declaracao_negativa_no_material_final(tmp_path: Path) -
         validate_adventure(candidate, manifest)
 
 
-def test_mapas_da_estacao_sao_svg_validos_e_estao_ligados() -> None:
-    body = ADVENTURE.read_text()
+def test_mapas_legados_da_estacao_permanecem_svg_validos() -> None:
     for audience in ("jogadores", "mestre"):
         path = ROOT / "campanha" / "aventuras" / "recursos" / f"01-estacao-canal-quatro-{audience}.svg"
         root = ElementTree.parse(path).getroot()
         assert root.tag.endswith("svg")
-        assert path.name in body
 
 
 def test_capitulos_de_arco_tem_proveniencia_de_recuperacao() -> None:

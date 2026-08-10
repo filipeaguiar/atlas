@@ -56,7 +56,7 @@ Estas fichas transformam funções já apresentadas em recursos de mesa. Adultos
 - **Vantagens:** Genialidade, Sentidos Especiais.
 - **Limitação:** depende de informação verificável.
 
-**Atlas, pausa (2 PM):** interrompe um dispositivo ou exercício institucional por uma rodada. **Critério explícito:** ao declarar o risco observado, concede **Ganho** ao teste seguinte para evitá-lo. **Registro comparado:** uma vez por cena, recupera um fato já observado que não depende de rolagem.
+**Critério explícito:** ao declarar o risco observado, concede **Ganho** ao teste seguinte para evitá-lo. **Registro comparado:** uma vez por cena, recupera um fato já observado que não depende de rolagem.
 
 **Interpretação:** precisa, justa e econômica; explica critérios antes de avaliar.
 

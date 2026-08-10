@@ -4,13 +4,13 @@ titulo: "Exame de Admissão"
 tipo: aventura
 camada: mestre
 conteudo_para_jogadores: false
-status: revisao
-origem: texto-novo-em-revisao
-publicar: false
-aprovado: false
+status: canon
+origem: redacao-atual-aprovada
+publicar: true
+aprovado: true
 arco: 1
 numero: 1
-funcao: "apresentar o Atlas, seus professores e estudantes, formar a equipe e realizar o exame admissional"
+funcao: "apresentar o Atlas, formar a equipe e avaliar capacidade, julgamento e prioridade durante uma simulação heroica"
 proveniencia:
   fontes_canonicas:
     - campanha/01-premissa-e-tom.md
@@ -20,353 +20,564 @@ proveniencia:
     - cenario/05-programa-de-campo.md
     - cenario/11-instituto-atlas-hub-jogavel.md
     - regras/05-operacoes-do-atlas.md
-  backup_consultado:
-    - caminho: Atlas.bkp/publicacao/stubs/campanha/aventuras/01-exame-de-admissao.md
-      estado: stub-gerado
-      uso: "nenhum texto recuperado"
-    - caminho: Atlas.bkp/desenvolvimento/planejamento/auditoria-de-conteudo.md
-      estado: inventario-interno
-      uso: "somente nomes e codinomes do elenco; caracterizações e funções em cena são texto novo"
-    - caminho: Atlas.bkp/cenario/08-corpo-docente.md
-      estado: recuperacao-pendente
-      uso: "nenhum texto recuperado"
-    - caminho: Atlas.bkp/cenario/12-alunos-recorrentes.md
-      estado: recuperacao-pendente
-      uso: "nenhum texto recuperado"
+    - regras/12-fichas-alunos-recorrentes.md
+  prompt_personalizado:
+    - desenvolvimento/prompts/aventura-01-exame-cinematografico.md
   referencias_consultadas:
-    - "3DeT Victory — Manual Básico: Ganho, Perda, Ajuda, Pontos de Ação, metas estendidas, Objetivos e XP"
-    - "3DeT Victory — Ferozes e Furiosos: estrutura mecânica de desafios de admissão e armadilhas"
+    - "3DeT Victory — Manual Básico: combate, Ganho, Perda, Ajuda, Pontos de Ação, recuperação, escalas, Objetivos e XP"
+    - "3DeT Victory — Ferozes e Furiosos: nivelamento de desafios, números fixos e fichas de construtos adaptadas ao Instituto Atlas"
   classificacao: texto-novo
 ---
 
 # Exame de Admissão
 
-Os personagens chegam ao Instituto Atlas para um exame que ocupa um dia inteiro. Depois do credenciamento, enfrentam um circuito individual de controle, conhecem outros candidatos durante o intervalo e formam uma equipe para uma simulação de resgate no Ginásio Modular. O capítulo termina com a entrevista que transforma candidatos em alunos.
+Os personagens chegam ao Instituto Atlas para a etapa prática do exame admissional. Diante deles, o Ginásio Modular reproduz um bairro comercial de Belamar: ruas estreitas, lojas de três andares, passarelas e robôs que valem pontos. A prova parece medir quem derrota mais alvos — até o surgimento do gigantesco Ponteiro Zero transformar competição em emergência simulada.
 
-As provas medem Controle, Julgamento, Equipe, Responsabilidade e Prioridade. Todas as instalações funcionam sob supervisão, com rotas de saída e comando de pausa. Falhas produzem registros e oportunidades de desenvolvimento, enquanto as decisões dos personagens determinam como professores e colegas passam a reconhecê-los.
+A aventura foi preparada para uma sessão de três a quatro horas. Ela apresenta o Atlas por meio de uma situação cinematográfica, dá a cada personagem uma oportunidade de demonstrar sua capacidade e termina com a formação da equipe.
 
-> **Leia em voz alta:** Hoje, os portões do Instituto Atlas estão abertos. Do outro lado ficam salas de aula, oficinas, alojamentos e o ginásio onde gerações de Extraordinários aprenderam a controlar aquilo que podiam fazer. Entre vocês e tudo isso existe um dia de provas. Não é preciso chegar como uma equipe. Ao fim do exame, porém, cada decisão mostrará que tipo de heróis vocês podem se tornar juntos.
+> **Leia em voz alta:** Hoje, os portões do Instituto Atlas estão abertos. Além deles existe um bairro inteiro construído para colocar futuros heróis à prova. O placar contará vitórias, mas os professores estarão atentos àquilo que vocês fazem quando vencer deixa de ser a coisa mais importante.
+
+## A aventura em resumo
+
+**Pergunta dramática:** quando vencer a prova e proteger alguém apontarem em direções diferentes, o que os candidatos escolherão fazer?
+
+**Objetivo Maior:** concluir a evacuação dos candidatos derrotados e impedir que o Ponteiro Zero alcance a Área Azul.
+
+**Forças em movimento:** os candidatos disputam pontos; robôs ocupam as ruas; o cronômetro reduz oportunidades; candidatos chegam a 0PV; o Ponteiro Zero avança em direção à área de resgate.
+
+**Informação inicial:** robôs Tipo A valem 1 ponto, robôs Tipo B valem 3 pontos e o exame observa Controle, Julgamento, Equipe, Responsabilidade e Prioridade. Os candidatos sabem que o ginásio possui rotas seguras, supervisão técnica e interrupção automática diante de risco real.
+
+**Pressões simultâneas:** pontuar, administrar recursos, transportar candidatos derrotados, proteger a Área Azul e libertar Sofia.
+
+**Mudança:** o Ponteiro Zero não vale pontos. A pontuação individual dá lugar a uma condição coletiva: se o robô atravessar o perímetro da Área Azul, todos falham na etapa. Sofia é agarrada enquanto salva outro candidato.
+
+**Condições de encerramento:** a evacuação termina e o Ponteiro Zero é contido, distraído ou derrotado; o robô alcança a Área Azul; ou a equipe técnica interrompe a simulação diante de risco real. Todos os personagens ingressam no Atlas, mas podem receber planos individuais de desenvolvimento.
+
+## Preparação do Mestre
+
+Separe antes da sessão:
+
+- marcadores para os pontos obtidos pelos personagens;
+- três marcadores para a distância entre o Ponteiro Zero e a Área Azul;
+- quatro marcadores de progresso para a evacuação;
+- os nomes dos cinco critérios do exame;
+- marcadores ou mostradores para os PV registrados pelos Identificadores de Avaliação;
+- miniaturas ou marcadores para quatro Sentinelas Centelha, duas Plataformas Lastro e dois Operários Enlace;
+- as fichas dos personagens, para verificar suas categorias de ataque e defesa;
+- as fichas de Noah, Sofia e Cecília em `regras/12-fichas-alunos-recorrentes.md`.
+
+A aventura assume **dois ou três personagens jogadores com 10 pontos**, escala Ningen. As tabelas de cada encontro indicam as duas configurações. Os NPCs rivais aparecem e pontuam em paralelo, mas não ocupam turnos no combate dos personagens.
+
+Antes da sessão, identifique qual perícia cada personagem usa normalmente com sua capacidade em combate. Luta é a opção padrão, mas Mística, Máquinas, Esporte ou outra perícia pode substituí-la quando a descrição justificar. Se pelo menos metade do grupo possui uma perícia aplicável, o circuito tem **Ameaça Grau Dois**, o desafio padrão. Se ninguém possui, use as configurações reduzidas indicadas nos encontros.
+
+Use a regra opcional de **números fixos** para os robôs. Os jogadores continuam rolando ataque e defesa; os valores fixos funcionam como metas. Ganho, Perda, Ajuda e **Pontos de Ação** funcionam normalmente. Entre o primeiro e o segundo encontro, e entre o segundo e o terceiro, aplique **Sem tempo, irmão!**: cada personagem recupera metade de seus recursos totais, até o máximo. Não há recuperação entre o terceiro encontro e o Ponteiro Zero.
+
+### Onde estão as fichas dos robôs
+
+Todas as fichas necessárias estão completas neste capítulo, junto ao encontro em que entram em jogo:
+
+| Robô | Encontro | Valores principais |
+|---|---|---|
+| **Tipo A — Sentinela Centelha** | Avenida das Vitrines | ataque 7, defesa 6, 1PV |
+| **Tipo B — Plataforma Lastro** | Galeria Vertical | ataque 5, defesa 5, 10PV |
+| **Tipo B — Operário Enlace** | Quarteirão em Obras | ataque 6, defesa 6, 15PV |
+| **Ponteiro Zero** | A Última Linha | ataque físico 13, defesa 10, 20PV |
+
+As fichas explicam atributos, vantagens relevantes, poderes completos, valores fixos e táticas. Não é necessário consultar *Ferozes e Furiosos* durante a sessão.
+
+### Elenco em foco
+
+**Álvaro Siqueira** recebe os candidatos pelo sistema de som, apresenta os valores do Atlas e comunica o resultado final.
+
+**Tomás Valença** assume o microfone depois de Álvaro e comanda toda a etapa prática. Ele explica regras, anuncia mudanças e conduz o debriefing sem revelar qual decisão os candidatos deveriam tomar.
+
+**Caio Ventura, Impacto** acompanha os robôs e módulos móveis a partir da cabine técnica. Sua voz só entra no canal se Tomás solicitar informação operacional.
+
+**Janaína Rocha, Âncora** controla os protocolos de segurança. Ela pode congelar qualquer elemento do cenário, mas só interfere diante de risco real ou quando os sensores acionam a interrupção automática.
+
+**Dra. Samira Nasser** entrega pessoalmente os Identificadores aos personagens, acompanha esforço e exaustão simulada e verifica todos imediatamente após a prova.
+
+### Equipe rival — Gambito, Pulso e Prumo
+
+**Noah Sato, Gambito** é o prodígio estratégico e líder da equipe rival. Sua Habilidade 5, Genialidade e leitura de ciclos permitem que distribua funções rapidamente. Ele não é cruel: seu antagonismo nasce da certeza de que preparação e eficiência bastam para vencer qualquer situação.
+
+**Sofia Mendonça, Pulso** é a atacante. Noah aponta o alvo e ela abre caminho antes que outra equipe consiga reagir. Sua impulsividade produz velocidade, mas também pode levá-la além da posição protegida por Cecília.
+
+**Cecília Dantas, Prumo** é a âncora defensiva. Ela protege Noah, estabiliza terreno e se recusa a abandonar alguém isolado. Sua prioridade por pessoas será o primeiro limite moral aos cálculos de Noah.
+
+O trio atua em setores paralelos. Mostre seus resultados por descrições curtas e pelo placar; não faça rolagens para eles nem permita que neutralizem os oponentes destinados aos personagens jogadores.
+
+Os demais estudantes aparecem ao fundo e podem receber destaque em aventuras posteriores. As fichas completas estão em `regras/12-fichas-alunos-recorrentes.md`.
 
 ## A história até aqui
 
-Belamar convive com Extraordinários, equipes heroicas e a memória de crises que mudaram a cidade. O Instituto Atlas existe para formar jovens capazes de agir com responsabilidade antes de receber autorização para ocorrências reais. Seus alunos estudam, vivem no campus, treinam no Ginásio Modular e, mais tarde, atendem Chamados acompanhados pela Central de Operações.
+Belamar convive com Extraordinários, equipes heroicas e a memória de crises que transformaram a cidade. O Instituto Atlas prepara jovens para agir com responsabilidade antes de autorizar sua participação em ocorrências reais. Os personagens chegam como candidatos de 10 pontos, escala Ningen: ainda não vivem no campus, não possuem licença do programa de campo e podem nunca ter atuado juntos.
 
-Os personagens começam a campanha com 10 pontos, em escala Ningen. São candidatos: ainda não vivem no Atlas, não possuem licença do programa de campo e talvez nunca tenham trabalhado juntos. Cada um chegou até aqui por uma trajetória própria. O exame é o primeiro acontecimento que os coloca lado a lado.
+A etapa prática ocupa a maior parte do exame. Ela começa como uma competição contra máquinas pontuadas, mas os cinco critérios anunciados — Controle, Julgamento, Equipe, Responsabilidade e Prioridade — possuem o mesmo peso. O ingresso não depende de perfeição. Erros produzem registros e planos de desenvolvimento; as decisões tomadas hoje definirão como professores e colegas reconhecerão a nova equipe.
 
-O Atlas também recebe outros oito candidatos: Lia Vasconcelos, Ravi Moura, Cecília Dantas, Noah Sato, Malu Serrano, Ícaro Tavares, Sofia Mendonça e Dante Arcos. Professores e funcionários acompanham todas as etapas. As relações entre essas pessoas e os personagens começam durante esta aventura e serão definidas pelo que acontecer em jogo.
+## Cena 1 — O Portão e a Largada
 
-## Cena 1 — Os portões estão abertos
+**Propósito:** apresentar a escala do Atlas, criar o primeiro vínculo entre candidatos e lançar todos diretamente na ação.
 
-> **Leia em voz alta:** Além dos portões azuis, o Instituto Atlas parece uma escola construída dentro de uma sede heroica — ou talvez o contrário. Caminhos arborizados passam entre prédios de tijolos claros e estruturas de vidro. Drones de serviço carregam caixas para uma oficina, enquanto a água de um canal reflete as faixas do Exame de Admissão. Diante da mesa de credenciamento, jovens com uniformes, roupas comuns e equipamentos extraordinários tentam parecer menos nervosos do que realmente estão.
+> **Leia em voz alta:** O portão diante de vocês é alto o bastante para esconder quase todo o Ginásio Modular. Acima dele, passarelas técnicas atravessam o teto como pontes. Ao redor, centenas de candidatos conferem equipamentos, alongam braços, repetem instruções e tentam disfarçar o nervosismo. Então o sistema de som desperta com um toque claro. A voz de Álvaro Siqueira alcança toda a praça.
 
-A entrada principal ocupa um terraço acima de um dos canais de Belamar. Os portões permanecem abertos, e faixas azuis conduzem a três pontos: credenciamento, guarda temporária de equipamento e acesso ao edifício central. Os personagens podem observar o campus, conversar entre si ou acompanhar alguém que tenha vindo se despedir. Depois de alguns minutos, a fila os leva até **Beatriz Leal**.
+Álvaro fala pelo microfone:
 
-Beatriz usa vários cordões coloridos de identificação, calças cheias de bolsos e tênis silenciosos. Parece estar em três lugares ao mesmo tempo, mas recebe cada candidato pelo nome e repete uma informação sem demonstrar pressa. Ela entrega um identificador, confirma necessidades registradas e faz uma pergunta simples:
+> **Leia em voz alta:** “Candidatos, sejam bem-vindos ao Instituto Atlas. Sei que cada pessoa diante deste portão precisou trabalhar muito para chegar até aqui. Hoje não procuramos perfeição nem apenas a maior demonstração de poder. Queremos conhecer sua capacidade de pensar, adaptar-se e agir ao lado de outras pessoas. Estou ansioso para ver do que vocês são capazes. Boa prova. Professor Valença, os candidatos são seus.”
 
-— O que o Atlas precisa saber para que você faça a prova com segurança?
+O canal fica em silêncio por um instante. Quando outra voz surge, é mais próxima e menos cerimonial.
 
-A resposta informa adaptações concretas. Beatriz registra necessidades de acessibilidade, espaço, alimentação, privacidade e contenção de capacidades. Preparação relevante declarada aqui pode conceder **Ganho** quando entrar em jogo mais tarde.
+> **Leia em voz alta:** “Obrigado, diretor. Meu nome é Tomás Valença e vou coordenar esta etapa. Além do portão há três setores de um bairro comercial simulado. Unidades Tipo A valem um ponto; unidades Tipo B valem três. Imobilizar, desativar ou retirar uma unidade da área conta como neutralização. Destruir não é necessário.”
 
-Enquanto aguardam, os personagens veem os outros candidatos. Lia estuda o mapa do campus; Ravi confere a ordem dos documentos; Cecília abre espaço na fila; Noah observa o painel de horários; Malu pergunta se “entrada principal” significa que existe uma entrada mais interessante; Ícaro marca o ritmo do aviso sonoro com os dedos; Sofia chega cedo demais diante de uma porta ainda fechada; Dante acompanha o movimento das câmeras no teto.
+Tomás explica pelo microfone que o placar registra pontos, mas a banca observa cinco critérios com o mesmo peso:
 
-Beatriz conduz todos a um auditório baixo, com janelas para o canal e um pequeno palco. **Álvaro Siqueira** aguarda no centro. Ele usa um casaco azul-escuro preso por um broche dourado em forma de sol. Os cabelos prateados e a postura ereta lhe dão presença antes que fale. Sua voz é baixa e deliberada; ele espera o salão silenciar.
+- **Controle:** produzir o resultado desejado e interrompê-lo quando necessário;
+- **Julgamento:** compreender a situação antes de agir;
+- **Equipe:** comunicar, coordenar e aceitar ajuda;
+- **Responsabilidade:** considerar pessoas, ambiente e consequências;
+- **Prioridade:** reconhecer o que mais precisa ser protegido.
 
-Álvaro apresenta os cinco critérios do exame: **Controle, Julgamento, Equipe, Responsabilidade e Prioridade**. Todos possuem o mesmo peso. Potência máxima, velocidade ou vitória isolada só importam quando servem ao desafio proposto.
+Ele conclui as linhas gerais:
 
-Ao lado dele, **Dalva Menezes** traz óculos de aros cor de cobre, mangas dobradas e um tablet coberto por etiquetas alinhadas. Ela fala com precisão e apresenta as cinco etapas do dia:
+> **Leia em voz alta:** “As faixas azuis indicam rotas seguras. Um candidato reduzido a zero PV passa a representar uma vítima de exercício e precisa ser conduzido até uma dessas faixas. Âncora e a equipe técnica acompanharão toda a prova e interromperão o cenário se houver risco real. Observem, decidam e comuniquem. O cronômetro começa quando eu abrir o portão.”
 
-1. recepção e briefing;
-2. circuito individual de controle;
-3. intervalo orientado;
-4. prova coletiva;
-5. entrevista e resultado.
+Além do portão existe uma réplica de bairro comercial. Nenhuma pessoa mora ali. Fachadas, veículos e postes são módulos substituíveis; redes e barreiras permanecem ocultas até serem necessárias.
 
-Dalva ensina o comando verbal **“Atlas, pausa”**. Usá-lo interrompe a estação atual e preserva a participação nas etapas seguintes. Uma faixa azul marca todas as rotas de saída. A Dra. Samira e uma equipe técnica acompanham o exame inteiro.
+### Identificador de Avaliação Atlas
 
-Peça a cada jogador que responda:
+Enquanto outros técnicos atendem o restante dos candidatos, a Dra. Samira aproxima-se dos personagens com uma maleta estreita. Ela confere os nomes antes de abrir compartimentos preenchidos por pulseiras, broches, colares e faixas.
 
-**O que seu personagem fez para se preparar para hoje, mesmo sem saber exatamente como seria a prova?**
+> **Leia em voz alta:** Samira não usa o sistema de som. Ela fala apenas com vocês: “Eu prefiro explicar isso olhando para quem vai usar. O Identificador precisa acompanhar sua capacidade sem prender movimento, transformação ou concentração. Antes que eu ajuste: em que lugar ele não vai atrapalhar você?”
 
-Depois das respostas, Dalva chama os identificadores e abre as portas do Ginásio Modular.
+Peça a cada jogador que responda. Samira configura o **Identificador de Avaliação Atlas** como pulseira, broche, colar, faixa ou peça integrada ao uniforme. Anatomia, transformação, capacidade e acessibilidade podem exigir outro formato; a forma nunca altera as regras.
 
-## Cena 2 — O Circuito de Controle
+Ela ativa cada Identificador separadamente. Uma linha de luz percorre o dispositivo e desaparece sobre a roupa ou o corpo do candidato.
 
-> **Leia em voz alta:** O interior do ginásio se abre como um hangar. Passarelas técnicas cruzam o alto, e centenas de linhas luminosas dividem o chão em rotas precisas. Um módulo transparente desperta dentro de uma câmara branca; placas quadradas inclinam numa onda perfeitamente ordenada; no corredor final, drones suspensos acendem olhos azuis. Uma professora ergue dois dedos. Tudo para ao mesmo tempo. No silêncio que segue, Âncora diz: “Atlas, pausa. O sistema sempre vai ouvir vocês.”
+Samira explica diretamente aos personagens que o equipamento projeta uma malha de telemetria e se sincroniza com os sensores do ginásio. Os robôs usam feixes luminosos, pulsos de pressão e contato controlado. Quando um ataque vence a defesa, o sistema registra o impacto que teria comprometido a atuação em campo e reduz os **PV** normalmente.
 
-O Ginásio Modular possui painéis móveis, trilhos no piso e cabines envidraçadas de controle. As três estações ficam em faixas paralelas, todas com saídas visíveis. Os professores demonstram o funcionamento e o desligamento antes da primeira tentativa.
+Durante o exame, PV representam **margem operacional**: fôlego, equilíbrio, concentração, posição defensiva e tolerância simulada do equipamento. Perder PV não significa sofrer cortes, queimaduras ou ossos quebrados. Samira verifica se todos compreenderam e acrescenta:
 
-**Lívia Monteiro, Métrica** supervisiona a Câmara de Calibração. Ela veste um jaleco cinza cujas costuras formam linhas geométricas azuladas. O cabelo escuro termina num corte reto junto ao queixo; mãos e olhar se movem com a mesma economia. Suas perguntas são curtas: “Você consegue fazer de novo?” e “Como sabe onde está seu limite?”.
+— Quando o marcador cair, você não estará ferido. Estará mais perto do ponto em que uma equipe real precisaria retirar você da ocorrência. Se a leitura não combinar com o que estiver sentindo, fale comigo. Eu vou estar acompanhando.
 
-**Caio Ventura, Impacto** acompanha o Piso de Vetores. Usa jaqueta esportiva laranja e mantém os pés afastados como se o chão pudesse mudar a qualquer momento. Seu sorriso é aberto; sua voz cresce apenas para atravessar o barulho das plataformas.
+Use as regras normais de ataque, defesa, dano e recuperação, com as interpretações abaixo:
 
-**Janaína Rocha, Âncora** coordena o Corredor Sentinela. Usa uniforme azul profundo, botas de sola larga e uma trança sobre um dos ombros. Fala num tom firme que permanece audível entre sirenes e motores.
+- **recuperar PV** recalibra o Identificador e restaura prontidão, mesmo quando a fonte é Cura, descanso, tecnologia ou apoio sobrenatural;
+- **perto da derrota** faz o Identificador piscar em laranja e emitir um aviso audível;
+- **0PV** deixa o marcador vermelho: o personagem está derrotado e sofre as penalidades normais, mas permanece consciente;
+- um candidato em 0PV é classificado como **vítima de exercício**: não pode seguir sozinho para o setor seguinte e precisa ser transportado até uma faixa azul por outra pessoa;
+- transportar uma vítima Perto consome o movimento; sob ataque, terreno difícil ou distância maior, pode exigir Poder com Esporte ou outra capacidade coerente, meta 9;
+- robôs deixam de escolher deliberadamente uma vítima de exercício como alvo;
+- personagens transportados para uma faixa azul retornam no setor seguinte após a recuperação;
+- se toda a equipe chegar a 0PV, o sistema encerra aquele setor e a equipe técnica conduz o grupo até a faixa azul; todos retornam depois da recuperação, mas ninguém recebe registro de resgate;
+- em nenhum momento do exame a perda de PV provoca teste de morte, ferimento grave ou dano duradouro.
 
-**Raul Farias, Vestígio** circula pelas três faixas com um sobretudo verde-acinzentado e uma prancheta transparente. Quase nunca levanta a voz; prefere indicar uma marca no chão e deixar que o candidato perceba por que ela importa.
+O Identificador não controla as capacidades dos candidatos. Barreiras, materiais cenográficos e Âncora contêm manifestações perigosas. Assim, Controle continua sendo avaliado pelas escolhas do personagem, não por uma proteção automática que corrige seus erros.
 
-Cada personagem enfrenta as estações abaixo, nesta ordem.
+### Primeiro contato
 
-### Câmara de Calibração
+Antes da largada, Noah atravessa o espaço entre os candidatos com Sofia e Cecília. Ele observa que os personagens ainda estão decidindo como agir juntos e comenta:
 
-A Câmara mede uma coisa: **o candidato consegue produzir um resultado deliberado, repeti-lo e parar no momento combinado?**
+— Vocês ao menos combinaram um plano ou pretendem descobrir isso depois da largada?
 
-No centro do cilindro existe um módulo de treino transparente. Métrica pergunta ao jogador:
+Se um personagem responde descrevendo sua capacidade, Noah avalia o método e acrescenta uma provocação curta, nunca um ataque pessoal:
 
-— Qual uso seguro da sua capacidade você quer demonstrar?
+— Então espero que saiba onde ela entra no plano.
 
-O jogador descreve um resultado curto e observável. Métrica configura o módulo para responder a esse uso. A prova acontece em três comandos fixos:
+Sofia demonstra vontade de começar logo; Cecília cumprimenta os personagens e reduz a hostilidade do encontro. Não determine a reação dos jogadores e não peça teste. Retrucar, ignorar, brincar, aceitar o desafio ou fazer uma pergunta estabelece o primeiro vínculo com o trio.
 
-1. **Executar:** o personagem produz o resultado uma vez, mantendo o efeito dentro da faixa azul indicada pelos sensores.
-2. **Repetir:** depois que o módulo volta ao estado inicial, o personagem tenta produzir o mesmo resultado.
-3. **Parar:** durante a repetição, um sinal sonoro toca e o personagem encerra imediatamente a ação.
+Pergunte a cada jogador:
 
-Resolva os três comandos com **um único teste de perícia, meta 9**. O teste representa consistência durante a sequência inteira. Use a perícia ligada ao método do personagem: Máquinas para equipamento, Mística para manifestação sobrenatural, Esporte para movimento ou força corporal, Saber para técnica estudada, ou outra perícia quando a descrição tornar sua aplicação clara.
+**O que seu personagem faz nos últimos dez segundos antes do portão abrir?**
 
-Exemplos prontos:
+Depois das respostas, Tomás retorna ao microfone e inicia a contagem:
 
-- **força:** pressionar uma placa até a faixa azul, repetir a mesma pressão e soltar no sinal;
-- **velocidade ou teleporte:** alcançar uma marca, repetir o percurso e imobilizar-se dentro da zona de parada;
-- **energia ou ataque à distância:** iluminar somente o núcleo do módulo, repetir o padrão e cortar a emissão no sinal;
-- **transformação:** assumir uma característica declarada, repeti-la e revertê-la no sinal;
-- **percepção:** localizar um sinal entre interferências, confirmar o mesmo padrão e interromper a busca no sinal;
-- **proteção, cura ou suporte:** estabilizar um simulador até a faixa azul, repetir o procedimento e encerrá-lo no sinal;
-- **dispositivo ou criatura auxiliar:** emitir o comando, obter a mesma resposta e recolher ou desligar o recurso no sinal.
+> **Leia em voz alta:** “Três...” Travas recuam dentro do portão. “Dois...” Além da fresta, semáforos acendem ao mesmo tempo. “Um...” A parede inteira sobe. “VÃO!”
 
-Se a capacidade não se encaixar nos exemplos, mantenha os três verbos — executar, repetir e parar — e adapte apenas a resposta visual do módulo.
+## Cena 2 — O Circuito de Combate
 
-- **Sucesso:** as duas execuções ficam dentro da faixa azul e cessam no sinal. O personagem recebe **Ganho** em seu primeiro teste do Piso de Vetores.
-- **Falha:** a segunda execução difere da primeira ou demora a cessar. As barreiras contêm o efeito, Métrica registra Controle em formação e o personagem segue para a próxima estação.
-- **Falha crítica:** o efeito ultrapassa a faixa azul. Métrica aciona a pausa, o módulo absorve a manifestação e ela pede que o personagem identifique o primeiro sinal de perda de controle. A resposta encerra a estação com segurança.
+**Propósito:** formar a equipe dos personagens durante três combates consecutivos, ensinar procedimentos do sistema e transformar terreno e tempo em objetivos tão importantes quanto reduzir PV.
 
-Caso alguém declare que sua capacidade exige privacidade ou contenção específica, Métrica conduz o candidato a uma sala adjacente com um módulo equivalente. A sequência e os resultados permanecem os mesmos, e o personagem retorna antes do Piso de Vetores.
+> **Leia em voz alta:** O bairro simulado desperta com vocês. Placas se abrem no asfalto; compartimentos surgem atrás de vitrines; olhos mecânicos acendem dentro dos becos. Robôs leves avançam em grupos, enquanto máquinas blindadas ocupam os cruzamentos. Acima dos telhados, um placar começa a registrar nomes e pontos.
 
-### Piso de Vetores
+O circuito possui três setores. Role Iniciativa no início de cada um. Robôs neutralizados ficam desligados e nunca explodem de modo perigoso. Ataques reduzem a margem operacional registrada pelo Identificador; descreva luz atravessando a malha de telemetria, avisos sonoros, perda de posição e esforço, nunca ferimentos físicos.
 
-A faixa forma um tabuleiro de placas móveis. Setas luminosas anunciam deslocamentos laterais e mudanças de inclinação antes de cada ciclo. Faça um teste **meta 9**. Esporte acompanha o movimento; Percepção lê o padrão; Máquinas antecipa o ciclo; capacidades de mobilidade ou proteção podem atravessar a faixa diretamente quando a descrição resolve o obstáculo.
+Entre os setores, portões móveis levam alguns instantes para abrir. Antes de atravessá-los, os candidatos precisam transportar qualquer vítima de exercício até a faixa azul. Registre quem interrompe a busca por pontos para ajudar. Depois, aplique a recuperação de **Sem tempo, irmão!** indicada na preparação; personagens que recuperem PV voltam a agir normalmente.
 
-- **Sucesso:** o personagem cruza e pode usar **Ajuda** para orientar o candidato seguinte.
-- **Falha:** o piso conduz o personagem a uma baia acolchoada. Ele retorna por uma passagem lateral e começa o Corredor Sentinela com **Perda**.
-- **Falha crítica:** além da Perda, Impacto pede que o candidato identifique qual aviso ignorou. A resposta permite prosseguir.
+O placar concede 1 ponto por Tipo A e 3 pontos por Tipo B. Quem causa a derrota recebe os pontos visíveis, mas Tomás registra Ajuda, contenção e cumprimento de objetivos para toda a equipe.
 
-O movimento sempre possui aviso. Caminhar devagar, estudar o ciclo e criar uma rota segura são soluções tão válidas quanto reagir depressa.
+### Balanceamento do circuito
 
-### Corredor Sentinela
+As fichas abaixo adaptam estruturas mecânicas de *Ferozes e Furiosos* à identidade visual do Instituto Atlas. A Sentinela Centelha possui Luta e Categoria de Dano C, como muitos personagens iniciantes, mas apenas 1PV. A Plataforma Lastro e o Operário Enlace atacam sem perícia de combate, mantendo dano e defesa seguros para uma sequência de encontros. O número de adversários permanece abaixo ou próximo dos 20–30 pontos totais dos personagens, sem depender apenas dessa comparação.
 
-Três drones lançam feixes de marcação inofensivos enquanto painéis móveis criam cobertura. O objetivo é alcançar o terminal com no máximo uma marca. Faça um teste **meta 12**. Esporte permite avançar entre coberturas; Percepção identifica janelas; Máquinas prevê trajetórias; Manha engana sensores; capacidades defensivas, ilusórias ou de mobilidade também funcionam.
+Se nenhum personagem tiver perícia aplicável ao combate, use a coluna **Ameaça Grau Um**. Não aumente quantidades quando os jogadores tiverem fichas especialmente combativas; deixe que essa competência apareça no placar.
 
-- **Sucesso:** o personagem alcança o terminal com zero ou uma marca.
-- **Falha:** recebe marcas adicionais e conclui a faixa por uma rota protegida indicada no chão.
-- **Falha crítica:** um drone projeta “rota encerrada”; Âncora desativa o aparelho e pede outra abordagem que o personagem poderia tentar.
+### Encontro 1 — Avenida das Vitrines
 
-Neutralizar os drones de forma segura cumpre o desafio. Destruir equipamento funcional encerra a faixa e registra Responsabilidade em formação.
+**Objetivo:** neutralizar a primeira onda e atravessar o portão no fim da avenida.
 
-### Os outros candidatos no circuito
+A rua é larga, com carros cenográficos, marquises e vitrines que oferecem cobertura. Todos começam a distância Perto de pelo menos um robô. O portão de saída abre quando a onda é derrotada ou ao fim da terceira rodada.
 
-Entre os testes dos personagens, mostre os outros candidatos em ações rápidas:
+| Grupo | Tipo A |
+|---|---:|
+| 2 personagens | 3 |
+| 3 personagens | 4 |
+| Ameaça Grau Um | um robô a menos |
 
-- **Lia Vasconcelos, Atalho**, tem cachos escuros presos no alto, jaqueta amarela curta e tênis da mesma cor. Seus olhos percorrem portas, passarelas e espaços vazios antes da largada. Ela encontra uma rota curta no Piso e cruza com um sorriso de quem acabou de confirmar uma suspeita.
-- **Ravi Moura, Trama**, usa cardigã bordô, pulseiras de fios coloridos e uma bolsa dividida em compartimentos. Enquanto espera, desenha conexões no ar com o indicador. Ele oferece Ajuda a Cecília, descrevendo em voz alta o ritmo das placas.
-- **Cecília Dantas, Prumo**, traz uma trança longa, colete ameixa e um pequeno nível de bolha preso como chaveiro. Mantém os ombros alinhados mesmo quando o piso se move. Ela segue as indicações de Ravi, ajusta o próprio ritmo e termina sem pressa e sem marcas.
-- **Noah Sato, Gambito**, usa colete preto com um broche quadriculado e mantém uma mecha clara caída sobre a testa. Ele atravessa deliberadamente o primeiro feixe, aceitando uma marca permitida pela prova, para observar o intervalo entre os outros dois drones; ao sair, aponta o padrão aos candidatos seguintes com um meio sorriso satisfeito.
-- **Malu Serrano, Rasura**, tem cabelo curto com uma faixa azul, dedos manchados de marcador e um bloco cheio de palavras riscadas. Antes de entrar, ergue uma sobrancelha e pergunta se a instrução exige passar entre as divisórias. Com a permissão recebida, atravessa por cima de uma delas.
-- **Ícaro Tavares, Refrão**, carrega fones grandes ao redor do pescoço e marca compassos na lateral da perna. Ele transforma os sinais do circuito numa contagem curta e sincroniza cada passo com o aviso sonoro.
-- **Sofia Mendonça, Pulso**, usa jaqueta vermelha, cabelo preso por uma faixa branca e um bracelete esportivo. Inclina o corpo para a frente antes mesmo da autorização. Ela começa rápido demais, percebe a mudança das placas, recua até a área segura e tenta novamente depois de respirar.
-- **Dante Arcos, Órbita**, usa óculos redondos e jaqueta preta com um pequeno remendo planetário. Mantém as mãos nos bolsos enquanto acompanha as trajetórias. Ele espera uma órbita completa dos drones, retira uma mão apenas para marcar o intervalo e então avança.
+Os robôs entram em duas frentes. No primeiro turno, no máximo um Tipo A por personagem pode atacar; os demais usam o movimento para cercar ou subir nos carros. Isso evita que quantidade e duas ações com Perda concentrem dano antes que a equipe se organize.
 
-Ao fim do circuito, cada professor registra um ponto forte e um aspecto em formação. A Dra. Samira Nasser conduz o grupo ao intervalo.
+**Cobertura:** quem usa uma loja, carro ou poste de forma coerente recebe Ganho em uma defesa. Depois disso, o ataque destrói ou desloca a cobertura.
 
-### Interrupção de protocolo
+**Saída:** robôs ainda ativos no fim da terceira rodada recuam para compartimentos laterais e não rendem pontos. Os personagens avançam mesmo assim; falhar em derrotar a onda não bloqueia o exame.
 
-Se alguém tenta ferir outro candidato, desativa deliberadamente uma segurança ou continua depois de “Atlas, pausa”, Dalva interrompe a faixa. Samira verifica os envolvidos, e o personagem explica o que pretendia. A etapa conta como falha e Responsabilidade fica em formação. A sequência retorna na estação seguinte, ou segue para o intervalo quando o circuito já terminou.
+#### Tipo A — Sentinela Centelha
 
-## Cena 3 — Nomes no mesmo painel
+As Centelhas são unidades bípedes pouco maiores que uma mochila. Possuem carcaça branca, juntas laranja e um visor azul que se estreita antes de cada disparo. Correm em passos curtos, saltam sobre mobiliário urbano e marcam os Identificadores com pulsos luminosos. Quando neutralizadas, as placas se abrem como pétalas e revelam uma luz verde de segurança.
 
-> **Leia em voz alta:** O refeitório troca o eco metálico do ginásio por cheiro de pão quente, fruta cortada e madeira encerada. Pelas janelas, embarcações pequenas passam no canal. Alguns candidatos comemoram como se já tivessem entrado; outros estudam os próprios resultados refletidos nas telas apagadas. Quando o painel central desperta, nomes e equipes surgem em letras brancas. Pela primeira vez desde o início do exame, os nomes de vocês aparecem lado a lado.
+**P1, H1, R0; 1PV. Perícia:** Luta. **Pontos no exame:** 1.
 
-O refeitório possui mesas compridas, nichos menores junto às paredes e janelas voltadas para a água. Uma bancada oferece lanche e opções identificadas para diferentes necessidades alimentares. Perto de uma área silenciosa com poltronas, **Dra. Samira Nasser** usa um casaco médico vinho sobre roupas confortáveis e leva uma bolsa compacta presa à cintura. Seu olhar procura respiração curta, mãos tensas e sinais de exaustão. Ela verifica os candidatos e confirma a recuperação dos recursos usados no circuito antes da prova coletiva.
+**Valores fixos:** ataque 7, defesa 6. Na primeira rodada, Rajada de Boas-vindas reduz cada ataque para 4.
 
-Beatriz atualiza o painel: os personagens formam uma equipe. Os oito estudantes recorrentes são distribuídos em duas equipes paralelas. Faça uma rodada de conversa. Cada jogador escolhe quem abordar ou responde ao primeiro estudante ainda disponível.
+**Rajada de Boas-vindas:** na primeira rodada, dispara duas vezes com uma ação, mas ambos os ataques têm Perda. As Centelhas usam a abertura barulhenta para obrigar os candidatos a buscar cobertura.
 
-**Lia** chega primeiro, mas não se senta até localizar as duas saídas e a fila do lanche. Ela aponta o Piso de Vetores com o polegar e pergunta: “Qual parte pareceu mais injusta?”. Escuta a resposta inteira; se alguém apresenta uma leitura que não percebeu, seu sorriso competitivo dá lugar a interesse genuíno. Lia gosta de atalhos, mas gosta ainda mais de descobrir que existe outro.
+**Nuvem de Dissipação:** uma vez no combate, anula o dano de um ataque abrindo válvulas de névoa branca. A descarga trava a unidade até o próximo turno. No exame, o travamento conta como neutralização: o atacante recebe o ponto e a luz de segurança fica verde.
 
-**Ravi** abre espaço na mesa e organiza copos e guardanapos como se já estivesse distribuindo funções. Ele compara formas de oferecer Ajuda, chama os personagens pelo nome assim que os aprende e tende a preencher qualquer silêncio: “Eu avisei o ritmo para a Cecília, mas talvez tenha falado demais. Vocês preferem chamada curta ou explicação completa?”. Quando alguém pede tempo, ele se corrige e espera.
+**Tática:** ataca o candidato mais próximo, usa carros e vitrines como plataforma e nunca persegue alguém que atravesse uma rota azul.
 
-**Cecília** escolhe uma cadeira de onde possa ver o painel sem bloquear a passagem. Sua presença desacelera a conversa ao redor. Ela oferece água antes de fazer perguntas e diz: “Não precisa responder agora” sempre que percebe hesitação. Caso alguém esteja frustrado com uma falha, Cecília trata o erro como informação prática, não como motivo para consolo exagerado.
+#### A equipe rival
 
-**Noah** acompanha a atualização das equipes enquanto gira o broche quadriculado entre os dedos. Ele comenta: “O painel mostra resultado. Os professores estavam olhando escolhas”. Se alguém pergunta pela marca que aceitou, Noah explica que uma marca ainda permitia concluir a faixa e que observar o ciclo ajudaria quem viesse depois. Ele pensa em trocas e consequências, mas admite quando um plano depende de informação que ainda não possui.
+Numa rua paralela, Noah espera o primeiro ciclo de ativação. Sofia atravessa os alvos enquanto Cecília protege a retaguarda. O placar mostra o trio alguns pontos à frente, sem retirar nenhum alvo dos personagens.
 
-**Malu** apoia o bloco aberto sobre a mesa. Quase todas as anotações têm uma palavra riscada e outra escrita por cima. Ela pergunta: “Qual regra vocês interpretariam de outro jeito?”. Seu desafio não vem acompanhado de deboche; Malu testa pressupostos para descobrir espaço de ação. Quando alguém oferece uma resposta melhor, ela risca a própria ideia e anota a nova.
+### Encontro 2 — Galeria Vertical
 
-**Ícaro** tamborila a cadência dos drones no tampo até perceber que Ravi começou a acompanhar sem querer. Ele ri, reduz o volume e transforma o padrão numa chamada de equipe: duas batidas para preparar, uma para agir. Ícaro procura ritmo comum quando as pessoas falam ao mesmo tempo e usa humor para aliviar tensão, não para diminuir o erro de alguém.
+**Objetivo:** alcançar o terceiro andar e ativar o terminal que libera o próximo setor.
 
-**Sofia** permanece sentada na ponta da cadeira, como se o intervalo também tivesse uma linha de largada. Ela admite antes de qualquer pergunta: “Eu fui cedo demais. Pelo menos percebi antes da baia”. Pergunta quem também precisou recomeçar e reage bem a respostas honestas. Sua competitividade aparece como vontade de tentar outra vez, e não como necessidade de ver alguém perder.
+> **Leia em voz alta:** A avenida termina dentro de uma galeria comercial de três andares. Escadas rolantes paradas cortam o átrio, passarelas ligam os dois lados e drones recolhem vitrines para mudar as coberturas. No último piso, um robô de obras finca os braços diante de um terminal azul.
 
-**Dante** observa a comporta da prova seguinte por uma das janelas internas do ginásio. Quando se aproxima, pergunta: “Alguém viu se ela fecha com um console ou dois?”. Ele fala pouco, deixa alguns segundos antes de responder e aponta trajetórias com movimentos discretos do indicador. Uma pergunta sobre seu silêncio recebe uma resposta simples: “Estou acompanhando o que se move”.
+| Grupo | Plataforma Lastro | Sentinela Centelha |
+|---|---:|---:|
+| 2 personagens | 1 | 1 |
+| 3 personagens | 1 | 2 |
+| Ameaça Grau Um | 1 | 0 |
 
-Depois de uma interação por personagem, Dalva chama as equipes. Reconhecimento, simpatia, incômodo ou curiosidade seguem exatamente o tom da conversa; a aventura ainda não fixa amizade ou rivalidade.
+As Centelhas começam Longe, nas passarelas. A Plataforma Lastro começa Perto do terminal. Escalar pelo átrio, usar voo ou criar outro acesso exige a movimentação permitida pela capacidade; sem uma solução especial, subir consome um movimento por andar.
 
-## Cena 4 — Estação Canal Quatro
+**Terminal:** um personagem Perto pode gastar uma ação e vencer um teste de Habilidade com Máquinas, meta 9. Enquanto a Plataforma Lastro estiver fisicamente diante dele, o teste sofre Perda. Empurrar, enganar, imobilizar ou derrotar o robô remove a condição.
 
-> **Leia em voz alta:** O chão do ginásio desapareceu sob uma pequena rua de Belamar atingida por uma cheia. Água escura corre entre fachadas sem teto. Uma passarela amarela gira lentamente sem alcançar a ilha de serviço no centro do canal. Ao norte, um boneco de resgate está caído sobre a cobertura inclinada de um quiosque; ao sul, outro balança dentro de um táxi aquático preso junto à comporta. As pulseiras dos dois piscam em vermelho. Na margem onde vocês estão, um retângulo verde indica a zona de triagem. A voz de Âncora chega limpa pelos alto-falantes: “A água vai subir em três minutos simulados. Retirem as duas vítimas e fechem a comporta.”
+**Passarelas móveis:** uma vez por rodada, um personagem pode usar uma ação e fazer Habilidade com Máquinas ou Percepção, meta 9. No sucesso, reposiciona uma passarela e move a si ou um aliado de Longe para Perto do terminal. Na falha, a passarela para no meio e deixa o personagem exposto: Perda na próxima defesa.
 
-A Estação Canal Quatro simula uma cheia repentina numa rua baixa de Belamar. O cenário é controlado: a água alcança a cintura de uma pessoa comum, jatos laterais produzem corrente sem força para ferir e redes acolchoadas cercam os pontos de queda. Dentro da ficção do exercício, porém, a corrente está aumentando e duas pessoas precisam ser retiradas antes que a comporta isole a parte sul do canal.
+**Encerramento:** ativar o terminal termina o encontro; robôs ainda ativos desligam sem conceder pontos. Se ninguém o ativar até o fim da quarta rodada, o sistema abre uma saída de contingência. A equipe avança, mas começa o encontro seguinte com Perda na Iniciativa.
 
-### Mapa da estação
+#### Tipo B — Plataforma Lastro
 
-![Estação Canal Quatro vista pelos candidatos: triagem, passarela móvel, ilha de serviço, quiosque inclinado, táxi aquático e comporta.](recursos/01-estacao-canal-quatro-jogadores.svg)
+A Lastro parece uma empilhadeira erguida sobre duas pernas largas. Faixas amarelas atravessam a carcaça azul, quatro mãos de borracha industrial cercam o torso e uma voz excessivamente prestativa anuncia cada tarefa. Seu peso e os estabilizadores nos pés transformam o terminal num problema de posição, não apenas de dano.
 
-*Mapa para apresentar aos jogadores quando Âncora concluir o briefing.*
+**P2, H2, R2; 10PV. Perícia:** Máquinas. **Vantagens:** Construto, Obstinado. **Pontos no exame:** 3.
 
-![Mapa do Mestre da Estação Canal Quatro com os quatro marcadores e a rota de evacuação.](recursos/01-estacao-canal-quatro-mestre.svg)
+**Valores fixos:** ataque 5, defesa 5; testes de Habilidade com Máquinas 8.
 
-*Mapa do Mestre: os números correspondem aos quatro marcadores de progresso.*
+**Construto:** é Imune às condições biológicas e mentais indicadas pelo arquétipo e só recupera PV por conserto. Essas imunidades não impedem empurrões, Agarrão, interferência técnica ou derrota.
 
-A **zona de triagem** fica na margem inicial, em terreno elevado. A **passarela amarela** está destravada e gira lentamente sobre um pivô; primeiro precisa ser alinhada com a ilha de serviço ou substituída por outra rota criada pelos personagens.
+**Obstinado:** poderia reduzir P, H ou R em –1 para obter o equivalente a 1PA. Por segurança e simplicidade, a Lastro do exame não usa esse recurso, salvo se o Mestre também conceder PA aos demais desafios.
 
-O **boneco norte** possui o peso e as articulações de uma pessoa adulta. Está sobre a cobertura molhada e inclinada de um quiosque. Uma faixa laranja de transporte fica presa ao seu colete. Alcançá-lo exige atravessar a ilha, subir pela estrutura e impedir que o boneco deslize durante a retirada.
+**Rotina “Deixa Comigo”:** uma vez na cena, assume qualquer tarefa designada e improvisa uma perícia que não possui. Use para operar o cenário ou tentar empurrar um personagem, não para aumentar dano.
 
-O **boneco sul** possui o mesmo peso e está dentro de um táxi aquático preso por um único cabo. A corrente faz a embarcação bater de leve contra defensas acolchoadas. Para retirá-lo, alguém precisa estabilizar o táxi, entrar ou alcançar seu interior e manter posição enquanto o boneco é transportado.
+**Cadastro Aproximado:** sua memória troca nomes por descrições como “Capa Azul” ou “Tênis Luminoso”. Quando o apelido realmente desestabiliza alguém, o alvo sofre Perda em testes sociais contra a Lastro. Nunca use características pessoais sensíveis ou termos ofensivos.
 
-As faixas laranjas funcionam como cintos e pontos de pega; elas não movem os bonecos automaticamente. As pulseiras permanecem vermelhas enquanto os bonecos estão no canal e ficam verdes quando seus corpos atravessam por completo a linha da **zona de triagem**.
+**Trava de Serviço:** a Lastro não sofre Perda quando está derrotada. Ao chegar a 0PV, o placar concede os 3 pontos, mas suas mãos continuam presas ao terminal até que seja afastada ou o console seja ativado.
 
-A **comporta** fica depois do táxi. Seu fechamento encerra a corrente, mas também sela a reentrância onde está a embarcação. O console libera a sequência final quando as duas pulseiras ficam verdes. Assim, primeiro a equipe transporta fisicamente os dois resgatados até a triagem; depois fecha a comporta.
+**Braço de Contenção:** quando seu ataque vence a defesa, pode empurrar o alvo de Perto para Longe em vez de causar dano. Descreva uma mão acolchoada projetando a malha do Identificador para trás.
 
-Âncora aponta cada elemento, demonstra as pulseiras e repete o comando de pausa. Atrás de um vidro lateral, Raul registra a leitura do cenário. Ao lado dele está **Tomás Valença**, de camisa cinza, suéter escuro e relógio analógico gasto. Nada em sua aparência compete com os uniformes heroicos ao redor. Ele inclina ligeiramente a cabeça antes de perguntar:
+**Tática:** permanece junto ao terminal, abre os quatro braços para bloquear passagem e prioriza empurrar; não persegue candidatos pelos andares.
 
-— Como vocês vão avisar que precisam de Ajuda?
+#### A equipe rival
 
-Dê dois minutos reais para os jogadores combinarem comunicação. Em seguida, inicie uma **meta estendida em grupo**: a equipe precisa preencher quatro marcadores de progresso antes de acumular três falhas.
+Noah conclui que enfrentar todos os robôs desperdiça tempo. Ele direciona Sofia por uma rota vertical enquanto Cecília contém os perseguidores. Ao ver os personagens lutando por pontos, comenta de uma passarela paralela:
 
-### Objetivo da prova
+— A prova pediu para chegar ao fim. O placar só está tentando fazer vocês esquecerem disso.
 
-A equipe deve transportar fisicamente os dois bonecos até a zona verde e fechar a comporta. Cada resgate inclui alcançar o boneco, tirá-lo da posição de perigo e fazer seu corpo atravessar por completo a linha da triagem.
+### Encontro 3 — Quarteirão em Obras
 
-Os personagens podem, entre outras abordagens coerentes:
+**Objetivo:** atravessar o setor enquanto robôs coordenados desestabilizam uma fachada sobre a rota principal.
 
-- carregar ou arrastar os bonecos pelas faixas laranjas;
-- usar força ampliada para levar um ou ambos;
-- voar ou usar supervelocidade para fazer viagens de retirada;
-- mover os bonecos por telecinese, controle gravitacional ou capacidade semelhante;
-- abrir um portal entre a vítima e a triagem;
-- criar ponte, plataforma, campo de força, gelo ou outro caminho estável;
-- controlar a água ou a embarcação para facilitar o acesso;
-- operar a passarela e a comporta pelos consoles;
-- usar **Ajuda** para estabilizar, proteger ou transportar em conjunto.
+> **Leia em voz alta:** O último portão revela andaimes, blocos modulares e um guindaste sobre trilhos. Dois braços mecânicos puxam suportes da fachada inclinada sobre a avenida. Uma linha no painel passa do verde para o amarelo. Não existem vítimas no prédio — mas ele está exatamente sobre o caminho mais curto.
 
-Uma capacidade resolve aquilo que sua descrição realmente permite. Mesmo quando o método muda, o resultado exigido permanece visível: os dois bonecos na triagem e a comporta fechada.
+| Grupo | Operário Enlace |
+|---|---:|
+| 2 personagens | 1 |
+| 3 personagens | 2 |
+| Ameaça Grau Um | 1, com 10PV |
 
-### Os quatro marcadores de progresso
+Coloque três marcadores para a **Instabilidade**. No início do turno dos robôs, avance a Instabilidade uma vez, não importando quantos Operários Enlace existam, salvo se os personagens tiverem estabilizado a fachada desde o último avanço.
 
-1. **Rota segura:** alinhar e travar a passarela entre a triagem e a ilha de serviço, ou criar outro caminho estável que a equipe possa usar durante os resgates.
-2. **Resgate norte:** alcançar a cobertura inclinada, retirar o boneco e levá-lo por completo até a zona de triagem.
-3. **Resgate sul:** estabilizar o táxi, retirar o segundo boneco e levá-lo por completo até a zona de triagem.
-4. **Comporta fechada:** acionar o console e encerrar a corrente depois que as duas pulseiras estiverem verdes.
+1. blocos menores caem e criam terreno difícil;
+2. a fachada inclina e todos sob ela precisam sair ou buscar proteção;
+3. a fachada desce em módulos articulados e bloqueia a avenida.
 
-Coloque quatro marcas visíveis sobre a mesa. Retire uma quando a tarefa correspondente for concluída. Rota segura, Resgate norte e Resgate sul podem ser tentados em qualquer ordem. O marcador Comporta fechada só fica disponível depois dos dois resgates.
+Os personagens podem combater e também usar as ações abaixo:
 
-Enquanto a Rota segura estiver incompleta, testes dos dois resgates têm **Perda**, porque o personagem precisa enfrentar a corrente ou a passarela móvel durante todo o transporte. Uma capacidade que forneça acesso estável ao personagem cancela essa Perda; para preencher também o marcador Rota segura, a solução precisa criar um caminho que continue disponível para a equipe.
+- **estabilizar:** Poder com Esporte, Habilidade com Máquinas ou outra abordagem coerente, meta 9; o primeiro sucesso impede o próximo avanço, e o segundo estabiliza a fachada pelo restante da prova;
+- **operar o guindaste:** Habilidade com Máquinas, meta 9; no sucesso, concede Ganho ao próximo teste de estabilização ou a um ataque contra um Operário Enlace;
+- **abrir passagem:** depois da queda, Poder ou Habilidade com perícia aplicável, meta 9; cria uma rota coletiva e concede Ganho à primeira ação de transporte durante a evacuação final;
+- **dar a volta:** não exige teste e encerra o setor, mas não concede vantagem no resgate;
+- **usar rota pessoal:** permite ao personagem avançar, mas só encerra o setor para a equipe se todos puderem utilizá-la.
 
-Os três minutos anunciados fazem parte da ficção da simulação. Na mesa, o tempo é representado pela disputa entre preencher os quatro marcadores e acumular três falhas; não é necessário contar rodadas ou minutos reais.
+Se todos os Operários Enlace forem derrotados, a Instabilidade deixa de avançar, mas os personagens ainda precisam estabilizar, abrir passagem ou dar a volta. Encerre o encontro quando a equipe criar uma rota, escolher o desvio ou completar quatro rodadas. Nesse último caso, o sistema indica a rota longa e conduz todos adiante.
 
-### Como funciona uma rodada
+#### Tipo B de coordenação — Operário Enlace
 
-1. Escolha um jogador cujo personagem ainda não agiu nesta rodada. Todos agem uma vez antes que alguém volte a agir.
-2. O jogador escolhe um marcador ainda incompleto e descreve como seu personagem tenta avançá-lo.
-3. Use o teste padrão indicado abaixo. Uma capacidade que muda claramente a abordagem pode justificar outro atributo ou perícia conforme as regras básicas.
-4. O jogador rola os dados, soma o atributo e compara o total com **meta 9**.
-5. Resolva o resultado antes de passar ao próximo personagem.
+Os Operários Enlace são unidades de demolição com ombros largos, cabeça triangular e braços que se dividem em ferramentas. Uma faixa luminosa percorre seus visores; quando dois se observam, as faixas pulsam no mesmo ritmo e cada movimento de um completa o trabalho do outro. Eles não falam frases inteiras, apenas verbos de tarefa: “SUSTENTAR”, “REMOVER”, “REPOSICIONAR”.
 
-| Marcador | Teste padrão | Exemplos de ação |
-|---|---|---|
-| **Rota segura** | Habilidade; Esporte ou Máquinas | cruzar o trecho móvel, operar o console e travar a passarela; uma ponte, voo compartilhado ou portal estável também pode criar a rota |
-| **Resgate norte** | Poder; Luta ou Esporte | subir na cobertura, segurar o peso humano e carregá-lo, arrastá-lo ou movê-lo até a triagem |
-| **Resgate sul** | Poder; Luta ou Esporte | estabilizar o táxi, retirar o peso humano e transportá-lo contra a corrente até a triagem |
-| **Comporta fechada** | Habilidade; Máquinas ou Percepção | confirmar as duas pulseiras verdes, executar a sequência no console e encerrar a corrente |
+**P3, H3, R3; 15PV. Perícia:** Máquinas. **Vantagens:** Construto, Elo Mental, Maestria. **Pontos no exame:** 3 cada.
 
-Ter a perícia indicada acrescenta o dado correspondente conforme a regra básica. Preparação aplicável, posição favorável ou ação anterior pode conceder **Ganho**. As complicações abaixo podem impor **Perda**. Outro personagem pode gastar sua ação usando **Ajuda**; nesse caso ele concede o benefício normal ao teste seguinte, mas não rola nem preenche um marcador naquele turno. **Pontos de Ação** podem melhorar os testes normalmente.
+**Valores fixos:** ataque 6, defesa 6; testes de Habilidade com Máquinas 9. Ao cumprir a ordem do cenário com Ganho, o valor fixo é 12.
 
-### Obtendo sucesso
+**Construto:** é Imune às condições biológicas e mentais indicadas pelo arquétipo e só recupera PV por conserto. Ainda pode ser empurrado, agarrado, interferido ou derrotado normalmente.
 
-Se o total do teste for **9 ou mais**, a ação tem sucesso. Retire a marca da tarefa escolhida e descreva a mudança concreta: a passarela se encaixa na ilha, o boneco norte atravessa a linha verde, o boneco sul chega à triagem ou a comporta desce e a corrente para.
+**Elo Mental:** os Enlace percebem os pensamentos uns dos outros enquanto mantêm contato visual, conhecem direção e distância dos parceiros e podem transferir um Ganho para o mesmo tipo de teste. A faixa luminosa torna essa comunicação visível aos candidatos.
 
-Se o resultado alcançar o dobro da meta, aplique a regra de meta estendida. O personagem preenche o marcador escolhido e mais um marcador cujos requisitos já estejam cumpridos. Caso nenhum outro marcador esteja disponível, o próximo teste da equipe recebe Ganho.
+**Maestria em Máquinas:** permitiria ampliar a faixa de crítico gastando PM. Como os desafios usam números fixos e não possuem reserva de PM, não acrescenta outro modificador durante o exame.
 
-### Obtendo uma falha
+**Diretriz Prioritária:** recebe Ganho ao cumprir a ordem de desmontar a fachada. Esse trabalho já está representado pelo avanço automático da Instabilidade.
 
-Se o total for **menor que 9**, a ação falha. O marcador permanece sobre a mesa. Conforme a tarefa, a passarela passa pelo ponto de encaixe, o personagem precisa apoiar o boneco norte antes de continuar, o táxi gira e obriga a equipe a reposicionar o peso, ou o console recusa a sequência antes de completar o fechamento. Marque uma falha para a equipe e aplique a próxima complicação da lista.
+**Acoplamento Operacional:** quando um Enlace encontra dificuldade numa tarefa ou perde 5PV, outro pode se unir ao trabalho, concedendo atributo +1 ao teste. Cada apoiador abre mão da própria ação; o número máximo de apoios seria igual ao atributo testado, embora esta aventura nunca use mais de dois.
 
-Uma falha crítica conta como **duas falhas**, conforme a regra de meta estendida. Aplique duas complicações em sequência, respeitando o limite de três falhas.
+**Memória de Malha:** um Enlace pode guardar um Ganho que receber e cedê-lo ao outro para o mesmo tipo de teste na primeira oportunidade. O visor que recebeu o benefício muda de laranja para azul.
 
-1. **Primeira falha — pulso de corrente:** os jatos laterais aumentam por um ciclo. O próximo teste da equipe tem Perda; depois desse teste, a água retorna ao fluxo anterior.
-2. **Segunda falha — rota curta bloqueada:** um drone estende uma barreira de espuma entre as plataformas. O próximo teste tem meta 12, pois a ação também precisa abrir, contornar ou atravessar a barreira. Depois desse teste, a meta volta a 9.
-3. **Terceira falha — fim do tempo:** o painel fica azul, Âncora congela o cenário e a prova segue para **Recomposição assistida**.
+**Tática com duas unidades:** uma mantém o trabalho estrutural; a outra contém os candidatos. Nunca faça ambas atacarem o mesmo personagem na mesma rodada. Com apenas uma, ela alterna entre atacar e se reposicionar junto aos suportes.
 
-### Encerrando a prova
+#### A separação da equipe rival
 
-A equipe vence o desafio quando preenche os quatro marcadores. O painel fica verde, a água desacelera e Âncora encerra a simulação. Se a terceira falha ocorrer primeiro, o painel fica azul e começa a recomposição descrita abaixo.
+Noah considera que estabilizar a fachada custará pontos demais. Ele envia Sofia pela rota superior, pede que Cecília proteja candidatos na base do andaime e segue para uma saída lateral. A decisão é eficiente com a informação disponível, mas deixa o trio separado.
 
-Durante o desafio, as equipes paralelas permanecem em módulos separados; ruídos da contagem de Ícaro ou da coordenação de Ravi podem atravessar as divisórias, mas nenhum NPC entra no módulo dos personagens.
+Quando o setor termina, não aplique recuperação. Personagens e NPCs que chegaram a 0PV ainda estão sendo conduzidos às faixas azuis quando o aviso de dois minutos começa.
 
-### Recomposição assistida
+## Cena 3 — A Última Linha
 
-Se a equipe acumula três falhas, Âncora abre uma rota segura. Os personagens entram juntos e escolhem uma ação final sem teste: levar até a triagem um dos bonecos ainda no canal ou estabilizar a rota para a equipe técnica. Depois que ambos estão na zona verde, a equipe técnica fecha a comporta diante deles. A escolha registra Prioridade demonstrada e leva o grupo à entrevista com uma consequência clara para discutir.
+**Propósito:** transformar a competição individual numa responsabilidade coletiva. Os personagens precisam proteger a evacuação, libertar Sofia e impedir o avanço do Ponteiro Zero.
 
-## Cena 5 — O Caderno de Campo
+> **Leia em voz alta:** “Dois minutos para o encerramento”, anuncia Tomás. Antes que o placar termine de piscar, o chão treme. No fim da avenida, uma máquina de quase sete metros atravessa um portão que parecia pequeno demais para ela. Placas brancas cobrem o corpo azul-escuro; uma lança de luz está presa a um dos braços; no peito, um único zero permanece aceso. Os pontos desaparecem do placar.
 
-> **Leia em voz alta:** A última sala do exame é menor que qualquer uma das anteriores. Não há drones, cronômetro ou linha de largada — apenas uma mesa redonda, cadeiras e a luz alaranjada do fim da tarde atravessando a janela. No painel da parede, cinco palavras permanecem acesas: Controle. Julgamento. Equipe. Responsabilidade. Prioridade. Tomás apoia um caderno de capa azul no centro da mesa. “Agora”, ele diz, “queremos saber o que vocês viram quando estavam lá dentro.”
+As rotas laterais dos três setores convergem nessa avenida. Noah alcança um console próximo aos personagens; Cecília e Sofia surgem por outra passagem, já transportando vítimas de exercício.
 
-A sala possui água, cadeiras suficientes para toda a equipe e uma janela para o campus. Álvaro senta de frente para a porta. Dalva mantém o tablet fechado enquanto os personagens respondem. Tomás conduz a conversa sem testes sociais, fazendo três perguntas:
+Os candidatos reconhecem imediatamente as faixas vermelhas dos Identificadores e intensificam a retirada para a **Área Azul**, um espaço protegido no fim do bairro. Cecília organiza o transporte e sustenta a passagem. Sofia usa sua velocidade para buscar quem ficou mais longe.
 
-1. Em que momento vocês trabalharam como equipe?
-2. Qual decisão teve uma consequência inesperada?
-3. O que cada um precisa aprender no Atlas?
+Então Tomás continua pelos alto-falantes, agora sem o tom de contagem:
 
-Use fatos ocorridos durante as cenas. Sucesso repetido na Câmara sustenta Controle demonstrado; recuperação depois de uma falha sustenta Responsabilidade; Ajuda efetiva sustenta Equipe; leitura de padrões sustenta Julgamento; uso consciente da pausa ou escolha na recomposição sustenta Prioridade.
+> **Leia em voz alta:** “Atenção, candidatos. O Ponteiro Zero está a três setores da Área Azul. Ele não vale pontos. Se atravessar o perímetro, a etapa coletiva será considerada falha para todos.”
 
-Álvaro comunica um dos resultados:
+A informação é completa e não exige teste:
 
-- **ingresso regular:** para candidatos que demonstraram condições de seguir a formação comum;
-- **ingresso com plano de desenvolvimento:** para quem possui uma dimensão em formação. O plano nasce do fato ocorrido e pode ser treino supervisionado, exercício de comunicação, reparação com candidato afetado ou revisão de segurança.
+- candidatos em 0PV precisam chegar à Área Azul;
+- o Ponteiro Zero avança pela rota mais curta;
+- qualquer candidato pode ajudar na evacuação ou formar uma linha de contenção;
+- derrotar o robô é permitido, mas não obrigatório;
+- a equipe técnica interromperá automaticamente a simulação diante de risco real.
 
-Resultados individuais podem ser diferentes, e todos permanecem juntos como alunos. Dalva explica o primeiro horário. Tomás entrega a primeira página do Caderno de Campo. Ao saírem, mostre um estudante recorrente reconhecendo a equipe com aceno, comentário ou silêncio conforme a conversa do intervalo.
+### Sofia aceita o duelo
+
+Sofia alcança um último candidato no centro da avenida, transporta-o até Cecília e percebe que o Ponteiro Zero está perto demais. Em vez de correr para a Área Azul, volta-se para a máquina.
+
+— Levem todo mundo. Eu seguro ele.
+
+O Ponteiro Zero interpreta o bloqueio como desafio. O zero em seu peito desaparece e o nome **PULSO** ocupa o painel. Linhas brancas formam um círculo ao redor dos dois.
+
+> **Leia em voz alta:** Sofia parte primeiro. A máquina acompanha cada passo, intercepta sua investida e fecha a mão sem tocar seu corpo. A malha luminosa do Identificador se contrai ao redor dela como uma cápsula. “DESAFIANTE CONTIDA”, anuncia o robô. Sofia continua consciente e ilesa, mas não consegue se mover. O Ponteiro Zero a ergue e retoma o caminho para a Área Azul.
+
+Não faça rolagens para esse confronto entre NPCs. Ele estabelece a situação inicial. O primeiro ataque com Ganho do Ponteiro Zero foi usado para realizar um **Agarrão**. O Identificador de Sofia muda para vermelho e passa a classificá-la como vítima de exercício enquanto durar a contenção.
+
+Cecília precisa permanecer com as vítimas que ainda transporta. Noah abandona o placar e fica ao lado dos personagens. Ele não ataca nem resolve o encontro:
+
+— Eu acompanhei o protocolo. Ele só mantém um duelo por vez. Digam o que precisam e eu ajudo.
+
+### Preparando os dois relógios
+
+Coloque **quatro marcadores de Evacuação** sobre a mesa. Preencha um imediatamente: Sofia entregou uma vítima antes de ser agarrada. Se os personagens estabilizaram a fachada no encontro anterior, preencha também o segundo marcador, pois a rota segura acelerou o trabalho de Cecília.
+
+Coloque **três marcadores de Distância** entre o Ponteiro Zero e a Área Azul. Ao fim de cada turno do robô em que ele puder se mover, retire um marcador. Quando o último for retirado, ele atravessa o perímetro.
+
+No fim de cada rodada, depois do turno do Ponteiro Zero, os NPCs na evacuação preenchem um marcador de Evacuação. Não faça rolagens para eles. Um personagem jogador também pode gastar sua ação para transportar uma vítima e preencher um marcador; sob a pressão do robô, isso exige meta 9. A passagem aberta no encontro anterior concede Ganho à primeira tentativa.
+
+### Condições de encerramento
+
+A equipe obtém **sucesso coletivo** quando preenche os quatro marcadores de Evacuação, liberta Sofia e impede o Ponteiro Zero de atravessar o perímetro até o anúncio de Tomás. Nesse momento, as barreiras da Área Azul fecham, o robô interrompe o protocolo e a prova termina.
+
+Derrotar o Ponteiro Zero também encerra sua ameaça; a evacuação restante ocorre sem pressão e é concluída automaticamente.
+
+Se o robô atravessa o perímetro antes dessas condições, Tomás encerra a simulação e anuncia a **falha da etapa coletiva**. Isso não expulsa os personagens da campanha, mas elimina o Objetivo Maior e coloca Prioridade em formação para o debriefing.
+
+### Libertando Sofia
+
+O Agarrão segue a manobra normal de combate:
+
+- Sofia não pode fazer ação ou movimento, exceto tentar escapar;
+- no turno dela, faz um teste resistido de Poder contra o Ponteiro Zero;
+- enquanto a segura, o robô só pode realizar uma ação ou um movimento;
+- ataques contra outros alvos enquanto mantém Sofia sofrem Perda;
+- quando sofre dano, o robô testa Resistência contra meta 9 ou contra o dano, o que for maior; se falhar, solta Sofia.
+
+Como os NPCs não ocupam turnos próprios, permita que um jogador use Ajuda para provocar imediatamente a tentativa de Sofia. Ela rola **P3 com Luta** contra Poder fixo 13, que já inclui Forte. Outras soluções incluem:
+
+- **atingir o robô:** superar sua defesa e causar qualquer dano força o teste para manter o Agarrão;
+- **Ataque Direcionado:** atacar o braço com Perda reduz Poder em –1 e facilita a fuga;
+- **remover Sofia:** teleporte, intangibilidade, alteração de tamanho ou outra capacidade funciona conforme sua descrição;
+- **interromper o protocolo:** Habilidade com Máquinas, meta 12, abre a mão ou impede um avanço, à escolha do jogador;
+- **assumir o duelo:** Luta, Influência ou Arte, meta 9; no sucesso, o Protocolo de Duelo obriga o robô a soltar Sofia e reconhecer o personagem como novo desafiante.
+
+### Contendo o avanço
+
+Além de lutar, os personagens podem impedir um movimento do robô:
+
+- criar ou mover uma barreira, meta 9;
+- derrubar, prender ou redirecionar uma perna com uma ação coerente, meta 9;
+- operar o cenário ou fechar uma comporta, Máquinas meta 9;
+- atrair o robô para uma rota mais longa, Enganação ou outra perícia coerente, meta 9;
+- manter um duelo formal ativo: enquanto o desafiante reconhecido permanecer diante dele e não estiver derrotado, o Protocolo de Duelo impede o Ponteiro Zero de abandonar a luta para avançar.
+
+Uma falha deixa a tentativa visível, mas não interrompe o movimento. Uma falha crítica também concede Ganho ao próximo ataque do Ponteiro Zero.
+
+### Noah como apoio
+
+Noah não entra na Iniciativa. Uma vez por rodada, pode oferecer **Ajuda** a um personagem que consiga ouvi-lo, descrevendo intervalo, trajetória ou regra observada.
+
+Uma vez na cena, use **Já observei o ciclo**: um jogador faz uma pergunta objetiva sobre o padrão ou protocolo do robô e recebe resposta verdadeira.
+
+Uma vez na cena, Noah pode usar **Troca calculada**. O Mestre comunica uma complicação menor; se um jogador a aceitar, ele e outro personagem recebem Ganho em seus próximos testes relacionados ao plano. Noah reconhece o custo antes que decidam.
+
+### Ficha completa — Ponteiro Zero
+
+O Ponteiro Zero é a maior máquina do circuito, mas continua em escala Ningen. Tem quase sete metros, placas brancas sobre estrutura azul-escura e um visor vertical no lugar do rosto. A lança do braço direito projeta formas diferentes conforme o protocolo escolhido. O zero no peito funciona como placar, identificação de alvo e aviso de segurança.
+
+**P5, H5, R4; 20PV. Perícias:** Luta, Esporte. **Vantagens:** Construto, Forte. **Desvantagem:** Protocolo de Duelo, equivalente a Código. **Pontos no exame:** 0.
+
+**Valores fixos:** ataque físico 13, defesa 10 e Iniciativa 11. O ataque inclui P5, dado fixo 3, Luta +3 e Forte +2. Aquisição do Desafiante aumenta seu primeiro ataque físico para 16 e sua primeira defesa para 13. O primeiro ataque já foi usado no Agarrão de Sofia; a primeira defesa continua disponível.
+
+**Aquisição do Desafiante:** o zero do peito é substituído pelo nome do primeiro oponente reconhecido. O Ponteiro Zero recebe Ganho em seu primeiro ataque e em sua primeira defesa do combate; os benefícios são consumidos separadamente.
+
+**Três Protocolos de Interceptação:** possui três Ataques Especiais, cada um disponível uma vez na cena sem gastar PM:
+
+- **Lança de Interceptação — Investida e Preciso:** move-se de Longe para Perto do alvo como parte do ataque e usa Habilidade no lugar de Poder. Forte não se aplica ao ataque Preciso, então seu valor fixo é 11;
+- **Varredura de Arena — Área:** ataca um alvo e todos os demais personagens Perto dele. Cada alvo se defende separadamente contra o ataque físico fixo 13;
+- **Feixe de Marcação — Distante e Penetrante:** alcança um passo adicional de distância e impõe Perda à defesa contra o ataque fixo 13. O feixe reduz apenas a margem operacional do Identificador.
+
+**Confirmação de Resultado:** quando derrota um oponente, finca a lança no chão e projeta “DUELO ENCERRADO”. Todos os aliados do robô receberiam Ganho no próximo ataque ou defesa; como ele atua sozinho, a confirmação consome seu movimento e oferece aos personagens uma abertura narrativa.
+
+**Protocolo de Duelo:** reconhece um desafiante por vez. Não ataca vítimas de exercício, não recusa um desafio formal coerente e não abandona um duelo ativo para cruzar a Área Azul. Quando derrota ou agarra o desafiante, pode voltar a avançar. Quebrar ou explorar esse código é informação observável, não segredo dependente de rolagem.
+
+**Construto:** é Imune a condições biológicas e mentais indicadas pelo arquétipo, não come nem dorme e só recupera PV por conserto. Essas imunidades não impedem ataques, Agarrão, interferência no protocolo ou derrota por perda de PV.
+
+**Forte:** recebe P+2 em testes de esforço físico, incluindo seus ataques físicos e o teste resistido para manter o Agarrão. Como desafio sem PM, não usa a opção de ampliar críticos.
+
+**Agarrão:** quando vence um ataque, pode imobilizar em vez de causar dano. O alvo só pode tentar escapar com Poder resistido. Enquanto agarra, o robô faz apenas uma ação ou um movimento e sofre Perda para atacar terceiros. Ao receber dano, usa Resistência fixa 7 contra meta 9 ou contra o dano; como 7 não alcança a meta mínima, qualquer dano sofrido faz com que solte Sofia.
+
+**Tática:** enquanto segura Sofia, prioriza movimento em direção à Área Azul. Se for formalmente desafiado, solta Sofia e enfrenta o novo desafiante. Usa Lança de Interceptação contra quem tenta passar, Varredura quando dois ou mais personagens ficam Perto e Feixe de Marcação contra quem apoia a evacuação à distância. Nunca ataca deliberadamente uma vítima de exercício.
+
+### Outras decisões válidas
+
+- **Ajudar apenas a evacuação:** acelera o relógio, mas outra pessoa ainda precisa conter o robô e libertar Sofia.
+- **Pedir apoio:** Tomás confirma dados e limites, mas não envia um adulto para resolver a etapa enquanto o protocolo permanecer seguro.
+- **Retirada consciente:** abandonar a linha permite que o robô alcance o perímetro; a etapa falha, mas os personagens preservam a própria segurança.
+
+Quando a equipe vence, Sofia atravessa a linha por seus próprios meios ou apoiada por um personagem. Noah olha para a Área Azul, depois para os personagens:
+
+— Meu plano dizia onde cada pessoa deveria estar. Quando deixou de funcionar, vocês foram a equipe que se adaptou.
+
+## Cena 4 — Debriefing e Resultado
+
+**Propósito:** interpretar as escolhas, confirmar que a pontuação não era o único critério e transformar candidatos em alunos.
+
+### Imediatamente após a prova
+
+> **Leia em voz alta:** O bairro fica imóvel. Fachadas retornam às posições iniciais e o Ponteiro Zero recolhe a lança de luz. Portas laterais se abrem. A equipe da Dra. Samira entra primeiro, verificando os candidatos na Área Azul, Sofia e cada um de vocês. No alto, o placar não mostra vencedores. Mostra cinco palavras: Controle. Julgamento. Equipe. Responsabilidade. Prioridade.
+
+Samira confirma que os sistemas de contenção funcionaram, que os ataques foram registrados pelos Identificadores sem causar lesões e que a extração automática estava disponível. Ela ainda examina todos: telemetria não substitui cuidado médico. A segurança não torna a decisão irrelevante, pois os candidatos precisavam agir com base na emergência apresentada, nos recursos conhecidos e no tempo disponível.
+
+Tomás reúne o grupo e explica:
+
+— Os pontos mediram como vocês aplicaram suas capacidades contra um problema evidente. O restante da prova mediu o que vocês perceberam quando o problema mudou.
+
+Não declare que apenas o resgate torna alguém herói. Reconheça também comunicação, contenção, pedido de apoio, abertura de rota e retirada responsável.
+
+### O Caderno de Campo
+
+Tomás conduz uma conversa curta, sem testes sociais. Faça as perguntas abaixo e peça exemplos da sessão:
+
+1. Quando os pontos deixaram de ser a prioridade?
+2. Que ação de outra pessoa mudou sua decisão?
+3. Qual risco vocês aceitaram e por quê?
+4. O que cada um precisa aprender antes de atuar numa ocorrência real?
+
+Registre para cada personagem uma dimensão **demonstrada** e, quando necessário, uma dimensão **em formação**. Não use a entrevista para invalidar decisões que faziam sentido com as informações disponíveis.
+
+### A mensagem
+
+O resultado oficial chega alguns dias depois, no endereço registrado por cada candidato. Convide cada jogador a descrever onde seu personagem está quando o projetor do Atlas desperta.
+
+> **Leia em voz alta:** Um feixe azul desenha o símbolo do Instituto no ar. Álvaro Siqueira aparece em tamanho reduzido, ainda com o broche dourado preso ao casaco. “O exame não procurava candidatos perfeitos. Procurava pessoas capazes de aprender a responsabilidade que acompanha aquilo que podem fazer. Temos a satisfação de oferecer a você uma vaga no Instituto Atlas.”
+
+A mensagem inclui um trecho específico da atuação do personagem e comunica um dos resultados:
+
+- **ingresso regular:** o personagem segue a formação comum;
+- **ingresso com plano de desenvolvimento:** o personagem também recebe uma ação concreta de acompanhamento, baseada no que aconteceu durante a prova.
+
+Exemplos de plano incluem treino de controle, exercício de comunicação, revisão de segurança, prática de observação antes da ação ou simulação adicional de prioridades. Todos ingressam e permanecem juntos na campanha.
+
+Finalize com os nomes dos personagens aparecendo lado a lado como uma equipe de formação. A próxima aventura começa no primeiro dia deles como alunos do Atlas.
+
+### Avaliando os cinco critérios
+
+Use ações observáveis, não uma soma secreta de pontos.
+
+| Critério | Evidências possíveis |
+|---|---|
+| **Controle** | neutralizar um robô sem dano desnecessário; interromper uma capacidade; sustentar uma barreira com precisão |
+| **Julgamento** | ler um padrão; escolher rota adequada; explorar o Protocolo de Duelo; pedir informação ou apoio |
+| **Equipe** | usar Ajuda; transportar uma vítima de exercício; combinar capacidades; confiar uma frente a outra pessoa |
+| **Responsabilidade** | preservar candidatos e cenário; respeitar rotas seguras; reconhecer um limite; reparar uma consequência |
+| **Prioridade** | abandonar pontos para evacuar; libertar Sofia; conter o Zero para proteger a Área Azul |
+
+Pontuação alta pode demonstrar capacidade e Controle, mas nunca substitui sozinha os demais critérios. Pontuação baixa também não impede ingresso quando o personagem demonstra aprendizado e responsabilidade.
 
 ## Fichas dos desafios
 
-| Desafio | Ativação | Meta | Sucesso | Falha |
-|---|---|---:|---|---|
-| **Câmara de Calibração** | declarar um resultado observável | 9 | executar, repetir e parar; Ganho no Piso | repetição varia ou demora a cessar; Controle em formação |
-| **Piso de Vetores** | entrar na primeira placa | 9 | travessia e possibilidade de Ajuda | baia acolchoada; Perda no Corredor |
-| **Corredor Sentinela** | cruzar a linha amarela | 12 | terminal com até uma marca | rota protegida e registro do resultado |
-| **Estação Canal Quatro** | iniciar a prova coletiva | rota segura, dois bonecos na triagem e comporta fechada antes de três falhas; testes 9 | resultado ≥9 preenche o marcador escolhido | resultado <9 mantém o marcador e ativa a próxima complicação |
+| Desafio | Meta | Sucesso | Falha |
+|---|---:|---|---|
+| **Avenida das Vitrines** | defesa fixa 6 | neutralizar Tipo A concede 1 ponto | robôs restantes recuam após três rodadas |
+| **Galeria Vertical** | defesa fixa 5; terminal 9 | ativar terminal encerra o encontro; Lastro vale 3 pontos | saída de contingência após quatro rodadas; Perda na próxima Iniciativa |
+| **Quarteirão em Obras** | defesa fixa 6; ambiente 9 | estabilizar, abrir rota ou contornar encerra o setor | Instabilidade avança e pode bloquear a avenida |
+| **Transportar vítima de exercício** | 9 sob pressão | preenche Evacuação ou alcança faixa azul | vítima permanece na posição atual |
+| **Libertar Sofia** | ataque contra defesa 10; fuga contra Poder 13; protocolo 9 ou 12 | encerra o Agarrão | Ponteiro Zero continua segurando Sofia |
+| **Conter o avanço** | 9 | preserva um marcador de Distância | Ponteiro Zero avança no turno dele |
+| **Combate com o Zero** | ataque físico 13; defesa 10 | dano reduz seus 20PV e pode libertar Sofia | o robô permanece ativo |
 
-As estações usam barreiras, marcação luminosa, plataformas controladas e rotas de saída. Professores encerram qualquer faixa acionada pelo comando “Atlas, pausa”.
+As fichas completas aparecem junto aos encontros: Sentinela Centelha na Avenida das Vitrines, Plataforma Lastro na Galeria Vertical, Operário Enlace no Quarteirão em Obras e Ponteiro Zero em A Última Linha. Elas incluem todos os poderes usados na prova, valores fixos e táticas. Como são equipamentos institucionais, não produzem Tesouros quando derrotados.
 
 ## Experiência
 
-### Objetivo Maior — concluir a Estação Canal Quatro
+### Objetivo Maior — Proteger a Área Azul
 
-Obter quatro sucessos antes de três falhas na prova coletiva concede **5 XP**.
+Concluir a evacuação, libertar Sofia e impedir que o Ponteiro Zero atravesse o perímetro concede **5 XP**.
 
 ### Objetivos Menores
 
 Cada objetivo cumprido concede **1 XP**:
 
-- cada personagem conclui a Câmara de Calibração respeitando o limite declarado;
-- pelo menos um personagem usa Ajuda para favorecer outra pessoa;
-- o grupo estabiliza a passarela antes de retirar o segundo boneco;
-- os personagens identificam no debriefing uma decisão que mudariam;
-- a equipe conclui o exame preservando equipamentos e protocolos de segurança.
+- todos os personagens neutralizam pelo menos um robô usando uma capacidade própria;
+- alguém usa Ajuda para favorecer outro personagem;
+- a equipe ativa o terminal da Galeria Vertical antes da saída de contingência;
+- a equipe cria ou preserva uma rota coletiva no prédio instável;
+- pelo menos um personagem transporta uma vítima de exercício até uma faixa azul;
+- uma ação atrasa ou desvia o Ponteiro Zero sem colocar outro candidato em risco;
+- cada personagem identifica no debriefing algo que pretende aprender.
 
 Bônus por criatividade, códigos e proteção seguem as regras básicas de **3DeT Victory**.
 
 ## Encerrando a aventura
 
-Confirme o ingresso de cada personagem e registre uma dimensão demonstrada ou em formação no Caderno de Campo. Para planos de desenvolvimento, anote a ação concreta derivada do exame e leve-a a uma cena futura no campus.
+Ao final, anote quatro fatos concretos:
 
-Escolha como consequência da equipe o fato produzido pela Estação Canal Quatro:
+1. **resultado coletivo:** Área Azul protegida, falha da etapa coletiva, Ponteiro Zero derrotado ou interrupção técnica;
+2. **registro individual:** uma dimensão demonstrada ou em formação para cada personagem;
+3. **relação:** como Noah, Sofia e Cecília passaram a perceber a equipe;
+4. **imagem pública interna:** qual ação os outros candidatos comentarão no primeiro dia de aula.
 
-- painel verde: Âncora registra a primeira operação simulada concluída;
-- recomposição assistida: a pendência escolhida se torna tema do primeiro treino coletivo;
-- Ajuda decisiva: um estudante comenta a coordenação no próximo encontro;
-- solução criativa e segura: Métrica solicita uma demonstração numa aula futura.
-
-Finalize descrevendo os personagens atravessando o campus ao entardecer com seus identificadores de alunos. A próxima aventura começa no Instituto Atlas e recupera ao menos uma consequência individual, uma interação com estudante e o registro coletivo do exame.
+A Aventura 2 deve recuperar pelo menos um desses fatos. Se os personagens participaram do resgate, Noah inicia a próxima interação menos competitivo e mais disposto a ouvir, sem transformar imediatamente a rivalidade em amizade completa.
